@@ -1,3 +1,6 @@
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "./lib/xapi.js";
+completableXapiTracker.sendStatement(completableXapiTracker.Initialized("https://ConnectadoWeb/",0))
+
 import BootScene from './scenes/bootScene.js';
 
 // Menus
