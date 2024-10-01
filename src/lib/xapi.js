@@ -13,16 +13,23 @@ const xAPIConfig = {
 }
 //var xapiTracker = new xAPITrackerAssetOAuth2("https://simva-api.simva-beta.e-ucm.es:443/activities/66eaa426a79dbf015d6f6206", xAPIConfig, "https://simva-beta.e-ucm.es/","testToken");
 const urlParams = new URLSearchParams(window.location.search);
+var simvaResultUri, authToken, username, homepage
 if(urlParams.size > 0) {
-    
+    simvaResultUri = urlParams.get('url');
+    authToken = "Bearer " + urlParams.get('authToken');
+    username = urlParams.get('username');
+    homepage = urlParams.get('homepage');
+    console.debug(simvaResultUri);
+    console.debug(authToken);
+    console.debug(username);
+    console.debug(homepage);
+} else {
+    simvaResultUri = null;
+    authToken = null;
+    username = null;
+    homepage = null;
 }
-const simvaResultUri = urlParams.get('url');
-console.log(simvaResultUri);
-const authToken = "Bearer " + urlParams.get('authToken');
-console.log(authToken);
-const username = urlParams.get('username');
-console.log(username);
-export var xapiTracker = new xAPITrackerAsset(simvaResultUri, authToken, "https://simva-beta2.e-ucm.es/", username, "connectadoWeb");
+export var xapiTracker = new xAPITrackerAsset(simvaResultUri, authToken, homepage, username, "connectadoWeb");
 export var accessibleXapiTracker = new AccessibleTracker(xapiTracker);
 export var alternativeXapiTracker = new AlternativeTracker(xapiTracker);
 export var completableXapiTracker = new CompletableTracker(xapiTracker);

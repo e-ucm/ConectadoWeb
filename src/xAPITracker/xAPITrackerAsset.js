@@ -1,7 +1,7 @@
-import XAPI from 'https://cdn.skypack.dev/@xapi/xapi';
 import ActorStatement from "./HighLevel/Statement/ActorStatement.js";
 import ContextStatement from "./HighLevel/Statement/ContextStatement.js";
 import Statement from "./HighLevel/Statement/Statement.js";
+import XAPI from "https://cdn.skypack.dev/@xapi/xapi";
 
 export default class xAPITrackerAsset {
     constructor(endpoint, auth, homePage, token, defaultUri) {
@@ -16,10 +16,12 @@ export default class xAPITrackerAsset {
         this.token = token;
         this.actor=new ActorStatement(token, token, homePage);
         this.context = new ContextStatement();
-        this.xapi = new XAPI({
-            endpoint: endpoint,
-            auth: auth
-        });
+        if(this.auth != null) {
+            this.xapi = new XAPI({
+                endpoint: endpoint,
+                auth: auth
+            });
+        }
         this.defaultUri=defaultUri;
         this.statementsToSend=[];
         if(this.auth) { 
