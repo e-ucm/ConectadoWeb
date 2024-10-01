@@ -90,7 +90,7 @@ export default class ClassFrontBase extends BaseScene {
         tables.input.cursor = 'pointer';
         
         tables.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("tables", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("tables", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(this.tablesNode);
         });
 

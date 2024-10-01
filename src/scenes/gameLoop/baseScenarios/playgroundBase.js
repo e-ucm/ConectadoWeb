@@ -37,7 +37,7 @@ export default class PlaygroundBase extends BaseScene {
         // Al hacer click sobre la zona de salida si hay algun dialogo que mostrar (para indicar que no se puede salir), se
         // mostrara. En caso contrario, se pasara a la escena del salon con la camara a la izquierda y se eliminara esta escena
         exit.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("exit", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("exit", GAMEOBJECTTYPE.ITEM));
             if (this.homeNode) {
                 this.dialogManager.setNode(this.homeNode);
             }
@@ -57,7 +57,7 @@ export default class PlaygroundBase extends BaseScene {
         // Al hacer click sobre la zona de la puerta, si hay algun dialogo que mostrar, (para indicar que 
         // no se puede entrar), se mostrara. En caso contrario, se pasara a la escena de las escaleras
         doors.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("doors", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("doors", GAMEOBJECTTYPE.ITEM));
             if (!this.doorNode && this.bgImg === 'playgroundOpened') {
                 this.gameManager.changeScene(this.stairs, { } , true);
             }

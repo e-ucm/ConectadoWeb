@@ -29,7 +29,7 @@ export default class BedroomMorningDay5 extends BedroomBase {
         bag.flipX = true;
         bag.setInteractive({ useHandCursor: true });
         bag.on('pointerdown', () => {
-            var statement = gameObjectXapiTracker.Interacted("bag", GAMEOBJECTTYPE.ITEM);
+            var statement = this.gameManager.Interacted("bag", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("bagPicked", true);
             gameObjectXapiTracker.sendStatement(statement);
             this.dialogManager.setNode(bagNode)

@@ -41,7 +41,7 @@ export default class RestroomBase extends BaseScene {
         let doorOpened = this.add.image(doorPos.x, doorPos.y, this.atlasName, 'restroomDoorOpened').setOrigin(0, 0).setScale(this.scale);
         // Al hacer click, se pasara a la escena del pasillo sin eliminar esta escena
         super.toggleDoor(doorClosed, doorOpened, () => {
-            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("corridorDoor", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("corridorDoor", GAMEOBJECTTYPE.ITEM));
             let params = {
                 camPos: "left"
             }
@@ -53,11 +53,11 @@ export default class RestroomBase extends BaseScene {
         let stall1DoorClosed = this.add.image(1911 * this.scale, 296 * this.scale, this.atlasName, 'restroomStall1Closed').setOrigin(0, 0).setScale(this.scale);
         let stall1DoorOpened = this.add.image(1742 * this.scale, 276 * this.scale, this.atlasName, 'restroomStall1Opened').setOrigin(0, 0).setScale(this.scale);
         super.toggleDoor(stall1DoorClosed, stall1DoorOpened, () => {
-            var statement = gameObjectXapiTracker.Interacted("restroomStall1", GAMEOBJECTTYPE.ITEM);
+            var statement = this.gameManager.Interacted("restroomStall1", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
             gameObjectXapiTracker.sendStatement(statement);
         }, true, () => {
-            var statement = gameObjectXapiTracker.Interacted("restroomStall1", GAMEOBJECTTYPE.ITEM);
+            var statement = this.gameManager.Interacted("restroomStall1", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
             gameObjectXapiTracker.sendStatement(statement);
         });
@@ -67,11 +67,11 @@ export default class RestroomBase extends BaseScene {
         let stall2DoorClosed = this.add.image(2197 * this.scale, 244 * this.scale, this.atlasName, 'restroomStall2Closed').setOrigin(0, 0).setScale(this.scale);
         let stall2DoorOpened = this.add.image(1844 * this.scale, 240 * this.scale, this.atlasName, 'restroomStall2Opened').setOrigin(0, 0).setScale(this.scale);
         super.toggleDoor(stall2DoorClosed, stall2DoorOpened, () => {
-            var statement = gameObjectXapiTracker.Interacted("restroomStall2", GAMEOBJECTTYPE.ITEM);
+            var statement = this.gameManager.Interacted("restroomStall2", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
             gameObjectXapiTracker.sendStatement(statement);
         }, true, () => {
-            var statement = gameObjectXapiTracker.Interacted("restroomStall2", GAMEOBJECTTYPE.ITEM);
+            var statement = this.gameManager.Interacted("restroomStall2", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
             gameObjectXapiTracker.sendStatement(statement);
         });

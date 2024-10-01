@@ -42,7 +42,7 @@ export default class CorridorMorningDay3 extends CorridorBase {
         let bulletinBoard = this.add.rectangle(2261 * this.scale, 388 * this.scale, 570 * this.scale, 590 * this.scale, 0xfff, 0).setOrigin(0, 0);
         bulletinBoard.setInteractive({ useHandCursor: true });
         bulletinBoard.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("bulletinBoard", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("bulletinBoard", GAMEOBJECTTYPE.ITEM));
             this.photo.visible = true;
             this.dialogManager.setNode(boardNode);
         })

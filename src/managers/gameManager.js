@@ -1,5 +1,5 @@
 import EventDispatcher from "../eventDispatcher.js";
-import { alternativeXapiTracker, completableXapiTracker } from "../lib/xapi.js";
+import { alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
 import BaseScene from "../scenes/gameLoop/baseScene.js";
 import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js";
 import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
