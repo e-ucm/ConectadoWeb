@@ -31,6 +31,12 @@ export default class ResultStatements {
         }
     };
 
+    setScoreValue(key, value) {
+        if (exists(this.Extensions.score)) {
+            this.Extensions.score = {};
+        }
+        this.Extensions.score[key] = Number(value);
+    };
 
     toXAPI() {
         var ret = {};

@@ -1,9 +1,9 @@
 import xAPITrackerAssetOAuth2 from "../xAPITracker/Auth/OAuth2.js"
 import xAPITrackerAsset from "../xAPITracker/xAPITrackerAsset.js"
-import Accessible from "../xAPITracker/HighLevel/Accessible.js"
-import Alternative from "../xAPITracker/HighLevel/Alternative.js"
-import Completable from "../xAPITracker/HighLevel/Completable.js"
-import GameObject from "../xAPITracker/HighLevel/GameObject.js"
+import {AccessibleTracker, ACCESSIBLETYPE } from "../xAPITracker/HighLevel/Accessible.js"
+import { CompletableTracker , COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import {AlternativeTracker , ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js"
+import { GameObjectTracker , GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
 const xAPIConfig = {
     "grant_type": "code",
     "auth_endpoint": "https://sso.simva-beta.e-ucm.es:443/realms/simva/protocol/openid-connect/auth",
@@ -23,8 +23,8 @@ console.log(authToken);
 const username = urlParams.get('username');
 console.log(username);
 export var xapiTracker = new xAPITrackerAsset(simvaResultUri, authToken, "https://simva-beta2.e-ucm.es/", username, "connectadoWeb");
-export var accessibleXapiTracker = new Accessible(xapiTracker);
-export var alternativeXapiTracker = new Alternative(xapiTracker);
-export var completableXapiTracker = new Completable(xapiTracker);
-export var gameObjectXapiTracker = new GameObject(xapiTracker);
-completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",0))
+export var accessibleXapiTracker = new AccessibleTracker(xapiTracker);
+export var alternativeXapiTracker = new AlternativeTracker(xapiTracker);
+export var completableXapiTracker = new CompletableTracker(xapiTracker);
+export var gameObjectXapiTracker = new GameObjectTracker(xapiTracker);
+completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME));
