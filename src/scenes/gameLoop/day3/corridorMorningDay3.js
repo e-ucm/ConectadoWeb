@@ -1,5 +1,10 @@
 import CorridorBase from "../baseScenarios/corridorBase.js";
 import Character from "../../../gameObjects/character.js";
+import { ACCESSIBLETYPE } from "../../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
 
 export default class CorridorMorningDay3 extends CorridorBase {
     constructor() {
@@ -37,6 +42,7 @@ export default class CorridorMorningDay3 extends CorridorBase {
         let bulletinBoard = this.add.rectangle(2261 * this.scale, 388 * this.scale, 570 * this.scale, 590 * this.scale, 0xfff, 0).setOrigin(0, 0);
         bulletinBoard.setInteractive({ useHandCursor: true });
         bulletinBoard.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("bulletinBoard", GAMEOBJECTTYPE.ITEM));
             this.photo.visible = true;
             this.dialogManager.setNode(boardNode);
         })

@@ -1,5 +1,10 @@
 
 import BaseScene from '../baseScene.js';
+import { ACCESSIBLETYPE } from "../../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
 
 export default class ClassBackBase extends BaseScene {
     /**
@@ -35,6 +40,7 @@ export default class ClassBackBase extends BaseScene {
         // Al hacer click, si hay algun dialogo que mostrar (para indicar que no se puede salir), se
         // mostrara. En caso contrario, se pasara a la escena del pasillo y se elimina esta escena
         super.toggleDoor(doorClosed, doorOpened, () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("classDoor", GAMEOBJECTTYPE.ITEM));
             if (this.doorNode) {
                 this.dialogManager.setNode(this.doorNode);
             }

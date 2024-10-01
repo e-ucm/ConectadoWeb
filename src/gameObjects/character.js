@@ -1,3 +1,9 @@
+import { ACCESSIBLETYPE } from "../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
+
 export default class Character {
     /**
     * Clase para un personaje y su retrato 
@@ -12,7 +18,7 @@ export default class Character {
         this.scene = scene;
 
         this.anims = [];
-
+        this.key = key;
         // Se crea el personaje y sus animaciones esqueletales de Spine
         // Nota: el origen es (0.5, 1). No se puede modificar
         this.char = this.scene.add.spine(trans.x, trans.y, key);
@@ -24,6 +30,7 @@ export default class Character {
 
         this.dialog = dialog;
         this.char.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted(this.key, GAMEOBJECTTYPE.NPC));
             this.dialog();
         });
 

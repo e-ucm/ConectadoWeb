@@ -1,6 +1,11 @@
 import BaseScreen from "./baseScreen.js";
 import VerticalListView from "../listView/verticalListView.js";
 import MessageBox from "../messageBox.js";
+import { ACCESSIBLETYPE } from "../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../lib/xapi.js";
 
 export default class ChatScreen extends BaseScreen {
     /**
@@ -128,6 +133,7 @@ export default class ChatScreen extends BaseScreen {
 
         // Al hacer click, vuelve a cambiar el color de la caja al original
         this.textBox.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("chatBoxScreen", GAMEOBJECTTYPE.ITEM));
             if (!this.scene.dialogManager.isTalking() && this.canAnswer) {
                 let fadeColor = this.scene.tweens.addCounter({
                     targets: [this.textBox],
@@ -198,6 +204,7 @@ export default class ChatScreen extends BaseScreen {
 
         });
         this.returnButton.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("returnButton", GAMEOBJECTTYPE.ITEM));
             if (!this.scene.dialogManager.isTalking()) {
                 let anim = this.scene.tweens.add({
                     targets: [this.returnButton],

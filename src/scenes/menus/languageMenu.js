@@ -1,4 +1,9 @@
 import GameManager from "../../managers/gameManager.js"
+import { ACCESSIBLETYPE } from "../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../lib/xapi.js";
 
 export default class LanguageMenu extends Phaser.Scene {
     /**
@@ -77,6 +82,7 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
+            alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected("language", language, ALTERNATIVETYPE.MENU));
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();

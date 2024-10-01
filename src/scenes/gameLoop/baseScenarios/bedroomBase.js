@@ -1,5 +1,10 @@
 
 import BaseScene from '../baseScene.js';
+import { ACCESSIBLETYPE } from "../../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
 
 export default class BedroomBase extends BaseScene {
     /**
@@ -26,17 +31,41 @@ export default class BedroomBase extends BaseScene {
         // Puerta del armario individual
         let door1Closed = this.add.image(2190 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor1Closed').setOrigin(0, 0).setScale(this.scale);
         let door1Opened = this.add.image(2110 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor1Opened').setOrigin(0, 0).setScale(this.scale);
-        super.toggleDoor(door1Closed, door1Opened);
+        super.toggleDoor(door1Closed, door1Opened, () => {
+            var statement = gameObjectXapiTracker.Interacted("wardrobeDoor1", GAMEOBJECTTYPE.ITEM);
+            statement.addResultExtension("status", "closed");
+            gameObjectXapiTracker.sendStatement(statement);
+        }, true, () => {
+            var statement = gameObjectXapiTracker.Interacted("wardrobeDoor1", GAMEOBJECTTYPE.ITEM);
+            statement.addResultExtension("status", "opened");
+            gameObjectXapiTracker.sendStatement(statement);
+        });
 
         // Puerta izquierda del armario
         let door2Closed = this.add.image(2500 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor2Closed').setOrigin(0, 0).setScale(this.scale);
         let door2Opened = this.add.image(2435 * this.scale, 307 * this.scale, this.atlasName, 'wardrobeDoor2Opened').setOrigin(0, 0).setScale(this.scale);
-        super.toggleDoor(door2Closed, door2Opened);
+        super.toggleDoor(door2Closed, door2Opened, () => {
+            var statement = gameObjectXapiTracker.Interacted("wardrobeDoor2", GAMEOBJECTTYPE.ITEM);
+            statement.addResultExtension("status", "closed");
+            gameObjectXapiTracker.sendStatement(statement);
+        }, true, () => {
+            var statement = gameObjectXapiTracker.Interacted("wardrobeDoor2", GAMEOBJECTTYPE.ITEM);
+            statement.addResultExtension("status", "opened");
+            gameObjectXapiTracker.sendStatement(statement);
+        });
 
         // Puerta derecha del armario
         let door3Closed = this.add.image(3155 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor3Closed').setOrigin(1, 0).setScale(this.scale);
         let door3Opened = this.add.image(3220 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor3Opened').setOrigin(1, 0).setScale(this.scale);
-        super.toggleDoor(door3Closed, door3Opened);
+        super.toggleDoor(door3Closed, door3Opened, () => {
+            var statement = gameObjectXapiTracker.Interacted("wardrobeDoor3", GAMEOBJECTTYPE.ITEM);
+            statement.addResultExtension("status", "closed");
+            gameObjectXapiTracker.sendStatement(statement);
+        }, true, () => {
+            var statement = gameObjectXapiTracker.Interacted("wardrobeDoor3", GAMEOBJECTTYPE.ITEM);
+            statement.addResultExtension("status", "opened");
+            gameObjectXapiTracker.sendStatement(statement);
+        });
 
 
         // Interior de los armarios. Se reordenan las profundidades de las puertas de los armarios
@@ -53,7 +82,9 @@ export default class BedroomBase extends BaseScene {
         wardrobe1.setInteractive({ useHandCursor: true });
         wardrobe1.on('pointerdown', () => {
             if (door1Opened.visible) {
-                this.dialogManager.setNode(this.wardrobe1Node)
+                gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("wardrobe1", GAMEOBJECTTYPE.ITEM));
+                this.dialogManager.setNode(this.wardrobe1Node);
+                
             }
         });
 
@@ -65,7 +96,8 @@ export default class BedroomBase extends BaseScene {
         wardrobe2.setInteractive();
         wardrobe2.on('pointerdown', () => {
             if (door2Opened.visible || door3Opened.visible) {
-                this.dialogManager.setNode(this.wardrobe2Node)
+                gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("wardrobe2", GAMEOBJECTTYPE.ITEM));
+                this.dialogManager.setNode(this.wardrobe2Node);
             }
         })
 
@@ -81,6 +113,7 @@ export default class BedroomBase extends BaseScene {
             this.dialogManager.setNode(this.pcNode);
         });
         this.dispatcher.add("turnPC", this, (obj) => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("computer", GAMEOBJECTTYPE.ITEM));
             this.gameManager.switchToComputer();
         });
 
@@ -95,6 +128,7 @@ export default class BedroomBase extends BaseScene {
             let params = {
                 camPos: "right"
             };
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("livingroomDoor", GAMEOBJECTTYPE.ITEM));
             this.gameManager.changeScene(this.livingroom, params, true);
         }, false);
 
@@ -107,6 +141,7 @@ export default class BedroomBase extends BaseScene {
         this.bed.setDepth(10);
         this.bedNode = null;
         this.bed.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("bed", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(this.bedNode);
         })
 
@@ -123,6 +158,8 @@ export default class BedroomBase extends BaseScene {
                 setTimeout(() => {
                     this.phoneManager.bgBlock.disableInteractive();
                     let nightmareScene = "NightmareDay" + this.gameManager.day;
+                    var statement = completableXapiTracker.Completed(super.name, COMPLETABLETYPE.STORYNODE, null, null);
+                    completableXapiTracker.sendStatement(statement);
                     this.gameManager.changeScene(nightmareScene);
                 }, 1000);
             })

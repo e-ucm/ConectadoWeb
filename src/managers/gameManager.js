@@ -1,5 +1,8 @@
 import EventDispatcher from "../eventDispatcher.js";
+import { alternativeXapiTracker, completableXapiTracker } from "../lib/xapi.js";
 import BaseScene from "../scenes/gameLoop/baseScene.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js";
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
 
 // Variable de nivel de modulo
 // - Se puede acceder desde cualquier parte del modulo, pero no es visible
@@ -363,7 +366,7 @@ export default class GameManager {
     switchToComputer() {
         // Se desactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(false);
-
+        
         // Se duerme la escena actual
         this.currentScene.scene.sleep();
 
@@ -440,6 +443,8 @@ export default class GameManager {
 
         // Si no se encuentra el personaje en la blackboard, se anade con 50 de amistad por defecto
         if (!this.getValue(varName)) {
+            alternativeXapiTracker.sendStatement(alternativeXapiTracker.Unlocked("friend", character, ALTERNATIVETYPE.ALTERNATIVE));
+            completableXapiTracker.sendStatement(completableXapiTracker.Initialized(varName, COMPLETABLETYPE.COMPLETABLE));
             this.setValue(varName, 50);
         }
 
@@ -447,7 +452,7 @@ export default class GameManager {
         let val = this.getValue(varName)
         val += amount;
         this.setValue(varName, val);
-
+        completableXapiTracker.sendStatement(completableXapiTracker.Progressed(varName, COMPLETABLETYPE.COMPLETABLE, val));
         // Actualiza el valor tambien en la pantalla de relaciones del movil
         this.UIManager.phoneManager.phone.updateRelationShip(character, val);
     }

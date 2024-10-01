@@ -1,5 +1,10 @@
 
 import BaseScene from '../baseScene.js';
+import { ACCESSIBLETYPE } from "../../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
 
 export default class LivingroomBase extends BaseScene {
     /**
@@ -37,6 +42,7 @@ export default class LivingroomBase extends BaseScene {
         // Al hacer click sobre la puerta abierta, si hay algun dialogo que mostrar (para indicar que no se puede salir), se 
         // mostrara. En caso contrario, se pasara a la escena del patio con la camara a la izquierda y se eliminara esta escena
         super.toggleDoor(playgroundDoorClosed, playgroundDoorOpened, () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("exitHomeDoor", GAMEOBJECTTYPE.ITEM));
             if (this.doorNode) {
                 this.dialogManager.setNode(this.doorNode);
             }
@@ -54,6 +60,7 @@ export default class LivingroomBase extends BaseScene {
         let bedroomDoorOpened = this.add.image(3956 * this.scale - 4, 175 * this.scale - 2, this.atlasName, 'bedroomDoorOpened').setOrigin(0, 0).setScale(this.scale);
         // Al hacer click sobre la puerta abierta, se pasa a la habitacion con la camara en la izquierda
         super.toggleDoor(bedroomDoorClosed, bedroomDoorOpened, () => {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("bedroomDoor", GAMEOBJECTTYPE.ITEM));
             let params = {
                 camPos: "left"
             };

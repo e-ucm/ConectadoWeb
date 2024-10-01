@@ -1,6 +1,11 @@
 import TextBox from '../UI/dialog/textBox.js';
 import OptionBox from '../UI/dialog/optionBox.js';
 import GameManager from './gameManager.js';
+import { ACCESSIBLETYPE } from "../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
 
 export default class DialogManager {
     /**
@@ -70,6 +75,7 @@ export default class DialogManager {
     * @param {Phaser.Scene} scene - escena a la que se va a pasar
     */
     changeScene(scene) {
+        completableXapiTracker.sendStatement(completableXapiTracker.Initialized(scene.scene.key, COMPLETABLETYPE.STORYNODE));
         // Desactiva la caja de texto y las opciones (por si acaso)
         if (this.textbox) {
             this.textbox.activate(false);
@@ -419,7 +425,7 @@ export default class DialogManager {
         this.activateOptions(false);
 
         let next = this.currNode.next[index];
-
+        alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected(this.currNode.fullId, this.currNode.choices[index].text, ALTERNATIVETYPE.DIALOG));
         // Si la opcion no se puede elegir de nuevo, elimina tanto la opcion
         // como el nodo al que lleva de sus arrays correspondientes
         if (!this.currNode.choices[index].repeat) {

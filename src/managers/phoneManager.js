@@ -1,5 +1,10 @@
 import Phone from '../UI/phone/phone.js';
 import GameManager from './gameManager.js';
+import { ACCESSIBLETYPE } from "../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
 
 export default class PhoneManager {
     /**
@@ -49,6 +54,7 @@ export default class PhoneManager {
         // pantalla que no sea la pantalla de alarma, se guarda
         this.bgBlock.on('pointerdown', () => {
             if (this.phone.visible && this.phone.currScreen !== this.phone.alarmScreen) {
+                gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("outOfPhone", GAMEOBJECTTYPE.ITEM));
                 this.togglePhone();
             }
         });
@@ -383,6 +389,7 @@ export default class PhoneManager {
 
     // Funcion llamada al aplazar la alarma
     sleep() {
+
         // Si no se ha dormido antes o no es el ultimo dia
         if (!this.gameManager.getValue("isLate") && this.gameManager.day !== 5) {
             // Se actualiza la variable de haberse quedado dormido
@@ -409,11 +416,15 @@ export default class PhoneManager {
         else {
             this.wakeUpMessage.visible = true;
         }
-
+        var statement = gameObjectXapiTracker.Interacted("Sleep_phone", GAMEOBJECTTYPE.ITEM);
+        statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
+        statement.addResultExtension("day",this.gameManager.day);
+        gameObjectXapiTracker.sendStatement(statement);
     }
 
     // Funcion llamada al apagar la alarma y despertarse
     wakeUp() {
+        
         // Se guarda el telefono
         this.togglePhone(1500);
 
@@ -432,6 +443,10 @@ export default class PhoneManager {
 
             });
         }
+        var statement = gameObjectXapiTracker.Interacted("wake_up_phone", GAMEOBJECTTYPE.ITEM);
+        statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
+        statement.addResultExtension("day",this.gameManager.day);
+        gameObjectXapiTracker.sendStatement(statement);
     }
 
 
