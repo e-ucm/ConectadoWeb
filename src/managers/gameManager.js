@@ -49,6 +49,10 @@ export default class GameManager {
 
         // Dia de la semana. Empieza en 0 porque al iniciarse la escena de la alarma, se va actualizando
         this.day = 0;
+        this.dayText = null;
+        this.hourId = null;
+        this.hour = null;
+        this.notificationAmount = null;
 
         this.generateTextures();
 
@@ -455,5 +459,14 @@ export default class GameManager {
         completableXapiTracker.sendStatement(completableXapiTracker.Progressed(varName, COMPLETABLETYPE.COMPLETABLE, val));
         // Actualiza el valor tambien en la pantalla de relaciones del movil
         this.UIManager.phoneManager.phone.updateRelationShip(character, val);
+    }
+
+    Interacted(id, type) {
+        var statement = gameObjectXapiTracker.Interacted(id, type);
+        statement.addResultExtension("GameDay",this.dayText); // GlobalState.Day
+        statement.addResultExtension("GameHour", this.hour); //GlobalState.Hour + ":" + GlobalState.Minute 
+        statement.addResultExtension("IsRepeatedDay", false); //TODO GlobalState.Repeated.ToString() 
+        statement.addResultExtension("MobileMessages", this.notificationAmount); //GlobalState.MessagesPending.ToString()
+        return statement;
     }
 }

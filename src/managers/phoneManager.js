@@ -54,7 +54,7 @@ export default class PhoneManager {
         // pantalla que no sea la pantalla de alarma, se guarda
         this.bgBlock.on('pointerdown', () => {
             if (this.phone.visible && this.phone.currScreen !== this.phone.alarmScreen) {
-                gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("outOfPhone", GAMEOBJECTTYPE.ITEM));
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("outOfPhone", GAMEOBJECTTYPE.ITEM));
                 this.togglePhone();
             }
         });
@@ -358,6 +358,10 @@ export default class PhoneManager {
         // Coge el dia del array en base al dia del gameManager
         let day = days[this.gameManager.day - 1];
 
+        // Set date time in game manager for xapiTracker
+        this.gameManager.hour = hour;
+        this.gameManager.dayText = day;
+
         // Cambia la hora del telefono
         this.phone.setDayInfo(hour, day);
     }
@@ -373,6 +377,8 @@ export default class PhoneManager {
 
     // Establece las notificaciones que hay
     setNotifications() {
+        // Set notificationAmount in game manager for xapiTracker
+        this.gameManager.notificationAmount = this.notificationAmount;
         // Si son mas de 0, activa las notificaciones si el icono esta activo y cambia el texto
         if (this.notificationAmount > 0) {
             this.notifications.visible = this.icon.visible;
@@ -389,7 +395,6 @@ export default class PhoneManager {
 
     // Funcion llamada al aplazar la alarma
     sleep() {
-
         // Si no se ha dormido antes o no es el ultimo dia
         if (!this.gameManager.getValue("isLate") && this.gameManager.day !== 5) {
             // Se actualiza la variable de haberse quedado dormido
@@ -416,9 +421,8 @@ export default class PhoneManager {
         else {
             this.wakeUpMessage.visible = true;
         }
-        var statement = gameObjectXapiTracker.Interacted("Sleep_phone", GAMEOBJECTTYPE.ITEM);
+        var statement = this.gameManager.Interacted("Sleep_phone", GAMEOBJECTTYPE.ITEM);
         statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
-        statement.addResultExtension("day",this.gameManager.day);
         gameObjectXapiTracker.sendStatement(statement);
     }
 
@@ -443,9 +447,8 @@ export default class PhoneManager {
 
             });
         }
-        var statement = gameObjectXapiTracker.Interacted("wake_up_phone", GAMEOBJECTTYPE.ITEM);
+        var statement = this.gameManager.Interacted("wake_up_phone", GAMEOBJECTTYPE.ITEM);
         statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
-        statement.addResultExtension("day",this.gameManager.day);
         gameObjectXapiTracker.sendStatement(statement);
     }
 

@@ -120,8 +120,8 @@ export default class LoginMenu extends Phaser.Scene {
                         userInfo.gender = "female";
                     }
                     var statement = accessibleXapiTracker.Accessed("StartGame");
-                    statement.addResultExtension("conectado://gender", userInfo.gender);
-                    statement.addResultExtension("conectado://pass", userInfo.password);
+                    statement.addResultExtension("gender", userInfo.gender);
+                    statement.addResultExtension("password", userInfo.password);
                     accessibleXapiTracker.sendStatement(statement);
 
                     this.gameManager.startGame(userInfo);
