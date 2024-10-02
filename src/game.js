@@ -1,3 +1,10 @@
+import { ACCESSIBLETYPE } from "./xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "./xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "./xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "./xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "./lib/xapi.js";
+completableXapiTracker.sendStatement(completableXapiTracker.Initialized("https://ConnectadoWeb/", COMPLETABLETYPE.GAME));
+
 import BootScene from './scenes/bootScene.js';
 
 // Menus

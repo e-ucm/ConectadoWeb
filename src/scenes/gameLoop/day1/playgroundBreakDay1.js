@@ -1,5 +1,10 @@
 import PlaygroundBase from "../baseScenarios/playgroundBase.js";
 import Character from "../../../gameObjects/character.js";
+import { ACCESSIBLETYPE } from "../../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
 
 export default class PlaygroundBreakDay1 extends PlaygroundBase {
     constructor() {
@@ -67,6 +72,7 @@ export default class PlaygroundBreakDay1 extends PlaygroundBase {
         });
         earring.setInteractive();
         earring.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("earring", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(earringNode);
         });
 

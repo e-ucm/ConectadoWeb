@@ -1,5 +1,7 @@
 import FriendRequest from './friendRequest.js'
 import VerticalListView from '../listView/verticalListView.js'
+import { GAMEOBJECTTYPE } from "../../xAPITracker/HighLevel/GameObject.js";
+import { gameObjectXapiTracker } from "../../lib/xapi.js";
 
 export default class FriendsTab extends Phaser.GameObjects.Group {
     /**
@@ -133,6 +135,14 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
         return this.nPendingRequests <= 0;
     }
 
+    interacted(id) {
+        try {
+            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted(id, GAMEOBJECTTYPE.ITEM));
+        } catch(e) {
+            console.debug(e);
+        }
+    }
+
     /**
      * Agregar una peticiones de amistad
      * @param {String} character - personaje 
@@ -148,6 +158,7 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
         let friendRequest = new FriendRequest(this.scene, 0, 0, 1, avatar, name, bio,
             // Rechazar
             () => {
+                this.interacted(`Deny_${character}_request`);
                 this.socialNetScreen.eraseFriend(character);
                 this.refuseFriendRequest(friendRequest);
             },
@@ -155,6 +166,7 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
             () => {
                 // Cuando se acepta la solicitud, todos los posts pendientes aparecen en el tablon
                 this.socialNetScreen.addPendingPosts(character);
+                this.interacted(`Accepted_${character}_request`);
                 // Se actualiza la UI
                 this.decreaseFriendRequests();
                 this.increaseFriends();

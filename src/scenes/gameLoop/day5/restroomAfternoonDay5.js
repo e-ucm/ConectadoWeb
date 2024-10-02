@@ -1,5 +1,10 @@
 
 import RestroomBase from '../baseScenarios/restroomBase.js';
+import { ACCESSIBLETYPE } from "../../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
 
 export default class RestroomAfternoonDay5 extends RestroomBase {
     constructor() {
@@ -18,6 +23,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
         let doorClosed = this.add.image(doorPos.x, doorPos.y, this.atlasName, 'restroomDoorClosed').setOrigin(0, 0).setScale(this.scale);
         doorClosed.setInteractive({ useHandCursor: true });
         doorClosed.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("restroomDoorclosed", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(doorNode);
         });
 
@@ -75,6 +81,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
             sink.setInteractive(sinkPolygon, Phaser.Geom.Polygon.Contains);
             sink.input.cursor = 'pointer';
             sink.on('pointerdown', () => {
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("sink", GAMEOBJECTTYPE.ITEM));
                 this.dialogManager.setNode(sinkNode);
             });
 
@@ -97,6 +104,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
             floor.setInteractive(floorPolygon, Phaser.Geom.Polygon.Contains);
             floor.input.cursor = 'pointer';
             floor.on('pointerdown', () => {
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("floor", GAMEOBJECTTYPE.ITEM));
                 this.dialogManager.setNode(floorNode);
             });
 

@@ -1,5 +1,9 @@
 import EventDispatcher from "../eventDispatcher.js";
+import { alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
 import BaseScene from "../scenes/gameLoop/baseScene.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js";
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import { GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
 
 // Variable de nivel de modulo
 // - Se puede acceder desde cualquier parte del modulo, pero no es visible
@@ -46,6 +50,10 @@ export default class GameManager {
 
         // Dia de la semana. Empieza en 0 porque al iniciarse la escena de la alarma, se va actualizando
         this.day = 0;
+        this.dayText = null;
+        this.hourId = null;
+        this.hour = null;
+        this.notificationAmount = null;
 
         this.generateTextures();
 
@@ -361,9 +369,10 @@ export default class GameManager {
     }
 
     switchToComputer() {
+        gameObjectXapiTracker.sendStatement(this.Interacted("ShowComputerLogin", GAMEOBJECTTYPE.ITEM));
         // Se desactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(false);
-
+        
         // Se duerme la escena actual
         this.currentScene.scene.sleep();
 
@@ -373,6 +382,7 @@ export default class GameManager {
     }
 
     leaveComputer() {
+        gameObjectXapiTracker.sendStatement(this.Interacted("offComputer", GAMEOBJECTTYPE.ITEM));
         // Se reactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(true);
 
@@ -440,6 +450,8 @@ export default class GameManager {
 
         // Si no se encuentra el personaje en la blackboard, se anade con 50 de amistad por defecto
         if (!this.getValue(varName)) {
+            alternativeXapiTracker.sendStatement(alternativeXapiTracker.Unlocked("friend", character, ALTERNATIVETYPE.ALTERNATIVE));
+            completableXapiTracker.sendStatement(completableXapiTracker.Initialized(varName, COMPLETABLETYPE.COMPLETABLE));
             this.setValue(varName, 50);
         }
 
@@ -447,8 +459,37 @@ export default class GameManager {
         let val = this.getValue(varName)
         val += amount;
         this.setValue(varName, val);
-
+        completableXapiTracker.sendStatement(completableXapiTracker.Progressed(varName, COMPLETABLETYPE.COMPLETABLE, val));
         // Actualiza el valor tambien en la pantalla de relaciones del movil
         this.UIManager.phoneManager.phone.updateRelationShip(character, val);
+    }
+
+    Interacted(id, type) {
+        var statement = gameObjectXapiTracker.Interacted(id, type);
+        statement.addResultExtension("GameDay",this.dayText);
+        statement.addResultExtension("GameHour", this.hour);
+        statement.addResultExtension("IsRepeatedDay", this.isRepeatedDay); //TODO GlobalState.Repeated.ToString() 
+        statement.addResultExtension("MobileMessages", this.notificationAmount);
+        this.blackboard.forEach((value, key) => {
+            statement.addResultExtension(key, value);
+        });
+        return statement;
+    }
+
+    Completed(id, type) {
+        var statement = completableXapiTracker.Completed(id, type);
+        statement.addResultExtension("Final", this.final);
+        statement.addResultExtension("GameDay",this.dayText);
+        statement.addResultExtension("GameHour", this.hour);
+        statement.addResultExtension("MariaFriendship",this.blackboard.get("MariaFS"));
+        statement.addResultExtension("AlisonFriendship", this.blackboard.get("AlisonFS"));
+        statement.addResultExtension("AnaFriendship", this.blackboard.get("AnaFS"));
+        statement.addResultExtension("GuillermoFriendship", this.blackboard.get("GuilleFS"));
+        statement.addResultExtension("JoseFriendship", this.blackboard.get("JoseFS"));
+        statement.addResultExtension("AlejandroFriendship", this.blackboard.get("AlexFS"));
+        statement.addResultExtension("ParentsFriendship", this.blackboard.get("ParentsFS"));
+        statement.addResultExtension("TeacherFriendship", this.blackboard.get("TeacherFS"));
+        statement.addResultExtension("RiskFriendship", this.blackboard.get("Risk"));
+        return statement;
     }
 }

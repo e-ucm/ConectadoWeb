@@ -1,5 +1,10 @@
 import Phone from '../UI/phone/phone.js';
 import GameManager from './gameManager.js';
+import { ACCESSIBLETYPE } from "../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
 
 export default class PhoneManager {
     /**
@@ -138,6 +143,7 @@ export default class PhoneManager {
 
             // Si el telefono es visible
             if (this.phone.visible) {
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("hideMobile", GAMEOBJECTTYPE.ITEM));
                 this.phone.setScale(this.PHONE_SCALE);
                 let x = { from: this.PHONE_VISIBLE.x, to: this.PHONE_HIDDEN.x };
                 let y = { from: this.PHONE_VISIBLE.y, to: this.PHONE_HIDDEN.y };
@@ -170,6 +176,7 @@ export default class PhoneManager {
             }
             // Si el telefono no es visible
             else {
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("toggleMobile", GAMEOBJECTTYPE.ITEM));
                 // Se hace visible y se bloquea la interaccion con los elementos del fondo
                 this.phone.visible = true;
                 this.bgBlock.setInteractive({ useHandCursor: true });
@@ -352,6 +359,10 @@ export default class PhoneManager {
         // Coge el dia del array en base al dia del gameManager
         let day = days[this.gameManager.day - 1];
 
+        // Set date time in game manager for xapiTracker
+        this.gameManager.hour = hour;
+        this.gameManager.dayText = day;
+
         // Cambia la hora del telefono
         this.phone.setDayInfo(hour, day);
     }
@@ -367,6 +378,8 @@ export default class PhoneManager {
 
     // Establece las notificaciones que hay
     setNotifications() {
+        // Set notificationAmount in game manager for xapiTracker
+        this.gameManager.notificationAmount = this.notificationAmount;
         // Si son mas de 0, activa las notificaciones si el icono esta activo y cambia el texto
         if (this.notificationAmount > 0) {
             this.notifications.visible = this.icon.visible;
@@ -409,11 +422,14 @@ export default class PhoneManager {
         else {
             this.wakeUpMessage.visible = true;
         }
-
+        var statement = this.gameManager.Interacted("Sleep_phone", GAMEOBJECTTYPE.ITEM);
+        statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
+        gameObjectXapiTracker.sendStatement(statement);
     }
 
     // Funcion llamada al apagar la alarma y despertarse
     wakeUp() {
+        
         // Se guarda el telefono
         this.togglePhone(1500);
 
@@ -432,6 +448,9 @@ export default class PhoneManager {
 
             });
         }
+        var statement = this.gameManager.Interacted("wake_up_phone", GAMEOBJECTTYPE.ITEM);
+        statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
+        gameObjectXapiTracker.sendStatement(statement);
     }
 
 

@@ -1,0 +1,11 @@
+{
+  "name": "conectado-web",
+  "description": "conectado Web Version",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "devDependencies": {
+    "express": "4.21.0"
+  }
+}

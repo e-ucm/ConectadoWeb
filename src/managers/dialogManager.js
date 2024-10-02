@@ -1,6 +1,11 @@
 import TextBox from '../UI/dialog/textBox.js';
 import OptionBox from '../UI/dialog/optionBox.js';
 import GameManager from './gameManager.js';
+import { ACCESSIBLETYPE } from "../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
 
 export default class DialogManager {
     /**
@@ -16,6 +21,7 @@ export default class DialogManager {
         this.currNode = null;               // Nodo actual
         this.portraits = new Map();         // Mapa para guardar los retratos en esta escena
         this.allPortraits = new Set();
+        this.launched=false;
 
         this.gameManager = GameManager.getInstance();
         this.dispatcher = this.gameManager.dispatcher;
@@ -70,6 +76,7 @@ export default class DialogManager {
     * @param {Phaser.Scene} scene - escena a la que se va a pasar
     */
     changeScene(scene) {
+        accessibleXapiTracker.sendStatement(accessibleXapiTracker.Accessed(scene.scene.key, ACCESSIBLETYPE.SCREEN));
         // Desactiva la caja de texto y las opciones (por si acaso)
         if (this.textbox) {
             this.textbox.activate(false);
@@ -251,6 +258,11 @@ export default class DialogManager {
                 this.activateOptions(true);
             }
             else if (this.currNode.type === "text") {
+                if(!this.launched) {
+                    var dialog = this.currNode.dialogs[0];
+                    completableXapiTracker.sendStatement(completableXapiTracker.Initialized(`${dialog.name} ${dialog.text}`, COMPLETABLETYPE.STORYNODE));
+                    this.launched=true;
+                }
                 // Si el nodo no tiene texto, se lo salta y pasa al siguiente nodo
                 // IMPORTANTE: DESPUES DE UN NODO DE DIALOGO SOLO HAY UN NODO, POR LO QUE 
                 // EL SIGUIENTE NODO SERA EL PRIMER NODO DEL ARRAY DE NODOS SIGUIENTES
@@ -295,6 +307,7 @@ export default class DialogManager {
             else if (this.currNode.type === "socialNetMessage") {
                 // Funcion comun (se anade el comentario al post y se procesa el nodo)
                 let fnAux = () => {
+                    alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected(this.currNode.postName, this.currNode.text, ALTERNATIVETYPE.DIALOG));
                     this.gameManager.computerScene.socialNetScreen.addCommentToPost(this.currNode.owner, this.currNode.postName,
                         this.currNode.character, this.currNode.name, this.currNode.text);
 
@@ -346,9 +359,11 @@ export default class DialogManager {
                 }
                 // Si ya se han mostrado todos los dialogos
                 else {
-                    // Actualiza el ultimo personaje que ha balado
+                    // Actualiza el ultimo personaje que se ha hablado
                     this.lastCharacter = this.currNode.character;
-
+                    var dialog = this.currNode.dialogs[this.currNode.currDialog-1];
+                    completableXapiTracker.sendStatement(completableXapiTracker.Completed(`${dialog.name} ${dialog.text}`, COMPLETABLETYPE.STORYNODE));
+                    this.launched=false;
                     // Se reinicia el dialogo del nodo actual y actualiza el nodo al siguiente
                     // IMPORTANTE: DESPUES DE UN NODO DE DIALOGO SOLO HAY UN NODO, POR LO QUE 
                     // EL SIGUIENTE NODO SERA EL PRIMER NODO DEL ARRAY DE NODOS SIGUIENTES
@@ -419,7 +434,7 @@ export default class DialogManager {
         this.activateOptions(false);
 
         let next = this.currNode.next[index];
-
+        alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected(this.currNode.fullId, this.currNode.choices[index].text, ALTERNATIVETYPE.DIALOG));
         // Si la opcion no se puede elegir de nuevo, elimina tanto la opcion
         // como el nodo al que lleva de sus arrays correspondientes
         if (!this.currNode.choices[index].repeat) {

@@ -1,5 +1,10 @@
 import BaseScreen from "./baseScreen.js";
 import Button from "../button.js"
+import { ACCESSIBLETYPE } from "../../xAPITracker/HighLevel/Accessible.js"
+import { COMPLETABLETYPE } from "../../xAPITracker/HighLevel/Completable.js";
+import { ALTERNATIVETYPE } from "../../xAPITracker/HighLevel/Alternative.js"
+import { GAMEOBJECTTYPE } from "../../xAPITracker/HighLevel/GameObject.js";
+import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../lib/xapi.js";
 
 export default class SettingsScreen extends BaseScreen {
     constructor(scene, phone, prevScreen) {
@@ -31,6 +36,7 @@ export default class SettingsScreen extends BaseScreen {
         let yesText = this.i18next.t("settings.yes", { ns: "phoneInfo" })
         let yesButton = new Button(scene, this.BG_X, this.BG_Y * 1.1, 1,
             () => {
+                alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected("setting_reset_game", "yes", ALTERNATIVETYPE.MENU));
                 yesButton.reset();
                 this.gameManager.startLangMenu();
             },
@@ -47,6 +53,7 @@ export default class SettingsScreen extends BaseScreen {
         let noText = this.i18next.t("settings.no", { ns: "phoneInfo" })
         let noButton = new Button(scene, this.BG_X, this.BG_Y * 1.4, 1,
             () => {
+                alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected("setting_reset_game", "no", ALTERNATIVETYPE.MENU));
                 noButton.reset();
                 phone.toPrevScreen();
             },

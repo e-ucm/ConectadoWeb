@@ -26,8 +26,8 @@
         },
         "teacherAnswer": {
             "text": "",
-            "text_male": "Il s'appelle {{name}}. Asseyez-vous à un autre table pour l'instant. J'ai demandé à Alison de l'aider pendant les premiers jours.",
-            "text_female": "Elle s'appelle {{name}}. Asseyez-vous à un autre table pour l'instant. J'ai demandé à Alison de l'aider pendant les premiers jours."
+            "text_male": "Il s'appelle {{name}}. Asseyez-vous à une autre table pour l'instant. J'ai demandé à Alison de l'aider pendant les premiers jours.",
+            "text_female": "Elle s'appelle {{name}}. Asseyez-vous à une autre table pour l'instant. J'ai demandé à Alison de l'aider pendant les premiers jours."
         }
     }
 
