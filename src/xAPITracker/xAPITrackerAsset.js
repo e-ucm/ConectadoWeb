@@ -4,11 +4,11 @@ import Statement from "./HighLevel/Statement/Statement.js";
 import XAPI from "https://cdn.skypack.dev/@xapi/xapi";
 
 export default class xAPITrackerAsset {
-    constructor(endpoint, auth, homePage, token, defaultUri) {
-        this.updateAuth(endpoint, auth, homePage, token, defaultUri);
+    constructor(endpoint, auth, homePage, token, defaultUri, debug=false) {
+        this.updateAuth(endpoint, auth, homePage, token, defaultUri, debug);
     }
 
-    updateAuth(endpoint, auth, homePage, token, defaultUri) {
+    updateAuth(endpoint, auth, homePage, token, defaultUri, debug) {
         this.online=false;
         this.endpoint = endpoint;
         this.auth = auth;
@@ -23,6 +23,7 @@ export default class xAPITrackerAsset {
             });
         }
         this.defaultUri=defaultUri;
+        this.debug=debug;
         this.statementsToSend=[];
         if(this.auth) { 
             this.online=true;
@@ -41,6 +42,7 @@ export default class xAPITrackerAsset {
     homePage;
     token;
     defaultUri;
+    debug;
     statementsToSend=[];
     
     Trace(verbId, objectType, objectId) {
@@ -56,12 +58,17 @@ export default class xAPITrackerAsset {
     }
 
     async enqueue(statement) {
-        console.debug(statement);
+        if(this.debug) {
+            console.debug(statement);
+        }
         if(this.online) {
             this.statementsToSend.push(statement);
             await this.xapi.sendStatements({statements: this.statementsToSend})
             .then((result) => {
                 this.statementsToSend = [];
+                if(this.debug) {
+                    console.debug(result);
+                }
             }).catch(console.error);
         } else {
             this.statementsToSend.push(statement);
