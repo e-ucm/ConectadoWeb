@@ -490,6 +490,7 @@ export default class GameManager {
         statement.addResultExtension("ParentsFriendship", this.blackboard.get("ParentsFS"));
         statement.addResultExtension("TeacherFriendship", this.blackboard.get("TeacherFS"));
         statement.addResultExtension("RiskFriendship", this.blackboard.get("Risk"));
+        statement.setProgress(this.day/5);
         return statement;
     }
 }
