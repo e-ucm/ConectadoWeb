@@ -19,7 +19,7 @@ if(urlParams.size > 0) {
     authToken = "Bearer " + urlParams.get('authToken');
     username = urlParams.get('username');
     homepage = urlParams.get('homepage');
-    debug = urlParams.get('debug');
+    debug = Boolean(urlParams.get('debug'));
     console.debug(simvaResultUri);
     console.debug(authToken);
     console.debug(username);
