@@ -30,6 +30,8 @@ export default class xAPITrackerAsset {
             if(this.statementsToSend.length > 0) {
                 this.sendEnqueuedStatements();
             }
+        } else {
+            console.log("XAPI Tracker for Serious Games Offline");
         }
     }
     
