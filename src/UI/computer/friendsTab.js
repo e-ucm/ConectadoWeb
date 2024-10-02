@@ -158,8 +158,8 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
         let friendRequest = new FriendRequest(this.scene, 0, 0, 1, avatar, name, bio,
             // Rechazar
             () => {
-                this.socialNetScreen.eraseFriend(character);
                 this.interacted(`Deny_${character}_request`);
+                this.socialNetScreen.eraseFriend(character);
                 this.refuseFriendRequest(friendRequest);
             },
             // Aceptar

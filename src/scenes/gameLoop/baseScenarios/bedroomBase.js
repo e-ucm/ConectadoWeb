@@ -110,10 +110,10 @@ export default class BedroomBase extends BaseScene {
         // Al hacer click sobre el, se cambia el nodo en el dialogManager, y si
         // se lanza el evento turnPC, se cambia a la escena del ordenador
         pc.on('pointerdown', () => {
+            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("computer", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(this.pcNode);
         });
         this.dispatcher.add("turnPC", this, (obj) => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("computer", GAMEOBJECTTYPE.ITEM));
             this.gameManager.switchToComputer();
         });
 
@@ -153,13 +153,11 @@ export default class BedroomBase extends BaseScene {
             this.phoneManager.topLid.y = -this.CANVAS_HEIGHT / 2;
             this.phoneManager.botLid.y = this.CANVAS_HEIGHT;
             let anim = this.phoneManager.closeEyesAnimation(false);
-
+            completableXapiTracker.sendStatement(this.gameManager.Completed(super.name, COMPLETABLETYPE.STORYNODE));
             anim.on('complete', () => {
                 setTimeout(() => {
                     this.phoneManager.bgBlock.disableInteractive();
                     let nightmareScene = "NightmareDay" + this.gameManager.day;
-                    var statement = completableXapiTracker.Completed(super.name, COMPLETABLETYPE.STORYNODE, null, null);
-                    completableXapiTracker.sendStatement(statement);
                     this.gameManager.changeScene(nightmareScene);
                 }, 1000);
             })

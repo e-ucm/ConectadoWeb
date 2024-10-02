@@ -54,7 +54,6 @@ export default class PhoneManager {
         // pantalla que no sea la pantalla de alarma, se guarda
         this.bgBlock.on('pointerdown', () => {
             if (this.phone.visible && this.phone.currScreen !== this.phone.alarmScreen) {
-                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("outOfPhone", GAMEOBJECTTYPE.ITEM));
                 this.togglePhone();
             }
         });
@@ -144,6 +143,7 @@ export default class PhoneManager {
 
             // Si el telefono es visible
             if (this.phone.visible) {
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("hideMobile", GAMEOBJECTTYPE.ITEM));
                 this.phone.setScale(this.PHONE_SCALE);
                 let x = { from: this.PHONE_VISIBLE.x, to: this.PHONE_HIDDEN.x };
                 let y = { from: this.PHONE_VISIBLE.y, to: this.PHONE_HIDDEN.y };
@@ -176,6 +176,7 @@ export default class PhoneManager {
             }
             // Si el telefono no es visible
             else {
+                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("toggleMobile", GAMEOBJECTTYPE.ITEM));
                 // Se hace visible y se bloquea la interaccion con los elementos del fondo
                 this.phone.visible = true;
                 this.bgBlock.setInteractive({ useHandCursor: true });
