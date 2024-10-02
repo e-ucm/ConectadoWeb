@@ -307,6 +307,7 @@ export default class DialogManager {
             else if (this.currNode.type === "socialNetMessage") {
                 // Funcion comun (se anade el comentario al post y se procesa el nodo)
                 let fnAux = () => {
+                    alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected(this.currNode.postName, this.currNode.text, ALTERNATIVETYPE.DIALOG));
                     this.gameManager.computerScene.socialNetScreen.addCommentToPost(this.currNode.owner, this.currNode.postName,
                         this.currNode.character, this.currNode.name, this.currNode.text);
 

@@ -153,7 +153,7 @@ export default class BedroomBase extends BaseScene {
             this.phoneManager.topLid.y = -this.CANVAS_HEIGHT / 2;
             this.phoneManager.botLid.y = this.CANVAS_HEIGHT;
             let anim = this.phoneManager.closeEyesAnimation(false);
-            completableXapiTracker.sendStatement(this.gameManager.Completed(super.name, COMPLETABLETYPE.STORYNODE));
+            completableXapiTracker.sendStatement(this.gameManager.Completed(this.scene.key, COMPLETABLETYPE.STORYNODE));
             anim.on('complete', () => {
                 setTimeout(() => {
                     this.phoneManager.bgBlock.disableInteractive();

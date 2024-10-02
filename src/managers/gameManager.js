@@ -484,9 +484,9 @@ export default class GameManager {
         statement.addResultExtension("MariaFriendship",this.blackboard.get("MariaFS"));
         statement.addResultExtension("AlisonFriendship", this.blackboard.get("AlisonFS"));
         statement.addResultExtension("AnaFriendship", this.blackboard.get("AnaFS"));
-        statement.addResultExtension("GuillermoFriendship", this.blackboard.get("GuillermoFS"));
+        statement.addResultExtension("GuillermoFriendship", this.blackboard.get("GuilleFS"));
         statement.addResultExtension("JoseFriendship", this.blackboard.get("JoseFS"));
-        statement.addResultExtension("AlejandroFriendship", this.blackboard.get("AlejandroFS"));
+        statement.addResultExtension("AlejandroFriendship", this.blackboard.get("AlexFS"));
         statement.addResultExtension("ParentsFriendship", this.blackboard.get("ParentsFS"));
         statement.addResultExtension("TeacherFriendship", this.blackboard.get("TeacherFS"));
         statement.addResultExtension("RiskFriendship", this.blackboard.get("Risk"));
