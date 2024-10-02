@@ -49,21 +49,16 @@ export default class xAPITrackerAsset {
     async sendEnqueuedStatements() {
         await this.xapi.sendStatements({statements: this.statementsToSend})
             .then((result) => {
-                console.log("Statement send");
-                console.log(result);
                 this.statementsToSend = [];
             }).catch(console.error);
     }
 
     async enqueue(statement) {
-        console.debug("Sending to LRS ")
         console.debug(statement);
         if(this.online) {
             this.statementsToSend.push(statement);
             await this.xapi.sendStatements({statements: this.statementsToSend})
             .then((result) => {
-                console.debug("Statement send");
-                console.debug(result);
                 this.statementsToSend = [];
             }).catch(console.error);
         } else {

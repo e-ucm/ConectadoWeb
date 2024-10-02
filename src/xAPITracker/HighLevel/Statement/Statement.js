@@ -37,19 +37,19 @@ export default class Statement {
     }
 
     setScore(raw, min, max, scaled) {
-        if (exists(raw)) {
+        if (! raw == null) {
             this.setScoreRaw(raw);
         }
 
-        if (exists(min)) {
+        if (! min== null) {
             this.setScoreMin(min);
         }
 
-        if (exists(max)) {
+        if (! max== null) {
             this.setScoreMax(max);
         }
 
-        if (exists(scaled)) {
+        if (! scaled== null) {
             this.setScoreScaled(scaled);
         }
     };
@@ -118,7 +118,7 @@ export default class Statement {
         if(this.version) {
             xapiTrace.version = this.version;
         }
-        if(this.result) {
+        if(!this.result.isEmpty()) {
             xapiTrace.result = this.result.toXAPI();
         }
         return xapiTrace;
