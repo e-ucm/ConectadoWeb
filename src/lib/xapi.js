@@ -40,7 +40,7 @@ if(urlParams.size > 0) {
     homepage = null;
     debug = false;
 }
-export var xapiTracker = new xAPITrackerAsset(simvaResultUri, authToken, homepage, username, "connectadoWeb", debug);
+export var xapiTracker = new xAPITrackerAsset(simvaResultUri, authToken, homepage, username, "ConectadoWeb", debug);
 export var accessibleXapiTracker = new AccessibleTracker(xapiTracker);
 export var alternativeXapiTracker = new AlternativeTracker(xapiTracker);
 export var completableXapiTracker = new CompletableTracker(xapiTracker);
