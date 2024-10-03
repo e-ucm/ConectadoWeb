@@ -25,12 +25,14 @@ if(urlParams.size > 0) {
     username = urlParams.get('username');
     homepage = urlParams.get('homepage');
     debug=urlParams.get('debug');
-    debug = Boolean(debug);
-    console.debug(simvaResultUri);
-    console.debug(authToken);
-    console.debug(username);
-    console.debug(homepage);
-    console.debug(debug);
+    if(debug !== null && debug == "true") {
+        debug = Boolean(debug);
+        console.debug(simvaResultUri);
+        console.debug(authToken);
+        console.debug(username);
+        console.debug(homepage);
+        console.debug(debug);
+    }
 } else {
     simvaResultUri = null;
     authToken = null;
@@ -43,4 +45,3 @@ export var accessibleXapiTracker = new AccessibleTracker(xapiTracker);
 export var alternativeXapiTracker = new AlternativeTracker(xapiTracker);
 export var completableXapiTracker = new CompletableTracker(xapiTracker);
 export var gameObjectXapiTracker = new GameObjectTracker(xapiTracker);
-completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME));

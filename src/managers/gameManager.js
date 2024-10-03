@@ -289,11 +289,11 @@ export default class GameManager {
     }
 
     startGame(userInfo) {
+        this.InitializedGame();
         this.blackboard.clear();
         this.setUserInfo(userInfo);
         this.day = 0;
         this.startedTime=new Date();
-
         // IMPORTANTE: Hay que lanzar primero el UIManager para que se inicialice
         // el DialogManager y las escenas puedan crear los dialogos correctamente
         let UIsceneName = 'UIManager';
@@ -480,13 +480,17 @@ export default class GameManager {
 
     Completed(id, type) {
         var statement = completableXapiTracker.Completed(id, type);
-        statement.addResultExtension("Final", this.final);
-        statement.addResultExtension("GameDay",this.dayText);
-        statement.addResultExtension("GameHour", this.hour);
         var actualTime = new Date();
         var durationInMs = actualTime.getTime() - this.startedTime.getTime();
         var duration = durationInMs/1000;
         statement.addResultExtension("Duration", duration);
+        return statement;
+    }
+
+    AddStateExtensions(statement) {
+        statement.addResultExtension("Final", this.final);
+        statement.addResultExtension("GameDay",this.dayText);
+        statement.addResultExtension("GameHour", this.hour);
         statement.addResultExtension("MariaFriendship",this.blackboard.get("MariaFS"));
         statement.addResultExtension("AlisonFriendship", this.blackboard.get("AlisonFS"));
         statement.addResultExtension("AnaFriendship", this.blackboard.get("AnaFS"));
@@ -498,5 +502,15 @@ export default class GameManager {
         statement.addResultExtension("RiskFriendship", this.blackboard.get("Risk"));
         statement.setProgress(this.day/5);
         return statement;
+    }
+
+    InitializedGame() {
+        completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME))
+    }
+
+    CompletedGame() {
+        var statement = completableXapiTracker.Completed("ConnectadoWeb",COMPLETABLETYPE.GAME);
+        statement.setCompletion(true);
+        completableXapiTracker.sendStatement(statement);
     }
 }
