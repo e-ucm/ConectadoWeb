@@ -281,6 +281,7 @@ export default class GameManager {
     }
 
     startCreditsScene(endgame) {
+        this.CompletedGame(true);
         let params = {
             endgame: endgame
         };
@@ -291,7 +292,6 @@ export default class GameManager {
     startGame(userInfo) {
         this.startedTime=new Date();
         this.InitializedGame();
-        this.CompletedGame();
         this.blackboard.clear();
         this.setUserInfo(userInfo);
         this.day = 0;
@@ -509,9 +509,9 @@ export default class GameManager {
         completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME))
     }
 
-    CompletedGame() {
+    CompletedGame(completion) {
         var statement = this.Completed("ConnectadoWeb",COMPLETABLETYPE.GAME);
-        statement.setCompletion(true);
+        statement.setCompletion(completion);
         completableXapiTracker.sendStatement(statement);
     }
 }

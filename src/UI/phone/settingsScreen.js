@@ -37,6 +37,7 @@ export default class SettingsScreen extends BaseScreen {
         let yesButton = new Button(scene, this.BG_X, this.BG_Y * 1.1, 1,
             () => {
                 alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected("setting_reset_game", "yes", ALTERNATIVETYPE.MENU));
+                this.gameManager.CompletedGame(false);
                 yesButton.reset();
                 this.gameManager.startLangMenu();
             },
