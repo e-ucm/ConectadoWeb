@@ -62,7 +62,8 @@ export default class xAPITrackerAsset {
             console.debug(statement);
         }
         if(this.online) {
-            await this.xapi.sendStatements({statements: [statement]})
+            var statements = [statement];
+            await this.xapi.sendStatements({statements: statements})
             .then((result) => {
                 if(this.debug !== null && this.debug) {
                     console.debug(result);
