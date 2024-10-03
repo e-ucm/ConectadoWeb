@@ -79,6 +79,10 @@ export default class Statement {
         this.addResultExtension('success', value);
     };
 
+    setDuration(value) {
+        this.addResultExtension('duration', value);
+    };
+
     setResponse(value) {
         this.addResultExtension('response', value);
     };

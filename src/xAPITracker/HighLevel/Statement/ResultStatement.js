@@ -5,11 +5,12 @@ export default class ResultStatements {
         this.Success = null;
         this.Completion = null;
         this.Response = null;
+        this.Duration = null;
         this.Extensions = {};
     }
 
     isEmpty() {
-        return (this.parent == null) && (this.Score == null) && (this.Success == null) && (this.Completion == null) && (this.Response == null) && (Object.keys(this.Extensions).length == 0);
+        return (this.parent == null) && (this.Score == null) && (this.Duration == null) && (this.Success == null) && (this.Completion == null) && (this.Response == null) && (Object.keys(this.Extensions).length == 0);
     }
 
     ExtensionIDs = {
@@ -31,6 +32,7 @@ export default class ResultStatements {
             case 'completion': { this.Completion = value; break; }
             case 'response': { this.Response = value; break; }
             case 'score': { this.Score = value; break; }
+            case 'duration': { this.Duration = value; break; }
             default: { this.Extensions[key] = value; break; }
         }
     };
@@ -60,6 +62,11 @@ export default class ResultStatements {
         if (this.Score !== null) {
             ret.score = this.Score;
         }
+
+        if (this.Duration !== null) {
+            ret.duration = this.Duration;
+        }
+
 
         if (this.Extensions !== null && obsize(this.Extensions) > 0) {
             ret.extensions = this.Extensions;
