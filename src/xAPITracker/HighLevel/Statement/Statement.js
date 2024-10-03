@@ -13,7 +13,7 @@ export default class Statement {
         this.timestamp = new Date();
         this.context = context;
         this.version = "1.0.3";
-        this.result = new ResultStatements();
+        this.result = new ResultStatements(this.defautURI);
     }
     
     actor;
@@ -96,7 +96,7 @@ export default class Statement {
     };
 
     addResultExtension(key,value) {
-        this.result.setExtension(this.setAsUri(key), value);
+        this.result.setExtension(key, value);
     };
 
     toXAPI() {
