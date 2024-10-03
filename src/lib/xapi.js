@@ -16,7 +16,12 @@ const urlParams = new URLSearchParams(window.location.search);
 var simvaResultUri, authToken, username, homepage,debug;
 if(urlParams.size > 0) {
     simvaResultUri = urlParams.get('url');
-    authToken = "Bearer " + urlParams.get('authToken');
+    var token = urlParams.get('authToken');
+    if(token) {
+        authToken = "Bearer " + token;
+    } else {
+        authToken = null;
+    }
     username = urlParams.get('username');
     homepage = urlParams.get('homepage');
     debug=urlParams.get('debug');

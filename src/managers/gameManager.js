@@ -54,6 +54,7 @@ export default class GameManager {
         this.hourId = null;
         this.hour = null;
         this.notificationAmount = null;
+        this.startedTime=null;
 
         this.generateTextures();
 
@@ -291,6 +292,7 @@ export default class GameManager {
         this.blackboard.clear();
         this.setUserInfo(userInfo);
         this.day = 0;
+        this.startedTime=new Date();
 
         // IMPORTANTE: Hay que lanzar primero el UIManager para que se inicialice
         // el DialogManager y las escenas puedan crear los dialogos correctamente
@@ -481,6 +483,10 @@ export default class GameManager {
         statement.addResultExtension("Final", this.final);
         statement.addResultExtension("GameDay",this.dayText);
         statement.addResultExtension("GameHour", this.hour);
+        var actualTime = new Date();
+        var durationInMs = actualTime.getTime() - this.startedTime.getTime();
+        var duration = durationInMs/1000;
+        statement.addResultExtension("Duration", duration);
         statement.addResultExtension("MariaFriendship",this.blackboard.get("MariaFS"));
         statement.addResultExtension("AlisonFriendship", this.blackboard.get("AlisonFS"));
         statement.addResultExtension("AnaFriendship", this.blackboard.get("AnaFS"));
