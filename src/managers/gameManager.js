@@ -289,12 +289,12 @@ export default class GameManager {
     }
 
     startGame(userInfo) {
+        this.startedTime=new Date();
         this.InitializedGame();
         this.CompletedGame();
         this.blackboard.clear();
         this.setUserInfo(userInfo);
         this.day = 0;
-        this.startedTime=new Date();
         // IMPORTANTE: Hay que lanzar primero el UIManager para que se inicialice
         // el DialogManager y las escenas puedan crear los dialogos correctamente
         let UIsceneName = 'UIManager';
