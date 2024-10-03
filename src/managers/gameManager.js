@@ -54,6 +54,7 @@ export default class GameManager {
         this.hourId = null;
         this.hour = null;
         this.notificationAmount = null;
+        this.isRepeatedDay=false;
         this.startedTime=null;
 
         this.generateTextures();
