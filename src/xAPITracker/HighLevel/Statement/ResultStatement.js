@@ -90,7 +90,7 @@ export default class ResultStatements {
                     this.Extensions[this.ExtensionIDs[key]] = this.Extensions[key];
                     delete this.Extensions[key];
                 } else {
-                    this.Extensions[this.ExtensionIDs[this.setAsUri(key)]] = this.Extensions[key];
+                    this.Extensions[this.setAsUri(key)] = this.Extensions[key];
                     delete this.Extensions[key];
                 }
             }
