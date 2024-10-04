@@ -24,7 +24,7 @@ const phasermsg = () => {
 }   
 
 export default {
-    input: 'src/main.js',
+    input: 'src/game.js',
     output: {
         file: './dist/bundle.js',
         name: 'PhaserTemplate',
