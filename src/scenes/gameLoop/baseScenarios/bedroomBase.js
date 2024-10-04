@@ -155,7 +155,7 @@ export default class BedroomBase extends BaseScene {
             let anim = this.phoneManager.closeEyesAnimation(false);
             completableXapiTracker.sendStatement(this.gameManager.AddStateExtensions(this.gameManager.Completed(`scene ${this.scene.key}`, COMPLETABLETYPE.COMPLETABLE)));
             completableXapiTracker.sendStatement(this.gameManager.Completed(this.scene.key, COMPLETABLETYPE.STORYNODE));
-            completableXapiTracker.sendStatement(this.gameManager.ProgressedGame());
+            this.gameManager.ProgressedGame();
             anim.on('complete', () => {
                 setTimeout(() => {
                     this.phoneManager.bgBlock.disableInteractive();
