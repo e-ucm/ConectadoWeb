@@ -510,6 +510,15 @@ export default class GameManager {
         completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME))
     }
 
+    ProgressedGame() {
+        var statement = completableXapiTracker.Progressed("ConnectadoWeb",COMPLETABLETYPE.GAME, this.day/5);
+        var actualTime = new Date();
+        var durationInMs = actualTime.getTime() - this.startedTime.getTime();
+        var duration = durationInMs/1000;
+        statement.setDuration(duration);
+        completableXapiTracker.sendStatement(statement);
+    }
+
     CompletedGame(completion) {
         var statement = this.Completed("ConnectadoWeb",COMPLETABLETYPE.GAME);
         statement.setCompletion(completion);
