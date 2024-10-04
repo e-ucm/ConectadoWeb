@@ -516,6 +516,7 @@ export default class GameManager {
         var durationInMs = actualTime.getTime() - this.startedTime.getTime();
         var duration = durationInMs/1000;
         statement.setDuration(duration);
+        statement = this.AddStateExtensions(statement);
         completableXapiTracker.sendStatement(statement);
     }
 
