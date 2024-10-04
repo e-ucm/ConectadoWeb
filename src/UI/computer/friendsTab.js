@@ -173,6 +173,7 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
             },
             // Bloquear
             () => {
+                this.interacted(`Block_${character}_request`);
                 // Se muestra un mensaje indicando que no esta permitido bloquear
                 // Solo se muestra si el tween no se esta ya mostrando
                 if (!this.blockNotTween) {
