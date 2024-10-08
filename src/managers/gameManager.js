@@ -282,7 +282,6 @@ export default class GameManager {
     }
 
     startCreditsScene(endgame) {
-        this.CompletedGame(true);
         let params = {
             endgame: endgame
         };
