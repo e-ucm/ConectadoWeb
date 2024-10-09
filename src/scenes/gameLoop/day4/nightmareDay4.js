@@ -1,3 +1,5 @@
+import { gameObjectXapiTracker } from '../../../lib/xapi.js';
+import { GAMEOBJECTTYPE } from '../../../xAPITracker/HighLevel/GameObject.js';
 import NightmareMinigame from '../baseScenarios/nightmareMinigame.js';
 import ReportablePhoto from '../../../gameObjects/reportablePhoto.js';
 
@@ -74,6 +76,7 @@ export default class NightmareDay4 extends NightmareMinigame {
         // Se crea la foto segun los parametros
         let photo = new ReportablePhoto(this, photosParams.scale, this.sprites[randomSprite], photosParams.speed,
             photosParams.minTouches, photosParams.maxTouches, () => {
+                gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted("photo_" + photo.frame, GAMEOBJECTTYPE.ITEM));
                 // Cuando se ha pulsado un numero determinado de clics...
                 // Se produce un terremoto
                 if (this.shakeCompleted) {
