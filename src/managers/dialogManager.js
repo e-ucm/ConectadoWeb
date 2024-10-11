@@ -362,7 +362,7 @@ export default class DialogManager {
                     // Actualiza el ultimo personaje que se ha hablado
                     this.lastCharacter = this.currNode.character;
                     var dialog = this.currNode.dialogs[this.currNode.currDialog-1];
-                    completableXapiTracker.sendStatement(completableXapiTracker.Completed(`${dialog.name} ${dialog.text}`, COMPLETABLETYPE.STORYNODE));
+                    completableXapiTracker.sendStatement(completableXapiTracker.Completed(`${dialog.name} ${dialog.text}`, COMPLETABLETYPE.STORYNODE,true, true));
                     this.launched=false;
                     // Se reinicia el dialogo del nodo actual y actualiza el nodo al siguiente
                     // IMPORTANTE: DESPUES DE UN NODO DE DIALOGO SOLO HAY UN NODO, POR LO QUE 

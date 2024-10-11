@@ -479,8 +479,8 @@ export default class GameManager {
         return statement;
     }
 
-    Completed(id, type) {
-        var statement = completableXapiTracker.Completed(id, type);
+    Completed(id, type, completion) {
+        var statement = completableXapiTracker.Completed(id, type, null, completion);
         var actualTime = new Date();
         var durationInMs = actualTime.getTime() - this.startedTime.getTime();
         var duration = durationInMs/1000;
@@ -520,8 +520,7 @@ export default class GameManager {
     }
 
     CompletedGame(completion) {
-        var statement = this.Completed("ConnectadoWeb",COMPLETABLETYPE.GAME);
-        statement.setCompletion(completion);
+        var statement = this.Completed("ConnectadoWeb",COMPLETABLETYPE.GAME, completion);
         completableXapiTracker.sendStatement(statement);
     }
 }

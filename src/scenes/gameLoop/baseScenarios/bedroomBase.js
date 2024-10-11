@@ -153,8 +153,8 @@ export default class BedroomBase extends BaseScene {
             this.phoneManager.topLid.y = -this.CANVAS_HEIGHT / 2;
             this.phoneManager.botLid.y = this.CANVAS_HEIGHT;
             let anim = this.phoneManager.closeEyesAnimation(false);
-            completableXapiTracker.sendStatement(this.gameManager.AddStateExtensions(this.gameManager.Completed(`scene ${this.scene.key}`, COMPLETABLETYPE.COMPLETABLE)));
-            completableXapiTracker.sendStatement(this.gameManager.Completed(this.scene.key, COMPLETABLETYPE.STORYNODE));
+            completableXapiTracker.sendStatement(this.gameManager.AddStateExtensions(this.gameManager.Completed(`scene ${this.scene.key}`, COMPLETABLETYPE.COMPLETABLE,true, true)));
+            completableXapiTracker.sendStatement(this.gameManager.Completed(this.scene.key, COMPLETABLETYPE.STORYNODE,true));
             this.gameManager.ProgressedGame();
             anim.on('complete', () => {
                 setTimeout(() => {
