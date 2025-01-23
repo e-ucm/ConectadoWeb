@@ -286,6 +286,28 @@ export default class GameManager {
         this.changeScene(sceneName, params);
     }
 
+    startTest() {
+        this.InitializedGame();
+        this.blackboard.clear();
+        let userInfo = {
+            name: "Pepe",
+            gender: "male",
+        }
+        this.setUserInfo(userInfo);
+
+        let UIsceneName = 'UIManager';
+        this.currentScene.scene.launch(UIsceneName);
+        this.UIManager = this.currentScene.scene.get(UIsceneName);
+
+        let computerSceneName = 'ComputerScene';
+        this.currentScene.scene.run(computerSceneName);
+        this.computerScene = this.currentScene.scene.get(computerSceneName);
+        this.computerScene.scene.sleep();
+
+        this.day = 3;
+        this.changeScene("BedroomAfternoonDay3");
+    }
+
     startGame(userInfo) {
         this.InitializedGame();
         this.blackboard.clear();
@@ -320,7 +342,6 @@ export default class GameManager {
         };
 
         this.changeScene(sceneName, params);
-
     }
 
     /**

@@ -34,7 +34,7 @@ export default class ChatScreen extends BaseScreen {
 
         // Configuracion de texto para la el texto del titulo
         let textConfig = { ...scene.gameManager.textConfig };
-        textConfig.fontFamily = 'roboto';
+        textConfig.fontFamily = 'roboto-regular';
         textConfig.color = '#000';
         textConfig.fontStyle = 'bold';
 
@@ -253,12 +253,8 @@ export default class ChatScreen extends BaseScreen {
      * @param {DialogNode} node - nodo de dialogo que se va a reproducir
      */
     setNode(node) {
-        this.canAnswer = true;
-        this.scene.dialogManager.setTalking(false);
-        this.scene.dialogManager.bgBlock.disableInteractive();
-
         // Si el nodo a poner es valido, cambia el nodo por el indicado
-        if (node) {
+        if (node !== null) {
             this.currNode = node;
 
             if (this.currNode.type === "chatMessage") {
@@ -269,11 +265,10 @@ export default class ChatScreen extends BaseScreen {
 
     // Procesa el nodo de dialogo
     processNode() {
-        this.canAnswer = true;
-        this.scene.dialogManager.setTalking(false);
-        this.scene.dialogManager.bgBlock.disableInteractive();
-        
-        if (this.currNode) {
+        if (this.currNode !== null) {
+            this.textBox.disableInteractive();
+            this.canAnswer = false;
+
             // Si el nodo es de tipo mensaje, con el retardo indicado, anade
             //  el mensaje al chat, pasa al siguiente nodo, y lo procesa.
             if (this.currNode.type === "chatMessage") {
@@ -304,9 +299,9 @@ export default class ChatScreen extends BaseScreen {
                 this.currNode = this.currNode.next[0];
                 this.processNode();
             }
-            // Si no, si es de cualquier otro tipo excepto de eleccion multiple, lo gestiona el dialogManager
-            else if (this.currNode.type !== "choice") {
-                this.scene.dialogManager.setNode(this.currNode);
+            else {
+                this.textBox.setInteractive();
+                this.canAnswer = true;
             }
         }
     }

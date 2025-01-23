@@ -100,7 +100,9 @@ export default class ClassFrontMorningDay1 extends ClassFrontBase {
 
             let nodes = this.cache.json.get('classFrontMorningDay1');
             let teacherNode = super.readNodes(nodes, "day1\\classFrontMorningDay1", "teacher", true);
-            this.dialogManager.setNode(teacherNode);
+            setTimeout(() => {
+                this.dialogManager.setNode(teacherNode);                
+            }, 50);
         }
 
 

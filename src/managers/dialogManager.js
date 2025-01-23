@@ -44,10 +44,9 @@ export default class DialogManager {
             if (this.textbox.box.input.enabled && this.textbox.box.alpha > 0) {
                 this.nextDialog();
             }
-
-            if (!this.currNode) {
-                this.textbox.activate(false);
-                this.bgBlock.disableInteractive();
+            else if (!this.currNode) {
+                // console.log("node null when clicking bgBlock");
+                this.setNode(null);
             }
         });
 
@@ -76,10 +75,9 @@ export default class DialogManager {
     changeScene(scene) {
         accessibleXapiTracker.sendStatement(accessibleXapiTracker.Accessed(scene.scene.key, ACCESSIBLETYPE.SCREEN));
         // Desactiva la caja de texto y las opciones (por si acaso)
-        if (this.textbox) {
-            this.textbox.activate(false);
-            this.bgBlock.disableInteractive();
-        }
+        this.textbox.activate(false);
+        // console.log("bgBlock interactive disabled when changing scene");
+        this.bgBlock.disableInteractive();
         this.activateOptions(false);
         this.portraits.clear();
 
@@ -131,23 +129,27 @@ export default class DialogManager {
     */
     setNode(node) {
         // Si no hay ningun dialogo activo y el nodo a poner es valido
-        if (!this.isTalking() && node) {
+        if (!this.isTalking() && node !== null) {
             // Indica que ha empezado un dialogo
             this.setTalking(true);
 
             // Desactiva la caja de texto y las opciones (por si acaso)
-            if (this.textbox) {
-                this.textbox.activate(false);
-                this.bgBlock.disableInteractive();
-            }
+            this.textbox.activate(false);
+            // console.log("bgBlock interactive disabled when setting valid node");
+            this.bgBlock.disableInteractive();
             this.activateOptions(false);
 
             // Cambia el nodo por el indicado
             this.currNode = node;
+            this.lastCharacter = null;
             this.processNode(node);
         }
         else {
+            // Se resetea la configuracion del texto de la caja por si se habia cambiado a la de por defecto
+            this.currNode = null;
+            this.textbox.resetTextConfig();
             this.textbox.activate(false);
+            // console.log("bgBlock interactive disabled when setting null node");
             this.bgBlock.disableInteractive();
             this.setTalking(false);
         }
@@ -223,6 +225,7 @@ export default class DialogManager {
             setTimeout(() => {
                 this.dispatcher.dispatch(evt.name, evt);
 
+                // console.log("Dispatching " + evt.name);
                 // Si el evento establece el valor de una variable, lo cambia en la 
                 // blackboard correspondiente (la de la escena o la del gameManager)
                 let blackboard = this.gameManager.blackboard;
@@ -241,6 +244,7 @@ export default class DialogManager {
         // Si el nodo actual es valido
         if (this.currNode) {
             this.bgBlock.setInteractive();
+
             // Si el nodo es un nodo condicional
             if (this.currNode.type === "condition") {
                 let i = this.processCondition(this.currNode);
@@ -300,6 +304,7 @@ export default class DialogManager {
             else if (this.currNode.type === "chatMessage") {
                 this.setTalking(false);
                 this.scene.phoneManager.phone.setChatNode(this.currNode.chat, this.currNode);
+                // console.log("bgBlock interactive disabled when setting chatMessageNode");
                 this.bgBlock.disableInteractive();
             }
             else if (this.currNode.type === "socialNetMessage") {
@@ -330,12 +335,10 @@ export default class DialogManager {
                 }
             }
         }
+        // Se ha acabado el dialogo o se ha pasado un nodo invalido
         else {
-            // Se resetea la configuracion del texto de la caja por si se habia cambiado a la de por defecto
-            this.textbox.resetTextConfig();
-            this.textbox.activate(false);
-            this.bgBlock.disableInteractive();
-            this.setTalking(false);
+            // console.log("node null when processing currentNode == null");
+            this.setNode(null);
         }
     }
 
