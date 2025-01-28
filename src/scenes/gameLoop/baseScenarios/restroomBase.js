@@ -38,7 +38,7 @@ export default class RestroomBase extends BaseScene {
         let doorOpened = this.add.image(doorPos.x, doorPos.y, this.atlasName, 'restroomDoorOpened').setOrigin(0, 0).setScale(this.scale);
         // Al hacer click, se pasara a la escena del pasillo sin eliminar esta escena
         super.toggleDoor(doorClosed, doorOpened, () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("corridorDoor", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("corridorDoor", GAMEOBJECTTYPE.ITEM));
             let params = {
                 camPos: "left"
             }
@@ -52,11 +52,11 @@ export default class RestroomBase extends BaseScene {
         super.toggleDoor(stall1DoorClosed, stall1DoorOpened, () => {
             var statement = this.gameManager.Interacted("restroomStall1", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         }, true, () => {
             var statement = this.gameManager.Interacted("restroomStall1", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         });
 
         // Puerta del segundo cubiculo
@@ -66,11 +66,11 @@ export default class RestroomBase extends BaseScene {
         super.toggleDoor(stall2DoorClosed, stall2DoorOpened, () => {
             var statement = this.gameManager.Interacted("restroomStall2", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         }, true, () => {
             var statement = this.gameManager.Interacted("restroomStall2", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         });
 
         // Tercer cubiculo (puerta cerrada siempre)

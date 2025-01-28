@@ -26,7 +26,7 @@ export default class Character {
 
         this.dialog = dialog;
         this.char.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(gameObjectXapiTracker.Interacted(this.key, GAMEOBJECTTYPE.NPC));
+            gameObjectXapiTracker.enqueue(gameObjectXapiTracker.Interacted(this.key, GAMEOBJECTTYPE.NPC));
             this.dialog();
         });
 

@@ -30,11 +30,11 @@ export default class BedroomBase extends BaseScene {
         super.toggleDoor(door1Closed, door1Opened, () => {
             var statement = this.gameManager.Interacted("wardrobeDoor1", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         }, true, () => {
             var statement = this.gameManager.Interacted("wardrobeDoor1", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         });
 
         // Puerta izquierda del armario
@@ -43,11 +43,11 @@ export default class BedroomBase extends BaseScene {
         super.toggleDoor(door2Closed, door2Opened, () => {
             var statement = this.gameManager.Interacted("wardrobeDoor2", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         }, true, () => {
             var statement = this.gameManager.Interacted("wardrobeDoor2", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         });
 
         // Puerta derecha del armario
@@ -56,11 +56,11 @@ export default class BedroomBase extends BaseScene {
         super.toggleDoor(door3Closed, door3Opened, () => {
             var statement = this.gameManager.Interacted("wardrobeDoor3", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "closed");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         }, true, () => {
             var statement = this.gameManager.Interacted("wardrobeDoor3", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("status", "opened");
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
         });
 
 
@@ -78,7 +78,7 @@ export default class BedroomBase extends BaseScene {
         wardrobe1.setInteractive({ useHandCursor: true });
         wardrobe1.on('pointerdown', () => {
             if (door1Opened.visible) {
-                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("wardrobe1", GAMEOBJECTTYPE.ITEM));
+                gameObjectXapiTracker.enqueue(this.gameManager.Interacted("wardrobe1", GAMEOBJECTTYPE.ITEM));
                 this.dialogManager.setNode(this.wardrobe1Node);
                 
             }
@@ -92,7 +92,7 @@ export default class BedroomBase extends BaseScene {
         wardrobe2.setInteractive();
         wardrobe2.on('pointerdown', () => {
             if (door2Opened.visible || door3Opened.visible) {
-                gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("wardrobe2", GAMEOBJECTTYPE.ITEM));
+                gameObjectXapiTracker.enqueue(this.gameManager.Interacted("wardrobe2", GAMEOBJECTTYPE.ITEM));
                 this.dialogManager.setNode(this.wardrobe2Node);
             }
         })
@@ -106,7 +106,7 @@ export default class BedroomBase extends BaseScene {
         // Al hacer click sobre el, se cambia el nodo en el dialogManager, y si
         // se lanza el evento turnPC, se cambia a la escena del ordenador
         pc.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("computer", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("computer", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(this.pcNode);
         });
         this.dispatcher.add("turnPC", this, (obj) => {
@@ -124,7 +124,7 @@ export default class BedroomBase extends BaseScene {
             let params = {
                 camPos: "right"
             };
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("livingroomDoor", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("livingroomDoor", GAMEOBJECTTYPE.ITEM));
             this.gameManager.changeScene(this.livingroom, params, true);
         }, false);
 
@@ -137,7 +137,7 @@ export default class BedroomBase extends BaseScene {
         this.bed.setDepth(10);
         this.bedNode = null;
         this.bed.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("bed", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("bed", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(this.bedNode);
         })
 
@@ -149,8 +149,8 @@ export default class BedroomBase extends BaseScene {
             this.phoneManager.topLid.y = -this.CANVAS_HEIGHT / 2;
             this.phoneManager.botLid.y = this.CANVAS_HEIGHT;
             let anim = this.phoneManager.closeEyesAnimation(false);
-            completableXapiTracker.sendStatement(this.gameManager.AddStateExtensions(this.gameManager.Completed(`scene ${this.scene.key}`, COMPLETABLETYPE.COMPLETABLE,true, true)));
-            completableXapiTracker.sendStatement(this.gameManager.Completed(this.scene.key, COMPLETABLETYPE.STORYNODE,true));
+            completableXapiTracker.enqueue(this.gameManager.AddStateExtensions(this.gameManager.Completed(`scene ${this.scene.key}`, COMPLETABLETYPE.COMPLETABLE,true, true)));
+            completableXapiTracker.enqueue(this.gameManager.Completed(this.scene.key, COMPLETABLETYPE.STORYNODE,true));
             this.gameManager.ProgressedGame();
             anim.on('complete', () => {
                 setTimeout(() => {

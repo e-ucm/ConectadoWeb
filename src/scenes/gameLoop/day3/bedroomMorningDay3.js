@@ -26,7 +26,7 @@ export default class BedroomMorningDay3 extends BedroomBase {
         bag.on('pointerdown', () => {
             var statement = this.gameManager.Interacted("bag", GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("bagPicked", true);
-            gameObjectXapiTracker.sendStatement(statement);
+            gameObjectXapiTracker.enqueue(statement);
             this.dialogManager.setNode(bagNode)
         });
 

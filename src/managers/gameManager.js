@@ -389,7 +389,7 @@ export default class GameManager {
     }
 
     switchToComputer() {
-        gameObjectXapiTracker.sendStatement(this.Interacted("ShowComputerLogin", GAMEOBJECTTYPE.ITEM));
+        gameObjectXapiTracker.enqueue(this.Interacted("ShowComputerLogin", GAMEOBJECTTYPE.ITEM));
         // Se desactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(false);
         
@@ -402,7 +402,7 @@ export default class GameManager {
     }
 
     leaveComputer() {
-        gameObjectXapiTracker.sendStatement(this.Interacted("offComputer", GAMEOBJECTTYPE.ITEM));
+        gameObjectXapiTracker.enqueue(this.Interacted("offComputer", GAMEOBJECTTYPE.ITEM));
         // Se reactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(true);
 
@@ -470,8 +470,8 @@ export default class GameManager {
 
         // Si no se encuentra el personaje en la blackboard, se anade con 50 de amistad por defecto
         if (!this.getValue(varName)) {
-            alternativeXapiTracker.sendStatement(alternativeXapiTracker.Unlocked("friend", character, ALTERNATIVETYPE.ALTERNATIVE));
-            completableXapiTracker.sendStatement(completableXapiTracker.Initialized(varName, COMPLETABLETYPE.COMPLETABLE));
+            alternativeXapiTracker.enqueue(alternativeXapiTracker.Unlocked("friend", character, ALTERNATIVETYPE.ALTERNATIVE));
+            completableXapiTracker.enqueue(completableXapiTracker.Initialized(varName, COMPLETABLETYPE.COMPLETABLE));
             this.setValue(varName, 50);
         }
 
@@ -479,7 +479,7 @@ export default class GameManager {
         let val = this.getValue(varName)
         val += amount;
         this.setValue(varName, val);
-        completableXapiTracker.sendStatement(completableXapiTracker.Progressed(varName, COMPLETABLETYPE.COMPLETABLE, val));
+        completableXapiTracker.enqueue(completableXapiTracker.Progressed(varName, COMPLETABLETYPE.COMPLETABLE, val));
         // Actualiza el valor tambien en la pantalla de relaciones del movil
         this.UIManager.phoneManager.phone.updateRelationShip(character, val);
     }
@@ -525,7 +525,7 @@ export default class GameManager {
     InitializedGame() {
         this.startedTime=new Date();
         this.Initialized=true;
-        completableXapiTracker.sendStatement(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME))
+        completableXapiTracker.enqueue(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME))
     }
 
     ProgressedGame() {
@@ -535,13 +535,14 @@ export default class GameManager {
         var duration = durationInMs/1000;
         statement.setDuration(duration);
         statement = this.AddStateExtensions(statement);
-        completableXapiTracker.sendStatement(statement);
+        completableXapiTracker.enqueue(statement);
     }
 
     CompletedGame(completion) {
         this.Initialized=false;
         var statement = this.Completed("ConnectadoWeb",COMPLETABLETYPE.GAME, completion);
-        completableXapiTracker.sendStatement(statement);
+        completableXapiTracker.enqueue(statement);
         xapiTracker.sendBackup();
+        xapiTracker.sendBatch();
     }
 }

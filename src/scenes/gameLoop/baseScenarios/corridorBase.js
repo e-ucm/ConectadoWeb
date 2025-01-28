@@ -48,7 +48,7 @@ export default class CorridorBase extends BaseScene {
         // Al hacer click, si hay algun dialogo que mostrar (para indicar que no se puede salir), se
         // mostrara. En caso contrario, se pasara a la escena de las escaleras sin eliminar esta escena
         this.stairsDoor.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("stairsDoor", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("stairsDoor", GAMEOBJECTTYPE.ITEM));
             if (this.stairsNode) {
                 this.dialogManager.setNode(this.stairsNode);
             }
@@ -67,7 +67,7 @@ export default class CorridorBase extends BaseScene {
         // Al hacer click, si hay algun dialogo que mostrar (para indicar que no se puede entrar), se
         // mostrara. En caso contrario, se pasara a la escena del bano sin eliminar esta escena
         super.toggleDoor(boysRestroomdoorClosed, boysRestroomDoorOpened, () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("boysRestroom", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("boysRestroom", GAMEOBJECTTYPE.ITEM));
             if (this.boysRestroomNode) {
                 this.dialogManager.setNode(this.boysRestroomNode);
             }
@@ -90,7 +90,7 @@ export default class CorridorBase extends BaseScene {
         // Al hacer click, si hay algun dialogo que mostrar (para indicar que no se puede entrar), se
         // mostrara. En caso contrario, se pasara a la escena del bano sin eliminar esta escena
         super.toggleDoor(girlsRestroomDoorClosed, girlsRestroomDoorOpened, () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("girlsRestroom", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("girlsRestroom", GAMEOBJECTTYPE.ITEM));
             if (this.girlsRestroomNode) {
                 this.dialogManager.setNode(this.girlsRestroomNode);
             }
@@ -115,7 +115,7 @@ export default class CorridorBase extends BaseScene {
         // Al hacer click, si hay algun dialogo que mostrar, se mostrara. 
         // En caso contrario, se pasara a la escena de la clase y se borrara esta escena
         super.toggleDoor(classDoorClosed, classDoorOpened, () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("classDoor", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("classDoor", GAMEOBJECTTYPE.ITEM));
             if (this.classNode) {
                 this.dialogManager.setNode(this.classNode);
             }

@@ -69,7 +69,7 @@ export default class PlaygroundBreakDay1 extends PlaygroundBase {
         });
         earring.setInteractive();
         earring.on('pointerdown', () => {
-            gameObjectXapiTracker.sendStatement(this.gameManager.Interacted("earring", GAMEOBJECTTYPE.ITEM));
+            gameObjectXapiTracker.enqueue(this.gameManager.Interacted("earring", GAMEOBJECTTYPE.ITEM));
             this.dialogManager.setNode(earringNode);
         });
 

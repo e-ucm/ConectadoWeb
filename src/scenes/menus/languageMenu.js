@@ -45,7 +45,6 @@ export default class LanguageMenu extends Phaser.Scene {
             height, 'UK', 'en', tweenTime, increase);
         
         // Boton de salir
-        let exitTranslation = "Exit";
         let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
             () => {
                 if(!this.gameManager.initialized) {
@@ -55,14 +54,6 @@ export default class LanguageMenu extends Phaser.Scene {
             },
             'powerOff', { R: 64, G: 142, B: 134 }, { R: 0, G: 104, B: 93 }, { R: 200, G: 200, B: 200 }
         );
-
-        // Texto que esta al lado del boton de salir
-        let exitTextStyle = { ...this.gameManager.textConfig };
-        exitTextStyle.fontFamily = 'kimberley';
-        exitTextStyle.fontSize = '40px';
-        exitTextStyle.color = '#004E46';
- 
-        this.add.text(exitButton.x + 60, exitButton.y, exitTranslation, exitTextStyle).setOrigin(0, 0.5);
     }
 
     /**
@@ -100,7 +91,7 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
-            alternativeXapiTracker.sendStatement(alternativeXapiTracker.Selected("language", language, ALTERNATIVETYPE.MENU));
+            alternativeXapiTracker.enqueue(alternativeXapiTracker.Selected("language", language, ALTERNATIVETYPE.MENU));
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();
