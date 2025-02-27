@@ -1,7 +1,7 @@
 {
     "alarm": {
         "title": "Alarme",
-        "message": "Vous êtes incapable de dormir davantage. Vous devriez vous réveiller maintenant"
+        "message": "Vous êtes incapable de dormir davantage.\n Vous devriez vous réveiller maintenant"
     },
     "clock": {
         "days": [
@@ -20,16 +20,16 @@
         "classStart": "08:30",
         "playgroundMorningLate": "08:40",
         
-        "startBreak": "11:05",
-        "midBreak": "11:10",
-        "endBreak": "11:20",
+        "startBreak": "12:01",
+        "midBreak": "12:30",
+        "endBreak": "13:02",
 
-        "endClass": "14:02",
-        "returnHome": "15:00",
+        "endClass": "17:30",
+        "returnHome": "18:02",
 
         "afternoon": {
-            "endClass": "14:05",
-            "corridor": "14:08"
+            "endClass": "17:00",
+            "corridor": "17:08"
         },
 
         "night": "21:30"
