@@ -525,7 +525,8 @@ export default class GameManager {
     InitializedGame() {
         this.startedTime=new Date();
         this.Initialized=true;
-        completableXapiTracker.enqueue(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME))
+        completableXapiTracker.enqueue(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME));
+        xapiTracker.sendBatch();
     }
 
     ProgressedGame() {
@@ -536,6 +537,7 @@ export default class GameManager {
         statement.setDuration(duration);
         statement = this.AddStateExtensions(statement);
         completableXapiTracker.enqueue(statement);
+        xapiTracker.sendBatch();
     }
 
     CompletedGame(completion) {
