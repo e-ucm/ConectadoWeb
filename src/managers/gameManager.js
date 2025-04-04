@@ -522,11 +522,11 @@ export default class GameManager {
         return statement;
     }
 
-    InitializedGame() {
+    async InitializedGame() {
         this.startedTime=new Date();
         this.Initialized=true;
-        completableXapiTracker.enqueue(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME));
-        xapiTracker.sendBatch();
+        await completableXapiTracker.enqueue(completableXapiTracker.Initialized("ConnectadoWeb",COMPLETABLETYPE.GAME));
+        await xapiTracker.sendBatch();
     }
 
     ProgressedGame() {
