@@ -1,6 +1,6 @@
 import BedroomBase from "../baseScenarios/bedroomBase.js";
 
-import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../../lib/xapi.js";
+import xapiTracker from "../../../lib/xapi.js";
 
 export default class BedroomMorningDay1 extends BedroomBase {
     constructor() {
@@ -24,9 +24,9 @@ export default class BedroomMorningDay1 extends BedroomBase {
         let bag = this.add.image(170, this.CANVAS_HEIGHT - 170, this.atlasName, 'bag').setOrigin(0, 0).setScale(this.scale);
         bag.setInteractive({ useHandCursor: true });
         bag.on('pointerdown', () => {
-            var statement = this.gameManager.Interacted("bag", GAMEOBJECTTYPE.ITEM);
+            var statement = this.gameManager.Interacted("bag", JSTracker.GAMEOBJECTTYPE.ITEM);
             statement.addResultExtension("bagPicked", true);
-            gameObjectXapiTracker.enqueue(statement);
+            xapiTracker.enqueue(statement);
             this.dialogManager.setNode(bagNode)
         });
 

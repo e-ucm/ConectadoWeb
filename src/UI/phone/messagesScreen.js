@@ -1,6 +1,6 @@
 import BaseScreen from "./baseScreen.js";
 import ChatScreen from "./chatScreen.js";
-import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../../lib/xapi.js";
+import xapiTracker from "../../lib/xapi.js";
 
 export default class MessagesScreen extends BaseScreen {
     constructor(scene, phone, prevScreen) {
@@ -83,7 +83,7 @@ export default class MessagesScreen extends BaseScreen {
 
         // Al hacer click, vuelve a cambiar el color de la caja al original
         button.on('pointerdown', () => {
-            gameObjectXapiTracker.enqueue(gameObjectXapiTracker.Interacted("messageButton", GAMEOBJECTTYPE.ITEM));
+            xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("messageButton", xapiTracker.JSTracker.GAMEOBJECTTYPE.ITEM));
             let fadeColor = this.scene.tweens.addCounter({
                 targets: [button],
                 from: 0,

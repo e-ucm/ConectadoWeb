@@ -1,6 +1,6 @@
 import FriendRequest from './friendRequest.js'
 import VerticalListView from '../listView/verticalListView.js'
-import { gameObjectXapiTracker } from "../../lib/xapi.js";
+import xapiTracker from '../../lib/xapi.js';
 
 export default class FriendsTab extends Phaser.GameObjects.Group {
     /**
@@ -136,7 +136,7 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
 
     interacted(id) {
         try {
-            gameObjectXapiTracker.enqueue(gameObjectXapiTracker.Interacted(id, GAMEOBJECTTYPE.ITEM));
+            xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted(id, JSTracker.GAMEOBJECTTYPE.ITEM));
         } catch(e) {
             console.debug(e);
         }

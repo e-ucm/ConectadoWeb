@@ -1,6 +1,6 @@
 import Phone from '../UI/phone/phone.js';
 import GameManager from './gameManager.js';
-import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
+import xapiTracker from "../lib/xapi.js";
 
 export default class PhoneManager {
     /**
@@ -139,7 +139,7 @@ export default class PhoneManager {
 
             // Si el telefono es visible
             if (this.phone.visible) {
-                gameObjectXapiTracker.enqueue(this.gameManager.Interacted("hideMobile", GAMEOBJECTTYPE.ITEM));
+                xapiTracker.enqueue(this.gameManager.Interacted("hideMobile", JSTracker.GAMEOBJECTTYPE.ITEM));
                 this.phone.setScale(this.PHONE_SCALE);
                 let x = { from: this.PHONE_VISIBLE.x, to: this.PHONE_HIDDEN.x };
                 let y = { from: this.PHONE_VISIBLE.y, to: this.PHONE_HIDDEN.y };
@@ -172,7 +172,7 @@ export default class PhoneManager {
             }
             // Si el telefono no es visible
             else {
-                gameObjectXapiTracker.enqueue(this.gameManager.Interacted("toggleMobile", GAMEOBJECTTYPE.ITEM));
+                xapiTracker.enqueue(this.gameManager.Interacted("toggleMobile", JSTracker.GAMEOBJECTTYPE.ITEM));
                 // Se hace visible y se bloquea la interaccion con los elementos del fondo
                 this.phone.visible = true;
                 this.bgBlock.setInteractive({ useHandCursor: true });
@@ -418,9 +418,9 @@ export default class PhoneManager {
         else {
             this.wakeUpMessage.visible = true;
         }
-        var statement = this.gameManager.Interacted("Sleep_phone", GAMEOBJECTTYPE.ITEM);
+        var statement = this.gameManager.Interacted("Sleep_phone", JSTracker.GAMEOBJECTTYPE.ITEM);
         statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
-        gameObjectXapiTracker.enqueue(statement);
+        xapiTracker.enqueue(statement);
     }
 
     // Funcion llamada al apagar la alarma y despertarse
@@ -444,9 +444,9 @@ export default class PhoneManager {
 
             });
         }
-        var statement = this.gameManager.Interacted("wake_up_phone", GAMEOBJECTTYPE.ITEM);
+        var statement = this.gameManager.Interacted("wake_up_phone", JSTracker.GAMEOBJECTTYPE.ITEM);
         statement.addResultExtension("isLate",this.gameManager.getValue("isLate"));
-        gameObjectXapiTracker.enqueue(statement);
+        xapiTracker.enqueue(statement);
     }
 
 

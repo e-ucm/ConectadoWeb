@@ -1,4 +1,4 @@
-import {xapiTracker, accessibleXapiTracker, alternativeXapiTracker, completableXapiTracker, gameObjectXapiTracker } from "../lib/xapi.js";
+import xapiTracker from "../lib/xapi.js";
 
 export default class Character {
     /**
@@ -26,7 +26,7 @@ export default class Character {
 
         this.dialog = dialog;
         this.char.on('pointerdown', () => {
-            gameObjectXapiTracker.enqueue(gameObjectXapiTracker.Interacted(this.key, GAMEOBJECTTYPE.NPC));
+            xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted(this.key, xapiTracker.JSTracker.GAMEOBJECTTYPE.NPC));
             this.dialog();
         });
 

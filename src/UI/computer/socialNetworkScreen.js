@@ -1,7 +1,7 @@
 import FriendsTab from './friendsTab.js'
 import FeedTab from './feedTab.js'
 import Post from './post.js';
-import { gameObjectXapiTracker } from "../../lib/xapi.js";
+import xapiTracker from '../../lib/xapi.js';
 
 export default class SocialNetworkScreen extends Phaser.GameObjects.Group {
     /**
@@ -550,7 +550,7 @@ export default class SocialNetworkScreen extends Phaser.GameObjects.Group {
      * Cambiar a la pestana donde aparecen las solicitudes de amistad
      */
     accessFriendsTab() {
-        gameObjectXapiTracker.enqueue(gameObjectXapiTracker.Interacted("ShowComputerFriends", GAMEOBJECTTYPE.GAMEOBJECT));
+        xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("ShowComputerFriends", JSTracker.GAMEOBJECTTYPE.GAMEOBJECT));
         this.feedTab.setVisible(false);
         this.friendsTab.start();
     }
@@ -559,7 +559,7 @@ export default class SocialNetworkScreen extends Phaser.GameObjects.Group {
      * Cambiar a la pestana donde aparecen los posts de los amigos
      */
     accessFeedTab() {
-        gameObjectXapiTracker.enqueue(gameObjectXapiTracker.Interacted("ShowComputerPublications", GAMEOBJECTTYPE.GAMEOBJECT));
+        xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("ShowComputerPublications", JSTracker.GAMEOBJECTTYPE.GAMEOBJECT));
         this.friendsTab.setVisible(false);
         this.feedTab.setVisible(true);
     }

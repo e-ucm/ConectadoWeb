@@ -3,7 +3,7 @@ import GameManager from '../../managers/gameManager.js'
 import CheckBox from '../../UI/checkbox.js'
 import RadioButtonGroup from '../../UI/radioButtonGroup.js'
 import TextInput from '../../UI/textInput.js'
-import { accessibleXapiTracker } from "../../lib/xapi.js";
+import xapiTracker from "../../lib/xapi.js";
 
 export default class LoginMenu extends Phaser.Scene {
     /**
@@ -119,10 +119,10 @@ export default class LoginMenu extends Phaser.Scene {
                     else if (userInfo.gender === 1) {
                         userInfo.gender = "female";
                     }
-                    var statement = accessibleXapiTracker.Accessed("StartGame");
+                    var statement = xapiTracker.accessibleTracker.Accessed("StartGame");
                     statement.addResultExtension("gender", userInfo.gender);
                     statement.addResultExtension("password", userInfo.password);
-                    accessibleXapiTracker.enqueue(statement);
+                    xapiTracker.enqueue(statement);
 
                     this.gameManager.startGame(userInfo);
                 }
