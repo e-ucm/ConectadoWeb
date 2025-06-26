@@ -1,8 +1,6 @@
 
 import BaseScene from '../baseScene.js';
 
-import xapiTracker from "../../../lib/xapi.js";
-
 export default class PlaygroundBase extends BaseScene {
     /**
      * Escena base para el patio. Coloca los elementos que se mantienen igual todos los dias
@@ -34,7 +32,7 @@ export default class PlaygroundBase extends BaseScene {
         // Al hacer click sobre la zona de salida si hay algun dialogo que mostrar (para indicar que no se puede salir), se
         // mostrara. En caso contrario, se pasara a la escena del salon con la camara a la izquierda y se eliminara esta escena
         exit.on('pointerdown', () => {
-            xapiTracker.enqueue(this.gameManager.Interacted("exit", JSTracker.GAMEOBJECTTYPE.ITEM));
+            this.gameManager.Interacted("exit", JSTracker.GAMEOBJECTTYPE.ITEM);
             if (this.homeNode) {
                 this.dialogManager.setNode(this.homeNode);
             }
@@ -54,7 +52,7 @@ export default class PlaygroundBase extends BaseScene {
         // Al hacer click sobre la zona de la puerta, si hay algun dialogo que mostrar, (para indicar que 
         // no se puede entrar), se mostrara. En caso contrario, se pasara a la escena de las escaleras
         doors.on('pointerdown', () => {
-            xapiTracker.enqueue(this.gameManager.Interacted("doors", JSTracker.GAMEOBJECTTYPE.ITEM));
+            this.gameManager.Interacted("doors", JSTracker.GAMEOBJECTTYPE.ITEM);
             if (!this.doorNode && this.bgImg === 'playgroundOpened') {
                 this.gameManager.changeScene(this.stairs, { } , true);
             }

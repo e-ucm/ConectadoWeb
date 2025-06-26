@@ -1,8 +1,6 @@
 import PlaygroundBase from "../baseScenarios/playgroundBase.js";
 import Character from "../../../gameObjects/character.js";
 
-import xapiTracker from "../../../lib/xapi.js";
-
 export default class PlaygroundMorningDay3 extends PlaygroundBase {
     constructor() {
         super('PlaygroundMorningDay3');
@@ -107,7 +105,7 @@ export default class PlaygroundMorningDay3 extends PlaygroundBase {
         let bulletinBoard = this.add.rectangle(1221 * this.scale, 1027 * this.scale, 190 * this.scale, 161 * this.scale, 0xfff, 0).setOrigin(0, 0);
         bulletinBoard.setInteractive({ useHandCursor: true });
         bulletinBoard.on('pointerdown', () => {
-            xapiTracker.enqueue(this.gameManager.Interacted("bulletinBoard", JSTracker.GAMEOBJECTTYPE.ITEM));
+            this.gameManager.Interacted("bulletinBoard", JSTracker.GAMEOBJECTTYPE.ITEM);
             this.photo.visible = true;
             this.dialogManager.setNode(boardNode);
         })

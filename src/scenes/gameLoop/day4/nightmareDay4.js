@@ -75,7 +75,7 @@ export default class NightmareDay4 extends NightmareMinigame {
         // Se crea la foto segun los parametros
         let photo = new ReportablePhoto(this, photosParams.scale, this.sprites[randomSprite], photosParams.speed,
             photosParams.minTouches, photosParams.maxTouches, () => {
-                xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("photo_" + photo.frame, JSTracker.GAMEOBJECTTYPE.ITEM));
+                xapiTracker.gameObjectTracker.Interacted("photo_" + photo.frame, JSTracker.GAMEOBJECTTYPE.ITEM);
                 // Cuando se ha pulsado un numero determinado de clics...
                 // Se produce un terremoto
                 if (this.shakeCompleted) {

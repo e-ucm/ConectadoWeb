@@ -63,11 +63,11 @@ export default class LoginScreen extends Phaser.GameObjects.Group {
             () => {
                 // Se comprueba que los datos introducidos son correctos
                 if (this.handleErrors(this.userInput, this.passwordInput)) {
-                    xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("onComputer", JSTracker.GAMEOBJECTTYPE.GAMEOBJECT));
+                    xapiTracker.gameObjectTracker.Interacted("onComputer", JSTracker.GAMEOBJECTTYPE.GAMEOBJECT);
                     this.scene.logIntoSocialNet();
                 }
                 else {
-                    xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("errorWhenIntroducedCredentialsonComputer", JSTracker.GAMEOBJECTTYPE.GAMEOBJECT));
+                    xapiTracker.gameObjectTracker.Interacted("errorWhenIntroducedCredentialsonComputer", JSTracker.GAMEOBJECTTYPE.GAMEOBJECT);
                     this.errorText.setVisible(true);
                 }
             },

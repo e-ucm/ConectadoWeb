@@ -1,8 +1,6 @@
 import CorridorBase from "../baseScenarios/corridorBase.js";
 import Character from "../../../gameObjects/character.js";
 
-import xapiTracker from "../../../lib/xapi.js";
-
 export default class CorridorBreakDay1 extends CorridorBase {
     constructor() {
         super('CorridorBreakDay1');
@@ -61,7 +59,7 @@ export default class CorridorBreakDay1 extends CorridorBase {
 
         // Al salir a las escaleras, aparece Alison
         this.stairsDoor.once('pointerdown', () => {
-            xapiTracker.enqueue(this.gameManager.Interacted("stairsDoor", JSTracker.GAMEOBJECTTYPE.ITEM));
+            this.gameManager.Interacted("stairsDoor", JSTracker.GAMEOBJECTTYPE.ITEM);
             alison.char.visible = true;
         });
         

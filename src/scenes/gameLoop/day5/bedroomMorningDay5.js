@@ -1,7 +1,5 @@
 import BedroomBase from "../baseScenarios/bedroomBase.js";
 
-import xapiTracker from "../../../lib/xapi.js";
-
 export default class BedroomMorningDay5 extends BedroomBase {
     constructor() {
         super('BedroomMorningDay5');
@@ -26,9 +24,7 @@ export default class BedroomMorningDay5 extends BedroomBase {
         bag.flipX = true;
         bag.setInteractive({ useHandCursor: true });
         bag.on('pointerdown', () => {
-            var statement = this.gameManager.Interacted("bag", JSTracker.GAMEOBJECTTYPE.ITEM);
-            statement.addResultExtension("bagPicked", true);
-            xapiTracker.enqueue(statement);
+            this.gameManager.Interacted("bag", JSTracker.GAMEOBJECTTYPE.ITEM).withResultExtension("bagPicked", true);
             this.dialogManager.setNode(bagNode)
         });
 

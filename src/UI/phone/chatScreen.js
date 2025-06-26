@@ -129,7 +129,7 @@ export default class ChatScreen extends BaseScreen {
 
         // Al hacer click, vuelve a cambiar el color de la caja al original
         this.textBox.on('pointerdown', () => {
-            xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("chatBoxScreen", JSTracker.GAMEOBJECTTYPE.ITEM));
+            xapiTracker.gameObjectTracker.Interacted("chatBoxScreen", JSTracker.GAMEOBJECTTYPE.ITEM);
             if (!this.scene.dialogManager.isTalking() && this.canAnswer) {
                 let fadeColor = this.scene.tweens.addCounter({
                     targets: [this.textBox],
@@ -200,7 +200,7 @@ export default class ChatScreen extends BaseScreen {
 
         });
         this.returnButton.on('pointerdown', () => {
-            xapiTracker.enqueue(xapiTracker.gameObjectTracker.Interacted("returnButton", JSTracker.GAMEOBJECTTYPE.ITEM));
+            xapiTracker.gameObjectTracker.Interacted("returnButton", JSTracker.GAMEOBJECTTYPE.ITEM);
             if (!this.scene.dialogManager.isTalking()) {
                 let anim = this.scene.tweens.add({
                     targets: [this.returnButton],
