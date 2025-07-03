@@ -1,0 +1,13 @@
+{
+    "wardrobe1": {
+        "root": {
+            "text": "这里什么都没有用。"
+        }
+    },
+
+    "wardrobe2": {
+        "root": {
+            "text": "En verdad, no está tan mal organizado."
+        }
+    }
+}

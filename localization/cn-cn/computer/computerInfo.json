@@ -1,0 +1,32 @@
+{
+    "yourUserText": "您的用户名",
+    "yourPasswordText": "你的密码",
+    "loginScreen": {
+        "subtitleText": "跟你既朋友接通知!",
+        "userInput": {
+            "sideText": "用戶"
+        },
+        "passwordInput": {
+            "sideText": "密码"
+        },
+        "errorText": "输入的用户名/密码不正确",
+        "enterButton": "输入"
+    },
+    "socialNetScreen": {
+        "tabTexts": {
+            "feed": "控制面板",
+            "friends": "朋友",
+            "upload": "发布"
+        },
+        "friendRequestNot": "您有新的好友申请！",
+        "blockNot": "****YOU CAN'T BLOCK USERS!",
+        "friendsNumberText": "朋友",
+        "pendingRequestsText": "等待请求",
+        "informationText": "这是您的控制面板，看看您的朋友分享了什么?"
+    },
+    "commentsNumberText": "评论",
+    "friendRequestButtons": {
+        "acceptText": "接受",
+        "denyText": "否认"
+    }
+}
