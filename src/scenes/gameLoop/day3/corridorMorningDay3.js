@@ -1,5 +1,6 @@
 import CorridorBase from "../baseScenarios/corridorBase.js";
 import Character from "../../../gameObjects/character.js";
+import JSTracker from "js-tracker";
 
 export default class CorridorMorningDay3 extends CorridorBase {
     constructor() {

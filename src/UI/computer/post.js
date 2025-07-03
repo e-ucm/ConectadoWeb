@@ -3,6 +3,8 @@ import ListViewButton from '../listView/listViewButton.js';
 import VerticalListView from '../listView/verticalListView.js';
 import MessageBox from '../messageBox.js'
 import xapiTracker from '../../lib/xapi.js';
+//import Phaser from 'phaser';
+
 export default class Post extends Phaser.GameObjects.Container {
     /**
      * Post que ha subido un personaje

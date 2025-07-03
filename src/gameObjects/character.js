@@ -1,4 +1,6 @@
+//import Phaser from 'phaser';
 import xapiTracker from "../lib/xapi.js";
+import JSTracker from "js-tracker";
 
 export default class Character {
     /**

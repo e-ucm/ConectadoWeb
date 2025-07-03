@@ -1,4 +1,5 @@
 import DialogObject from './dialogObject.js';
+//import Phaser from 'phaser';
 
 export default class OptionBox extends DialogObject {
     /**

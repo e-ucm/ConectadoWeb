@@ -4,6 +4,7 @@ import CheckBox from '../../UI/checkbox.js'
 import RadioButtonGroup from '../../UI/radioButtonGroup.js'
 import TextInput from '../../UI/textInput.js'
 import xapiTracker from "../../lib/xapi.js";
+//import Phaser from 'phaser';
 
 export default class LoginMenu extends Phaser.Scene {
     /**

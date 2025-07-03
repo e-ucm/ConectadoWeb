@@ -1,3 +1,5 @@
+//import Phaser from 'phaser';
+
 export default class ListViewHit extends Phaser.GameObjects.Zone {
     /**
      * Collide que se puede usar en los elementos que se colocan en una listview

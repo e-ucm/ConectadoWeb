@@ -1,5 +1,6 @@
 import ListViewButton from '../listView/listViewButton.js';
 import GameManager from '../../managers/gameManager.js';
+//import Phaser from 'phaser';
 
 export default class FriendRequest extends Phaser.GameObjects.Container {
     /**

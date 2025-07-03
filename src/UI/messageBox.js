@@ -1,3 +1,5 @@
+//import Phaser from 'phaser';
+
 export default class MessageBox extends Phaser.GameObjects.Container {
     /**
      * Contenedor para las burbujas de mensajes

@@ -2,6 +2,8 @@ import TextBox from '../UI/dialog/textBox.js';
 import OptionBox from '../UI/dialog/optionBox.js';
 import GameManager from './gameManager.js';
 import xapiTracker from "../lib/xapi.js";
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class DialogManager {
     /**

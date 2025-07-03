@@ -1,4 +1,5 @@
 import GameManager from "../managers/gameManager.js";
+//import Phaser from 'phaser';
 
 export default class Counter extends Phaser.GameObjects.Container {
     /**

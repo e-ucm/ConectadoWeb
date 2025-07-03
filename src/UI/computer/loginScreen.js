@@ -1,6 +1,8 @@
 import TextInput from '../../UI/textInput.js'
 import Button from '../../UI/button.js'
 import xapiTracker from '../../lib/xapi.js';
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class LoginScreen extends Phaser.GameObjects.Group {
     /**

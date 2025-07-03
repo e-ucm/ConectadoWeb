@@ -1,3 +1,4 @@
+//import Phaser from 'phaser';
 import BootScene from './scenes/bootScene.js';
 
 // Menus

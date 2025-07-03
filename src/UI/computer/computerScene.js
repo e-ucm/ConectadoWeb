@@ -3,6 +3,7 @@ import GameManager from '../../managers/gameManager.js';
 import LoginScreen from './loginScreen.js'
 import SocialNetworkScreen from './socialNetworkScreen.js'
 import BaseScene from '../../scenes/gameLoop/baseScene.js';
+//import Phaser from 'phaser';
 
 export default class ComputerScene extends BaseScene {
     /**

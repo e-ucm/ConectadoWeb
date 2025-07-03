@@ -4,6 +4,8 @@ import StatusScreen from "./statusScreen.js";
 import MessagesScreen from "./messagesScreen.js";
 import SettingsScreen from "./settingsScreen.js";
 import xapiTracker from "../../lib/xapi.js";
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class Phone extends Phaser.GameObjects.Container {
     constructor(scene, phoneManager) {

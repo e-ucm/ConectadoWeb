@@ -1,6 +1,7 @@
 import EventDispatcher from "../eventDispatcher.js";
 import xapiTracker from '../lib/xapi.js';
 import BaseScene from "../scenes/gameLoop/baseScene.js";
+import JSTracker from "js-tracker";
 
 // Variable de nivel de modulo
 // - Se puede acceder desde cualquier parte del modulo, pero no es visible

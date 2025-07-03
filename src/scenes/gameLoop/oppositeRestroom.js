@@ -1,5 +1,6 @@
 
 import BaseScene from './baseScene.js';
+import JSTracker from "js-tracker";
 
 export default class OppositeRestroom extends BaseScene {
     /**

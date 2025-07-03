@@ -2,6 +2,8 @@ import FriendsTab from './friendsTab.js'
 import FeedTab from './feedTab.js'
 import Post from './post.js';
 import xapiTracker from '../../lib/xapi.js';
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class SocialNetworkScreen extends Phaser.GameObjects.Group {
     /**

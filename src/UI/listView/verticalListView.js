@@ -1,3 +1,5 @@
+//import Phaser from 'phaser';
+
 export default class VerticalListView extends Phaser.GameObjects.Container {
     /**
      * Clase que permite crear una lista con elementos scrolleables. Se puede incluir cualquier

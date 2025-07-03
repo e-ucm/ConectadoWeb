@@ -1,5 +1,6 @@
 import Phone from '../UI/phone/phone.js';
 import GameManager from './gameManager.js';
+import JSTracker from "js-tracker";
 
 export default class PhoneManager {
     /**

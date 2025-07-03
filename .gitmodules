@@ -1,0 +1,4 @@
+[submodule "src/js-tracker"]
+	path = src/js-tracker
+	url = https://github.com/e-ucm/js-tracker.git
+	branch = scorm

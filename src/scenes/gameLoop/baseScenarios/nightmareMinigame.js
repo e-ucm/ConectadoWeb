@@ -1,4 +1,5 @@
 import NightmareBase from './nightmareBase.js'
+//import Phaser from 'phaser';
 
 export default class NightmareMinigame extends NightmareBase {
     /**

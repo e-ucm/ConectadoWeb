@@ -1,5 +1,6 @@
 import Button from '../../UI/button.js';
 import GameManager from '../../managers/gameManager.js';
+//import Phaser from 'phaser';
 
 export default class CreditsScene extends Phaser.Scene {
     /**

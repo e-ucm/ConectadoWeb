@@ -1,3 +1,4 @@
+//import Phaser from 'phaser';
 let instance = null;
 
 export default class EventDispatcher {

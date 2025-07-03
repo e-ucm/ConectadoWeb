@@ -1,3 +1,4 @@
+//import Phaser from 'phaser';
 export default class ChairWithGum extends Phaser.GameObjects.Container {
     /**
      * Silla con un chicle pegado con colisiones

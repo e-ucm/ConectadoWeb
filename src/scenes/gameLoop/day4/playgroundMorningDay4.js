@@ -1,5 +1,6 @@
 import PlaygroundBase from "../baseScenarios/playgroundBase.js";
 import Character from "../../../gameObjects/character.js";
+import JSTracker from "js-tracker";
 
 export default class PlaygroundMorningDay4 extends PlaygroundBase {
     constructor() {

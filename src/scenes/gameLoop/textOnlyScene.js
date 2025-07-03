@@ -1,4 +1,5 @@
 import BaseScene from './baseScene.js';
+//import Phaser from 'phaser';
 
 export default class TextOnlyScene extends BaseScene {
     /**

@@ -1,3 +1,5 @@
+//import Phaser from 'phaser';
+
 export default class StatusBar {
     constructor(scene, screen, x, y, w, h, character) {
         let bgCol = 0xc0c0c0;

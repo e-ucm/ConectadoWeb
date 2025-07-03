@@ -1,5 +1,7 @@
 
 import RestroomBase from '../baseScenarios/restroomBase.js';
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class RestroomBreakDay2 extends RestroomBase {
     constructor() {

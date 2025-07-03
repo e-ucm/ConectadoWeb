@@ -1,5 +1,7 @@
 
 import BaseScene from '../baseScene.js';
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class ClassFrontBase extends BaseScene {
     /**

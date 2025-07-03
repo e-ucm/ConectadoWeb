@@ -1,4 +1,5 @@
 import GameManager from "../managers/gameManager.js";
+//import Phaser from 'phaser';
 
 export default class CheckBox extends Phaser.GameObjects.Container {
     /**

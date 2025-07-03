@@ -1,6 +1,8 @@
 import BaseScreen from "./baseScreen.js";
 import Button from "../button.js"
 import xapiTracker from "../../lib/xapi.js";
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class SettingsScreen extends BaseScreen {
     constructor(scene, phone, prevScreen) {

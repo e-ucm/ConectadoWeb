@@ -1,6 +1,7 @@
 import xapiTracker from '../../../lib/xapi.js';
 import NightmareMinigame from '../baseScenarios/nightmareMinigame.js';
 import ChairWithGum from '../../../gameObjects/chairWithGum.js';
+import JSTracker from "js-tracker";
 
 export default class NightmareDay2 extends NightmareMinigame {
     /**

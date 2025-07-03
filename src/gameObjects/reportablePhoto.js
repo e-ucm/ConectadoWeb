@@ -1,3 +1,4 @@
+//import Phaser from 'phaser';
 import GameManager from "../managers/gameManager.js";
 
 export default class ReportablePhoto extends Phaser.GameObjects.Container {

@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8" />
+    <title>ConectadoWeb</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        canvas { display: block; width: 100%; height: 100%; }
+    </style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/bigIcon.png">
@@ -11,8 +16,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Scripts -->
-    
-    <script src="./src/lib/js-tracker-webpack.bundle.js"></script>
     <script src="src/script.js"></script>
     <script src="src/lib/phaser.js"></script>
     <!-- Como los archivos .spine estan desactualizados se han tenido que comentar 
@@ -41,7 +44,7 @@
 
     <!-- Contenedor del juego -->
     <div id="game">
-        <script src="./src/game.js" type="module"></script>
+        <script type="module" src="/bundle.js"></script>
     </div>
 
 

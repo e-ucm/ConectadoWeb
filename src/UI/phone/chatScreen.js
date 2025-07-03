@@ -2,6 +2,8 @@ import BaseScreen from "./baseScreen.js";
 import VerticalListView from "../listView/verticalListView.js";
 import MessageBox from "../messageBox.js";
 import xapiTracker from "../../lib/xapi.js";
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class ChatScreen extends BaseScreen {
     /**

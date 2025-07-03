@@ -1,5 +1,6 @@
 import Post from './post.js'
 import VerticalListView from '../listView/verticalListView.js';
+//import Phaser from 'phaser';
 
 export default class FeedTab extends Phaser.GameObjects.Group {
     /**

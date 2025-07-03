@@ -1,6 +1,6 @@
 import NightmareMinigame from '../baseScenarios/nightmareMinigame.js';
-
 import xapiTracker from "../../../lib/xapi.js";
+import JSTracker from "js-tracker";
 
 export default class NightmareDay3 extends NightmareMinigame {
     /**

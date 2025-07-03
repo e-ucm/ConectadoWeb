@@ -1,6 +1,8 @@
 import FriendRequest from './friendRequest.js'
 import VerticalListView from '../listView/verticalListView.js'
 import xapiTracker from '../../lib/xapi.js';
+import JSTracker from "js-tracker";
+//import Phaser from 'phaser';
 
 export default class FriendsTab extends Phaser.GameObjects.Group {
     /**

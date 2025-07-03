@@ -1,4 +1,5 @@
 import BedroomBase from "../baseScenarios/bedroomBase.js";
+import JSTracker from "js-tracker";
 
 export default class BedroomMorningDay3 extends BedroomBase {
     constructor() {

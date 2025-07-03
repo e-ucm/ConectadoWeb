@@ -1,3 +1,5 @@
+//import Phaser from 'phaser';
+
 export default class DialogObject {
     /**
     * Clase base para los elementos de dialogo, con metodos 

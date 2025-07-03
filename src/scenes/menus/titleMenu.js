@@ -1,6 +1,7 @@
 import GameManager from '../../managers/gameManager.js'
 import Button from '../../UI/button.js'
 import Counter from '../../UI/counter.js'
+//import Phaser from 'phaser';
 
 export default class TitleMenu extends Phaser.Scene {
     /**
