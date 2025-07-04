@@ -1,0 +1,23 @@
+{
+    "titleText": "製作人員",
+    "projectManagerText": "策劃經理",
+    "design-devText": "設計及開發",
+    "artManagerText": "藝術經理",
+    "art-animationText": "藝術與動畫",
+    "webVersionText": "****Web version",
+    "originalConceptText": "原創概念",
+    "acknowledgmentsText": "致謝",
+    "libraryText": "多謝他出色的對話庫",
+    "hackatonText": "多謝他程式設計節所發起的一切",
+    "betaTestersText": "測試員",
+    "localizationText": "當地化團隊",
+    "frenchText": "合作者",
+    "collaboratorsText": "合作者",
+    "schoolsText": "教育機構",
+    "schoolCollabText": "已合作遊戲驗證工作",
+    "specialThanksText": "特別鳴謝",
+    "sponsorsText": "贊助商",
+    "endThanksText": "多謝!",
+    "returnButton": "****Return",
+    "exitButton": "****Exit"
+}

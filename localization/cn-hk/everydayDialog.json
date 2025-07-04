@@ -1,0 +1,190 @@
+{
+    "phone": {
+        "root": {
+            "text": "我冇野可以答"
+        }
+    },
+
+    "bedroom": {
+        "pc": {
+            "root": [
+                {
+                    "text": "****If I turn it on now, I'll be late for sure."
+                },
+                {
+                    "text": "****Better to wait till afternoon."
+                }
+            ],
+            "pcQuestion": {
+                "text": "你係咪想開電腦？"
+            },
+            "pcChoice": [
+                {
+                    "text": "係"
+                },
+                {
+                    "text": "唔係"
+                }
+            ],
+            "leavePC":{
+                "text": "我還是走吧。"
+            }
+        },
+
+        "bagAfternoon": {
+            "root": [
+                {
+                    "text": "我剛剛回來。"
+                },
+                {
+                    "text": "我完全不需要這個背囊。"
+                }
+            ]
+        },
+        
+        "bedAfternoon": {
+            "root": {
+                "text": "嗯…我現在應該去睡覺嗎？"
+            },
+            "choices": [
+                {
+                    "text": "係"
+                },
+                {
+                    "text": "係"
+                }
+            ]
+        }
+    },
+
+    "livingroom": {
+        "doorMorning": {
+            "root": {
+                "text": "我忘了背囊。最好回房間拿了再走。"
+            }
+        },
+        "doorAfternoon": {
+            "root": {
+                "text": "我在街上無事可做。"
+            }
+        }
+    },
+
+    "playground": {
+        "homeMorning": {
+            "root": {
+                "text": "我剛剛到，還不能離開。"
+            }
+        },
+        "homeBreak": {
+            "root": {
+                "text": "現在是小息時間，還有幾堂課我才能回家。"
+            }
+        },
+        "doorMorning": {
+            "root": {
+                "text": "看來我早到了，現在還不能進去。我最好消磨一下時間。"
+            }
+        },
+        "doorAfternoon": {
+            "root": [
+                {
+                    "text": "今天的課已經結束了，也沒人了。"
+                },
+                {
+                    "text": "我還是回家吧。"
+                }
+            ]
+        }
+    },
+
+    "stairs": {
+        "door": {
+            "root": {
+                "text": "裡面好像沒人。"
+            }
+        },
+        "tag": {
+            "root": {
+                "text": "校長室"
+            }
+        },
+        "downstairs": {
+            "root": {
+                "text": "我應該直接去上課。"
+            }
+        }
+    },
+
+    "corridor": {
+        "restroom": {
+            "root": {
+                "text": "",
+                "text_male": "我唔可以入去，呢度係女仔廁所。",
+                "text_female": "我唔可以入去，呢度係男仔廁所。"
+            }
+        },
+        "class": {
+            "root": {
+                "text": "如果我入咗去俾老師發現，我就出唔返嚟㗎啦。"
+            },
+            "choices": [
+                {
+                    "text": "(點都要入去)。"
+                },
+                {
+                    "text": "我再去別處轉轉。"
+                }
+            ]
+        }
+
+    },
+
+    "class": {
+        "table": {
+            "root": {
+                "text": "這個地方是空的，我可以坐這裡嗎？"
+            },
+            "choices": [
+                {
+                    "text": "是"
+                },
+                {
+                    "text": "不是"
+                }
+            ],
+            "teacherArrive": {
+                "text": "(背後敲門，老師來了)"
+            }
+        },
+        "late": {
+            "root": [
+                {
+                    "text": "{{name}}你遲到了。"
+                },
+                {
+                    "text": "請坐，我們繼續上課。"
+                }
+            ]
+        }
+    },
+
+    "board": {
+        "gumWashed": [
+            {
+                "text": "這是一張我昨天剛弄走那香口膠的照片。"
+            },
+            {
+                "text": "附上原汁原味的一句句子 \"有個寶寶來到了教室\" "
+            }
+        ],
+        "gumNotWashed": [
+            {
+                "text": "這裏有張我的照片，它被修改過，所以看起來像是我在拉香口膠。"
+            },
+            {
+                "text": "誰想用這種方式嘲笑我？"
+            }
+        ]
+    }
+}

@@ -10,7 +10,7 @@
             "comment": {
                 "decision": [
                     {
-                        "text": "(删除帖子)"
+                        "text": "（删除帖子）"
                     },
                     {
                         "text": "艾莉森…这就是你想交换密码的原因。"
@@ -34,10 +34,10 @@
                     "text": "等待你的来电"
                 },
                 "secondCommentMale": {
-                    "text": "我们可以随时见面 ;)"
+                    "text": "我们可以随时见面 ;）"
                 },
                 "secondCommentFemale": {
-                    "text": "我们可以随时见面 ;)"
+                    "text": "我们可以随时见面 ;）"
                 },
                 "thirdComment": {
                     "text": "你是误打过来吗？因为我发这人是在打给我哈哈哈"

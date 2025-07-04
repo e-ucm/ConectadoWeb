@@ -1,0 +1,274 @@
+{
+    "dad": {
+        "root": [
+            {
+                "text": "Habla con tu madre."
+            },
+            {
+                "text": "Quiere saber qué tal te ha ido el día."
+            }
+        ]
+    },
+
+    "mom": {
+        "notTalked": [
+            {
+                "text": "Ya has vuelto, {{name}}."
+            },
+            {
+                "text": "¿Qué tal te ha ido el día?"
+            }
+        ],
+        "talked": {
+            "text": "¿Quieres que hablemos un rato?"
+        },
+        "talked2": {
+            "text": "¿Qué tal el día?"
+        },
+
+        "choices1": [
+            {
+                "text": "Bien, normal, me voy a mi cuarto."
+            },
+            {
+                "text": "Hoy Álex y Ana me han intentado chantajear."
+            },
+            {
+                "text": "Hoy Álex y Ana me han chantajeado."
+            },
+            {
+                "text": "(Hablar de otra cosa)"
+            }
+        ],
+
+        "mariaNotPranked": [
+            {
+                "text": "Han intentado que le ponga un cartel a María."
+            },
+            {
+                "text": "Se creen los reyes del colegio o algo."
+            }
+        ],
+        "mariaPranked": [
+            {
+                "text": "Han hecho que le ponga un cartel a María."
+            },
+            {
+                "text": "No me han dado otra opción para recuperar el móvil que me habían quitado."
+            }
+        ],
+
+        "choices2": [
+            {
+                "text": "Hoy he perdido el móvil."
+            },
+            {
+                "text": "Alguien me ha quitado el móvil."
+            },
+            {
+                "text": "Alison, puedo confiar en ella."
+            },
+            {
+                "text": "Me voy a la habitación. Ya hemos hablado suficiente."
+            }
+        ],
+        "lostPhone": {
+            "text": "Hoy me han quitado el móvil y no he podido recuperarlo."
+        },
+        "lostPhone2": {
+            "text": "Pues te has quedado sin móvil. Tienes que tener más cuidado con las cosas."
+        },
+
+        "foundPhone": [
+            {
+                "text": "Hoy me han quitado el móvil."
+            },
+            {
+                "text": "",
+                "text_male": "Y alguien lo ha dejado tirado en el baño de chicas.",
+                "text_female": "Y alguien lo ha dejado tirado en el baño de chicos."
+            }
+        ],
+        "foundPhone2": {
+            "text": "Tienes que tener más cuidado con las cosas. No puedes dejarlas en cualquier sitio."
+        },
+
+        "exchangedPassword": [
+            {
+                "text": "Alison me ha sorprendido. De verdad puedo confiar en ella."
+            },
+            {
+                "text": "Hoy hemos intercambiado nuestras contraseñas."
+            }
+        ],
+        "exchangedPassword2": [
+            {
+				"text": "¿¡Cómo se te ocurre!? ¿Y si las comparte o se hace pasar por ti?"
+			},
+			{
+				"text": "¿Es que no piensas en lo que haces?"
+			}
+        ],
+        "exchangedPassword3": [
+            {
+                "text": "Pero yo tengo sus contraseñas también. Confió en ella."
+            },
+            {
+                "text": "Es la única que quiere ser mi amiga."
+            }
+        ],
+
+        "commonPhone": {
+            "text": "No ha sido culpa mía."
+        },
+        "commonPhone2": {
+            "text": "Eso no quita que debas vigilar tus cosas. De todas formas..."
+        },
+
+        "suggestMeeting": {
+            "text": "Creo que deberíamos hablar con el colegio sobre todo lo que está pasando."
+        },
+        "meetingChoices": [
+            {
+                "text": "Si, por favor. No puedo más."
+            },
+            {
+                "text": "No. La tomarán aún más conmigo."
+            }
+        ],
+        "acceptMeeting": {
+            "text": "No te preocupes cariño. Vamos a solucionar todo."
+        },
+
+        "rejectMeeting": {
+            "text": "De acuerdo. Por ahora no iremos al colegio."
+        },
+        "rejectMeeting2": {
+            "text": "Pero en cuanto pase algo más grave... no nos vamos a quedar sentados."
+        },
+
+        "meetingSuccess": {
+            "text": "Más motivos para que nos reunamos con el colegio mañana y solucionemos esto."
+        }
+    },
+
+    "noPhone": {
+        "root": [
+            {
+                "text": "我喺度幫電話叉電"
+            },
+            {
+                "text": "我記得擺喺門口嘅枱上面…第三個抽屜入面…"
+            },
+            {
+                "text": "喺度，但用唔用到㗎？… 好嘢，太好啦。"
+            },
+            {
+                "text": "呢啲係咩訊息嚟嘅？"
+            }
+        ]
+    },
+
+    "classChat": {
+        "root": {
+            "text": "睇嚟來你沒有把我踢走，乾杯。作為禮物我會話俾你知我喜歡吸陰莖 :)"
+        },
+        "message2": {
+            "text": "事實上我對一切都有興趣，如果有人想知道既話，請話俾我聽"
+        },
+        "message3": {
+            "text": "多謝你的坦白，但我地已經知道了，你的臉上寫滿了一切"
+        },
+        "message4": {
+            "text": "我們有一個完美既名，SUFACE，那個爛臉哈哈哈"
+        },
+        "message5": {
+            "text": "這個是什麼？點解講呢啲話？"
+        },
+        "message6": {
+           "text": "最好的一天但我錯過了...我失去咗乜野？"
+        },
+        "message7": {
+            "text": "",
+            "text_male": "你已經過界了，誰在搞怪他?",
+            "text_female": "你已經過界了，誰在搞怪她?"
+        },
+        "message8": {
+            "text": "沒有，怎麼了，吉耶？你被騙了並且不想讓人知道？哈哈哈"
+        },
+        "choices": [
+            {
+                "text": "Yo no he escrito nada"
+            },
+            {
+                "text": "Álex, Ana, que os den"
+            },
+            {
+                "text": "Como oís, me encanta"
+            }
+        ],
+
+        "notMe": {
+            "text": "alguien ha usado mi móvil para escribir eso"
+        },
+        "notMe2": {
+            "text": "ya tenemos fotos de lo que has dicho, vamos a compartirselas a todas las clases jajaja"
+        },
+        "notMe3": {
+            "text": "jajaja ya es tarde para negar nada :P"
+        },
+
+        "fkU": {
+            "text": "Álex, Ana, que os den, sé que es cosa vuestra"
+        },
+        "fkU2": {
+            "text": "quiza lo sea, y q? ya tenemos fotos de la conversacion"
+        },
+        "fkU3": {
+            "text": "mañana sabra todo el mundo tus gustos jajaja"
+        },
+
+        "agree": {
+            "text": "Como oís, me encanta, algún problema? ENVIDIOSOS!!"
+        }
+    },
+
+    "mariaChat": {
+        "root": {
+            "text": "",
+            "text_male": "你很性感, 明天係廁所你就會知道 ;)",
+            "text_female": "我是女人，我了解你明天係廁所你就會知道 ;)"
+        },
+        "message2": {
+            "text": "呢個太唔似你啦{{name}}, 你被坑了是吧?"
+        },
+        "choices": [
+            {
+                "text": "Yo no he escrito nada"
+            },
+            {
+                "text": "Si, he sido yo"
+            },
+            {
+                "text": "(No contestar)"
+            }
+        ],
+
+        "notMe": {
+            "text": "perdona María, no te he escrito yo, debieron escribirte cuando me quitaron el móvil"
+        },
+        "notMe2": {
+            "text": "lo siento mucho, de verdad"
+        },
+        "notMe3": {
+            "text": "",
+            "text_male": "te creo, tranquilo, descansa",
+            "text_female": "te creo, tranquila, descansa"
+        },
+
+        "wasMe": {
+            "text": "si, lo escribí yo, mañana nos vemos guapa"
+        }
+    }
+
+}

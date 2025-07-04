@@ -1,0 +1,46 @@
+{
+    "wardrobe1": {
+        "root": {
+            "text": "No hay nada útil dentro."
+        }
+    },
+
+    "wardrobe2": {
+        "root": {
+            "text": "No necesito buscar nada de aquí dentro."
+        }
+    },
+
+
+    "bed": {
+        "root": {
+                "text": "嗯…我現在應該去睡覺嗎？"
+            },
+            "choices": [
+                {
+                    "text": "Sí."
+                },
+                {
+                    "text": "No."
+                }
+            ],
+        "noPhone": [
+            {
+                "text": "Pero no tengo móvil para ponerme el despertador."
+            },
+            {
+                "text": "Mmmm, usaré mi móvil viejo, pero al estar sin SIM y no tener nada sólo me servirá como despertador."
+            },
+            {
+                "text": "Vale, despertador listo... Hora de dormir."
+            }
+        ]
+    },
+
+    "phone": {
+        "root": {
+            "text": "我睇到你刪除了你的帖子，上面有你的電話號碼，不過唔使擔心，我截咗圖啦，我可以再上傳一次哈哈哈"
+        }
+    }
+    
+}

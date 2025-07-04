@@ -2,7 +2,7 @@
     "yourUserText": "您的用户名",
     "yourPasswordText": "你的密码",
     "loginScreen": {
-        "subtitleText": "跟你既朋友接通知!",
+        "subtitleText": "跟你既朋友接通知！",
         "userInput": {
             "sideText": "用戶"
         },
@@ -19,7 +19,7 @@
             "upload": "发布"
         },
         "friendRequestNot": "您有新的好友申请！",
-        "blockNot": "****YOU CAN'T BLOCK USERS!",
+        "blockNot": "****YOU CAN'T BLOCK USERS！",
         "friendsNumberText": "朋友",
         "pendingRequestsText": "等待请求",
         "informationText": "这是您的控制面板，看看您的朋友分享了什么？"
