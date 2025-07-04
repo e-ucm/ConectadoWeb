@@ -2,68 +2,66 @@
     "alison": {
         "passwordExchanged": [
             {
-                "text": "Te has ganado lo que ha pasado."
+                "text": "这是你应得的。"
             },
             {
-                "text": "¿Cómo se te ocurre darme tu contraseña?"
+                "text": "你把密码给我的时候在想什么？"
             }
         ],
         "phoneStolen": {
-            "text": "Si hubieras confiado en mí, igual esto no habría pasado. Es tu culpa."
+            "text": "如果你信任我，这一切都不会发生。这是你的错。"
         },
 
         "talked": {
-            "text": "Vete, no tenemos de que hablar."
+            "text": "走开，我们没什么好说的。"
         }
     },
 
     "ana": {
         "passwordExchanged": [
             {
-                "text": "No me creo que le dieras tu contraseña a Alison."
+                "text": "我不敢相信你把密码给了艾莉森。"
             },
             {
-                "text": "¿De verdad te pensabas que iba a ser tu amiga? No me creo lo fácil que fué engañarte."
+                "text": "你真的以为她会成为你的朋友吗？我不敢相信竟然这么简单。"
             },
             {
-                "text": "¡¡¡Jajajaja!!! En serio, me parto contigo."
+                "text": "哈哈哈！！！说真的，我都要被你逗笑了。"
             }
         ],
         "phoneFound": [
             {
-                "text": "¡¡¡Jajajaja!!! No me creo que no tuvieras patrón de desbloqueo en el móvil."
+                "text": "哈哈哈！！！我不敢相信你的手机没有设置锁屏图案。"
             },
             {
-                "text": "Pensaba que iba a ser más difícil..."
+                "text": "我还以为会更难一些…"
             },
             {
                 "text": "",
-                "text_male": "Que divertido va a ser el día. Ahora la mayoría piensa que eres de verdad un marica vicioso que le da a todo.",
-                "text_female": "Que divertido va a ser el día, ahora la mayoría piensa que eres de verdad una puta viciosa."
+                "text_male": "今天真有意思。现在大家都觉得你是个他妈的喜欢这一切的人。",
+                "text_female": "今天真有意思。现在大家都觉得你是个他妈的淫荡妓女。"
             }
         ],
         "phoneNotFound": [
             {
-                "text": "Mira quién ha llegado. Y yo que pensaba que hoy no vendrías."
+                "text": "看看谁来了，我还以为你今天不会来了呢。"
             },
             {
-                "text": "¿Aún sigues sin móvil? Jajaja. No era tan difícil encontrarlo si hubieras buscado bien."
+                "text": "还没手机吗？哈哈哈，如果你仔细找找，其实也不难找到。"
             },
             {
-                "text": "",
-                "text_male": "Hay que ser estúpido.",
-                "text_female": "Hay que ser estúpida."
+                "text": "真是个混蛋…"
             },
             {
-                "text": "¿De dónde has salido? Jajaja."
+                "text": "你从哪儿冒出来的？哈哈哈。"
             }
         ],
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<铃声响起>>"
         },
 
         "talked": {
-            "text": "Jajajaja. Margi."
+            "text": "哈哈哈，落伍的家伙。"
         }
     }
 }

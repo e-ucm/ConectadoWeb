@@ -2,21 +2,21 @@
     "sink": {
         "washed": [
             {
-                "text": "Ya me he quitado el chicle, pero ahora la mancha es peor."
+                "text": "我已经把口香糖去掉了，但污渍更严重了。"
             },
             {
-                "text": "Se van a reír aún más de mí."
+                "text": "他们会更加嘲笑我的。"
             }
         ],
         "notWashed": {
-            "text": "Igual con agua y jabón consigo quitarlo."
+            "text": "也许我只需要水和肥皂。"
         },
         "choices": [
             {
-                "text": "(Probar con agua y jabón)"
+                "text": "（试试水和肥皂）"
             },
             {
-                "text": "(Dejarlo como está)"
+                "text": "（就这样吧）"
             }
         ]
     }

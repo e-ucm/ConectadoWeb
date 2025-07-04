@@ -1,120 +1,120 @@
 {
     "ana": {
         "talked": {
-            "text": "Piérdete. No tengo nada que hablar contigo."
+            "text": "走开。我没什么和你说的。"
         },
         "mean": {
-            "text": "¿Qué estás mirando? Di algo o vete."
+            "text": "你看什么？不说话就走开。"
         },
         "normal": [
             {
-                "text": "Buenos días,{{name}}."
+                "text": "早上好，{{name}}"
             },
             {
-                "text": "¿Querías algo?"
+                "text": "你需要什么吗？"
             }
         ],
         "choices": [
             {
-                "text": "Nada (te vas)."
+                "text": "没什么（你离开了）。"
             },
             {
-                "text": "Me han dicho que has hablado con Álex de gastarme una broma."
+                "text": "我听说你和亚历克斯在谈论什么恶作剧。"
             }
         ],
         "warnMean": {
-            "text": "Sí, ¿y? Venga, vete."
+            "text": "是啊，怎么了？拜托，走开。"
         },
         "warnNormal": [
             {
-                "text": "Vaya, nos has pillado. Era una tontería."
+                "text": "该死，被你发现了，真傻。"
             },
             {
-                "text": "Pero ya no tiene gracia. No la haremos."
+                "text": "但已经不好笑了，我们不会这么做的。"
             }
         ]
     },
 
     "maria": {
         "talked": {
-            "text": "Ya he hablado con María. Debería ver quién más hay por el patio esperando a que suene la campana."
+            "text": "我已经和玛丽亚谈过了。我应该去操场上找那些等着铃响的人。"
         },
         "notMet": {
-            "text":  "¿Querías algo?"
+            "text":  "你需要什么吗？"
         },
         "notMetChoices": [
             {
-                "text": "No, nada. Adiós."
+                "text": "不，不需要，拜拜。"
             },
             {
-                "text": "Saludarte, siempre te veo sola y leyendo."
+                "text": "打个招呼吧。我总是看到你一个人在这里看书。"
             }
         ],
         "niceResponse": [
             {
-                "text": "Muy amable."
+                "text": "很友善。"
             },
             {
-                "text": "La gente no suele hablar conmigo."
+                "text": "通常没人和我说话。"
             },
             {
-                "text": "Que pases un buen día."
+                "text": "祝你今天过得愉快。"
             }
         ],
 
         "ignore": [
             {
-                "text": "Estoy leyendo."
+                "text": "我在看书"
             },
             {
-                "text": "Si no te importa... (Te ignora y sigue leyendo)."
+                "text": "如果你不介意的话…（她忽略了你，继续看书）"
             }
         ],
 
         "warn": [
             {
-                "text": "Buenos días,{{name}}."
+                "text": "早上好，{{name}}。"
             },
             {
-                "text": "Antes he escuchado a Álex hablar con Ana sobre gastarte una broma."
+                "text": "我听到亚历克斯在和安娜说想捉弄你一下。"
             },
             {
-                "text": "No sé qué puede ser, pero ten cuidado. No suelen ser graciosas precisamente."
+                "text": "我不知道会是什么，但小心点，他们通常都不太好笑。"
             }
         ],
         "warnChoices": [
             {
-                "text": "Gracias por avisar"
+                "text": "谢谢你的提醒"
             },
             {
-                "text": "No le tengo miedo"
+                "text": "我不怕他"
             }
         ],
         "warnGoodbye": {
-            "text": "Nos vemos después. Hasta luego"
+            "text": "再见，拜拜。"
         },
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<铃声响起>>"
         }
     },
 
     "jose": {
         "notTalked": [
             {
-                "text": "¿Has visto la aplicación que comprueba tu relación con la gente con la que más hablas?"
+                "text": "你看到过那个可以看你和聊天最多的人的关系的手机应用吗？"
             },
             {
-                "text": "Te dice con quién te llevas mejor o peor de los que también tienen instalada la aplicación."
+                "text": "它会告诉你，在所有下载了这个应用的人中，你和谁相处得来，和谁相处不来。"
             },
             {
-                "text": "Dicen que es muy exacta, pero aún no se sabe como funciona."
+                "text": "据说它非常准确，但不清楚它是如何工作的。"
             },
             {
-                "text": "Veo que ya la tienes."
+                "text": "我看到你已经有了。"
             }
         ],
         "talked": {
-            "text": "Nos vemos luego."
+            "text": "再见"
         }
     }
 }

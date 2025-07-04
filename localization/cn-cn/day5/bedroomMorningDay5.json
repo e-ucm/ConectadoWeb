@@ -1,13 +1,13 @@
 {
     "bag": {
         "root": {
-            "text": "Cogeré todo para marcharme."
+            "text": "我把东西都带上，然后离开。"
         }
     },
 
     "wardrobe1": {
         "root": {
-            "text": "Por ahora no necesito nada que pueda estar ahí dentro."
+            "text": "我现在不需要这里任何东西。"
         }
     },
 
@@ -20,27 +20,27 @@
     
     "bed": {
         "root": {
-            "text": "He de irme."
+            "text": "得走了。"
         }
     },
 
     "pc": {
         "root": {
-            "text": "¿Quieres encender el ordenador?"
+            "text": "你想打开电脑吗？"
         },
         "pcChoice": [
             {
-                "text": "Sí."
+                "text": "是"
             },
             {
-                "text": "No."
+                "text": "否"
             }
         ],
         "turnPC": {
-            "text": "No enciende, ¿se habrá estropeado?"
+            "text": "它开不了机，是坏了吗？"
         },
         "leavePC": {
-            "text": "Mejor no. Es hora de irse a clase."
+            "text": "最好还是别管它，去上课吧。"
         }
     }
 }

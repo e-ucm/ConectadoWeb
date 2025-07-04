@@ -3,35 +3,35 @@
         "introduction": {
             "root": [
                 {
-                    "text": "¿No te gustan las nuevas fotos que hemos publicado?"
+                    "text": "Don't you like the new photos we posted?"
                 },
                 {
-                    "text": "Puedes intentar borrarlas..."
+                    "text": "You can try to delete them..."
                 },
                 {
-                    "text": "Vas a tener que hacer algo más aparte de borrarlas o denunciarlas."
+                    "text": "But you're gonna have to do more than just deleting or reporting them."
                 },
                 {
-                    "text": "Venga... prueba a ver, pero todos tenemos una copia ya."
+                    "text": "Go on, try it... but we all already have a copy."
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "No has conseguido nada."
+                    "text": "You haven't got anything."
                 },
                 {
-                    "text": "Jajajaja."
+                    "text": "Hahahaha."
                 },
                 {
-                    "text": "Las fotos siguen ahí."
+                    "text": "Photos are still there."
                 },
                 {
-                    "text": "Una vez en internet, cualquiera puede hacer una copia."
+                    "text": "Once online, everyone can make a copy."
                 }
             ]
         }
     },
-    "imageText": "Denunciar foto"
+    "imageText": "Report photo"
 }

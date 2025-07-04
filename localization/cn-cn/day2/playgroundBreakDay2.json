@@ -1,69 +1,69 @@
 {
     "ana_jose": {
         "washed": {
-            "text": "Jajaja. ¿Te has meado encima?"
+            "text": "哈哈，你尿裤子了吗？"
         },
         "washed2": [
             {
-				"text": "Jajajaja. No, no, mira bien, se ha cagado."
+				"text": "哈哈哈，没有，没有，你看，他拉裤子了。"
 			},
 			{
-				"text": "¿Llevas el móvil, Ana? ¡¡Foto!!"
+				"text": "安娜，你带手机了吗？拍张照片！！"
 			}
         ],
         "washed3": {
-            "text": "Jajajaja."
+            "text": "哈哈哈."
         },
 
         "notWashed": [
             {
-				"text": "A ver si lavas la ropa. Menudo desastre llevas en el pantalón."
+				"text": "你应该洗衣服了，你的裤子真是一团糟。"
 			},
 			{
-				"text": "¿No tenéis lavadora en casa?"
+				"text": "你们家没有洗衣机吗？"
 			}
         ],
         "notWashed2": [
             {
-				"text": "Jajajaja. ¡Nueva moda! Chicles pegados al pantalón."
+				"text": "哈哈哈，新潮流！裤子上粘着口香糖。"
 			},
 			{
-				"text": "Con lo horrorosa que es su ropa, no merece la pena que la lave."
+				"text": "那件恶心的衣服不值得洗。"
 			},
 			{
-				"text": "Debería tirarla a la basura directamente."
+				"text": "他应该直接扔进垃圾桶。"
 			}
         ],
         "notWashed3": {
-            "text": "Jajajaja."
+            "text": "哈哈哈."
         }
     },
 
     "guille_alison": {
         "washed": {
-            "text": "Menuda mancha llevas."
+            "text": "真是个污点。"
         },
         "washed2": {
-            "text": "Bueno, no pasa nada. En un rato se secará."
+            "text": "嗯，没关系，一会儿就干了。"
         },
 
         "notTalked": [
             {
-				"text": "¿Dónde te has apoyado?"
+				"text": "你坐哪了？"
 			},
 			{
-				"text": "Te has debido sentar encima de un chicle."
+				"text": "你可能坐到口香糖上了。"
 			}
         ],
         "notTalked2": {
-            "text": "Menudo desastre. Pasa por el baño antes de ir a clase."
+            "text": "真是一团糟，上课前去浴室处理一下。"
         },
         "notTalked3": {
-            "text": "Sí, igual consigues quitarlo."
+            "text": "对，也许你能把它弄掉。"
         },
 
         "talked": {
-            "text": "Prueba a quitarte el chicle en el baño."
+            "text": "试着在浴室里把那块口香糖弄掉。"
         }
     }
 }

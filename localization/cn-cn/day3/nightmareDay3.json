@@ -3,31 +3,29 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Voy a hacer que nadie te quiera hablar."
+                    "text": "I'm going to make sure nobody talks to you."
                 },
                 {
-                    "text": "Puedes decir lo que quieras, pero no conseguirás nada."
+                    "text": "You can do whatever you want, but you won't get anything."
                 },
                 {
-                    "text": "Adelante. Habla con la gente de clase, a ver si consigues que te hablen."
+                    "text": "Go on. Talk to people in class, and see if you get them to talk to you."
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "",
-                    "text_male": "Me parece que te has quedado solo.",
-                    "text_female": "Me parece que te has quedado sola."
+                    "text": "I think you've been left alone."
                 },
                 {
-                    "text": "¿Qué tal sienta que todos te ignoren?"
+                    "text": "How does it feel to be ignored by everybody?"
                 },
                 {
-                    "text": "¿No te parece divertido que nadie te haga caso?"
+                    "text": "Isn't it funny that none cares about you?"
                 },
                 {
-                    "text": "Porque yo me estoy partiendo de solo verte."
+                    "text": "Because I'm cracking up just by looking at you."
                 }
             ]
         }
@@ -38,13 +36,13 @@
         },
         "playerWorry": [
             {
-                "text": "¿Tú también me vas a ignorar?"
+                "text": "Are you gonna ignore me too?"
             },
             {
-                "text": "¿No te habían hecho lo mismo? No me ignores, sabes lo que se siente."
+                "text": "Didn't they do the same to you? Don't ignore me, you know how it feels."
             },
             {
-                "text": "Tú me entiendes, ¿verdad?"
+                "text": "You get me, right?"
             }
         ]
     },
@@ -54,13 +52,13 @@
         },
         "playerWorry": [
             {
-                "text": "Tú eres mi amigo, ¿no?"
+                "text": "You're my friend, right?"
             },
             {
-                "text": "Guille, tú no eres como los demás."
+                "text": "Guille, you're not like the others."
             },
             {
-                "text": "No dejes que te amenacen."
+                "text": "Don't let them threaten you."
             }
         ]
     },
@@ -70,13 +68,13 @@
         },
         "playerWorry": [
             {
-                "text": "¿Vas a ignorarme sin motivo? ¿Solo por qué te han dicho que lo hagas?"
+                "text": "Are you gonna ignore me without a reason? Just because someone has told you to do so?"
             },
             {
-                "text": "Podemos ser amigos."
+                "text": "We can be friends."
             },
             {
-                "text": "¿Tienes 3 años? Dime algo."
+                "text": "What are you? Three? Talk to me."
             }
         ]
     },
@@ -86,13 +84,13 @@
         },
         "playerWorry": [
             {
-                "text": "Eres mi amiga, ¿no?"
+                "text": "You're my friend, right?"
             },
             {
-                "text": "Eres maja. No me vas a dejar de hablar, ¿verdad?"
+                "text": "You're nice. You're not gonna stop talking to me, aren't you?"
             },
             {
-                "text": "Por favor, dime algo."
+                "text": "Please, talk to me."
             }
         ]
     },
@@ -102,13 +100,13 @@
         },
         "playerWorry": [
             {
-                "text": "¿Qué te he hecho? ¿Por qué vas a por mí también?"
+                "text": "What have I done to you? Why do you come after me?"
             },
             {
-                "text": "Si Álex se tira de un puente, ¿también te tiras tú?"
+                "text": "If Alex jumps off a bridge, are you gonna jump off too?"
             },
             {
-                "text": "¿No podemos llevarnos bien?"
+                "text": "Can't we just get along?"
             }
         ]
     }

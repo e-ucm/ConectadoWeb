@@ -1,109 +1,104 @@
 {
     "badEnding": [
         {
-            "text": "Al final todo ha acabado igual. No se puede decir que no lo haya intentado."
+            "text": "In the end, everything has ended up the same. Can't say I haven't tried it."
         },
         {
-            "text": "Supongo que ya es tarde. Has desaprovechado la oportunidad que te he dado."
+            "text": "I suppose it's already too late. You've wasted the opportunity I've given to you."
         },
         {
-            "text": "Álex y Ana seguirán haciendo la vida imposible a otros compañeros. Tú no has sido su primera víctima, ni la última."
+            "text": "Alex and Anna will continue making life impossible to other classmates. You haven't been their first victim, nor the last one."
         },
         {
-            "text": "¿Tan difícil es pedir ayuda cuando uno la necesita? ¿Olvidarse de nuestro ego? Uno no siempre tiene la culpa de lo que le pasa, ni se lo merece."
+            "text": "Is it too hard asking for help when needed? Forget your ego. You're not always to blame for what happens to you, nor do you deserve it."
         },
         {
-            "text": "¿Por qué ese miedo a compartir lo que te sucede, lo que uno siente?"
+            "text": "Why that fear of sharing what is going on with yourself, what do you feel?"
         },
         {
-            "text": "¿Por qué dejamos que las personas sufran? ¿Por qué pensamos que es mejor permanecer callado? ¿Que el tiempo todo lo cura?"
+            "text": "Why do we let people suffer? Why do we think it's better to remain silent? To let time heals everything?"
         },
         {
-            "text": "Es fácil reírse de los demás, ¿pero qué pasa cuando el afectado eres tú?"
+            "text": "It's easy to make fun of others, but what happens when the one affected is you?"
         },
         {
-            "text": "¿Por qué es mejor sufrir o ver a los demás pasarlo mal que pedir ayuda? ¿Acaso pedir ayuda es chivarse? ¿Es chivarse evitar que alguien lo pase mal?"
+            "text": "Why is it better to suffer or see others having a bad time than asking for help? Is it asking for help or preventing someone from having a rough time snitching?"
         }
     ],
     "normalEnding": [
         {
-            "text": "Parece que al final no he conseguido mi propósito, pero al menos han mejorado un poco las cosas."
+            "text": "It seems that I haven't reached my purpose at the end, but at least things have improved a little."
         },
         {
-            "text": "Álex ahora estará vigilado y al menos os dejará a todos un poco más en paz."
+            "text": "Alex will be watched from now on and will at least leave you all in peace a little."
         },
         {
-            "text": "Hay que pedir ayuda cuando uno la necesita, olvidarse de nuestro ego. Uno no siempre tiene la culpa de lo que le pasa, ni se lo merece."
+            "text": "You must ask for help when you need. Forget your ego. You're not always to blame for what happens to you, nor do you deserve it."
         },
         {
-            "text": "El tiempo no va a solucionar las cosas si sufres. No hay que dejarlo pasar."
+            "text": "Time isn't gonna fix things if you suffer. You mustn't let it go."
         },
         {
-            "text": "Todos necesitamos ayuda alguna vez, y espero que al menos ahora seas consciente de que, al igual que hay personas que te ayudan, hay otras que necesitan que tú les ayudes."
+            "text": "We all need help once in a while, and at least I hope you're now aware that, as there are people who help you, others need you to help them too."
         },
         {
-            "text": "¿Acaso es mejor sufrir o ver a los demás pasarlo mal que pedir ayuda? ¿Acaso pedir ayuda es chivarse? ¿Es chivarse evitar que alguien lo pase mal?"
+            "text": "Maybe is it better to suffer or see others suffer than asking for help? Is it asking for help or preventing someone from having a rough time snitching?"
         },
         {
-            "text": "Espero que con lo que has vivido pierdas ese miedo a contar las cosas malas que os pasan a ti y a tus compañeros."
+            "text": "I hope that, with what you have gone through, you lose that fear of telling the bad things that happen to to you and your classmates."
         }
     ],
     "goodEnding": [
         {
-            "text": "Bien, hemos conseguido cambiar las cosas."
+            "text": "Good, we've managed to change things."
         },
         {
-            "text": "Aún no lo sabes, pero hemos conseguido que Álex os deje en paz a sus compañeros y a ti."
+            "text": "You don't know it yet, but we've managed to Alex stop bullying his classmates and you."
         },
         {
-            "text": "Si nadie le hubiera parado los pies, tú no habrías sido la última persona en sufrir acoso."
+            "text": "If no one had stopped him, you wouldn't have been the last person to suffer his bullying."
         },
         {
-            "text": "Es bueno contar las cosas, pedir ayuda. Nadie se merece que lo marginen, humillen o se burlen de él, sea cual sea el motivo."
+            "text": "It's good to speak up and ask for help. No one deserves what you've dealt with, no matter the reason."
         },
         {
-            "text": "",
-            "text_male": "Habrá gente que diga que te chivaste al profesor, a los compañeros o a tus padres. Yo opino que has sido un héroe.",
-            "text_female": "Habrá gente que diga que te chivaste al profesor, a los compañeros o a tus padres. Yo opino que has sido una heroína."
-
+            "text": "There will be people saying you snitch to your professor, to your classmates or to your parents. I think you've been a hero."
         },
         {
-            "text": "",
-            "text_male": "Espero que nunca más te quedes callado si alguien necesita ayuda o sufre. Que le des tu apoyo en vez de seguir al matón de turno.",
-            "text_female": "Espero que nunca más te quedes callada si alguien necesita ayuda o sufre. Que le des tu apoyo en vez de seguir al matón de turno."
+            "text": "I hope you never stay silent again if someone needs help or is suffering. You should show them your support instead of following the bully."
         },
         {
-            "text": "Es fácil no hacer nada, ¿pero has pensado que tu puedes ser su siguiente víctima como ha pasado ahora...?"
+            "text": "It's easy to do nothing, but has it crossed your mind that you can be his next victim, just like what happened now...?"
         }
     ],
     "playerQuestion": [
         {
-            "text": "¿Quién eres?"
+            "text": "Who are you?"
         },
         {
-            "text": "Deja de decir estupideces y desaparece."
+            "text": "Cut the crap and go away."
         }
     ],
     "curiousAnswer": [
         {
-            "text": "Me temo que eso no puedo decírtelo."
+            "text": "I'm afraid I can't tell you that."
         },
         {
-            "text": "Piensa en mí como alguien que está CONECTADO a ti por aquello que tenemos en común."
+            "text": "Think of me as someone who is CONNECTED to you by all the things we have in common."
         },
         {
-            "text": "Quizá una voz de la conciencia..."
+            "text": "Perhaps a voice of conscience..."
         },
         {
-            "text": "Pero poco importa quien yo sea. Lo importante es que lo que has vivido te ha hecho reflexionar y ser mejor persona."
+            "text": "But it doesn't matter who I am. What matters is that what you've gone through made you think and be a better person."
         }
     ],
     "unpoliteAnswer": [
         {
-            "text": "Siento que mi presencia no te resulte cómoda."
+            "text": "I'm sorry my presence doesn't make you comfortable."
         },
         {
-            "text": "Y que quizá esto no haya servido para nada..."
+            "text": "And maybe this wasn't worth at all..."
         }
     ]
 }

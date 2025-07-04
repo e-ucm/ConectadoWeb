@@ -3,26 +3,26 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Bueno...¿ya lo hemos solucionado no?"
+                    "text": "So... have we already worked this out?"
                 },
                 {
-                    "text": "¿Sabes dónde sentarte?"
+                    "text": "Do you know where to sit down?"
                 },
                 {
-                    "text": "Quizás deberías evitar que los chicles caigan en la silla golpeándolos. O si no, tendrás que sentarte en uno."
+                    "text": "Perhaps you should avoid those gums to fall on the chairs by hitting them. Or else,d you'll have to sit down on one of them."
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "Tendrás que sentarte en un chicle."
+                    "text": "You'll have to sit down on a gum."
                 },
                 {
-                    "text": "Jajaja. Adelante, siéntate."
+                    "text": "Hahaha. Go on, sit down."
                 },
                 {
-                    "text": "Venga, ¿a qué esperas?"
+                    "text": "Come on, what are you waiting for?"
                 }
             ]
         }
