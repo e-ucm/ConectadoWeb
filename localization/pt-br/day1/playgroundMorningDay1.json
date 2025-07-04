@@ -1,0 +1,118 @@
+{
+    "jose": {
+        "notTalked": {
+            "text": "",
+            "text_male": "Você é novo, não é?",
+            "text_female": "Você é nova, não é?"
+        },
+        "ask": {
+            "text": "Quer alguma coisa?"
+        },
+
+        "talked": {
+            "text": "Has vuelto. ¿Quieres algo más?"
+        },
+        "choices": [
+            {
+                "text": "Oi, me chamo {{name}}."
+            },
+            {
+                "text": "(Perguntar onde fica a sala de aula.)"
+            },
+            {
+                "text": "Não preciso de nada, até mais."
+            }
+        ],
+        "askClass": {
+            "text": "Essa também é a minha sala, que fica no segundo andar. Suba as escadas à sua direita assim que entrar no prédio. E no primeiro andar, está a sala do diretor."
+        },
+        "askMore":  {
+            "text": "Precisa de mais alguma coisa?"
+        },
+        "goodbye": {
+            "text": "Até mais."
+        },
+        "notIntroduced": {
+            "text": "Eu sou o Jose."
+        },
+        "alreadyIntroduced": {
+            "text": "Você já me disse o seu nome."
+        }
+    },
+    
+    "alison": {
+        "root": {
+            "text": "A gente se conhece?"
+        },
+        "choices": [
+            {
+                "text": "Sou {{name}}... E você é?"
+            },
+            {
+                "text": "Não, desculpe. estou com pressa. Até mais."
+            }
+            
+        ],
+        "introduce": [
+            {
+                "text": "Prazer, sou a Alison."
+            },
+            {
+                "text": "Espero que você goste daqui. As pessoas são super bacanas."
+            },
+            {
+                "text": "Em qual série você está?"
+            }
+        ],
+        "playerAnswer": {
+            "text": "(Você responde.)"
+        },
+        "afterPlayerIntroduction": [
+            {
+                "text": "Vejo você na sala então."
+            },
+            {
+                "text": "Aquele garota de camiseta amarela perto da entrada do pátio também está na nossa turma."
+            },
+            {
+                "text": "Ele é muito legal! Por que você não vai falar com ele?"
+            }
+        ],
+        "goodbye": [
+            {
+                "text": "",
+                "text_male": "Não seja tímido, eu não mordo, viu",
+                "text_female": "Não seja tímida, eu não mordo, viu"
+            },
+            {
+                "text": "Então, até mais. Tenha um bom primeiro dia."
+            }
+        ]
+    },
+
+    "guille": {
+        "root": {
+            "text": "",
+            "text_male": "Você é novo aqui? Acho que nunca te vi antes.",
+            "text_female": "Você é nova aqui? Acho que nunca te vi antes."
+        },
+        "choices": [
+            {
+                "text": "Sim me chamo {{name}}... Que é você?"
+            },
+            {
+                "text": "Desculpe, estou com pressa (Você sai)."
+            }
+        ],
+        "introduce": {
+            "text": "Pode me chamar do Guille."
+        },
+        "bellRinging": {
+            "text": "<<O sinal está tocando.>>"
+        },
+        "guilleGoodbye": {
+            "text": "Vamos entrar, até mais."
+        }
+    }
+    
+}

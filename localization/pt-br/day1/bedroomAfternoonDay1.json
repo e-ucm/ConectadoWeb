@@ -1,0 +1,40 @@
+{
+    "wardrobe1": {
+        "root": {
+            "text": "Não tem nada útil aqui dentro."
+        }
+    },
+
+    "wardrobe2": {
+        "root": {
+            "text": "Não estou com vontade de limpar essa bagunça."
+        }
+    },
+
+    "phone": {
+        "root": {
+            "text": "Eu te enviei um pedido de amizade"
+        },
+        "message2": {
+            "text": "Aceita pelo computador :)"
+        },
+        "choices": [
+            {
+                "text": "Sim, vou aceitar agora."
+            },
+            {
+                "text": "Vou ver isso quando puder."
+            },
+            {
+                "text": "(Ela é muito chata, não vou responder.)"
+            }
+        ],
+        "acceptNow": {
+            "text": "Sim, aceito seu convite agora :)"
+        },
+        "acceptLater": {
+            "text": "Vou olhar isso quando puder. Estou ocupado agora."
+        }
+    }
+    
+}

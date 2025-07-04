@@ -1,0 +1,53 @@
+{
+    "alarm": {
+        "title": "Despertador",
+        "message": "Você não consegue mais dormir. \nÉ hora de acordar."
+    },
+    "clock": {
+        "days": [
+            "Segunda-feira, Dia 1",
+            "Terça-feira, Dia 2",
+            "Quarta-feira, Dia 3",
+            "Quinta-feira, Dia 4",
+            "Sexta-feira, Dia 5"
+        ],
+
+        "alarmHour": "07:30",
+        "alarmLateHour": "08:05",
+        "pcLateHour": "08:10",
+        
+        "playgroundMorning": "08:20",
+        "classStart": "08:30",
+        "playgroundMorningLate": "08:40",
+        
+        "startBreak": "11:05",
+        "midBreak": "11:10",
+        "endBreak": "11:20",
+
+        "endClass": "14:02",
+        "returnHome": "15:00",
+
+        "afternoon": {
+            "endClass": "14:05",
+            "corridor": "14:08"
+        },
+
+        "night": "21:30"
+    },
+    "statusScreen": {
+        "title":"Risco Social",
+        "subtitle":"Amizades"
+    },
+    "textMessages": {
+        "title": "CHAT",
+        "chat1": "Alison",
+        "chat2": "Aula",
+        "chat3": "María",
+        "chat4": "Álex"
+    },
+    "settings": {
+        "text": "Você voltará para a tela inicial. Tem certeza?",
+        "yes": "Sim",
+        "no": "Não" 
+    }
+}

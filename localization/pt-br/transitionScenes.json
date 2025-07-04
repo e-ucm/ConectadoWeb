@@ -1,0 +1,27 @@
+{
+    "day1": {
+        "start": "O alarme do seu telefone está tocando. É hora de acordar. Hoje é seu primeiro dia em uma nova escola, e é hora de conhecer seus novos amigos.",
+        "startClass": "Todos se sentam, a aula está começando.",
+        "startClassLate": "Você vai e se senta em seu lugar enquanto todos olham para você.",
+        "startBreak": "O sinal toca, é hora do intervalo. É a sua chance de fazer novos amigos.",
+        "endBreak": "Assim que você entra, o sinal toca e o professor aparece. A manhã acaba antes de você perceber. É hora de voltar para casa..."
+    },
+    "day2": {
+        "startClass": "Todos se sentam. Antes que percebem, já é hora do intervalo.",
+        "startClassLate": "Você se senta na primeira cadeira vazia que encontra, enquanto todos os alunos olham para você.",
+        "endBreak": "Assim que você entra, o sinal toca e o professor aparece. A manhã acaba antes de você perceber. É hora de voltar para casa..."
+    },
+    "day3": {
+        "startClass": "O dia foi chato. As aulas terminaram e a maioria das pessoas te ignorou o tempo todo. Tem um bilhete na sua mesa dizendo para você ir ao banheiro, alguém está te esperando por lá."
+    },
+    "day4": {
+        "startClass": "O sinal está tocando, é hora do recreio...",
+        "endBreak": "Assim que você entra, o sinal toca e o professor aparece. A manhã acaba antes de você perceber. É hora de voltar para casa...",
+        "endDay": "As aulas estão durando cada vez mais... Que bom que já é hora de ir para casa."
+    },
+    "day5": {
+        "startClass": "As aulas acabaram, mas as pessoas têm te olhado e cochichado nas suas costas durante todo o dia.",
+        "endDay": "Você vai para casa e dorme mais cedo hoje. Como sempre, é hora de sonhar...",
+        "end": "FIM"
+    }
+}

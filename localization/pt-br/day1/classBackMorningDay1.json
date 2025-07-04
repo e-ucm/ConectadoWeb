@@ -1,0 +1,35 @@
+{
+    "beforeEnter": {
+        "root": [
+            {
+                "text": "Na semana passada, se vocês se lembram, estávamos aprendendo como fazer uma análise morfológica de uma frase."
+            },
+            {
+                "text": "Agora é hora de analisar a sintaxe."
+            }
+        ],
+        "knock": {
+            "text": "(Alguém bate à porta.)"
+        },
+        "allowEnter": {
+            "text": "Pode entrar."
+        }
+    },
+    "afterEnter": {
+        "root": {
+            "text": "Alejandro, você está atrasado. Por favor, sente-se."
+        },
+        "alexAnswer": {
+            "text": "",
+            "text_male": "O novato está no meu lugar.",
+            "text_female": "A novata está no meu lugar."
+        },
+        "teacherAnswer": {
+            "text": "",
+            "text_male": "Seu nome é {{name}}. Sente-se em outra cadeira por enquanto. Pedi para a Alison ajudar ele nos primeiros dias.",
+            "text_female": "Seu nome é {{name}}. Sente-se em outra cadeira por enquanto. Pedi para a Alison ajudar ela nos primeiros dias."
+        }
+    }
+
+    
+}

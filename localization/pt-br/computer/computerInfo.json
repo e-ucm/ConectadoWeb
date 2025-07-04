@@ -1,0 +1,32 @@
+{
+    "yourUserText": "Seu nome de usuário",
+    "yourPasswordText": "Sua senha",
+    "loginScreen": {
+        "subtitleText": "CONECTE-SE COM SEUS AMIGOS!",
+        "userInput": {
+            "sideText": "Nome de usuário"
+        },
+        "passwordInput": {
+            "sideText": "Senha"
+        },
+        "errorText": "O nome de usuário/senha inseridos estão incorretos",
+        "enterButton": "Entrar"
+    },
+    "socialNetScreen": {
+        "tabTexts": {
+            "feed": "Tablón",
+            "friends": "Amigos",
+            "upload": "Publicar"
+        },
+        "friendRequestNot": "Você tem novas solicitações de amizade!",
+        "blockNot": "BLOQUEAR USUÁRIOS NÃO É PERMITIDO!",
+        "friendsNumberText": "Amigos",
+        "pendingRequestsText": "Solicitações pendentes:",
+        "informationText": "Este é o seu painel, veja o que seus amigos compartilharam"
+    },
+    "commentsNumberText": "Comentários",
+    "friendRequestButtons": {
+        "acceptText": "Aceitar solicitação",
+        "denyText": "Negar solicitação"
+    }
+}
