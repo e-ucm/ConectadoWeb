@@ -7,39 +7,39 @@
 
     "wardrobe2": {
         "root": {
-            "text": "No necesito buscar nada de aquí dentro."
+            "text": "我不需要这里任何东西。"
         }
     },
 
 
     "bed": {
         "root": {
-                "text": "¿Mmm, debería irme ya a dormir?"
+                "text": "嗯，我现在应该去睡觉吗？"
             },
             "choices": [
                 {
-                    "text": "Sí."
+                    "text": "是"
                 },
                 {
-                    "text": "No."
+                    "text": "否"
                 }
             ],
         "noPhone": [
             {
-                "text": "Pero no tengo móvil para ponerme el despertador."
+                "text": "但是我没法用手机定闹钟了。"
             },
             {
-                "text": "Mmmm, usaré mi móvil viejo, pero al estar sin SIM y no tener nada sólo me servirá como despertador."
+                "text": "嗯，那我就用我的旧手机吧，但它没有电话卡，所以只能当闹钟用。"
             },
             {
-                "text": "Vale, despertador listo... Hora de dormir."
+                "text": "好吧，闹钟已经设好了…该睡觉了。"
             }
         ]
     },
 
     "phone": {
         "root": {
-            "text": "He visto que has borrado tu publicacion con tu nº de telefono, pero no pasa nada, tengo pantallazo y puedo resubirlo jajaja"
+            "text": "我看到你删除了你的帖子，上面有你的电话号码，不过别担心，我截图了，我可以再上传一次哈哈哈"
         }
     }
     

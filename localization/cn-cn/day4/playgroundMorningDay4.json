@@ -2,104 +2,104 @@
     "alison": {
         "root": [
             {
-                "text": "{{name}}, quiero hablar contigo."
+                "text": "{{name}}，我想和你谈谈。"
             },
             {
-                "text": "No sé si lo sabes, pero Álex nos ha dicho a todos que no te hablemos."
+                "text": "我不知道你是否知道，但亚历克斯告诉我们所有人不要和你说话。"
             },
             {
-                "text": "Y a los que no queremos hacerle caso nos amenaza con algo."
+                "text": "他还在威胁那些不听他的话的人。"
             },
             {
-                "text": "¿Puedo confiar en ti? No quiero dejar de ser tu amiga."
+                "text": "我能相信你吗？我不想我们不再是朋友。"
             }
         ],
         "choices": [
             {
-                "text": "Muchas gracias por ser mi amiga."
+                "text": "非常感谢你成为我的朋友。"
             },
             {
-                "text": "No. Y no tengo interés en ganarme tu confianza."
+                "text": "不，而且我对获得你的信任不感兴趣。"
             }
         ],
         "thanks": [
             {
-                "text": "Me alegra oír eso."
+                "text": "我听到这个消息很高兴。"
             },
             {
-                "text": "Intercambiemos contraseñas de redes sociales y del móvil."
+                "text": "让我们交换手机和社交媒体密码吧。"
             },
             {
-                "text": "Como muestra de amistad y confianza."
+                "text": "作为友谊和信任的象征。"
             },
             {
-                "text": "Antiguamente para gestos así se daban la mano con una herida abierta para intercambiar sangre."
+                "text": "在过去，人们会通过分享血液来握手表示友好，即使手上有伤口。"
             },
             {
-                "text": "Pero eso es asqueroso y puedes coger cualquier cosa."
+                "text": "但那太恶心且不卫生了。"
             }
         ],
         "passChoices": [
             {
-                "text": "(Aceptar el intercambio de contraseñas)"
+                "text": "（接受交换密码）"
             },
             {
-                "text": "(Rechazar el intercambio de contraseñas)"
+                "text": "（拒绝交换密码）"
             }
         ],
         "exchange":  {
-            "text": "(Os escribís las contraseñas a través del móvil)"
+            "text": "你通过手机输入密码吧。"
         },
         "exchange2": {
-            "text": "Perfecto. Best Friends (sonríe de oreja a oreja)."
+            "text": "完美。“最好的朋友”（笑得合不拢嘴）。"
         },
         "dont": [
             {
-                "text": "Si no confías en mí yo tampoco puedo confiar en ti."
+                "text": "如果你不信任我，那我也不能信任你。"
             },
             {
-                "text": "Lo siento, pero entonces no puedo hablarte más."
+                "text": "对不起，那我不能和你说话了。"
             },
             {
-                "text": "No quiero que Álex la tome conmigo."
+                "text": "我不想被亚历克斯盯上。"
             }
         ],
         "reject": [
             {
-                "text": "Entonces no me queda otra que hacer caso a Álex y dejarte de hablar."
+                "text": "那我别无选择，我只能不和你说话了。"
             },
             {
-                "text": "No quiero correr ningún riesgo."
+                "text": "我不想冒任何风险。"
             }
         ],
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<铃声响了>>"
         },
         "late": {
-            "text": "Me voy a clase ya, que es tarde, ya verás como nos cae bronca."
+            "text": "****I'm going to class now， it's late already， we'll get scolded for sure。"
         }
     },
 
     "guille": {
         "root": {
-            "text": "(El gesto de su cara cambia al verte, gira la cabeza y mira a otro lado)"
+            "text": "（他一看到你，表情就变了。转过头看向别处）"
         }
     },
 
     "jose": {
         "root": [
             {
-                "text": "(Con una sonrisa en su cara te mira fijamente y empieza a reir)"
+                "text": "（他面带微笑地看着你，然后开始大笑）"
             },
             {
-                "text": "¡¡Jajaja!!"
+                "text": "哈哈哈！！"
             }
         ]
     },
 
     "board": {
         "root": {
-            "text": "Parece que alguien ha arrancado ya la foto de ayer."
+            "text": "看来有人拍了昨天的照片。"
         }
     }
 }

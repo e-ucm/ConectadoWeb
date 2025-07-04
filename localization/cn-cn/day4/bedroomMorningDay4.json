@@ -1,7 +1,7 @@
 {
     "bag": {
         "root": {
-            "text": "Habrá que irse... "
+            "text": "得走了…"
         }
     },
 
@@ -13,14 +13,14 @@
 
     "wardrobe2": {
         "root": {
-            "text": "Igual puedo ordenar ahora en vez de ir a clase... Mamá se enfadaría."
+            "text": "也许我现在应该整理这些，而不是去上学…妈妈会生气的。"
         }
     },
 
     
     "bed": {
         "root": {
-            "text": "Otro día más, tengo que irme, espero que se pase rápido."
+            "text": "又是新的一天。我得走了，希望快点结束。"
         }
     }
     

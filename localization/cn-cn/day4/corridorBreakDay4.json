@@ -1,42 +1,42 @@
 {
     "maria": {
         "normal": {
-            "text": "Me alegro de que hoy hayas venido."
+            "text": "很高兴你今天来了。"
         },
         
         "notFound": {
-            "text": "¿Has visto mi móvil?"
+            "text": "看到我的手机了吗？"
         },
         "notFound2": [
             {
-                "text": "No, ni idea. Revisa bien la clase por si acaso."
+                "text": "没看到，不知道，你再检查一下其他同学以防万一吧。"
             },
             {
-                "text": "Si veo algo, te aviso."
+                "text": "如果我看到什么会告诉你的。"
             }
         ],
 
         "found": {
-            "text": "¿Has visto si ha entrado alguien a los baños recientemente?"
+            "text": "你看到有人最近进洗手间了吗？"
         },
         "found2": {
-            "text": "No me he fijado, lo siento."
+            "text": "我没注意到，对不起。"
         },
 
         "prankChoices": [
             {
-                "text": "Buenas, María."
+                "text": "嘿，玛丽亚。"
             },
             {
-                "text": "(Pegar el cartel con cuidado e irte sin decir nada)"
+                "text": "（小心地贴上海报并默默离开）"
             }
         ],
         "pranked": [
             {
-                "text": "(Bien. Parece que no se ha dado cuenta)"
+                "text": "（太好了，她似乎没有注意到）"
             },
             {
-                "text": "(Espero que ahora me digan dónde está mi móvil)"
+                "text": "（我希望他们现在告诉我我的手机在哪里）"
             }
         ]
     },
@@ -44,15 +44,15 @@
     "restroom": {
         "root": {
             "text": "",
-            "text_male": "No puedo entrar ahí, es el baño de chicas.",
-            "text_female": "No puedo entrar ahí, es el baño de chicos."
+            "text_male": "我不能去那里，那是女生洗手间。",
+            "text_female": "我不能去那里，那是男生洗手间。"
         },
         "choices": [
             {
-                "text": "(Entrar de todas formas)"
+                "text": "（不管怎样还是进去）"
             },
             {
-                "text": "(Marcharse)"
+                "text": "（离开）"
             }
         ]
     }

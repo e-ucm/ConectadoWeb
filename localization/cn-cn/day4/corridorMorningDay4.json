@@ -1,29 +1,29 @@
 {
     "alexAna": {
         "root": {
-            "text": "(Te han visto, pero pasan de ti, Álex y ana siguen hablando entre ellos)"
+            "text": "（他们看到了你但仍然忽略你。亚历克斯和安娜正在聊天）"
         },
         "suggestion": {
-            "text": "Creo que cabezabuque y gremlin son los más originales."
+            "text": "我觉得“怪头船”和“小妖精”是最有创意的。"
         },
         "opinion": [
             {
-				"text": "El de margi me parecía bien."
+				"text": "我一直很喜欢Outkast"
 			},
 			{
-				"text": "Aunque es verdad que{{name}}cabezabuque suena my bien. Jajaja."
+				"text": "不过说真的，{{name}}“船头怪”听起来真的不错哈哈哈哈哈。"
 			}
         ],
         "jose": {
-            "text": "Jajaja. A ver que opina Jose."
+            "text": "哈哈哈哈哈，我们来看看何塞怎么想。"
         },
         "goOn": {
-            "text": "No os cortéis. Seguid ignorándome y pensando en el mote que me vais a poner."
+            "text": "别害羞，继续无视我，然后想怎么给我起名字吧。"
         }
     },
     "board": {
         "root": {
-            "text": "Parece que alguien ha arrancado ya la foto de ayer."
+            "text": "看起来有人拍了昨天的照片。"
         }
     }
 }

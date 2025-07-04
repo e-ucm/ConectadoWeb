@@ -46,7 +46,7 @@
         "chat4": "亚历山大"
     },
     "settings": {
-        "text": "****You will return to the main screen. Are you sure?",
+        "text": "****You will return to the main screen。 Are you sure？",
         "yes": "是",
         "no": "否" 
     }

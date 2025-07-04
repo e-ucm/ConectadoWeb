@@ -22,7 +22,7 @@
         "blockNot": "****YOU CAN'T BLOCK USERS!",
         "friendsNumberText": "朋友",
         "pendingRequestsText": "等待请求",
-        "informationText": "这是您的控制面板，看看您的朋友分享了什么?"
+        "informationText": "这是您的控制面板，看看您的朋友分享了什么？"
     },
     "commentsNumberText": "评论",
     "friendRequestButtons": {

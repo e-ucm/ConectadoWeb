@@ -3,32 +3,32 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Don't you like the new photos we posted?"
+                    "text": "Don't you like the new photos we posted？"
                 },
                 {
-                    "text": "You can try to delete them..."
+                    "text": "You can try to delete them…"
                 },
                 {
-                    "text": "But you're gonna have to do more than just deleting or reporting them."
+                    "text": "But you're gonna have to do more than just deleting or reporting them。"
                 },
                 {
-                    "text": "Go on, try it... but we all already have a copy."
+                    "text": "Go on， try it… but we all already have a copy。"
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "You haven't got anything."
+                    "text": "You haven't got anything。"
                 },
                 {
-                    "text": "Hahahaha."
+                    "text": "Hahahaha。"
                 },
                 {
-                    "text": "Photos are still there."
+                    "text": "Photos are still there。"
                 },
                 {
-                    "text": "Once online, everyone can make a copy."
+                    "text": "Once online， everyone can make a copy。"
                 }
             ]
         }

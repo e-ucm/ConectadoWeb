@@ -1,49 +1,49 @@
 {
     "alison": {
         "ignore": {
-            "text": "..."
+            "text": "…"
         },
         "ignoreThoughts": {
-            "text": "También me está ignorando... ¿Qué les he hecho?"
+            "text": "又无视我…我做错什么了？"
         },
 
         "notTalked": [
             {
-                "text": "Estaba mirando el tablón."
+                "text": "我刚才在看公告板。"
             },
             {
-                "text": "Y... será mejor que no lo mires. Ignóralo hoy."
+                "text": "还有…你今天最好也别看它。"
             }
         ],
         "choices": [
             {
-                "text": "Ya lo he visto."
+                "text": "我已经看过了。"
             },
             {
-                "text": "¿Por qué? ¿Qué hay?"
+                "text": "为什么？那是什么？"
             }
         ],
         "seen": [
             {
-                "text": "Lo siento. Álex está llegando demasiado lejos."
+                "text": "对不起，亚历克斯这次做得太过分了。"
             },
             {
-                "text": "Igual deberías hablar con el profesor o a la directora."
+                "text": "也许你应该跟老师或者校长谈谈。"
             }
         ],
         "ask": [
             {
-                "text": "Alguien ha puesto una foto tuya en los tablones de todo el colegio."
+                "text": "有人把你的照片贴到了学校的每一个公告板上。"
             },
             {
-                "text": "En el patio también estaba."
+                "text": "操场上也有。"
             },
             {
-                "text": "Creo que deberías hablar con algún profesor."
+                "text": "我觉得你应该去找任何有空的老师谈谈。"
             }
         ],
         "talked": {
-            "text": "Ignora lo del tablón."
+            "text": "别看公告板了。"
         }
     }
 }

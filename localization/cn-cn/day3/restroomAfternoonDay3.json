@@ -1,103 +1,102 @@
 {
     "guille": {
         "maleRestroom": {
-            "text": "Así que eras tú el de la nota, Guille."
+            "text": "所以写纸条的那个人…是你，吉列尔莫。"
         },
 
         "femaleRestroom": [
             {
-                "text": "¿Qué haces en el baño de chicas, Guille?"
+                "text": "你在女厕所干什么， 吉列尔莫？"
             },
             {
-                "text": "No puedes estar aquí. Vete."
+                "text": "你不可以在这里， 走开。"
             }
         ],
         "explainRestroom": {
-            "text": "Tenía que hablar contigo, yo te pasé la notita."
+            "text": "我需要跟你谈谈。我就是留下这张纸条的人。"
         },
 
         "ask": [
             {
-                "text": "¿Ahora si me hablas?"
+                "text": "那你现在跟我说话了。"
             },
             {
-                "text": "¿A qué viene esto de que más de media clase me ignore?"
+                "text": "为什么班上有一半的人都不理我？"
             }
         ],
         "explanation": [
             {
-                "text": "De eso te quería hablar."
+                "text": "这就是我想跟你说的。"
             },
             {
-                "text": "No puedo hablar contigo mientras Álex o alguno de sus amigos pueda verme."
+                "text": "我不能在亚历山大或他任何朋友能看到我们的地方跟你说话。"
             },
             {
-                "text": "Me ha amenazado con mandarle a mis padres una foto mía del año pasado en la que salgo con una cerveza y un cigarrillo."
+                "text": "他威胁我说要把我抽烟喝酒的照片发给我父母。"
             },
             {
-                "text": "Mis padres son muy estrictos, y si la ven, no se que podrá pasar. Igual me mandan a otro instituto."
+                "text": "我爸妈管得很严，要是他们发现了，我不知道会发生什么…他们甚至可能会把我送到另一所高中。"
             }
         ],
         "explanationQuestion": {
-            "text": "¿Pero por qué Álex no quiere que nadie hable conmigo?"
+            "text": "但为什么亚历山大不想让任何人跟我说话？"
         },
         "continueExplanation": [
             {
-                "text": "No lo sabemos. La tiene tomada contigo desde el primer día."
+                "text": "我们不知道，他从第一天起就对你有意见。"
             },
             {
-                "text": "Mucha gente le hace caso porque quiere, pero somos unos cuantos a los que nos ha amenazado."
+                "text": "太多人会按他的意愿行事，但我们中有些人被他威胁过。"
             },
             {
-                "text": "A María le pasó algo parecido a lo tuyo el año pasado, aunque fue cosa de Ana."
+                "text": "去年玛丽亚也发生过类似的事情，虽然那是安娜干的。"
             },
             {
-                "text": "Desde entonces no tiene amigos y cuando alguno de nosotros intenta hablar con ella... nos ignora."
+                "text": "从那以后她就没有朋友了，当有人想跟她说话时…她就无视我们。"
             },
             {
-                "text": "No nos ha perdonado."
+                "text": "她还没原谅我们。"
             },
             {
-                "text": "Bueno... Sólo quería decirte que lo siento, pero hasta que a Álex se le pase el mosqueo no podré hablar contigo."
+                "text": "好吧…我只想说对不起，但在亚历山大不再生气之前，我不能跟你说话。"
             },
             {
-                "text": "Lo siento mucho,{{name}}."
+                "text": "我真的很抱歉，{{name}}。"
             }
         ],
 
         "choices": [
             {
-                "text": "¿Y ya está? ¿Álex se sale con la suya?"
+                "text": "就这样？亚历山大得到了他想要的？"
             },
             {
-                "text": "¿Y mi foto en el tablón? ¿Ha sido Álex?"
+                "text": "那我贴在公告板上的照片呢？是亚历山大干的吗？"
             }
         ],
         "apology": [
             {
-                "text": "De verdad que lo siento."
+                "text": "我真的很抱歉，说真的。"
             },
             {
-                "text": "Pero no quiero que me haga también la vida imposible a mí."
+                "text": "但我不想让他也让我的生活变得悲惨。"
             }
         ],
         "aboutBoard": [
             {
-                "text": "Eso fue cosa de Ana."
+                "text": "那是安娜的作风。"
             },
             {
-                "text": "Está muy pillada por Álex y si él te putea, ella va a hacer lo mismo."
+                "text": "她真的很喜欢亚历山大，如果他跟你过不去，她也会对你做同样的事情。"
             },
             {
-                "text": "Y José es su perrito faldero. No sabe pensar por sí mismo."
+                "text": "还有何塞，他是亚历山大的忠实追随者，自己没有主见。"
             },
             {
-                "text": "Evita a los tres."
+                "text": "避开他们三个。"
             }
         ],
         "talked": {
-            "text": "Lo siento mucho, de verdad, pero mis padres no pueden enterarse."
+            "text": "我真的很抱歉，说真的，但我父母不能知道这件事。"
         }
-
     }
 }

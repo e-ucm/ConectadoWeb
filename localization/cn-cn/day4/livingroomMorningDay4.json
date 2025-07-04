@@ -1,45 +1,45 @@
 {
     "mom_dad": {
         "meeting": {
-            "text": "Hemos decidido ir a hablar con tu tutor para ver qué está pasando en el colegio."
+            "text": "我们决定去和你的老师谈谈，看看发生了什么。"
         },
         "meeting2": {
-            "text": "Vamos a pedirle una cita para mañana."
+            "text": "我们打算要求明天见面。"
         },
         "choices": [
             {
-                "text": "Gracias."
+                "text": "****Thanks。"
             },
             {
-                "text": "Va a ser peor."
+                "text": "****It'll be worse…"
             }
         ],
         "thanks": {
-            "text": "De nada, cariño. Queremos que estés bien."
+            "text": "完全不是那样的，亲爱的，我们希望你好好的。"
         },
         "thanks2": {
-            "text": "Intentaremos tener la reunión mañana como muy tarde."
+            "text": "我们最迟明天要安排这次会面。"
         },
         "downplay": [
             {
-                "text": "No quiero que vayáis. Será peor."
+                "text": "我不想你们去。那样会更糟。"
             },
             {
-                "text": "Creerán que soy un chivato y tampoco ha sido para tanto."
+                "text": "他们会认为我是告密的人，而且其实这也不是什么大事。"
             },
             {
-                "text": "Dejadlo estar. El tiempo lo solucionará."
+                "text": "别管了，时间会解决一切的。"
             }
         ],
         "downplay2": {
-            "text": "Bien. Pero si va a más dínoslo."
+            "text": "好吧，但如果事情变得更糟，一定要告诉我们。"
         },
 
         "talked": {
-            "text": "Ten cuidado y pórtate bien."
+            "text": "保重，小心些。"
         },
         "talked2": {
-            "text": "Y acuérdate que el domingo vamos a visitar a la abuela."
+            "text": "还有，记住我们星期天要去看奶奶。"
         }
     }
 }

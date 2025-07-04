@@ -2,41 +2,41 @@
     "guilleAlison": {
         "choices": [
             {
-                "text": "¿Sabéis quién me ha quitado el móvil y lo ha dejado en el baño?"
+                "text": "你知道是谁拿了我的手机然后把它放在厕所里的吗？"
             },
             {
-                "text": "¿Alguno sabe dónde está mi móvil? Alguien me lo ha quitado."
+                "text": "有人知道我的手机在哪吗？有人把它拿走了。"
             },
             {
-                "text": "Supongo que no me vais a hablar... Paso de deciros nada."
+                "text": "我想你现在不想和我说话…那我就先走了。"
             }
         ],
         "askFound": {
-            "text": "..."
+            "text": "…"
         },
         "askFound2": {
-            "text": "No vamos a chivarnos, pero supongo que ya te imaginas quién tiene la culpa."
+            "text": "我们不会告发他们，但我想你已经猜到是谁了。"
         },
         "askFound3": {
-            "text": "*sshhhhhh*"
+            "text": "嘘嘘嘘嘘"
         },
 
         "askNotFound": {
-            "text": "..."
+            "text": "…"
         },
         "askNotFound2": {
-            "text": "Lo siento, no tenemos ni idea."
+            "text": "对不起，我们不知道。"
         },
         "askNotFound3": {
-            "text": "Gracias Guille."
+            "text": "谢谢你，吉列尔莫。"
         },
         
 
         "talked": {
-            "text": "..."
+            "text": "…"
         },
         "talked2": {
-            "text": "..."
+            "text": "…"
         }
     }
 }

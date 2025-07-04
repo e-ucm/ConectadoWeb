@@ -1,5 +1,5 @@
 {
-    "mainText": "与您的朋友保持联络！",   
+    "mainText": "与您的朋友保持联络！",
     "startButton": "开始",
     "backButton": "返回",
     "warningText": "重要提示！",
@@ -11,7 +11,7 @@
     "userInput": {
         "sideText": "用戶",
         "defaultText": "您的用户名 "
-    }, 
+    },
     "passwordInput": {
         "sideText": "密码",
         "defaultText": "你的密码 "

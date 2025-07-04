@@ -3,73 +3,73 @@
         "choices": [
             {
                 "text": "",
-                "text_male": "¿Habéis sido vosotros? ¿Habéis escondido mi móvil en el baño de chicas?",
-                "text_female": "¿Habéis sido vosotros? ¿Habéis escondido mi móvil en el baño de chicos?"
+                "text_male": "****是你吗？你把我的手机藏在girls洗手间了？",
+                "text_female": "****是你吗？你把我的手机藏在boys洗手间了？"
             },
             {
-                "text": "¿Alguno de vosotros sabe dónde está mi móvil? No tiene gracia."
+                "text": "有人知道我的手机在哪里吗？这不好笑。"
             },
             {
-                "text": "Sé que habéis sido vosotros. No tiene gracia."
+                "text": "我知道是你，这不好笑。"
             }
         ],
 
         "askFound": {
-            "text": "¿Y qué si hemos sido nosotros? ¿Vas a ir llorando a hablar con nuestro tutor, con tus padres...?"
+            "text": "如果我们干的会怎样？你要哭着去找我们的导师，还是你的父母…？"
         },
         "askFound2": [
             {
-                "text": "Jajaja. Seguro que sí."
+                "text": "哈哈哈哈哈，我肯定他会去的。"
             },
             {
-                "text": "Venga, piérdete. Vete a llorar a otro sitio."
+                "text": "快走开，去别的地方哭吧。"
             }
         ],
 
         "askNotFound": [
             {
-                "text": "Quizá."
+                "text": "也许吧"
             },
             {
-                "text": "Te diremos dónde está si vas con María y le pegas este cartel en la espalda."
+                "text": "如果你去把这张海报贴在玛丽亚背上，我们就告诉你手机在哪里。"
             },
             {
-                "text": "(Te da un papel con celo donde se puede lee \"Soy masoca, si lees esto insúltame\")"
+                "text": "（她给你一张纸，上面贴着胶带，写着“我是个受虐狂，如果你看到这句话就来虐待我吧”）"
             },
             {
-                "text": "Vuelve cuando lo hayas hecho. Si no, ni te molestes en volver."
+                "text": "你贴好了再回来…否则，就别白费力气了。"
             }
         ],
 
         "askPrank": {
-            "text": "¿Ya has pegado el cartel a María sin que se dé cuenta?"
+            "text": "你把海报贴在玛丽亚背上，她没注意到吗？"
         },
         "prankChoices": [
             {
-                "text": "Sí."
+                "text": "是的"
             },
             {
-                "text": "No."
+                "text": "没有"
             }
         ],
 
         "hurry": {
-            "text": "¿A qué esperas? Venga, ve a pegar ese cartel a María."
+            "text": "你还在等什么？快来，把那张海报贴在玛丽亚背上。"
         },
         "reveal": {
-            "text": "Jajajaja. Muy bien hecho."
+            "text": "哈哈哈哈哈，干得好。"
         },
         "reveal2": {
             "text": "",
-            "text_male": "Jajaja. Tu móvil está en el baño de chicas.",
-            "text_female": "Jajaja. Tu móvil está en el baño de chicos."
+            "text_male": "****哈哈哈哈哈，你的手机在girls洗手间。",
+            "text_female": "****哈哈哈哈哈，你的手机在boys洗手间。"
         },
 
         "laugh": {
-            "text": "Jajajaja."
+            "text": "哈哈哈哈哈哈哈哈哈哈。"
         },
         "laugh2": {
-            "text": "Jajajaja."
+            "text": "哈哈哈哈哈哈哈哈哈哈。"
         }
     }
 }

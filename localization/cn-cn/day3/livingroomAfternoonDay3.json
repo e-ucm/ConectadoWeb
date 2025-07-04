@@ -2,94 +2,94 @@
     "mom": {
         "notTalked": [
             {
-                "text": "Buenas tardes, cariño"
+                "text": "下午好，亲爱的。"
             },
             {
-                "text": "¿Qué habéis hecho hoy?"
+                "text": "你今天做了什么？"
             }
         ],
         "talked": {
-            "text": "¿Quieres hablar de algo más?"
+            "text": "你还想谈点别的吗？"
         },
         "choices1": [
             {
-                "text": "Nada a destacar."
+                "text": "真的没什么值得注意的。"
             },
             {
-                "text": "María no ha venido."
+                "text": "玛丽亚没来。"
             },
             {
-                "text": "(Hablar de otra cosa)"
+                "text": "（谈论其他话题。）"
             }
         ],
         "maria": {
-            "text": "A María hoy no la he visto."
+            "text": "你今天没看到玛丽亚。"
         },
         
         "choices2": [
             {
-				"text": "La clase."
+				"text": "班级里"
 			},
 			{
-				"text": "(Contarle lo de la foto en los tablones)"
+				"text": "（讲述公告板上的照片。）"
 			},
 			{
-				"text": "(Hablar de otros compañeros)"
+				"text": "（谈论其他同学。）"
 			}
         ],
         "school": [
             {
-                "text": "Casi todos me han ignorado. Pocos hablaban conmigo."
+                "text": "几乎所有人都无视我，他们几乎不跟我说话。"
             },
             {
-                "text": "Es como si todo el mundo me evitara o me hiciera el vacío."
+                "text": "就好像每个人都在躲着我，或者对我冷暴力。"
             }
         ],
         "board": [
             {
-                "text": "Se han dedicado a poner fotos mías en todos los tablones."
+                "text": "他们决定把我的照片贴到学校的每一个公告板上。"
             },
             {
-                "text": "No se qué he hecho mal para que se porten así conmigo."
+                "text": "我不知道我做错了什么，要被这样对待。"
             }
         ],
         "momBoard": [
             {
-				"text": "Luego hablaré con tu padre."
+				"text": "我稍后会跟你爸爸谈谈这件事。"
 			},
 			{
-				"text": "Igual deberíamos ir a hablar con tu tutor a ver qué está pasando."
+				"text": "也许我们应该去找你的老师，看看发生了什么事情。"
 			}
         ],
 
         "choices3": [
             {
-                "text": "He hablado con Guille."
+                "text": "我已经跟吉列尔莫谈过了。"
             },
             {
-                "text": "Me voy a la habitación. Tengo cosas que hacer."
+                "text": "我要回房间了，我有事情要做。"
             }
         ],
         "guille": [
             {
-                "text": "Guille me ha contado que Álex me odia."
+                "text": "吉列尔莫告诉我亚历克斯讨厌我。"
             },
             {
-                "text": "Álex me está haciendo la vida imposible."
+                "text": "亚历克斯让我的日子很难过。"
             },
             {
-                "text": "Y tiene amenazada a media clase para que me ignoren."
+                "text": "他还威胁班级里一半的人不要理我。"
             }
         ],
         "aboutBoard": [
             {
-                "text": "Y me ha contado que Ana es la primera en seguirle el juego a Álex."
+                "text": "他还告诉我安娜是第一个跟他玩这个游戏的人。"
             },
             {
-                "text": "Está mañana ha llegado la primera..."
+                "text": "她今天早上第一个到…"
             },
             {
-                "text": "Y se ha dedicado a poner fotos mías en todos los tablones."
+                "text": "然后决定把我的照片贴满学校的公告板。"
             }
         ]
 

@@ -3,110 +3,110 @@
         "introduction": {
             "root": [
                 {
-                    "text": "I'm going to make sure nobody talks to you."
+                    "text": "I'm going to make sure nobody talks to you。"
                 },
                 {
-                    "text": "You can do whatever you want, but you won't get anything."
+                    "text": "You can do whatever you want， but you won't get anything。"
                 },
                 {
-                    "text": "Go on. Talk to people in class, and see if you get them to talk to you."
+                    "text": "Go on。 Talk to people in class， and see if you get them to talk to you。"
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "I think you've been left alone."
+                    "text": "I think you've been left alone。"
                 },
                 {
-                    "text": "How does it feel to be ignored by everybody?"
+                    "text": "How does it feel to be ignored by everybody？"
                 },
                 {
-                    "text": "Isn't it funny that none cares about you?"
+                    "text": "Isn't it funny that none cares about you？"
                 },
                 {
-                    "text": "Because I'm cracking up just by looking at you."
+                    "text": "Because I'm cracking up just by looking at you。"
                 }
             ]
         }
     },
     "Maria": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "Are you gonna ignore me too?"
+                "text": "Are you gonna ignore me too？"
             },
             {
-                "text": "Didn't they do the same to you? Don't ignore me, you know how it feels."
+                "text": "Didn't they do the same to you？ Don't ignore me， you know how it feels。"
             },
             {
-                "text": "You get me, right?"
+                "text": "You get me， right？"
             }
         ]
     },
     "Guille": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "You're my friend, right?"
+                "text": "You're my friend， right？"
             },
             {
-                "text": "Guille, you're not like the others."
+                "text": "Guille， you're not like the others。"
             },
             {
-                "text": "Don't let them threaten you."
+                "text": "Don't let them threaten you。"
             }
         ]
     },
     "Jose": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "Are you gonna ignore me without a reason? Just because someone has told you to do so?"
+                "text": "Are you gonna ignore me without a reason？ Just because someone has told you to do so？"
             },
             {
-                "text": "We can be friends."
+                "text": "We can be friends。"
             },
             {
-                "text": "What are you? Three? Talk to me."
+                "text": "What are you？ Three？ Talk to me。"
             }
         ]
     },
     "Alison": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "You're my friend, right?"
+                "text": "You're my friend， right？"
             },
             {
-                "text": "You're nice. You're not gonna stop talking to me, aren't you?"
+                "text": "You're nice。 You're not gonna stop talking to me， aren't you？"
             },
             {
-                "text": "Please, talk to me."
+                "text": "Please， talk to me。"
             }
         ]
     },
     "Ana": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "What have I done to you? Why do you come after me?"
+                "text": "What have I done to you？ Why do you come after me？"
             },
             {
-                "text": "If Alex jumps off a bridge, are you gonna jump off too?"
+                "text": "If Alex jumps off a bridge， are you gonna jump off too？"
             },
             {
-                "text": "Can't we just get along?"
+                "text": "Can't we just get along？"
             }
         ]
     }
