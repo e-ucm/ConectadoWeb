@@ -2,161 +2,153 @@
     "alex": {
         "notTalked": [
             {
-                "text": "",
-                "text_male":  "¡¡Eh, nuevo, hablemos un momento!!",
-                "text_female": "¡¡Eh, nueva, hablemos un momento!!"
+                "text": "喂，新来的，我們聊一聊！"
             },
             {
-                "text": "",
-                "text_male": "Hoy estabas sentado en mi sitio. No quiero que te vuelvas a sentar ahí.",
-                "text_female": "Hoy estabas sentada en mi sitio. No quiero que te vuelvas a sentar ahí."
+                "text": "今天你坐了我的坐位，我不想你再坐在那裡。"
             },
             {
-                "text": "A partir de mañana siéntate en la otra mesa del final que está vacía."
+                "text": "從明天開始，你坐在後面的空位。"
             }
         ],
         "talked": {
-            "text": "¿Qué miras? Largo, ya hemos hablado todo lo que teníamos que hablar."
+            "text": "你看什麼呢？走開，我們已經沒什麼可說。"
         },
 
         "choices": [
             {
-                "text": "Vale, perdona, no volverá a pasar."
+                "text": "好的，對不起，不會再發生了。"
             },
             {
-                "text": "Es sólo un sitio."
+                "text": "不過是个坐位而已"
             },
             {
-                "text": "¿Y quién se supone que eres para decirme dónde no puedo sentarme?"
+                "text": "你是誰，憑什麼告訴我能坐哪裡，不能坐哪裡？"
             }
         ],
 
         "submitReply": [
             {
-                "text": "Así me gusta, obediente."
+                "text": "這就對了，聽話點。"
             },
             {
-                "text": "Y ya que estamos, para compensar, dame ese bocadillo que llevas, que tengo hambre."
+                "text": "順帶一提，作為補償，給我那個三文治，我餓了。"
             }
         ],
         "giveSandwich": {
-            "text": "(Le das el bocadillo)"
+            "text": "（你把三文治给了他）"
         },
         "takeSandwich":  {
-            "text": "Venga, fuera de mi vista."
+            "text": "好了，滾開。"
         },
 
         "downplayReply": [
             {
-                "text": "Así es, es sólo un sitio, como todos los demás, pero es mi sitio."
+                "text": "是的，那不過是個坐位，但那是我的坐位。"
             },
             {
-                "text": "Así que búscate otro."
+                "text": "所以你去找別的座位吧。"
             },
             {
-                "text": "(Con tono amenazador) Sino tendré que ayudarte yo a buscarlo."
+                "text": "（用威脅的語氣）否則我會幫你找一個。"
             },
             {
-                "text": "Y el último al que le ayudé a elegir otro sitio lo que encontró fue un moratón en su cara."
+                "text": "我幫上一個找一張座位…他也在他的臉上找到瘀傷。"
             },
             {
-                "text": "Y ahora lárgate."
+                "text": "現在走開。"
             }
         ],
 
         "defyReply": {
-            "text": "",
-            "text_male": "¿Vas de listo?",
-            "text_female": "¿Vas de lista?"
+            "text": "你挺聰明的，不是嗎？"
         },
         "push": {
-            "text": "(Recibes un empujón)"
+            "text": "（你被推了一下）"
         },
         "insult": {
-            "text": "",
-            "text_male": "Que así sea, capullo",
-            "text_female":  "Que así sea, estúpida"
+            "text": "就這樣吧，蠢材。"
         },
         "leave": {
-            "text": "(Alejandro se va)"
+            "text": "（阿歷離開了）"
         }
     },
 
     "alison": {
         "notTalked": [
             {
-                "text": "Dónde lo habré perdido..."
+                "text": "我到底把它丟在哪裡了…"
             },
             {
-                "text": "Perdona {{name}}, no te había visto."
+                "text": "對不起{{name}}，我沒看到你。"
             },
             {
-                "text": "Estoy buscando un pendiente, no sé dónde lo he podido perder."
+                "text": "我在找一隻耳環，我不知道它掉在哪裡了。"
             }
         ],
         "talked": [
             {
-                "text": "¿Aún no has encontrado nada?"
+                "text": "你還沒找到嗎？"
             },
             {
-                "text": "Sigue buscando, por favor."
+                "text": "請繼續幫我找找。"
             }
         ],
 
         "choices1": [
             {
-                "text": "¿Has mirado en el pasillo?"
+                "text": "你在走廊找過了嗎？"
             },
             {
-                "text": "¿Has buscado en el patio?"
+                "text": "你在操場找過了嗎？"
             },
             {
-                "text": "Quizá lo hayas dejado en casa..."
+                "text": "或許你把它忘在家裡了…"
             }
         ],
         "didntCheck": [
             {
-                "text": "No he mirado aún."
+                "text": "我還沒找過。"
             },
             {
-                "text": "¿Puedes ir tú? Mientras termino de buscar en clase..."
+                "text": "我還要在教室繼續找…你能去那裡找找找嗎？"
             },
             {
-                "text": "Me harías un gran favor."
+                "text": "你會幫我一個很大的忙。"
             }
         ],
         "cry": [
             {
-                "text": "No puede ser, esta mañana lo llevaba."
+                "text": "不可能的，今天早上我還戴著。"
             },
             {
-                "text": "So- so- son nuevos, un re... regalo."
+                "text": "它-它-它們是新的，一份禮…禮物。"
             }
         ],
         "playerThoughts": {
-            "text": "(Notas que está muy preocupada y a punto de llorar)"
+            "text": "（你注意到她非常擔心，快要哭了）"
         },
         "beg" :{
-            "text": "Por favor, *snif* , *snif*, ¿puedes ayudarme a encontrarlo?"            
+            "text": "拜託，*抽泣* *抽泣* 你能幫我找找它們嗎？"            
         },
         "choices2": [
             {
-                "text": "De acuerdo, echaré un vistazo."
+                "text": "好的，我去看看。"
             },
             {
-                "text": "Si (Iré a disfrutar del recreo y luego le diré que no he encontrado nada)."
+                "text": "好（我會享受小息及告訴她沒沒有找到任何東西）。"
             }
         ],
         "illusionOfFreeChoice": [
             {
-                "text": "Muchas gracias."
+                "text": "非常感謝你。"
             },
             {
-                "text": "Además, toma mi número. Así podemos escribirnos."
+                "text": "另外，這是我的電話號碼，這樣我們可以互發訊息。"
             }
         ],
         "exchangePhoneNumber": {
-            "text": "(También le das tu número)"
+            "text": "（你也給她你的電話號嗎）"
         }
         
     },
@@ -165,10 +157,10 @@
     "door": {
         "root": [
             {
-                "text": "Alison parece preocupada."
+                "text": "愛莉看來很擔心。"
             },
             {
-                "text": "Debería hablar con ella para ver que pasa."
+                "text": "我應該和她聊聊，看看發生了什麼事。"
             }
         ]
     }

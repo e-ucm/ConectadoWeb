@@ -2,15 +2,15 @@
     "player_stairs": {
         "root": [
             {
-                "text": "Ya se ha ido todo el mundo."
+                "text": "所有人已經走晒。"
             },
             {
                 "text": "",
-                "text_male": "¿Debería fiarme de Álex e ir al baño para hablar con él?",
-                "text_female": "¿Debería fiarme de Álex e ir al baño para hablar con Ana?"
+                "text_male": "我應唔應該相信阿歷。走入廁所同他講？",
+                "text_female": "我應唔應該相信阿歷。走入廁所同安娜講？"
             },
             {
-                "text": "Si voy, ¿me dejarán en paz de una vez por todas?"
+                "text": "如果要去，係唔係一次就係咁多？"
             }
         ]
     },
@@ -18,24 +18,24 @@
     
     "class": {
         "root": {
-            "text": "No tengo nada que hacer dentro de clase."
+            "text": "我沒有需要在班上完成的事情。"
         }
     },
 
     "alex_stairs": {
         "root": [
             {
-                "text": "¿De verdad? No me digas que te ibas a ir sin pasar por el baño."
+                "text": "真係？你冇入過廁所就想走。"
             },
             {
-                "text": "Piensa que es para arreglar todo. Vamos... voy contigo."
+                "text": "諗吓呢次係攪掂所有嘢既機會。嚟啦…我會陪你走。"
             }
         ]
     },
 
     "alex_corridor": {
         "root": {
-            "text": "Venga, pasa al baño."
+            "text": "嚟喇，入去廁所。"
         }
     }
 }

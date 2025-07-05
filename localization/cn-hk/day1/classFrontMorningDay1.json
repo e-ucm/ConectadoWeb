@@ -1,52 +1,50 @@
 {
     "ana": {
         "root": {
-            "text": "Me parece que te has equivocado de clase."
+            "text": "我想你走錯教室了。"
         },
         "choices": [
             {
-                "text": "No, es que hoy es mi primer día. Soy {{name}}."
+                "text": "不，今天是我第一天上學，我是{{name}}。"
             },
             {
-                "text": "¿Y tú quién eres? ¿La marimacho de clase?"
+                "text": "而你是誰？班上的男人婆？"
             }
         ],
         
         "introduce": [
             {
-                "text": "",
-                "text_male": "Oh, así que tú eres {{name}}, el nuevo.",
-                "text_female": "Oh, así que tú eres {{name}}, la nueva."
+                "text": "哦，原來你是新同學啊。"
             },
             {
-                "text": "Yo soy Ana. También estoy en esta clase."
+                "text": "Y我是安娜，我也是這個班的。"
             }
         ],
         "insult": {
-            "text": "Imbécil de mierda..."
+            "text": "你是個討厭鬼…"
         },
 
         "teacherArrive": {
-            "text": "(Ruidos de fondo. Parece que tu nuevo profesor ha llegado)"
+            "text": "（背景聲音，看來你們的新老師來了）"
         },
         "teacher": {
-            "text": "Vamos a empezar la clase, venga, pasad todos y sentaos."
+            "text": "大家快點，課堂要開始了，進來坐好。"
         },
 
         "chooseSit":[
             {
-                "text": "(Sentarse en última fila)"
+                "text": "（坐在最後一行）"
             },
             {
-                "text": "(Preguntar dónde puedes sentarte)"
+                "text": "（詢問你可以坐在哪裡）"
             }
         ],
         "ask": [
             {
-                "text": "Siéntate al lado de Alison."
+                "text": "坐在愛莉旁邊。"
             },
             {
-                "text": "Alison, haz el favor de resolver todas las dudas que tenga {{name}} sobre el colegio."
+                "text": "愛莉，請幫忙解答{{name}}對學校的任何疑問。"
             }
         ] 
 
@@ -55,27 +53,27 @@
     "teacher": {
         "root": [
             {
-                "text": "{{name}} ¿verdad?"
+                "text": "{{name}}對嗎？"
             },
             {
-                "text": "Llegar tarde tu primer día, no es una buena manera de empezar."
+                "text": "第一天上學就遲到可不是一個好開始。"
             },
             {
                 "text": "",
-                "text_male": "Clase, este es vuestro nuevo compañero, por favor, ayudadlo en sus primeros días.",
-                "text_female": "Clase, esta es vuestra nueva compañera, por favor, ayudadla en sus primeros días."
+                "text_male": "同學們，這是你的新同學，請在頭幾天幫幫他。",
+                "text_female": "同學們，這是你的新同學，請在頭幾天幫幫她。"
             },
             {
-                "text": "{{name}}, yo soy vuestro tutor. Cualquier cosa que necesites, dímelo."
+                "text": "{{name}}， 我是你的導師，如果你需要任何幫助，請告訴我。"
             },
             {
-                "text": "Por favor, {{name}} siéntate al lado de Alison."
+                "text": "請，{{name}}坐在愛莉旁邊。"
             },
             {
-                "text": "Alison, haz el favor de resolver todas las dudas que tenga {{name}} sobre el colegio."
+                "text": "愛莉，請幫忙解答{{name}}對學校的任何疑問。"
             },
             {
-                "text": "Continuemos con la clase."
+                "text": "我們繼續上課。"
             }
         ]
     }

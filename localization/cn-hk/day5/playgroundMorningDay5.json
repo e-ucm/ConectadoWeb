@@ -2,68 +2,66 @@
     "alison": {
         "passwordExchanged": [
             {
-                "text": "Te has ganado lo que ha pasado."
+                "text": "發生係你既事係你應得既。"
             },
             {
-                "text": "¿Cómo se te ocurre darme tu contraseña?"
+                "text": "當你俾我密碼時你係度諗乜野？"
             }
         ],
         "phoneStolen": {
-            "text": "Si hubieras confiado en mí, igual esto no habría pasado. Es tu culpa."
+            "text": "如果你相信我，會冇呢啲嘢發生。係你既錯。"
         },
 
         "talked": {
-            "text": "Vete, no tenemos de que hablar."
+            "text": "走開，我地無嘢好傾。"
         }
     },
 
     "ana": {
         "passwordExchanged": [
             {
-                "text": "No me creo que le dieras tu contraseña a Alison."
+                "text": "我唔能夠相信你俾密碼俾愛莉。"
             },
             {
-                "text": "¿De verdad te pensabas que iba a ser tu amiga? No me creo lo fácil que fué engañarte."
+                "text": "你有冇諗過佢會係你既朋友？我唔相信會咁容易囉。"
             },
             {
-                "text": "¡¡¡Jajajaja!!! En serio, me parto contigo."
+                "text": "哈哈哈哈！！！講真，我笑緊你。"
             }
         ],
         "phoneFound": [
             {
-                "text": "¡¡¡Jajajaja!!! No me creo que no tuvieras patrón de desbloqueo en el móvil."
+                "text": "哈哈哈哈！！！ 我唔相信你既電話冇鎖機圖案。"
             },
             {
-                "text": "Pensaba que iba a ser más difícil..."
+                "text": "我覺得會再難啲…"
             },
             {
                 "text": "",
-                "text_male": "Que divertido va a ser el día. Ahora la mayoría piensa que eres de verdad un marica vicioso que le da a todo.",
-                "text_female": "Que divertido va a ser el día, ahora la mayoría piensa que eres de verdad una puta viciosa."
+                "text_male": "今日會係好好笑既日子。依家所有人都覺得你係真係一名他媽的喜歡這一切的人。",
+                "text_female": "今日會係好好笑既日子。依家所有人都覺得你係真係一名他媽的淫蕩妓女。"
             }
         ],
         "phoneNotFound": [
             {
-                "text": "Mira quién ha llegado. Y yo que pensaba que hoy no vendrías."
+                "text": "你睇吓邊個係度，我以為你今日唔會出現。"
             },
             {
-                "text": "¿Aún sigues sin móvil? Jajaja. No era tan difícil encontrarlo si hubieras buscado bien."
+                "text": "仲冇電話？哈哈哈，如果你搵得夠徹底既話係唔會咁難搵既。"
             },
             {
-                "text": "",
-                "text_male": "Hay que ser estúpido.",
-                "text_female": "Hay que ser estúpida."
+                "text": "依個討厭鬼…"
             },
             {
-                "text": "¿De dónde has salido? Jajaja."
+                "text": "你嚟自邊度？哈哈哈。"
             }
         ],
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<學校鐘聲響起>>"
         },
 
         "talked": {
-            "text": "Jajajaja. Margi."
+            "text": "哈哈哈哈，低賤既人。"
         }
     }
 }

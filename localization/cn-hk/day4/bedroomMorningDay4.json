@@ -1,26 +1,26 @@
 {
     "bag": {
         "root": {
-            "text": "Habrá que irse... "
+            "text": "我要行喇…"
         }
     },
 
     "wardrobe1": {
         "root": {
-            "text": "No hay nada útil dentro."
+            "text": "這裡沒有什麼有用的東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "Igual puedo ordenar ahora en vez de ir a clase... Mamá se enfadaría."
+            "text": "我依家整返好佢，好過去返學… 媽咪會嬲。"
         }
     },
 
     
     "bed": {
         "root": {
-            "text": "Otro día más, tengo que irme, espero que se pase rápido."
+            "text": "又一日，我要走啦，希望快啲完。"
         }
     }
     

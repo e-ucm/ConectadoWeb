@@ -1,13 +1,13 @@
 {
     "wardrobe1": {
         "root": {
-            "text": "No hay nada útil dentro."
+            "text": "這裡沒有什麼有用的東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "No necesito buscar nada de aquí dentro."
+            "text": "我冇嘢需要。"
         }
     },
 
@@ -18,21 +18,21 @@
             },
             "choices": [
                 {
-                    "text": "Sí."
+                    "text": "係"
                 },
                 {
-                    "text": "No."
+                    "text": "唔係"
                 }
             ],
         "noPhone": [
             {
-                "text": "Pero no tengo móvil para ponerme el despertador."
+                "text": "但係我而家用唔到電話嘅鬧鐘。"
             },
             {
-                "text": "Mmmm, usaré mi móvil viejo, pero al estar sin SIM y no tener nada sólo me servirá como despertador."
+                "text": "嗯，我會用返部舊電話，但係冇SIM卡，淨係可以當鬧鐘"
             },
             {
-                "text": "Vale, despertador listo... Hora de dormir."
+                "text": "好啦，校咗鬧鐘，準備瞓覺。"
             }
         ]
     },

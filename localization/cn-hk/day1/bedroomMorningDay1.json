@@ -2,29 +2,29 @@
     "bag": {
         "root": [
             {
-                "text": "Creo que tengo todo preparado..."
+                "text": "我想我一切都準備好了…"
             },
             {
-                "text": "Sí, lo llevo todo. Será mejor que coja la mochila y me marche ya."
+                "text": "好的，我已拿齊所有東西。現在帶上背包，趕緊出發。"
             }
         ]
     },
 
     "wardrobe1": {
         "root": {
-            "text": "No hay nada útil dentro."
+            "text": "這裡沒有什麼有用的東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "En algún momento tendré que ordenar todo esto, pero ahora tengo que irme a clase."
+            "text": "我最終必須把這裏清理乾淨，但現在我必須返學。"
         }
     },
     
     "bed": {
         "root": {
-            "text": "Ahora que me he conseguido levantar no debería volver a acostarme."
+            "text": "既然我已經起床了，就不應該再躺下。"
         }
     }
 

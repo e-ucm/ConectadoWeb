@@ -2,10 +2,10 @@
     "dad": {
         "root": [
             {
-                "text": "Habla con tu madre."
+                "text": "同你媽咪講。"
             },
             {
-                "text": "Quiere saber qué tal te ha ido el día."
+                "text": "佢想知道你今日過得點。"
             }
         ]
     },
@@ -13,142 +13,142 @@
     "mom": {
         "notTalked": [
             {
-                "text": "Ya has vuelto, {{name}}."
+                "text": "你返嚟啦，{{name}}。"
             },
             {
-                "text": "¿Qué tal te ha ido el día?"
+                "text": "今日過成點呀？"
             }
         ],
         "talked": {
-            "text": "¿Quieres que hablemos un rato?"
+            "text": "想唔想傾一陣偈？"
         },
         "talked2": {
-            "text": "¿Qué tal el día?"
+            "text": "今日過得點呀？"
         },
 
         "choices1": [
             {
-                "text": "Bien, normal, me voy a mi cuarto."
+                "text": "好，同平時一樣，我返房啦。"
             },
             {
-                "text": "Hoy Álex y Ana me han intentado chantajear."
+                "text": "今日阿歷同安娜或過威脅我。"
             },
             {
-                "text": "Hoy Álex y Ana me han chantajeado."
+                "text": "今日阿歷同安娜威脅咗我。"
             },
             {
-                "text": "(Hablar de otra cosa)"
+                "text": "（轉話題）"
             }
         ],
 
         "mariaNotPranked": [
             {
-                "text": "Han intentado que le ponga un cartel a María."
+                "text": "佢哋試過逼我貼瑪莉亞嘅海報。"
             },
             {
-                "text": "Se creen los reyes del colegio o algo."
+                "text": "佢哋自稱係咩學校之王喎。"
             }
         ],
         "mariaPranked": [
             {
-                "text": "Han hecho que le ponga un cartel a María."
+                "text": "佢哋逼我貼瑪莉亞嘅海報…"
             },
             {
-                "text": "No me han dado otra opción para recuperar el móvil que me habían quitado."
+                "text": "如果我要攞返部手機，就要咁做。"
             }
         ],
 
         "choices2": [
             {
-                "text": "Hoy he perdido el móvil."
+                "text": "我今日唔見咗部電話。"
             },
             {
-                "text": "Alguien me ha quitado el móvil."
+                "text": "有人攞咗我部電話。"
             },
             {
-                "text": "Alison, puedo confiar en ella."
+                "text": "愛莉，我信佢。"
             },
             {
-                "text": "Me voy a la habitación. Ya hemos hablado suficiente."
+                "text": "我返房啦，我哋已經傾夠啦。"
             }
         ],
         "lostPhone": {
-            "text": "Hoy me han quitado el móvil y no he podido recuperarlo."
+            "text": "佢哋攞咗我部手機，我攞唔返。"
         },
         "lostPhone2": {
-            "text": "Pues te has quedado sin móvil. Tienes que tener más cuidado con las cosas."
+            "text": "咁就冇手機啦。咁你要小心自己嘅嘢呀。"
         },
 
         "foundPhone": [
             {
-                "text": "Hoy me han quitado el móvil."
+                "text": "佢哋今日攞走咗我部電話。"
             },
             {
                 "text": "",
-                "text_male": "Y alguien lo ha dejado tirado en el baño de chicas.",
-                "text_female": "Y alguien lo ha dejado tirado en el baño de chicos."
+                "text_male": "有人將部電話女留喺廁所。",
+                "text_female": "有人將部電話男留喺廁所。"
             }
         ],
         "foundPhone2": {
-            "text": "Tienes que tener más cuidado con las cosas. No puedes dejarlas en cualquier sitio."
+            "text": "你要小心自己嘅嘢，唔可以隨便擺。"
         },
 
         "exchangedPassword": [
             {
-                "text": "Alison me ha sorprendido. De verdad puedo confiar en ella."
+                "text": "愛莉比到驚喜我，我可以真係信任佢。"
             },
             {
-                "text": "Hoy hemos intercambiado nuestras contraseñas."
+                "text": "今日我哋交換咗密碼。"
             }
         ],
         "exchangedPassword2": [
             {
-				"text": "¿¡Cómo se te ocurre!? ¿Y si las comparte o se hace pasar por ti?"
+				"text": "你夠膽咁做！？如果佢分享你嘅密碼，或者扮你咁點算。"
 			},
 			{
-				"text": "¿Es que no piensas en lo que haces?"
+				"text": "你諗下自己做緊乜？"
 			}
         ],
         "exchangedPassword3": [
             {
-                "text": "Pero yo tengo sus contraseñas también. Confió en ella."
+                "text": "但我都有佢嘅密碼。我信佢。"
             },
             {
-                "text": "Es la única que quiere ser mi amiga."
+                "text": "佢係唯一一個想同我做朋友嘅人。"
             }
         ],
 
         "commonPhone": {
-            "text": "No ha sido culpa mía."
+            "text": "依嗰唔係我嘅錯。"
         },
         "commonPhone2": {
-            "text": "Eso no quita que debas vigilar tus cosas. De todas formas..."
+            "text": "但呢個唔係漏低自己嘢嘅理由。算啦…"
         },
 
         "suggestMeeting": {
-            "text": "Creo que deberíamos hablar con el colegio sobre todo lo que está pasando."
+            "text": "我諗要同學校傾下，睇下發生咗咩事。"
         },
         "meetingChoices": [
             {
-                "text": "Si, por favor. No puedo más."
+                "text": "好，我真係頂唔順啦。"
             },
             {
-                "text": "No. La tomarán aún más conmigo."
+                "text": "唔好，咁會仲弊。"
             }
         ],
         "acceptMeeting": {
-            "text": "No te preocupes cariño. Vamos a solucionar todo."
+            "text": "唔使擔心，我哋會搞掂一切。"
         },
 
         "rejectMeeting": {
-            "text": "De acuerdo. Por ahora no iremos al colegio."
+            "text": "****Alright。 We won't go for now。"
         },
         "rejectMeeting2": {
-            "text": "Pero en cuanto pase algo más grave... no nos vamos a quedar sentados."
+            "text": "但如果真係發生咩嚴重嘅事，咁冇人可以阻止。"
         },
 
         "meetingSuccess": {
-            "text": "Más motivos para que nos reunamos con el colegio mañana y solucionemos esto."
+            "text": "咁更加有理由聽日去校長室解決哂件事。"
         }
     },
 
@@ -186,88 +186,86 @@
             "text": "這個是什麼？點解講呢啲話？"
         },
         "message6": {
-           "text": "最好的一天但我錯過了...我失去咗乜野？"
+           "text": "最好的一天但我錯過了…我失去咗乜野？"
         },
         "message7": {
             "text": "",
-            "text_male": "你已經過界了，誰在搞怪他?",
-            "text_female": "你已經過界了，誰在搞怪她?"
+            "text_male": "你已經過界了，誰在搞怪他？",
+            "text_female": "你已經過界了，誰在搞怪她？"
         },
         "message8": {
             "text": "沒有，怎麼了，吉耶？你被騙了並且不想讓人知道？哈哈哈"
         },
         "choices": [
             {
-                "text": "Yo no he escrito nada"
+                "text": "我冇寫到任何野"
             },
             {
-                "text": "Álex, Ana, que os den"
+                "text": "阿歷，安娜，攪錯呀你"
             },
             {
-                "text": "Como oís, me encanta"
+                "text": "就你所聽到既，我愛佢"
             }
         ],
 
         "notMe": {
-            "text": "alguien ha usado mi móvil para escribir eso"
+            "text": "有人用我的手機寫咗呢個"
         },
         "notMe2": {
-            "text": "ya tenemos fotos de lo que has dicho, vamos a compartirselas a todas las clases jajaja"
+            "text": "我們有你所講既相，我們會跟其他課室分享，哈哈哈"
         },
         "notMe3": {
-            "text": "jajaja ya es tarde para negar nada :P"
+            "text": "哈哈哈現在否認什乜野都太遲啦 :P"
         },
 
         "fkU": {
-            "text": "Álex, Ana, que os den, sé que es cosa vuestra"
+            "text": "阿歷，安娜，操你哋兩個的，我知道係你哋既嘢"
         },
         "fkU2": {
-            "text": "quiza lo sea, y q? ya tenemos fotos de la conversacion"
+            "text": "可能係，咁又點？我哋已經有對話既相啦"
         },
         "fkU3": {
-            "text": "mañana sabra todo el mundo tus gustos jajaja"
+            "text": "明天大家都會知道你既個人品味哈哈哈"
         },
 
         "agree": {
-            "text": "Como oís, me encanta, algún problema? ENVIDIOSOS!!"
+            "text": "係呀，我鐘意佢，有乜野問題？咁，我鐘意佢，仲有乜野問題？你妒忌啦！"
         }
     },
 
     "mariaChat": {
         "root": {
             "text": "",
-            "text_male": "你很性感, 明天係廁所你就會知道 ;)",
-            "text_female": "我是女人，我了解你明天係廁所你就會知道 ;)"
+            "text_male": "你很性感，明天係廁所你就會知道 ;）",
+            "text_female": "我是女人，我了解你明天係廁所你就會知道 ;）"
         },
         "message2": {
-            "text": "呢個太唔似你啦{{name}}, 你被坑了是吧?"
+            "text": "呢個太唔似你啦{{name}}，你被坑了是吧？"
         },
         "choices": [
             {
-                "text": "Yo no he escrito nada"
+                "text": "我冇寫到任何野"
             },
             {
-                "text": "Si, he sido yo"
+                "text": "係，係我"
             },
             {
-                "text": "(No contestar)"
+                "text": "（唔答）"
             }
         ],
 
         "notMe": {
-            "text": "perdona María, no te he escrito yo, debieron escribirte cuando me quitaron el móvil"
+            "text": "對唔住，瑪莉亞，呢啲唔係我寫的，他們偷我手機的時候可能會寫信給你"
         },
         "notMe2": {
-            "text": "lo siento mucho, de verdad"
+            "text": "我好對唔住，真的"
         },
         "notMe3": {
-            "text": "",
-            "text_male": "te creo, tranquilo, descansa",
-            "text_female": "te creo, tranquila, descansa"
+            "text": "我信你，放鬆，休息一下"
         },
 
         "wasMe": {
-            "text": "si, lo escribí yo, mañana nos vemos guapa"
+            "text": "係既，我寫咗，明天見 <3"
         }
     }
 

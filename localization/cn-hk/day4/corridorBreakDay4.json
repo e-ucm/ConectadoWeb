@@ -1,42 +1,42 @@
 {
     "maria": {
         "normal": {
-            "text": "Me alegro de que hoy hayas venido."
+            "text": "好開心你今日嚟咗。"
         },
         
         "notFound": {
-            "text": "¿Has visto mi móvil?"
+            "text": "你有冇見過我部電話？"
         },
         "notFound2": [
             {
-                "text": "No, ni idea. Revisa bien la clase por si acaso."
+                "text": "冇，冇辦法，喺小息嘅時候再檢查多次。"
             },
             {
-                "text": "Si veo algo, te aviso."
+                "text": "如果我見到，我實會同你講。"
             }
         ],
 
         "found": {
-            "text": "¿Has visto si ha entrado alguien a los baños recientemente?"
+            "text": "你最近有冇見過有人入廁所？"
         },
         "found2": {
-            "text": "No me he fijado, lo siento."
+            "text": "唔好意思，我冇留意到。"
         },
 
         "prankChoices": [
             {
-                "text": "Buenas, María."
+                "text": "喂，瑪莉亞。"
             },
             {
-                "text": "(Pegar el cartel con cuidado e irte sin decir nada)"
+                "text": "（小心地貼枱，之後靜雞雞咁走）"
             }
         ],
         "pranked": [
             {
-                "text": "(Bien. Parece que no se ha dado cuenta)"
+                "text": "（好，睇嚟佢冇留意到）"
             },
             {
-                "text": "(Espero que ahora me digan dónde está mi móvil)"
+                "text": "（我希望佢依家可以同我講我部電話喺邊）"
             }
         ]
     },
@@ -49,10 +49,10 @@
         },
         "choices": [
             {
-                "text": "(Entrar de todas formas)"
+                "text": "（點都要入去）"
             },
             {
-                "text": "(Marcharse)"
+                "text": "（走）"
             }
         ]
     }

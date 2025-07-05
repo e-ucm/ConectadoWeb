@@ -2,15 +2,15 @@
     "phone": {
         "root": [
             {
-                "text": "Es mi móvil."
+                "text": "呢部係我嘅電話。"
             },
             {
                 "text": "",
-                "text_male": "¿Quién me lo ha quitado y lo ha dejado en el baño de chicas?",
-                "text_female": "¿Quién me lo ha quitado y lo ha dejado en el baño de chicos?"
+                "text_male": "邊個攞咗部電話，仲要擺喺女廁所？",
+                "text_female": "邊個攞咗部電話，仲要擺喺男廁所？"
             },
             {
-                "text": "Mierda, encima no enciende. Espero que sea cosa de la batería. En cuanto llegue a casa se la cambio."
+                "text": "大鑊，開唔到機。希望只係冇電喇，等陣返到屋企即刻叉電。"
             }
         ]
     }

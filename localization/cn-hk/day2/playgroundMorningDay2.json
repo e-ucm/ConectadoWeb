@@ -1,120 +1,120 @@
 {
     "ana": {
         "talked": {
-            "text": "Piérdete. No tengo nada que hablar contigo."
+            "text": "走開。我沒什麼好跟你說的。"
         },
         "mean": {
-            "text": "¿Qué estás mirando? Di algo o vete."
+            "text": "你在看什麼？說點什麼或滾開。"
         },
         "normal": [
             {
-                "text": "Buenos días, {{name}}."
+                "text": "早上好，{{name}}。"
             },
             {
-                "text": "¿Querías algo?"
+                "text": "你有什麼事嗎？"
             }
         ],
         "choices": [
             {
-                "text": "Nada (te vas)."
+                "text": "沒什麼（你離開）。"
             },
             {
-                "text": "Me han dicho que has hablado con Álex de gastarme una broma."
+                "text": "我聽講你和阿歷正在談論一些惡作劇。"
             }
         ],
         "warnMean": {
-            "text": "Sí, ¿y? Venga, vete."
+            "text": "是啊，那又怎樣？走開吧"
         },
         "warnNormal": [
             {
-                "text": "Vaya, nos has pillado. Era una tontería."
+                "text": "該死的，你掲穿了我們，這太傻了。"
             },
             {
-                "text": "Pero ya no tiene gracia. No la haremos."
+                "text": "但這已經不好玩了，我們不會做的。"
             }
         ]
     },
 
     "maria": {
         "talked": {
-            "text": "Ya he hablado con María. Debería ver quién más hay por el patio esperando a que suene la campana."
+            "text": "我已經和瑪莉亞談過。我應該在操場上尋找等待鐘聲響起的人。"
         },
         "notMet": {
-            "text":  "¿Querías algo?"
+            "text":  "你有什麼需要我？"
         },
         "notMetChoices": [
             {
-                "text": "No, nada. Adiós."
+                "text": "不，沒有，再見。"
             },
             {
-                "text": "Saludarte, siempre te veo sola y leyendo."
+                "text": "打個招呼。我總是看到你一個人在看書。"
             }
         ],
         "niceResponse": [
             {
-                "text": "Muy amable."
+                "text": "非常友善。"
             },
             {
-                "text": "La gente no suele hablar conmigo."
+                "text": "人們通常不和我說話。"
             },
             {
-                "text": "Que pases un buen día."
+                "text": "祝你有美好的一天。"
             }
         ],
 
         "ignore": [
             {
-                "text": "Estoy leyendo."
+                "text": "我正在讀書。"
             },
             {
-                "text": "Si no te importa... (Te ignora y sigue leyendo)."
+                "text": "如果你不介意的話…（她不睬你並繼續閱讀）"
             }
         ],
 
         "warn": [
             {
-                "text": "Buenos días, {{name}}."
+                "text": "早晨，{{name}}。"
             },
             {
-                "text": "Antes he escuchado a Álex hablar con Ana sobre gastarte una broma."
+                "text": "我聽到阿歷和安娜談論要跟你開玩笑。"
             },
             {
-                "text": "No sé qué puede ser, pero ten cuidado. No suelen ser graciosas precisamente."
+                "text": "我不知道會發生什麼，但要小心，它們通常不太好笑。"
             }
         ],
         "warnChoices": [
             {
-                "text": "Gracias por avisar"
+                "text": "謝謝你的提醒。"
             },
             {
-                "text": "No le tengo miedo"
+                "text": "我不怕他"
             }
         ],
         "warnGoodbye": {
-            "text": "Nos vemos después. Hasta luego"
+            "text": "稍後見，再見。"
         },
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<學校鐘聲響起>>"
         }
     },
 
     "jose": {
         "notTalked": [
             {
-                "text": "¿Has visto la aplicación que comprueba tu relación con la gente con la que más hablas?"
+                "text": "你有看過那個可以檢查你與經常聊天的人關係的手機應用程式嗎？"
             },
             {
-                "text": "Te dice con quién te llevas mejor o peor de los que también tienen instalada la aplicación."
+                "text": "它會告訴你在所有下載它的人當中，你和誰相處得好或不好。"
             },
             {
-                "text": "Dicen que es muy exacta, pero aún no se sabe como funciona."
+                "text": "據說它非常準確，但其工作原理尚不清楚。"
             },
             {
-                "text": "Veo que ya la tienes."
+                "text": "我看到你已經有了。"
             }
         ],
         "talked": {
-            "text": "Nos vemos luego."
+            "text": "再見"
         }
     }
 }

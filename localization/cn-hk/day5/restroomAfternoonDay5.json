@@ -2,29 +2,29 @@
     "enter": {
         "root": {
             "text": "",
-            "text_male": "Mmm... ¿Pasa algo, Álex? ¿Por qué no entras?",
-            "text_female": "¿Ana? ¿Estás aquí?"
+            "text_male": "咦，亞歷，發生咗乜事呀？你點解仲係呢度呀？",
+            "text_female": "安娜，你係呢度嗎？"
         }
     },
 
     "door_enter": {
         "root": [
             {
-                "text": "¿Qué está pasando? La puerta no se abre."
+                "text": "發生緊乜事？度門唔開既。"
             },
             {
-                "text": "¿Me han encerrado en el baño? ¡¡¡Ana!!! ¡¡Alex!! ¡¡Alguien!!"
+                "text": "佢地有冇鎖咗我係個洗手間呀？安娜！！！阿歷！！有冇人！！"
             },
             {
-                "text": "¿Qué hago ahora? Tengo que conseguir salir de aquí."
+                "text": "我依家應該點做？我要離開呢度。"
             }
         ],
         "getOut": [
             {
-                "text": "La luz. ¿En serio?"
+                "text": "燈呢。認真既？"
             },
             {
-                "text": "Tengo que salir de aquí."
+                "text": "我要離開呢度。"
             }
         ]
     },
@@ -32,251 +32,239 @@
     "door_locked": {
         "root":  [
             {
-                "text": "Este es el picaporte de la puerta, pero no se abre."
+                "text": "呢個係個門閂，但係佢開唔到。"
             },
             {
-                "text": "¡¡¡Ana!!! ¡¡Alex!! ¡¡Alguien!!"
+                "text": "佢地有冇鎖我係個廁所度呀？安娜！！！阿歷！！有冇人！！"
             }
         ]
     },
 
     "sink": {
        "root": {
-            "text": "¡¡Agh!! Me acabo de dar con los lavabos.¡¡Mierda!!"
+            "text": "呀！！我啱啱撞到洗手盤。哎呀！！"
         } 
     },
     
     "floor": {
         "root": [
             {
-                "text": "Está mojado... Pero esto es el suelo"
+                "text": "咁濕既…但呢度係地板。"
             },
             {
-                "text": "¡¡Puaj!! Por favor, que no sea pis."
+                "text": "呀！！請唔好係度痾尿…"
             }
         ]
     },
 
     "lightsOn": {
         "root": {
-            "text": "¡¡La luz ha vuelto!! Y se oye algo en el pasillo. Debería poder salir ya."
+            "text": "燈著返啦！！同埋我可以聽到走廊有嘢。我應該已經走到出去。"
         },
         "teacher": {
-            "text": "",
-            "text_male": "¿Qué hacías aquí encerrado?",
-            "text_female": "¿Qué hacías aquí encerrada?"
+            "text": "你被鎖住咗係度做緊啲乜野呀？"
         },
 
         "meetingFS": [
             {
-                "text": "Hoy he tenido reunión con tus padres y me han contado todo lo que les has contado a ellos."
+                "text": "今日我同你既家長開咗個會，同埋佢地同我講晒所有嘢。"
             },
             {
-                "text": "Podrías habérmelo dicho a mi directamente."
+                "text": "你應該早啲直接同我講呀嘛。"
             },
             {
-                "text": "",
-                "text_male": "Supongo que el que estuvieras encerrado dentro del baño ha sido cosa de Álex.",
-                "text_female": "Supongo que el que estuvieras encerrada dentro del baño ha sido cosa de Álex."
+                "text": "我估係阿歷將你鎖咗係個廁所度，係唔係呢？"
             },
             {
-                "text": "Por ahora se va a expulsar a Álex 3 días. Si sigue dándote problemas cuando vuelva, debes decírmelo."
+                "text": "會被驅逐離校3日。如果佢番到嚟繼續煩住你既話，你一定要話俾我知。"
             },
             {
-                "text": "Si sigue igual, podríamos expulsarlo del colegio e incluso llamar a la policía y tomar represalias legales."
+                "text": "如果佢繼續咁樣既呢，為咗大家好，我地會將佢驅逐離校，或者甚至叫警察同告佢。"
             },
             {
-                "text": "Vete a casa y descansa."
+                "text": "返屋企休息啦。"
             }
         ],
 
         "noMeetingFS": [
             {
-                "text": "(Chivarse de todo lo que te ha hecho Álex)"
+                "text": "（同佢講晒阿歷對我所做既事）"
             },
             {
-                "text": "No sé qué ha pasado."
+                "text": "我唔知道發生緊乜嘢事。"
             }
         ],
         "snitchNoMeetingFS": [
             {
-                "text": "¿Cómo no me has contado todo esto antes?"
+                "text": "點解你之前唔同我講晒所有呢啲嘢呀？"
             },
             {
-                "text": "Voy a llamar a tus padres para hablar con ellos."
+                "text": "我會叫你既家長，同佢講呢件事。"
             },
             {
-                "text": "Y veremos que podemos hacer con Álex."
+                "text": "睇吓我地點樣處理阿歷。"
             },
             {
-                "text": "Intentaré que lo expulsen 3 días."
+                "text": "我會嘗試將阿歷驅逐離校3日。"
             },
             {
-                "text": "Y si pasa algo más no dudes en hablar conmigo o con la orientadora."
+                "text": "如果任何事情發生，唔好猶豫，同我或者學校輔導員講。"
             },
             {
-                "text": "Vete a casa y descansa."
+                "text": "返屋企休息啦。"
             }
         ],
         "noSnitchNoMeetingFS": [
             {
-                "text": "",
-                "text_male": "¿Estás seguro de que no pasa nada?",
-                "text_female": "¿Estás segura de que no pasa nada?"
+                "text": "你肯定所有嘢無事？"
             },
             {
-                "text": "Bueno, vete a casa. Pero recuerda una cosa..."
+                "text": "咁，你返屋企啦。但記住呢點…"
             },
             {
-                "text": "Si alguien se mete contigo, habla conmigo o con la orientadora."
+                "text": "如果有人取笑你，你就同我或者學校輔導員講。"
             },
             {
-                "text": "Busca ayuda. Las cosas no van a mejorar por sí solas, sólo pueden ir a peor."
+                "text": "搵人幫手，事情唔會因時間而自變好既，只會變得更差。"
             }
         ],
         
 
         "meetingNoFS": [
             {
-                "text": "(Chivarse de todo lo que te ha hecho Álex)"
+                "text": "（同佢講晒阿歷對我所做既事）"
             },
             {
-                "text": "No sé qué ha pasado."
+                "text": "我唔知道發生緊乜嘢事。"
             }
         ],
         "snitchMeetingNoFS": [
             {
-                "text": "¿Cómo no me lo contaste antes?"
+                "text": "點解你唔早啲同我講呀？"
             },
             {
-                "text": "Además hoy he tenido reunión con tus padres y también hemos hablado de esto."
+                "text": "之外，今日我同你既家長開咗個會，同埋我地傾過呢樣"
             },
             {
-                "text": "Con todo lo que me has dicho... Hablaré con la directora para expulsar a Álex 3 días."
+                "text": "就住你所講既嘢，我會同校長傾，將阿歷驅逐離校3日。"
             },
             {
-                "text": "Si a la vuelta sigue acosándote ya sea en persona o en las redes dímelo."
+                "text": "如果佢繼續透過自己或者社交媒體騷擾你，你話俾我知就可以啦。"
             },
             {
-                "text": "Si sigue igual podríamos expulsarlo del colegio e incluso llamar a la policía y tomar represalias legales."
+                "text": "如果佢繼續咁樣既呢，為咗大家好，我地會將佢驅逐離校，或者甚至叫警察同告佢。"
             },
             {
-                "text": "Vete a casa y descansa."
+                "text": "返屋企休息啦。"
             }
         ],
         "noSnitchMeetingNoFSMaria": [
             {
-                "text": "",
-                "text_male": "¿Estás seguro?",
-                "text_female": "¿Estás segura?"
+                "text": "你肯定嗎？"
             },
             {
-                "text": "He tenido reunión con tus padres y estás teniendo problemas con Álex."
+                "text": "今日我同你既家長開咗個會，似乎你同阿歷出咗麻煩喎。"
             },
             {
-                "text": "Además, María vino a hablar conmigo y la orientadora. Por lo que nos dijo, Álex se está metiendo contigo."
+                "text": "而且，瑪莉亞同學校輔導員過過嚟話俾我知阿歷對你挑起事端。"
             },
             {
-                "text": "",
-                "text_male": "No tienes nada que encubrir y no eres un chivato por pedir ayuda. El comportamiento de Álex merece un castigo.",
-                "text_female": "No tienes nada que encubrir y no eres una chivata por pedir ayuda. El comportamiento de Álex merece un castigo."
+                "text": "你唔需要收埋任何嘢，你向人求救時唔需要偷偷摸摸。阿歷既行為顯示到佢需要被罰。"
             },
             {
-                "text": "Hemos decidido expulsar a Álex 3 días."
+                "text": "我地已經決定將阿歷驅逐離校3日。"
             },
             {
-                "text": "Si sigue igual podríamos expulsarlo del colegio e incluso llamar a la policía y tomar represalias legales."
+                "text": "如果佢繼續咁樣既呢，為咗大家好，我地會將佢驅逐離校，或者甚至叫警察同告佢。"
             },
             {
-                "text": "Vete a casa y descansa."
+                "text": "返屋企休息啦。"
             }
         ],
         "noSnitchMeetingNoFSNoMaria": [
             {
-                "text": "Hoy he tenido reunión con tus padres. Están preocupados."
+                "text": "今日我同你既家長開咗個會，佢地好擔心。"
             },
             {
-                "text": "Si estás teniendo problemas con alguno de tus compañeros deberías hablar conmigo o con la orientadora."
+                "text": "老師如果你同同學有任何麻煩你應該同我或都學校輔導員講。"
             },
             {
-                "text": "Si evitas que te ayudemos, las cosas pueden ir a peor."
+                "text": "如果你拒絶幫忙，事情可能變得更差。"
             },
             {
-                "text": "Y en cualquier caso, no te mereces que se burlen de ti y ridiculicen."
+                "text": "無論任何情況，你唔值得被取笑同欺負既。"
             },
             {
-                "text": "Si es lo que está pasando pídenos ayuda o las cosas seguirán igual."
+                "text": "如果呢件事係咁發生，請尋求協助，若果唔係，事情會一直發生。"
             }
         ],
 
         "noMeetingNoFS": [
             {
-                "text": "(Chivarse de todo lo que te ha hecho Álex)"
+                "text": "（同佢講晒阿歷對我所做既事）"
             },
             {
-                "text": "No sé qué ha pasado."
+                "text": "我唔知道發生緊乜嘢事。"
             }
         ],
         "snitchNoMeetingNoFSMaria": [
             {
-                "text": "¿Cómo no me has dicho nada antes?"
+                "text": "點解你之前唔同我講呀？"
             },
             {
-                "text": "Además María vino a hablar conmigo y la orientadora. Nos ha contado lo mismo que tú ahora."
+                "text": "而且，瑪莉亞同學校輔導員過過嚟話俾我知阿歷對你挑起事端。"
             },
             {
-                "text": "La chica se preocupa por ti. Todos necesitamos amigos así."
+                "text": "佢關心你，我地需要好似佢咁樣既朋友。"
             },
             {
-                "text": "El comportamiento de Álex merece un castigo y es importante que me hayas contado todo."
+                "text": "阿歷既行為應得到懲罰，而且你同我講晒所有事係好重要既。"
             },
             {
-                "text": "Todo esto no es culpa tuya ni te lo mereces."
+                "text": "呢個唔係你既錯，你唔值得既。"
             },
             {
-                "text": "Hemos decidido expulsar a Álex 3 días."
+                "text": "我地決定將阿歷驅逐離校3日。"
             },
             {
-                "text": "Si sigue igual podríamos expulsarlo del colegio e incluso llamar a la policía y tomar represalias legales."
+                "text": "如果佢繼續咁樣既呢，為咗大家好，我地會將佢驅逐離校，或者甚至叫警察同告佢。"
             },
             {
-                "text": "Vete a casa y descansa."
+                "text": "返屋企休息啦。"
             }
         ],
         "snitchNoMeetingNoFSNoMaria": [
             {
-                "text": "Hablaré con tus padres del tema."
+                "text": "我會同你既家長傾。"
             },
             {
-                "text": "Si tienes más problemas con Álex ven a hablar conmigo. Mañana le llamaré la atención."
+                "text": "如果你仲同阿歷出現麻煩，過嚟同我講，聽日我會話佢。"
             },
             {
-                "text": "Es importante que si tienes problemas los cuentes. El tiempo por sí solo no va a hacer que vaya a mejor."
+                "text": "你講呢件事出嚟好重要，事情唔會因時間而變好既。"
             },
             {
-                "text": "Y en cualquier caso, no te mereces que se burlen de ti y ridiculicen."
+                "text": "無論任何情況，你唔值得被取笑同欺負既。"
             },
             {
-                "text": "Si es lo que está pasando, pide ayuda o las cosas seguirán igual, incluso pueden ir a peor."
+                "text": "呢件事唔會變，直到你尋求協助，若果唔係，事情會一直發生。"
             }
         ],
         "noSnitchNoMeetingNoFS": [
             {
-                "text": "",
-                "text_male": "¿Estás seguro de que no está pasando nada?",
-                "text_female": "¿Estás segura de que no está pasando nada?"
+                "text": "你肯定無事？"
             },
             {
-                "text": "Pues venga, vete a casa."
+                "text": "咁，你返屋企啦。"
             },
             {
-                "text": "Pero acuérdate de esto: si estás teniendo problemas con un compañero y no buscas ayuda, lo más seguro es que todo empeore."
+                "text": "但記住，如果你同任何人出現麻煩，而你唔尋求協助，事情一定會差落去。"
             },
             {
-                "text": "Y en cualquier caso, no te mereces que se burlen de ti y ridiculicen."
+                "text": "無論任何情況，你唔值得被取笑同欺負既。"
             },
             {
-                "text": "Si es lo que está pasando, pídenos ayuda o las cosas seguirán igual."
+                "text": "呢件事唔會變，直到你尋求協助。"
             }
         ]
     }

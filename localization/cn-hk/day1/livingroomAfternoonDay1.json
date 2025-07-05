@@ -2,10 +2,10 @@
     "dad": {
         "root": [
             {
-                "text": "Habla con tu madre."
+                "text": "跟你媽媽談談。"
             },
             {
-                "text": "Quiere saber qué tal te ha ido el día."
+                "text": "她想知道你今天過得怎麼樣。"
             }
         ]
     },
@@ -13,192 +13,192 @@
     "mom": {
         "notTalked": [
             {
-                "text": "Ya has vuelto, {{name}}."
+                "text": "你回來了，{{name}}。"
             },
             {
-                "text": "¿Qué tal te ha ido el día?"
+                "text": "你今日怎麼樣呀？"
             }
         ],
         "talked": {
-            "text": "¿Quieres que hablemos un rato?"
+            "text": "你想聊一會兒嗎？"
         },
 
         "choices1": [
             {
-                "text": "Bien, normal. Me voy a mi cuarto."
+                "text": "好的，老樣子，我要回房間了。"
             },
             {
-                "text": "He conocido a Guille..."
+                "text": "我遇到了吉耶…"
             },
             {
-                "text": "(Hablar de otros compañeros)"
+                "text": "（談談其他同學）"
             }
         ],
         "guille": [
             {
-                "text": "Hoy he conocido a Guille, hay sido muy amable conmigo."
+                "text": "今日我與吉耶見面，他對我很好。"
             },
             {
-                "text": "Creo que seremos buenos amigos."
+                "text": "我認為我們會成為好朋友的。"
             }
         ],
         "guilleExtra": [
             {
-                "text": "Además me ha aconsejado que mire los tablones de anuncios."
+                "text": "他還建議我去看壁布板。"
             },
             {
-                "text": "Porque a veces dejan cosas interesantes."
+                "text": "有時會貼上一些有趣的東西。"
             }
         ],
 
         "choices2": [
             {
-                "text": "Hay una chica llamada Alison..."
+                "text": "有名女孩叫愛莉…"
             },
             {
-                "text": "Jose..."
+                "text": "荷西…"
             },
             {
-                "text": "(Hablar de otros compañeros)"
+                "text": "（談談其他同學）"
             }
         ],
         "alison": [
             {
-                "text": "En clase hay una chica rubia llamada Alison."
+                "text": "有一名金髮女孩叫愛莉。"
             },
             {
-                "text": "Hoy había perdido uno de sus pendientes."
+                "text": "她丟失了一隻耳環。"
             }
         ],
         "notFound": {
-            "text": "Creo que al final no lo ha podido encontrar."
+            "text": "我認為她找不到它了。"
         },
         "found": {
-            "text": "La ayudé a buscarlo. Resulta que estaba en el patio."
+            "text": "我幫她找了，結果發現它在操場上。"
         },
         "jose": [
             {
-                "text": "Jose es otro compañero de clase, aunque parece más tímido."
+                "text": "荷西是另一位同學，儘管他看起來比較害羞。"
             },
             {
-                "text": "Pero también parece majo."
+                "text": "但他看起來也不錯。"
             }
         ],
 
 
         "choices3": [
             {
-                "text": "A clase va María..."
+                "text": "在班裡有瑪莉亞…"
             },
             {
-                "text": "Está Álex..."
+                "text": "還有阿歷…"
             },
             {
-                "text": "(Hablar de otros compañeros)"
+                "text": "（談談其他同學）"
             }
         ],
         "maria": {
-            "text": "Otra chica de clase es María."
+            "text": "班上還有一個女孩叫瑪莉亞。"
         },
         "meanResponse": {
-            "text": "Es una chica que se pasa los recreos leyendo. La clase dice que es rara, que mejor pase de ella."
+            "text": "她所有的休息時間都在看書。全班都說她是怪人，最好別打擾她。"
         },
         "niceResponse": [
             {
-                "text": "Al parecer los demás de clase piensan que es rara."
+                "text": "班上其他人似乎都覺得她是名怪人。"
             },
             {
-                "text": "La dejan de lado."
+                "text": "他們排擠了她。"
             },
             {
-                "text": "He estado hablando con ella un rato y a mi no me lo ha parecido."
+                "text": "我和她聊了一會兒，我覺得她並不奇怪。"
             }
         ],
         "alex": [
             {
-                "text": "En clase también está Álex."
+                "text": "還有阿歷。"
             },
             {
-                "text": "Ha llegado tarde a clase."
+                "text": "他今天遲到了。"
             },
             {
-                "text": "Es un poco borde y da algo de miedo."
+                "text": "他有點粗魯，而且有點可怕。"
             }
         ],
         "submit": [
             {
-                "text": "Parece que le quité el sitio al llegar a clase."
+                "text": "看來我上課的時候就坐了他的座位。"
             },
             {
-                "text": "Pero le pedí perdón y parece que ya no está enfadado."
+                "text": "但我道了歉，他似乎不再生氣了。"
             }
         ],
         "downplay": [
             {
-                "text": "Es un chaval que busca pelea por nada."
+                "text": "他是典型的搞事者。"
             },
             {
-                "text": "Le quité su sitio sin querer."
+                "text": "我無意中坐在了他的座位。"
             },
             {
-                "text": "Me ha amenazado."
+                "text": "他恐嚇了我。"
             }
         ],
         "momDownplayReply": [
             {
-                "text": "¿Cómo que te ha amenazado?"
+                "text": "他恐嚇你了？"
             },
             {
-                "text": "Seguro que lo has malinterpretado."
+                "text": "我肯定你誤會了。"
             },
             {
-                "text": "¿A quién más has conocido hoy?"
+                "text": "今天你還遇到了誰？"
             }
         ],
         "defy": [
             {
-                "text": "Es borde, y busca pelea."
+                "text": "他很粗魯，而且是搞事者。"
             },
             {
-                "text": "Y todo porque me he sentado en su sitio."
+                "text": "都是因為我坐在了他的座位。"
             },
             {
-                "text": "Que se busque otro."
+                "text": "他應該再找另一張。"
             }
         ],
         "momDefyReply": {
-            "text": "Deberías disculparte y no buscar problemas."
+            "text": "你應該道歉，不要惹麻煩。"
         },
 
 
         "choices4": [
             {
-                "text": "Ana..."
+                "text": "安娜…"
             },
             {
-                "text": "El colegio..."
+                "text": "學校…"
             },
             {
-                "text": "Me voy a la habitación. Ya hemos hablado suficiente."
+                "text": "我會返房，我哋傾夠啦。"
             }
         ],
         "ana": [
             {
-                "text": "En clase también está Ana."
+                "text": "還有安娜。"
             },
             {
-                "text": "Da un poco de miedo."
+                "text": "她有點可怕。"
             }
         ],
         "school": {
-            "text": "Y el colegio, bueno..."
+            "text": "至於學校嘛…"
         },
         "schoolChoices": [
             {
-                "text": "Me gusta como es el edificio y el patio."
+                "text": "我喜歡這棟建築和操場的樣子。"
             },
             {
-                "text": "Es aburrido, le faltan cosas."
+                "text": "很無聊，沒什麼可做的。"
             }
         ]
     }

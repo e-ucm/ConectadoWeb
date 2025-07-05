@@ -1,92 +1,90 @@
 {
     "maria": {
         "friend": {
-            "text": "Buenos días {{name}}."
+            "text": "早晨，{{name}}。"
         },
         "hello": {
-            "text": "Hola, María."
+            "text": "你好，瑪莉亞"
         },
         "friendChoices": [
             {
-                "text": "Ayer no viniste a clase. ¿Estás bien?"
+                "text": "你琴日冇嚟，你有冇事？"
             },
             {
-                "text": "¿Me hablas?"
+                "text": "你同我講嘢？"
             },
             {
-                "text": "Tengo prisa, ya ha sonado la campana. Hablamos luego."
+                "text": "我趕時間，同埋已經響咗鐘，遲啲再傾啦。"
             }
         ],
 
         "askMissing": [
             {
-                "text": "Sí, estoy bien. Gracias por preguntar."
+                "text": "我無事，多謝關心。"
             },
             {
-                "text": "Ayer me encontraba en casa con fiebre y me quedé descansado."
+                "text": "我尋日發燒，所以留喺屋企休息。"
             },
             {
-                "text": "Hoy ya estoy como nueva."
+                "text": "今日已經完全好返啦。"
             }
         ],
 
         "askTalkFriends": [
             {
-                "text": "Supongo que lo dices por Álex."
+                "text": "我諗你講緊阿歷。"
             },
             {
-                "text": "Ana hizo algo parecido el año pasado para putearme."
+                "text": "安娜上年都做過類似嘅嘢嚟搞我。"
             },
             {
-                "text": "Deberías hablar con tus padres o nuestro tutor."
+                "text": "你應該同你屋企人或者老師講。"
             },
             {
-                "text": "Yo no lo hice cuando tuve la oportunidad, mis padres se enteraron cuando me obligaron a ir a un psicólogo."
+                "text": "我以前有機會嘅時候冇講，之後我屋企人發現咗就逼我去見心理醫生。"
             },
             {
-                "text": "",
-                "text_male": "Si necesitas que te acompañe para hablar con el profe puedes decírmelo. Pero no te quedes callado",
-                "text_female": "Si necesitas que te acompañe para hablar con el profe puedes decírmelo. Pero no te quedes callada"
+                "text": "如果你想我陪你去同老師講，講聲我知就得。但唔好唔出聲。"
             }
         ],
         "askTalkFriends2": {
-            "text": "Gracias, nos vemos luego."
+            "text": "多謝，下次見。"
         },
 
         "normal": {
-            "text": "Buenas, María."
+            "text": "喂，瑪莉亞"
         },
         "normal2": {
-            "text": "Hola, {{name}}. ¿Quieres algo?"
+            "text": "你好，{{name}}。有嘢想講？"
         },
         "normalChoices": [
             {
-                "text": "Nada, hasta luego."
+                "text": "冇吖，遲啲見。"
             },
             {
-                "text": "¿Me hablas?"
+                "text": "你同我講緊嘢？"
             }
         ],
         "askTalkNormal": {
-            "text": "¿Por qué no lo iba a hacer?"
+            "text": "點解唔係呢？"
         },
         "askTalkNormal2": {
-            "text": "¿No has hablado con Álex?"
+            "text": "你冇同阿歷講過咩？"
         },
         "askTalkNormal3": [
             {
-                "text": "Sí, lo de que nadie te dirija la palabra..."
+                "text": "係啊，關於嗰個沉默治療嘅事…"
             },
             {
-                "text": "A mi ya me hicieron la vida imposible entre todos el año pasado. Aprendí la lección."
+                "text": "佢哋上年已經搞到我好慘，當買過教訓啦。"
             },
             {
-                "text": "Lo mejor será que hables con tus padres o con tu tutor y no hagas caso a Álex ni a ninguno de sus perritos falderos."
+                "text": "最好係同你父母或者導師講，唔好理阿歷或者佢班『手下』。"
             }
         ],
 
         "talked": {
-            "text": "Llegarás tarde a clase si no te vas ya."
+            "text": "如果你而家唔去，你會遲到㗎"
         }
     }
 }

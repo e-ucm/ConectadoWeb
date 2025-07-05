@@ -3,112 +3,110 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Voy a hacer que nadie te quiera hablar."
+                    "text": "我會保證冇人會同你傾偈。"
                 },
                 {
-                    "text": "Puedes decir lo que quieras, pero no conseguirás nada."
+                    "text": "你可以做任何嘢，但係你唔會得到任何嘢。"
                 },
                 {
-                    "text": "Adelante. Habla con la gente de clase, a ver si consigues que te hablen."
+                    "text": "去啦，同同班既同學去傾，睇下佢地會唔會同你傾偈。"
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "",
-                    "text_male": "Me parece que te has quedado solo.",
-                    "text_female": "Me parece que te has quedado sola."
+                    "text": "我覺得你孤獨。"
                 },
                 {
-                    "text": "¿Qué tal sienta que todos te ignoren?"
+                    "text": "你被人忽視你有乜嘢感受？"
                 },
                 {
-                    "text": "¿No te parece divertido que nadie te haga caso?"
+                    "text": "冇人對你重視，你覺唔覺得好笑嗎？"
                 },
                 {
-                    "text": "Porque yo me estoy partiendo de solo verte."
+                    "text": "因為我淨係見到你已經笑唔停。"
                 }
             ]
         }
     },
     "Maria": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "¿Tú también me vas a ignorar?"
+                "text": "你係唔係都係唔理我嗎？"
             },
             {
-                "text": "¿No te habían hecho lo mismo? No me ignores, sabes lo que se siente."
+                "text": "佢地有冇對你做同樣既野？唔好唔理我，你知道個感受係點。"
             },
             {
-                "text": "Tú me entiendes, ¿verdad?"
+                "text": "你明白我，係唔係？"
             }
         ]
     },
     "Guille": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "Tú eres mi amigo, ¿no?"
+                "text": "你係我既朋友，係唔係？"
             },
             {
-                "text": "Guille, tú no eres como los demás."
+                "text": "吉耶，你唔似其他人。"
             },
             {
-                "text": "No dejes que te amenacen."
+                "text": "唔好俾佢地威脅你。"
             }
         ]
     },
     "Jose": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "¿Vas a ignorarme sin motivo? ¿Solo por qué te han dicho que lo hagas?"
+                "text": "你係唔係冇原因而忽視我"
             },
             {
-                "text": "Podemos ser amigos."
+                "text": "我地可以做朋友。"
             },
             {
-                "text": "¿Tienes 3 años? Dime algo."
+                "text": "你幾多歲？3歲？同我傾。"
             }
         ]
     },
     "Alison": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "Eres mi amiga, ¿no?"
+                "text": "你係我既朋友，係唔係？"
             },
             {
-                "text": "Eres maja. No me vas a dejar de hablar, ¿verdad?"
+                "text": "你好似對我好好，你唔會唔理我，係唔係？"
             },
             {
-                "text": "Por favor, dime algo."
+                "text": "唔該你，同我傾。"
             }
         ]
     },
     "Ana": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "playerWorry": [
             {
-                "text": "¿Qué te he hecho? ¿Por qué vas a por mí también?"
+                "text": "我對你做過乜野？點解你都跟住我？"
             },
             {
-                "text": "Si Álex se tira de un puente, ¿también te tiras tú?"
+                "text": "如果阿歷由條橋跳落嚟呢？你會唔會都係咁做？"
             },
             {
-                "text": "¿No podemos llevarnos bien?"
+                "text": "我地可唔可以好好相處？"
             }
         ]
     }

@@ -1,24 +1,22 @@
 {
     "wardrobe1": {
         "root": {
-            "text": "No hay nada útil dentro."
+            "text": "這裡沒有什麼有用的東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "Hoy tampoco me da tiempo a ordenar el armario."
+            "text": "我今天沒有時間收拾這一切。"
         }
     },
 
     "phone1": {
         "root": {
-            "text": "{{name}} este es el chat k tenemos ls de clase"
+            "text": "{{name}}呢個係我们所有同学都使用既聊天室"
         },
         "message2": {
-            "text": "",
-            "text_male": "Bienvenido",
-            "text_female": "Bienvenida"
+            "text": "歡迎"
         },
         "message3": {
             "text": ":)"
@@ -27,86 +25,84 @@
     "phone2": {
         "root": [
             {
-                "text": "Gracias :)"
+                "text": "多謝 :)"
             }
         ],
         "reply": {
-            "text": "Gracias :)"
+            "text": "多謝 :)"
         }
     },
     "phone3": {
         "root": {
-            "text": "",
-            "text_male": "xq lo invitas al grupo? no hablaste cn alex esta mañana?",
-            "text_female": "xq la invitas al grupo? no hablaste cn alex esta mañana?"
+            "text": "點解要邀请？你今天唔係同阿歷講野咩？"
 
         },
         "message4": {
             "text": "",
-            "text_male": "Pff, no se ha ganado estar en el grupo. El k pueda k lo eche YA!",
-            "text_female": "Pff, no se ha ganado estar en el grupo. El k pueda k la eche YA!"
+            "text_male": "咦，仲未有資格加入這個小組。有人踢他去群組！",
+            "text_female": "咦，仲未有資格加入這個小組。有人踢她去群組！"
         },
         "message5": {
-            "text": "Ya sólo falta que invitéis a la friki de María"
+            "text": "唯一剩低既就係呢個怪物，瑪莉亞"
         },
         "message6": {
-            "text": "Jose es el admin, habla con él mañana, q el chat no suele leerlo"
+            "text": "荷茜係管理員，明天同佢傾傾，他唔係成日閱讀聊呢個聯天"
         },
         "reply2": [
             {
-                "text": "Me sienta mal que me tratéis así"
+                "text": "M你對我好差，你令我感覺唔好。"
             },
             {
-                "text": "Madurad"
+                "text": "成熟啲啦"
             },
             {
-                "text": "¿Qué os he hecho?"
+                "text": "我對你做咗啲乜野？"
             }
         ],
         "sad": {
-            "text": "Acabo de llegar al colegio, y de verdad me sienta fatal que la mitad de la clase me trate como la mierda"
+            "text": "我啱啱嚟到學校，你哋對我咁唔公平，感覺真係太差啦。"
         },
         "sad2": {
-            "text": "No digo que os caiga bien a todos, pero lo mínimo es tratarme con respeto"
+            "text": "我唔係話你哋都一定要鐘意我，但你哋必須尊重我。"
         },
 
         "growUp": {
-            "text": "Madurad, tenéis 2años o qué os pasa"
+            "text": "成熟啲啦，你幾大呀？"
         },
         "ask": {
-            "text": "No lo entiendo, ¿Qué os he hecho para que me insultéis, gastéis bromas pesadas, me ignoréis y marginéis?"
+            "text": "我唔明白，我做了乜野事令你如此侮辱、忽視和取笑我？"
         },
         "message7": {
-            "text": "¿Qué problema tenéis con {{name}}?"
+            "text": "你同{{name}}有乜野問題？"
         },
         "message8": {
-            "text": "Os estáis pasando"
+            "text": "你過界喇"
         },
         "message9": {
-            "text": "No os metáis donde no os llaman, también puedo hacer que Jose os eche a vosotros"
+            "text": "呢個唔關你事。我也可以讓何塞把你踢出去。"
         },
         "reply3": [
             {
-                "text": "Ya me salgo yo del grupo"
+                "text": "唔洗擔心，我宜家離開"
             },
             {
-                "text": "Espero que Jose tenga más cerebro"
+                "text": "我希望荷西會更聰明。"
             },
             {
-                "text": "Álex, para"
+                "text": "阿歷，停手"
             }
         ],
         "leave": {
-            "text": "Si que esté en el grupo va a ser un problema me voy yo"
+            "text": "如果我加入呢個群聊有問題，我就離開啦"
         },
         "insult": {
-            "text": "Espero que Jose no sea tan estúpido como tú cuando lea el chat"
+            "text": "我希望荷西係睇聊天室內容既時候不會好似你一樣咁蠢"
         },
         "stop": {
-            "text": "Para, no te he hecho nada como para que te portes así conmigo"
+            "text": "停低，我沒有對你做任何嘢，令你咁樣對我"
         },
         "goToSleep": {
-            "text": "Me voy a dormir, os veo mañana"
+            "text": "我要瞓覺了，明天見"
         }
     }
     

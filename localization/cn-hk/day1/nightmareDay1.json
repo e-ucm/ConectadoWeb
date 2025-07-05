@@ -3,26 +3,26 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Tu primer día de clase. ¿Por qué no te sientas?"
+                    "text": "你第一日返學。點解你唔搵張座位坐呢"
                 },
                 {
-                    "text": "Escoge el sitio que más te guste."
+                    "text": "你揀個最鐘意既位。"
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "Me parece que te has quedado sin sitio."
+                    "text": "我覺得你漏咗個位。"
                 },
                 {
-                    "text": "¿Ni siquiera sabes sentarte?"
+                    "text": "你依家知唔知點樣坐低？"
                 },
                 {
-                    "text": "¿Acaso no sirves para nada?"
+                    "text": "你甚至值唔值任何野？"
                 },
                 {
-                    "text": "¿Cómo esperas hacer así amigos?"
+                    "text": "你如何同咁樣既人做朋友呢？"
                 }
             ]
         }
@@ -30,13 +30,13 @@
     "seat": {
         "root": [
             {
-                "text": "Veo que has encontrado un sitio, pero..."
+                "text": "我睇到你已經搵到張座位，但係…"
             },
             {
-                "text": "Ese sitio es mío. Tendrás que escoger otro."
+                "text": "個個座位係我，你要搵另一個。"
             },
             {
-                "text": "Puedes sentarte donde quieras menos ahí."
+                "text": "除咗呢個位之外，你可以周圍坐。"
             }
         ]
     }

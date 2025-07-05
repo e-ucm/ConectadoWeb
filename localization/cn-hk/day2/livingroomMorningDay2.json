@@ -1,10 +1,10 @@
 {
     "door": {
         "normal": {
-            "text": "Parece que papá y mamá hoy han vuelto a irse pronto."
+            "text": "看來今天爸爸媽媽離開得很早。"
         },
         "late": {
-            "text": "Parece que papá y mamá se han ido ya a trabajar."
+            "text": "看來爸爸媽媽已經上班了。"
         }
     }
 }

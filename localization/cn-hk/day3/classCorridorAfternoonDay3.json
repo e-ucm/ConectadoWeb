@@ -2,17 +2,17 @@
     "player_stairs": {
         "root": [
             {
-                "text": "Antes de irme a casa debería pasar por el baño."
+                "text": "我應該要在回家前去浴室。"
             },
             {
-                "text": "Igual la nota era importante."
+                "text": "也許那紙條是重要的。"
             }
         ]
     },
 
     "class": {
         "root": {
-            "text": "No tengo nada que hacer dentro de clase."
+            "text": "我沒有需要在班上完成的事情。"
         }
     }
 }

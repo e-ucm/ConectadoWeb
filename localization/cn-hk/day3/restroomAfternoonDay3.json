@@ -1,102 +1,102 @@
 {
     "guille": {
         "maleRestroom": {
-            "text": "Así que eras tú el de la nota, Guille."
+            "text": "所以這張紙條上的人…就是你，吉耶。"
         },
 
         "femaleRestroom": [
             {
-                "text": "¿Qué haces en el baño de chicas, Guille?"
+                "text": "你係女廁做乜野呀，吉耶？"
             },
             {
-                "text": "No puedes estar aquí. Vete."
+                "text": "你唔可以係度呀，走啦。"
             }
         ],
         "explainRestroom": {
-            "text": "Tenía que hablar contigo, yo te pasé la notita."
+            "text": "我要同你傾，我係留低紙條既人。"
         },
 
         "ask": [
             {
-                "text": "¿Ahora si me hablas?"
+                "text": "現在你跟我談。"
             },
             {
-                "text": "¿A qué viene esto de que más de media clase me ignore?"
+                "text": "那麼班上有一半人不理我呢？"
             }
         ],
         "explanation": [
             {
-                "text": "De eso te quería hablar."
+                "text": "這就是我想跟你說的話。"
             },
             {
-                "text": "No puedo hablar contigo mientras Álex o alguno de sus amigos pueda verme."
+                "text": "N我無法在阿歷或他的任何朋友看到我們的地方與你交談。"
             },
             {
-                "text": "Me ha amenazado con mandarle a mis padres una foto mía del año pasado en la que salgo con una cerveza y un cigarrillo."
+                "text": "他威脅我要把我吸煙飲酒的照片傳給父母。"
             },
             {
-                "text": "Mis padres son muy estrictos, y si la ven, no se que podrá pasar. Igual me mandan a otro instituto."
+                "text": "我的父母對我非常嚴格，如果他們發現了，我不知道會發生什麼事…他們甚至可能會把我送到另一間高中。"
             }
         ],
         "explanationQuestion": {
-            "text": "¿Pero por qué Álex no quiere que nadie hable conmigo?"
+            "text": "但為什麼阿歷不想讓任何人跟我說話呢？"
         },
         "continueExplanation": [
             {
-                "text": "No lo sabemos. La tiene tomada contigo desde el primer día."
+                "text": "我們不知道，他從第一天起就看中你。"
             },
             {
-                "text": "Mucha gente le hace caso porque quiere, pero somos unos cuantos a los que nos ha amenazado."
+                "text": "太多人按照他的意願行事，但我們當中有些人曾經受到他的威脅。"
             },
             {
-                "text": "A María le pasó algo parecido a lo tuyo el año pasado, aunque fue cosa de Ana."
+                "text": "去年在瑪莉亞也發生過類似的事情，儘管那是安娜的事。"
             },
             {
-                "text": "Desde entonces no tiene amigos y cuando alguno de nosotros intenta hablar con ella... nos ignora."
+                "text": "從那時起她就沒有朋友，當有人試圖和她談話時…她不理會我們。"
             },
             {
-                "text": "No nos ha perdonado."
+                "text": "她還沒有原諒我們。"
             },
             {
-                "text": "Bueno... Sólo quería decirte que lo siento, pero hasta que a Álex se le pase el mosqueo no podré hablar contigo."
+                "text": "嗯…我只是想說抱歉，但在阿歷不再憤怒之前我無法和你說話。"
             },
             {
-                "text": "Lo siento mucho, {{name}}."
+                "text": "我真的很抱歉{{name}}。"
             }
         ],
 
         "choices": [
             {
-                "text": "¿Y ya está? ¿Álex se sale con la suya?"
+                "text": "就這樣嗎？阿歷得到他想要的嗎？"
             },
             {
-                "text": "¿Y mi foto en el tablón? ¿Ha sido Álex?"
+                "text": "那麼我在黑板上的照片呢？是阿歷嗎？"
             }
         ],
         "apology": [
             {
-                "text": "De verdad que lo siento."
+                "text": "我真的很抱歉，真的。"
             },
             {
-                "text": "Pero no quiero que me haga también la vida imposible a mí."
+                "text": "但我不想讓他令我的生活變得悲慘。"
             }
         ],
         "aboutBoard": [
             {
-                "text": "Eso fue cosa de Ana."
+                "text": "那是安娜做的。"
             },
             {
-                "text": "Está muy pillada por Álex y si él te putea, ella va a hacer lo mismo."
+                "text": "她對阿歷真的很感興趣。如果阿歷招惹你，她將會做出一樣的事情。"
             },
             {
-                "text": "Y José es su perrito faldero. No sabe pensar por sí mismo."
+                "text": "還有荷西，他是阿歷的走狗，沒有辦法自己思考。"
             },
             {
-                "text": "Evita a los tres."
+                "text": "要盡量避開他們三個。"
             }
         ],
         "talked": {
-            "text": "Lo siento mucho, de verdad, pero mis padres no pueden enterarse."
+            "text": "我真的很抱歉，真的，但我的父母不能知道這件事。"
         }
 
     }

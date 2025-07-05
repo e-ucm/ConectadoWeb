@@ -1,117 +1,111 @@
 {
     "jose": {
         "notTalked": {
-            "text": "",
-            "text_male": "Eres nuevo, ¿no?",
-            "text_female": "Eres nueva, ¿no?"
+            "text": "你是新來的，對吧？"
         },
         "ask": {
-            "text": "¿Quieres algo?"
+            "text": "你有什麼需要嗎？"
         },
 
         "talked": {
-            "text": "Has vuelto. ¿Quieres algo más?"
+            "text": "你回來了，還有什麼需要嗎？"
         },
         "choices": [
             {
-                "text": "Hola, soy {{name}}."
+                "text": "你好，我是{{name}}。"
             },
             {
-                "text": "(Preguntar dónde está tu clase)"
+                "text": "（詢問教室在哪裡）。"
             },
             {
-                "text": "No necesito nada. Hasta luego."
+                "text": "我什麼都不需要，一會兒再見。"
             }
         ],
         "askClass": {
-            "text": "Esa es también mi clase. Está en la segunda planta, subiendo las escaleras de la derecha que encuentras nada más entrar al edificio. Y en la primera planta está el despacho del director."
+            "text": "那也是我的教室，在二樓。進入大樓後，從右邊上樓。一樓是校長室。"
         },
         "askMore":  {
-            "text": "¿Necesitas algo más?"
+            "text": "你有什麼需要嗎？"
         },
         "goodbye": {
-            "text": "Adiós."
+            "text": "再見。"
         },
         "notIntroduced": {
-            "text": "Yo soy Jose."
+            "text": "我是荷西。"
         },
         "alreadyIntroduced": {
-            "text": "Ya me has dicho tu nombre."
+            "text": "你已經告訴我你的名字了。"
         }
     },
     
     "alison": {
         "root": {
-            "text": "¿Te conozco?"
+            "text": "我認識你嗎？"
         },
         "choices": [
             {
-                "text": "Soy {{name}}... ¿Y tú eres?"
+                "text": "我是{{name}}…，而你是…？"
             },
             {
-                "text": "No. Lo siento, tengo prisa. Adiós."
+                "text": "對不起，我有事。再見。"
             }
             
         ],
         "introduce": [
             {
-                "text": "Encantada, yo soy Alison."
+                "text": "很高興認識你，我是愛莉。"
             },
             {
-                "text": "Espero que estés a gusto aquí. Hay gente muy maja."
+                "text": "希望你在這裡過得愉快，這裡的人都很好。"
             },
             {
-                "text": "¿A qué curso vas?"
+                "text": "你是哪個年級的？"
             }
         ],
         "playerAnswer": {
-            "text": "(Contestas)"
+            "text": "（你回答）"
         },
         "afterPlayerIntroduction": [
             {
-                "text": "Entonces te veré en clase."
+                "text": "那麼課堂上再見。"
             },
             {
-                "text": "El chico de la camiseta amarilla que está cerca de la entrada al patio también va a nuestra clase."
+                "text": "操場門口旁邊那個穿黃色襯衫的男孩也是我們班的。"
             },
             {
-                "text": "Es muy majo. ¿Por qué no hablas con él?"
+                "text": "他人很好，你怎麼不去跟他說點話？"
             }
         ],
         "goodbye": [
             {
-                "text": "",
-                "text_male": "No seas tan tímido, no muerdo",
-                "text_female": "No seas tan tímida, no muerdo"
+                "text": "別害羞，我不咬人。"
             },
             {
-                "text": "Bueno, nos vemos. Ten un buen primer día."
+                "text": "好了，再見。祝你有個愉快的第一天。"
             }
         ]
     },
 
     "guille": {
         "root": {
-            "text": "",
-            "text_male": "¿Eres nuevo? No te había visto antes por aquí.",
-            "text_female": "¿Eres nueva? No te había visto antes por aquí."
+            "text": "你是新來的吧？我以前沒見過你。"
         },
         "choices": [
             {
-                "text": "Sí, soy {{name}}... ¿Y tú eres?"
+                "text": "是的，我是 {{name}}…你是誰？"
             },
             {
-                "text": "Perdona, tengo prisa (Te vas)."
+                "text": "不好意思，我有點事。 （你離開）。"
             }
         ],
         "introduce": {
-            "text": "Llámame Guille."
+            "text": "叫我吉耶。"
         },
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<學校鐘聲響起>>"
         },
         "guilleGoodbye": {
-            "text": "Deberíamos entrar ya. Nos vemos."
+            "text": "我們該進去了，再見。"
         }
     }
     

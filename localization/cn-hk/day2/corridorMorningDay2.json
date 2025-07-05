@@ -2,131 +2,126 @@
     "alex": {
         "choices": [
             {
-                "text": "Me han dicho que quieres gastarme una broma."
+                "text": "我聽說你想對我開個惡作劇。"
             },
             {
-                "text": "¿No podemos llevarnos bien?"
+                "text": "我們可以好好相處嗎？"
             },
             {
-                "text": "Conozco a los de tu tipo."
+                "text": "我知道你是什麼樣的人。"
             }
         ],
         "prank": [
             {
-                "text": "",
-                "text_male": "Soy un poco bromista, pero tranquilo.",
-                "text_female": "Soy un poco bromista, pero tranquila."
+                "text": "我有點喜歡開玩笑，但放輕鬆點。"
             },
             {
-                "text": "Nos reiremos todos."
+                "text": "我們都會笑一笑的。"
             }
         ],
 
         "ask": {
-            "text": "¿Por qué no empezamos de cero?"
+            "text": "為什麼我們不重新開始呢？"
         },
         "askReply": {
-            "text": "De acuerdo. Entremos en clase."
+            "text": "好啦，我們進去吧。"
         },
 
         "distrust": [
             {
-                "text": "Eres el típico que se aprovecha de todos."
+                "text": "你就是那種會利用他人的人。"
             },
             {
-                "text": "Que busca pelea con cualquier excusa."
+                "text": "不管什麼理由，都想找人打架。"
             }
         ],
         "distrustReply": {
-            "text": "",
-            "text_male": "Si has terminado de darme la chapa, lárgate, capullo.", 
-            "text_female": "Si has terminado de darme la chapa, lárgate, estúpida."
-            
+            "text": "如果你說完了，滾吧，你這個廢物。"
         },
 
         "normal": {
-            "text": "¿Sigues enfadado por lo del sitio de ayer?"
+            "text": "你還在為座位的事情生氣嗎？"
         },
         "normalReply": {
-            "text": "Ya veremos. ¿Y tú? ¿Sabes ya cual es tu sitio?"
+            "text": "我們走著瞧。你已經知道哪一張桌子是你的嗎？"
         },
         "talked": {
-            "text": "Me está ignorando."
+            "text": "他在無視我。"
         }
     },
     
     "alison": {
         "notTalked": {
-            "text": "¿Qué tal, {{name}}?"
+            "text": "你好嗎，{{name}}？"
         },
         "warn": [
             {
-                "text": "Por cierto, antes hablaba Álex de gastarte una broma."
+                "text": "順帶一提，阿歷之前說想對你開個惡作劇。"
             },
             {
-                "text": "No suele ser así, no sé qué le pasa."
+                "text": "他以前不是這樣的，我不知道他現在怎麼樣了。"
             },
             {
-                "text": "Ten cuidado, ¿vale?"
+                "text": "保重，好嗎？"
             }
         ],
         "talked": {
-            "text": "Entremos a clase o llegaremos tarde."
+            "text": "我們進去吧，不然我們就要遲到了。"
         }
     },
 
     "guille": {
         "match": [
             {
-                "text": "Vamos a quedar el sábado en mi casa para ver una peli."
+                "text": "這週六我們要在我家看電影。"
             },
             {
-                "text": "¿Quieres venir? Viene gente de clase."
+                "text": "你想來嗎？有同學會來。"
             },
             {
-                "text": "Y la veremos en una tele gigante que se ha comprado mi padre para ver el fútbol."
+                "text": "我們會在我父親剛買的大電視上看，他是為了看足球比賽買的。"
             }
         ],
         "choices": [
             {
-                "text": "Sí."
+                "text": "係"
             },
             {
-                "text": "No."
+                "text": "唔係"
             },
             {
-                "text": "Tengo que preguntar antes a mis padres si puedo."
+                "text": "我要先問問我的父母。"
             }
         ],
         "yes": [
             {
-                "text": "Genial, ya somos uno más entonces."
+                "text": "太好了，又有一個人加入了。"
             },
             {
-                "text": "Ya te diré la dirección y los detalles."
+                "text": "我會把地址和其他細節告訴你。"
             }
         ],
         "no": [
             {
-                "text": "Es una pena."
+                "text": "好可惜。"
             },
             {
-                "text": "Bueno, hasta luego."
+                "text": "那麼，再見。"
             }
         ],
         "ask": {
-            "text": "Bueno, ya me dirás."
+            "text": "那麼，告訴我吧。"
         },
         
         "reminder": {
-            "text": "Acuérdate, el sábado en mi casa a las 6 de la tarde."
+            "text": "記住，週六下午6點，在我家。"
         },
         "goToClass": {
-            "text": "Entremos a clase."
+            "text": "我們進去吧。"
         },
 
         "distracted": {
-            "text": "Parece distraído."
+            "text": "看起來心不在焉。"
         }
     }
 }

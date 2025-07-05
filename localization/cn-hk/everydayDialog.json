@@ -9,10 +9,10 @@
         "pc": {
             "root": [
                 {
-                    "text": "****If I turn it on now, I'll be late for sure."
+                    "text": "****If I turn it on now，I'll be late for sure。"
                 },
                 {
-                    "text": "****Better to wait till afternoon."
+                    "text": "****Better to wait till afternoon。"
                 }
             ],
             "pcQuestion": {
@@ -130,7 +130,7 @@
             },
             "choices": [
                 {
-                    "text": "(點都要入去)。"
+                    "text": "（點都要入去）。"
                 },
                 {
                     "text": "我再去別處轉轉。"
@@ -154,7 +154,7 @@
                 }
             ],
             "teacherArrive": {
-                "text": "(背後敲門，老師來了)"
+                "text": "（背後敲門，老師來了）"
             }
         },
         "late": {

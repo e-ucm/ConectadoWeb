@@ -1,41 +1,39 @@
 {
     "wardrobe1": {
         "root": {
-            "text": "No hay nada útil dentro."
+            "text": "這裡沒有什麼有用的東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "Ahora no me apetece ordenar todo esto."
+            "text": "我沒有心情執拾這地方。"
         }
     },
 
     "phone": {
         "root": {
-            "text": "Te he mandado una petición de amistad"
+            "text": "我已經向你發送好友請求。"
         },
         "message2": {
-            "text": "Acéptamela desde tu ordenador :)"
+            "text": "係電腦接受佢啦:)"
         },
         "choices": [
             {
-                "text": "Sí, ahora te acepto"
+                "text": "好， 我依家接受你"
             },
             {
-                "text": "Cuando pueda lo miro"
+                "text": "如果得既話我可以睇一睇"
             },
             {
-                "text": "(Es un poco pesada, paso de contestar nada)"
+                "text": "（佢好悶，我唔答）"
             }
         ],
         "acceptNow": {
-            "text": "Sí, ahora te acepto la petición :)"
+            "text": "係，我依家接受你既邀請 :)"
         },
         "acceptLater": {
-            "text": "",
-            "text_male": "Cuando pueda lo miro, ahora mismo estoy ocupado",
-            "text_female": "Cuando pueda lo miro, ahora mismo estoy ocupada"
+            "text": "當我可機會既時候我會調查呢件事。我宜家好忙"
         }
     }
     

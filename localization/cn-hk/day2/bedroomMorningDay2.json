@@ -1,25 +1,25 @@
 {
     "bag": {
         "root": {
-            "text": "Todo listo, vámonos."
+            "text": "一切都準備就緒，我們出發吧。"
         }
     },
 
     "wardrobe1": {
         "root": {
-            "text": "Por ahora no necesito nada que pueda estar ahí dentro."
+            "text": "我現在不需要這裡的任何東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "Tengo que irme ya a clase y aún no he ordenado esto. Tendré que buscar otro momento"
+            "text": "我現在要去上課了，但還沒收拾好。看來我要另外再找個時間去做。"
         }
     },
     
     "bed": {
         "root": {
-            "text": "Ya tendré tiempo de dormir cuando vuelva de clase."
+            "text": "等我放學回來再睡一會。"
         }
     }
 

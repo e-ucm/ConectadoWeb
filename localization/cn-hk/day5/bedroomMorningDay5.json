@@ -1,26 +1,26 @@
 {
     "bag": {
         "root": {
-            "text": "Cogeré todo para marcharme."
+            "text": "我會帶晒所有嘢走。"
         }
     },
 
     "wardrobe1": {
         "root": {
-            "text": "Por ahora no necesito nada que pueda estar ahí dentro."
+            "text": "我依家唔需要任何嘢。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "..."
+            "text": "…"
         }
     },
 
     
     "bed": {
         "root": {
-            "text": "He de irme."
+            "text": "我得走了。"
         }
     },
 
@@ -30,17 +30,17 @@
         },
         "pcChoice": [
             {
-                "text": "Sí."
+                "text": "係"
             },
             {
-                "text": "No."
+                "text": "唔係"
             }
         ],
         "turnPC": {
-            "text": "No enciende, ¿se habrá estropeado?"
+            "text": "佢唔著，係唔係壞咗呢？"
         },
         "leavePC": {
-            "text": "Mejor no. Es hora de irse a clase."
+            "text": "最好唔好，去上堂。"
         }
     }
 }

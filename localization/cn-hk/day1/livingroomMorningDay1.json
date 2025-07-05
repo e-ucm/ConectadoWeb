@@ -2,43 +2,41 @@
     "mom": {
         "notTalkedNormal": [
             {
-                "text": "",
-                "text_male": "Veo que ya estás listo para irte.",
-                "text_female": "Veo que ya estás lista para irte."
+                "text": "看來你已經準備出發了。"
             },
             {
-                "text": "¿Llevas todo? Acuérdate de coger la mochila."
+                "text": "你帶齊東西了嗎？記得帶上背囊。"
             },
             {
-                "text": "Pórtate bien y haz muchos amigos."
+                "text": "乖啲，多交些朋友。"
             }
         ],
         "notTalkedLate": [
             {
-                "text": "¿Has visto la hora que es?"
+                "text": "你看現在幾點了？"
             },
             {
-                "text": "Tu primer día en el nuevo colegio y ya llegas tarde."
+                "text": "你在新學校的第一天就遲到了。"
             },
             {
-                "text": "¡Venga, coge todo lo que necesites y vete ya!"
+                "text": "快點，帶齊所有東西，馬上離開！"
             }
         ],
         "hasBag": {
-            "text": "Veo que llevas todo."
+            "text": "看來你把所有東西都收拾好了。"
         },
         "hasBagNormal": {
-            "text": "Vete ya o acabarás llegando tarde."
+            "text": "****Go now or you will be late。"
         },
         "hasBagLate":  {
-            "text": "Vete, que ya llegas tarde."
+            "text": "****Go now，you're already late。"
         },
         "noBag": [
             {
-                "text": "Te dejas la mochila."
+                "text": "你忘了背囊。"
             },
             {
-                "text": "Está en tu cuarto. Cógela y vete ya."
+                "text": "它在你房間，趕緊帶上出發。"
             }
         ]
     }

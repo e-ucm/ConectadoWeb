@@ -1,45 +1,45 @@
 {
     "mom_dad": {
         "meeting": {
-            "text": "Hemos decidido ir a hablar con tu tutor para ver qué está pasando en el colegio."
+            "text": "我哋會同你嘅導師傾下，睇下發生咗咩事。"
         },
         "meeting2": {
-            "text": "Vamos a pedirle una cita para mañana."
+            "text": "我哋問緊聽日見面。"
         },
         "choices": [
             {
-                "text": "Gracias."
+                "text": "多謝。"
             },
             {
-                "text": "Va a ser peor."
+                "text": "會仲差…"
             }
         ],
         "thanks": {
-            "text": "De nada, cariño. Queremos que estés bien."
+            "text": "冇事㗎，我哋都係想你好。"
         },
         "thanks2": {
-            "text": "Intentaremos tener la reunión mañana como muy tarde."
+            "text": "我哋試下爭取最遲喺聽日見面。"
         },
         "downplay": [
             {
-                "text": "No quiero que vayáis. Será peor."
+                "text": "我唔想你哋去，件事會變得更差。"
             },
             {
-                "text": "Creerán que soy un chivato y tampoco ha sido para tanto."
+                "text": "佢哋會覺得我係二五仔，雖然唔係啲咩問題。"
             },
             {
-                "text": "Dejadlo estar. El tiempo lo solucionará."
+                "text": "算啦，時間可以解決問題。"
             }
         ],
         "downplay2": {
-            "text": "Bien. Pero si va a más dínoslo."
+            "text": "好喇，如果情況惡化，記得要話我哋知。"
         },
 
         "talked": {
-            "text": "Ten cuidado y pórtate bien."
+            "text": "照顧好自己，同埋乖啲。"
         },
         "talked2": {
-            "text": "Y acuérdate que el domingo vamos a visitar a la abuela."
+            "text": "記住星期日我哋去探阿嫲。"
         }
     }
 }

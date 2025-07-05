@@ -2,32 +2,28 @@
     "beforeEnter": {
         "root": [
             {
-                "text": "La semana pasada, si recordáis, terminamos de ver como hacer el análisis morfológico de una frase."
+                "text": "如果你記得上個星期，我哋學緊點做語態分析。"
             },
             {
-                "text": "Ahora toca ver como hacer el análisis sintáctico."
+                "text": "依家係教句法分析。"
             }
         ],
         "knock": {
-            "text": "(Alguien está llamando a la puerta)"
+            "text": "（有人敲緊門）"
         },
         "allowEnter": {
-            "text": "Pasa."
+            "text": "入嚟。"
         }
     },
     "afterEnter": {
         "root": {
-            "text": "Alejandro, llegas tarde, por favor siéntate."
+            "text": "阿歷，你遲到喎，請坐低啦。"
         },
         "alexAnswer": {
-            "text": "",
-            "text_male": "El nuevo está en mi sitio.",
-            "text_female": "La nueva está en mi sitio."
+            "text": "新嚟嘅人坐咗我嗰位。"
         },
         "teacherAnswer": {
-            "text": "",
-            "text_male": "Su nombre es {{name}}. Siéntate por ahora en otro lugar. Le he pedido a Alison que lo ayude en sus primeros días.",
-            "text_female": "Su nombre es {{name}}. Siéntate por ahora en otro lugar. Le he pedido a Alison que la ayude en sus primeros días."
+            "text": "我叫{{name}}。暫時坐住其他位先，呢幾日我已經請咗愛莉幫手。"
         }
     }
 

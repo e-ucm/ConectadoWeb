@@ -1,26 +1,26 @@
 {
     "bag": {
         "root": {
-            "text": "Cogeré todo para marcharme."
+            "text": "我會攞好所有東西並離開。"
         }
     },
 
     "wardrobe1": {
         "root": {
-            "text": "Por ahora no necesito nada que pueda estar ahí dentro."
+            "text": "我現在不需要這裏的任何東西。"
         }
     },
 
     "wardrobe2": {
         "root": {
-            "text": "No tengo ganas de ordenar ahora."
+            "text": "我現在沒有心情組織。"
         }
     },
 
     
     "bed": {
         "root": {
-            "text": "He de irme."
+            "text": "我得走了。"
         }
     }
     

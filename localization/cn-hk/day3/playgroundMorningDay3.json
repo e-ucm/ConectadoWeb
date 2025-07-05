@@ -1,67 +1,67 @@
 {
     "group": {
         "notTalked": {
-            "text": "Buenos días. ¿Qué hacéis todo aquí?"
+            "text": "早安，你在這做什麽呢？"
         },
         "explain": {
-            "text": "Sólo estábamos hablando."
+            "text": "我們只是在聊天。"
         },
         "shutUp": [
             {
-                "text": "Cállate Guille. ¿En qué hemos quedado?"
+                "text": "閉嘴吉耶，還記得我們的約定嗎？"
             },
             {
-                "text": "¿Acaso quieres que se enteren tus padres?"
+                "text": "還是你想你的父母知道呢？"
             }
         ],
         "silence": {
-            "text": "..."
+            "text": "…"
         },
         "choices": [
             {
-                "text": "¿Qué está pasando, Guille?"
+                "text": "發生了什麽，吉耶？"
             },
             {
-                "text": "Eso ha sonado a amenaza."
+                "text": "那聽起來像是威脅。"
             }
         ],
         "worry": {
-            "text": "¿Estás bien, Guille?"
+            "text": "你還好嗎，吉耶？"
         },
         "threat": {
-            "text": "¿También la tienes tomada con Guille, Álex?"
+            "text": "你還要和吉耶過不去嗎…阿歷？"
         },
         
         "silenceQuestion": {
-            "text": "..."
+            "text": "…"
         },
         "askSilence": {
-            "text": "¿Nadie va a decir nada?"
+            "text": "有誰要説些什麽嗎？"
         },
 
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<學校鐘聲響起>>"
         },
         "late": {
-            "text": "Vale. No digáis nada. Yo me voy a clase, que ya es suficientemente tarde."
+            "text": "好吧，什麽都不要説。我要去教室，現在已經足夠晚了。"
         },
         "talked": [
             {
-                "text": "En serio, ¿Me estáis haciendo el vacío?"
+                "text": "你們是在排擠我嗎，這是認真的？"
             },
             {
-                "text": "¿Tú también, Guille?"
+                "text": "你也是嗎，吉耶？"
             }
         ],
         "keepSilence": {
-            "text": "..."
+            "text": "…"
         },
         "talkedChoices": [
             {
-                "text": "Esperar a ver si te hablan."
+                "text": "等等看他們會不會説話。"
             },
             {
-                "text": "Marcharte."
+                "text": "離開。"
             }
         ]
     }

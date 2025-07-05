@@ -3,26 +3,26 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Bueno...¿ya lo hemos solucionado no?"
+                    "text": "所以…你有冇整到出嚟？"
                 },
                 {
-                    "text": "¿Sabes dónde sentarte?"
+                    "text": "你知唔知道去邊度坐？"
                 },
                 {
-                    "text": "Quizás deberías evitar que los chicles caigan en la silla golpeándolos. O si no, tendrás que sentarte en uno."
+                    "text": "可能你要避免拍打呢啲跌落座位既香口膠，如果唔係你要坐上其中一粒。"
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "Tendrás que sentarte en un chicle."
+                    "text": "你要坐上一粒香口膠。"
                 },
                 {
-                    "text": "Jajaja. Adelante, siéntate."
+                    "text": "哈哈，去啦，坐低。"
                 },
                 {
-                    "text": "Venga, ¿a qué esperas?"
+                    "text": "嚟啦，你等咩喎"
                 }
             ]
         }

@@ -2,13 +2,13 @@
     "noPhone": {
         "root": [
             {
-                "text": "No encuentro mi móvil."
+                "text": "我搵唔到我部電話。"
             },
             {
-                "text": "Lo había dejado encima de la mesa al empezar la clase."
+                "text": "啱啱上堂嗰陣我已經擺咗上枱。"
             },
             {
-                "text": "¿Alguien me lo ha quitado? Será mejor que pregunte."
+                "text": "有冇人拎咗？我最好周圍問。"
             }
         ]
     }

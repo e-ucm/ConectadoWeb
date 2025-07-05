@@ -1,122 +1,120 @@
 {
     "maria": {
         "notTalked": {
-            "text": "¿Quieres algo?"
+            "text": "你有什麼需要嗎？"
         },
         "choices1": [
             {
-                "text": "Nada, adiós."
+                "text": "沒有，再見。"
             },
             {
-                "text": "¿Por qué estás aquí sola en vez de en el patio?"
+                "text": "你為什麼自己一個在這裡，而不是在操場呢？"
             }
         ],
         "ask": {
-            "text": "Prefiero quedarme aquí tranquila leyendo."
+            "text": "我更喜歡安靜地在這裡看書。"
         },
         "choices2": [
             {
-                "text": "Disfruta, adiós (Que chica más rara)."
+                "text": "那你慢慢享受吧，再見。（真是個怪人）"
             },
             {
-                "text": "¿No prefieres estar en el recreo con tus amigos?"
+                "text": "你不喜歡和朋友一起去操場玩嗎？"
             }
         ],
         "keepAsking": [
             {
-                "text": "",
-                "text_male": "Eres un poco pesado con las preguntas.",
-                "text_female": "Eres un poco pesada con las preguntas."
+                "text": "你問所有那些問題有點煩。"
             },
             {
-                "text": "No tengo amigos, creen que soy rara."
+                "text": "我沒有朋友，他們認為我是個怪人。"
             },
             {
-                "text": "Ya te puedes ir."
+                "text": "你現在可以走了。"
             }
         ],
         "choices3": [
             {
-                "text": "(Quedarte)"
+                "text": "（留下）"
             },
             {
-                "text": "(Irte)"
+                "text": "（離開）"
             }
         ],
         "stay": [
             {
-                "text": "No me pareces rara."
+                "text": "在我看來你並不像怪人。"
             },
             {
-                "text": "Voy a bajar al recreo. Si quieres venir, estaré abajo."
+                "text": "我現在去操場，如果你想來的話我會在樓下等你。"
             }
         ],
         "stayAnswer": [
             {
-                "text": "Gracias, eres muy amable."
+                "text": "謝謝，你真好心。"
             },
             {
-                "text": "Pero al menos hoy me quedaré aquí. Me queda poco para terminar el libro."
+                "text": "但今天我會留在這裡，我快要讀完我的書了。"
             },
             {
-                "text": "Pásalo muy bien en el recreo. Y evita a Álex, es estúpido."
+                "text": "玩得開心點，小心阿歷，他是個混蛋。"
             }
         ],
         
         "talkedMean": {
-            "text": "..."
+            "text": "…"
         },
         "talkedMeanThoughts": {
-            "text": "Parece que me está ignorando."
+            "text": "看來她不理會我了。"
         },
         "talkedNice": {
-            "text": "Estoy terminando el libro, hablamos en otro momento."
+            "text": "我正要讀完我的書，我們改天再聊。"
         }
 
     },
 
     "phone": {
         "root": {
-            "text": "De nuevo muchas gracias por ayudarme"
+            "text": "多謝你幫我。"
         },
         "choices":[
             {
-                "text": "No es nada."
+                "text": "冇事"
             },
             {
-                "text": "(No contestar, ya la veré luego)"
+                "text": "（唔好答，我會睇下之後點樣回應）"
             }
         ],
         "reply": {
-            "text": "No es nada"
+            "text": "冇事"
         }
     },
 
     "alison": {
         "notFound": [
             {
-                "text": "¿Aún no has encontrado nada?"
+                "text": "你還沒找到嗎？"
             },
             {
-                "text": "Sigue buscando, por favor."
+                "text": "請繼續幫我找找。"
             }
         ],
 
         "found": [
             {
-                "text": "Veo que has encontrado el pendiente."
+                "text": "我看到你已找回了耳環。"
             },
             {
-                "text": "Muchas gracias."
+                "text": "非常感謝你。"
             },
             {
-                "text": "Eres genial, te debo una."
+                "text": "你真棒，我欠你一个人情。"
             },
             {
-                "text": "El recreo se va a acabar ya, deberíamos ir entrando a clase."
+                "text": "小息時間快結束，我們應該回教室了。"
             },
             {
-                "text": "Nos vemos dentro."
+                "text": "裡面見。"
             }
         ]
     }

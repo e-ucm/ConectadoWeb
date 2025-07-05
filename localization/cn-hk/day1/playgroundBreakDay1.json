@@ -2,10 +2,10 @@
     "earring": {
         "root": [
             {
-                "text": "Parece que es el pendiente de Alison."
+                "text": "看起來像愛莉的耳環。"
             },
             {
-                "text": "Será mejor que me lo lleve."
+                "text": "我最好把它還給她"
             }
         ]
     },
@@ -13,24 +13,24 @@
     "ana": {
         "earringNotFound": [
             {
-                "text": "Hay algo raro cerca de la canasta."
+                "text": "籃框附近有些奇怪的東西。"
             },
             {
-                "text": "Veo algo brillar desde aquí."
+                "text": "我從這裡看到有閃閃發光的東西。"
             }
         ],
         "earringFound": {
-            "text": "Parece que has encontrado el pendiente de Alison."
+            "text": "看來你找到愛莉的耳環。"
         }
     },
 
     "guille": {
         "root": [
             {
-                "text": "Nuestro tutor es bastante majo."
+                "text": "我們的導師很好。"
             },
             {
-                "text": "Si tienes cualquier problema, habla con él."
+                "text": "如果你有任何問題，請去找他。"
             }
         ]
     }

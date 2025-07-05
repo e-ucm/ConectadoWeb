@@ -1,36 +1,36 @@
 {
     "maria": {
         "root": {
-            "text": "..."
+            "text": "…"
         },
         "leaveMaria": {
-            "text": "Parece incómoda. Mejor dejarla por ahora."
+            "text": "她看起來不太自在，最好暫時不要打擾她。"
         }
     },
     
     "alison": {
         "root": {
-            "text": "Perdona, tengo prisa. Si no entro ya a clase voy a llegar tarde." 
+            "text": "抱歉，我趕時間，我再不進去我就遲到了。" 
         }
     },
 
     "guille": {
         "notTalked": [
             {
-                "text": "Buenas, estaba leyendo los anuncios del corcho."
+                "text": "你好，我正在看壁布板。"
             },
             {
-                "text": "A veces hay cosas interesantes, y últimamente alguien va dejando cromos, mensajes y adivinanzas."
+                "text": "有時會有一些有趣的東西，最近有人留下了信息、貼紙和謎語。"
             },
             {
-                "text": "Acostúmbrate a mirarlo una vez al día."
+                "text": "每天至少看一次，養成習慣吧。"
             },
             {
-                "text": "¿Entramos a clase?"
+                "text": "我們進去吧？"
             }
         ],
         "talked": {
-            "text": "Acuérdate de mirar los corchos. A veces se encuentran cosas interesantes."
+            "text": "記得看看佈告欄，有時你能發現有趣的事。"
         }
     }
     

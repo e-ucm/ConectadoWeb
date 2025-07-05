@@ -2,18 +2,18 @@
     "maria": {
         "washed": [
             {
-                "text": "¿Qué has hecho? menuda mancha."
+                "text": "你做了什麼？這麼大的污漬。"
             },
             {
-                "text": "Madre mía, parece que te hayas meado encima, o incluso cagado."
+                "text": "噢老友，看起來你尿濕了自己，甚至還拉了。"
             }
         ],
         "notWashed": [
             {
-                "text": "No sé si te has fijado, pero llevas un chicle pegado en el culo."
+                "text": "也許你還沒注意到，但你的屁股上黏著一塊香口膠。"
             },
             {
-                "text": "Puedes pasar por el baño a verlo en el espejo."
+                "text": "你可以去洗手間照照鏡子。"
             }
         ]
     }

@@ -2,104 +2,104 @@
     "alison": {
         "root": [
             {
-                "text": "{{name}}, quiero hablar contigo."
+                "text": "{{name}}，我想同你傾一傾。"
             },
             {
-                "text": "No sé si lo sabes, pero Álex nos ha dicho a todos que no te hablemos."
+                "text": "唔知你知唔知喇，阿歷叫咗我哋唔好同你講嘢。"
             },
             {
-                "text": "Y a los que no queremos hacerle caso nos amenaza con algo."
+                "text": "佢而家威脅所有唔跟佢指示嘅人。"
             },
             {
-                "text": "¿Puedo confiar en ti? No quiero dejar de ser tu amiga."
+                "text": "我可以信你？我唔想我哋唔再係朋友。"
             }
         ],
         "choices": [
             {
-                "text": "Muchas gracias por ser mi amiga."
+                "text": "好多謝你做我嘅朋友。"
             },
             {
-                "text": "No. Y no tengo interés en ganarme tu confianza."
+                "text": "唔喇，我對獲得你嘅信任冇興趣。"
             }
         ],
         "thanks": [
             {
-                "text": "Me alegra oír eso."
+                "text": "聽到你咁講我好開心。"
             },
             {
-                "text": "Intercambiemos contraseñas de redes sociales y del móvil."
+                "text": "不如我哋交換電話同社交媒體嘅密碼。"
             },
             {
-                "text": "Como muestra de amistad y confianza."
+                "text": "作為表達友誼同信任。"
             },
             {
-                "text": "Antiguamente para gestos así se daban la mano con una herida abierta para intercambiar sangre."
+                "text": "以前啲人會割開手掌握手以示結拜。"
             },
             {
-                "text": "Pero eso es asqueroso y puedes coger cualquier cosa."
+                "text": "但咁做好核突又唔健康。"
             }
         ],
         "passChoices": [
             {
-                "text": "(Aceptar el intercambio de contraseñas)"
+                "text": "接受交換密碼）"
             },
             {
-                "text": "(Rechazar el intercambio de contraseñas)"
+                "text": "（拒絕交換密碼）"
             }
         ],
         "exchange":  {
-            "text": "(Os escribís las contraseñas a través del móvil)"
+            "text": "你喺部電話入密碼。"
         },
         "exchange2": {
-            "text": "Perfecto. Best Friends (sonríe de oreja a oreja)."
+            "text": "好\"好朋友\" （露出滿足笑容）。"
         },
         "dont": [
             {
-                "text": "Si no confías en mí yo tampoco puedo confiar en ti."
+                "text": "如果你唔信我，我都唔可以信你。"
             },
             {
-                "text": "Lo siento, pero entonces no puedo hablarte más."
+                "text": "對唔住，我唔會再同你講嘢。"
             },
             {
-                "text": "No quiero que Álex la tome conmigo."
+                "text": "我唔想阿歷對我有偏見。"
             }
         ],
         "reject": [
             {
-                "text": "Entonces no me queda otra que hacer caso a Álex y dejarte de hablar."
+                "text": "咁我冇其他選擇，唯有唔再同你講嘢。"
             },
             {
-                "text": "No quiero correr ningún riesgo."
+                "text": "我唔想冒任何風險。"
             }
         ],
         "bellRinging": {
-            "text": "<<La campana está sonando>>"
+            "text": "<<學校鐘聲響起>>"
         },
         "late": {
-            "text": "Me voy a clase ya, que es tarde, ya verás como nos cae bronca."
+            "text": "****Alright。 Don't say anything。 I'm going to class。 It's already late enough。"
         }
     },
 
     "guille": {
         "root": {
-            "text": "(El gesto de su cara cambia al verte, gira la cabeza y mira a otro lado)"
+            "text": "（見到你後神情轉變，擰轉頭望其他地方）"
         }
     },
 
     "jose": {
         "root": [
             {
-                "text": "(Con una sonrisa en su cara te mira fijamente y empieza a reir)"
+                "text": "（面帶笑容望住你，開始大笑）"
             },
             {
-                "text": "¡¡Jajaja!!"
+                "text": "哈哈哈！！"
             }
         ]
     },
 
     "board": {
         "root": {
-            "text": "Parece que alguien ha arrancado ya la foto de ayer."
+            "text": "好似有人影咗尋日嘅相。"
         }
     }
 }
