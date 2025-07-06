@@ -4,17 +4,17 @@
     "loginScreen": {
         "subtitleText": "CONECTE-SE COM SEUS AMIGOS!",
         "userInput": {
-            "sideText": "Nome de usuário"
+            "sideText": "Usuário"
         },
         "passwordInput": {
             "sideText": "Senha"
         },
-        "errorText": "O nome de usuário/senha inseridos estão incorretos",
+        "errorText": "Usuário/Senha incorretos.",
         "enterButton": "Entrar"
     },
     "socialNetScreen": {
         "tabTexts": {
-            "feed": "Tablón",
+            "feed": "Painel",
             "friends": "Amigos",
             "upload": "Publicar"
         },
@@ -26,7 +26,7 @@
     },
     "commentsNumberText": "Comentários",
     "friendRequestButtons": {
-        "acceptText": "Aceitar solicitação",
-        "denyText": "Negar solicitação"
+        "acceptText": "Aceitar",
+        "denyText": "Negar"
     }
 }

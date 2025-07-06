@@ -23,7 +23,7 @@
                 "text_female": "Seu primeiro dia na nova escola e você já está atrasada."
             },
             {
-                "text": "Vamos, pegue tudo o que precisa e saia agora!"
+                "text": "Vamos, pegue tudo o que precisa e saia AGORA!"
             }
         ],
         "hasBag": {
@@ -39,10 +39,10 @@
         },
         "noBag": [
             {
-                "text": "Esqueci a mochila!"
+                "text": "Você esqueceu a sua mochila."
             },
             {
-                "text": "Melhor voltar ao meu quarto para pegá-la antes de sair."
+                "text": "Está no seu quarto. Pegue-a e vá para escola agora!"
             }
         ]
     }

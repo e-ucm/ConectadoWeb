@@ -2,10 +2,10 @@
     "earring": {
         "root": [
             {
-                "text": "Parece que é o brinco perdido da Alison!"
+                "text": "Parece que é o brinco perdido da Alice!"
             },
             {
-                "text": "Será mejor que me lo lleve."
+                "text": "Acho que é melhor eu o entregar para ela."
             }
         ]
     },
@@ -20,14 +20,14 @@
             }
         ],
         "earringFound": {
-            "text": "Parece que você encontrou o brinco perdido da Alison."
+            "text": "Parece que você encontrou o brinco perdido da Alice."
         }
     },
 
     "guille": {
         "root": [
             {
-                "text": "Nosso professor é bem legal."
+                "text": "Nosso professor é bem legal!"
             },
             {
                 "text": "Se você tiver algum problema, é só falar com ele."

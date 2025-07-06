@@ -3,8 +3,8 @@
         "notTalked": [
             {
                 "text": "",
-                "text_male":  "Ei, novato, vamos conversar um pouco!!",
-                "text_female": "Ei, novata, vamos conversar um pouco!!"
+                "text_male":  "Ei, novato, vamos conversar um pouco!",
+                "text_female": "Ei, novata, vamos conversar um pouco!"
             },
             {
                 "text": "Hoje você se sentou no meu lugar. Não quero que faça isso de novo."
@@ -38,7 +38,7 @@
             }
         ],
         "giveSandwich": {
-            "text": "(Você dá a ele o seu sanduíche.)"
+            "text": "(Você dá a ele o seu sanduíche)"
         },
         "takeSandwich":  {
             "text": "Agora vai, sai logo daqui."
@@ -55,7 +55,7 @@
                 "text": "(Com um tom ameaçador) Ou vou ter que te ajudar a encontrar um."
             },
             {
-                "text": "E o último que ajudei a encontrar um lugar... Bem, ele acabou encontrando a minha mão na cara dele."
+                "text": "E o último que ajudei a encontrar um lugar... Bem, ele acabou encontrando foi a minha mão na cara dele!"
             },
             {
                 "text": "Agora sai daqui."
@@ -64,26 +64,26 @@
 
         "defyReply": {
             "text": "",
-            "text_male": "Você se acha o espertão, não é?",
-            "text_female": "Você se acha a espertona, não é?"
+            "text_male": "Você se acha o espertão não é?",
+            "text_female": "Você se acha a espertona não é?"
         },
         "push": {
             "text": "",
-            "text_male": "Você é empurrado.",
-            "text_female": "Você é empurrada."
+            "text_male": "(Você é empurrada).",
+            "text_female": "(Você é empurrado)."
         },
         "insult": {
             "text": "Que seja, idiota."
         },
         "leave": {
-            "text": "(Alejandro vai embora.)"
+            "text": "(Alexandre vai embora)"
         }
     },
 
     "alison": {
         "notTalked": [
             {
-                "text": "Onde será que eu perdi isso..."
+                "text": "Onde será que eu perdi eles..."
             },
             {
                 "text": "Desculpe {{name}}, eu não te vi."
@@ -117,7 +117,7 @@
                 "text": "Ainda não procurei."
             },
             {
-                "text": "Você pode ir lá? Enquanto isso, eu termino de procurar na sala.."
+                "text": "Você pode ir lá? Enquanto isso, eu termino de procurar na sala..."
             },
             {
                 "text": "Você me faria um grande favor."
@@ -128,21 +128,21 @@
                 "text": "Não pode ser, eu estava usando eles esta manhã."
             },
             {
-                "text": "E-e-eles são novos, ganhei de p-presente."
+                "text": "Eles são novos, ganhei de presente..."
             }
         ],
         "playerThoughts": {
-            "text": "(Você precbe que ela está muito preocupada e prestes a chorar.)"
+            "text": "(Você percebe que ela está muito preocupada e prestes a chorar)"
         },
         "beg" :{
-            "text": "Por favor, *snif* , *snif*, você pode me ajudar a e encontrá-los?"            
+            "text": "Por favor, sniff, sniff, você pode me ajudar a encontrá-los?"            
         },
         "choices2": [
             {
                 "text": "Tudo bem, vou dar uma olhada."
             },
             {
-                "text": "Sim (Na verdade, vou ir curtir o recreio e só dizer a ela que não encontrei nada.)"
+                "text": "Sim (Na verdade, vou ir curtir o recreio e só dizer a ela que não encontrei nada)."
             }
         ],
         "illusionOfFreeChoice": [
@@ -150,11 +150,11 @@
                 "text": "Muito obrigada."
             },
             {
-                "text": "Aquí está meu número de telefone, assim podemos trocar mensagens."
+                "text": "Aqui está meu número de telefone, assim podemos trocar mensagens."
             }
         ],
         "exchangePhoneNumber": {
-            "text": "(Você também dá a ela o seu número.)"
+            "text": "(Você também dá a ela o seu número)"
         }
         
     },
@@ -163,10 +163,10 @@
     "door": {
         "root": [
             {
-                "text": "Alison parece preocupada."
+                "text": "Alice parece preocupada."
             },
             {
-                "text": "Debería hablar con ella para ver que pasa."
+                "text": "Devo ir falar com ela pra ver o que está acontecendo."
             }
         ]
     }

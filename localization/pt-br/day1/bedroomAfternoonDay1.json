@@ -13,20 +13,20 @@
 
     "phone": {
         "root": {
-            "text": "Eu te enviei um pedido de amizade"
+            "text": "Eu te enviei um pedido de amizade."
         },
         "message2": {
             "text": "Aceita pelo computador :)"
         },
         "choices": [
             {
-                "text": "Sim, vou aceitar agora."
+                "text": "Sim, vou aceitar agora"
             },
             {
-                "text": "Vou ver isso quando puder."
+                "text": "Vou ver isso quando puder"
             },
             {
-                "text": "(Ela é muito chata, não vou responder.)"
+                "text": "(Ela é muito chata, não vou responder)"
             }
         ],
         "acceptNow": {

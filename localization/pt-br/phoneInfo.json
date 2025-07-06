@@ -1,7 +1,7 @@
 {
     "alarm": {
         "title": "Despertador",
-        "message": "Você não consegue mais dormir. \nÉ hora de acordar."
+        "message": "Você não consegue mais dormir. É hora de acordar."
     },
     "clock": {
         "days": [
@@ -35,15 +35,15 @@
         "night": "21:30"
     },
     "statusScreen": {
-        "title":"Risco Social",
+        "title":"Nível de Risco Social",
         "subtitle":"Amizades"
     },
     "textMessages": {
         "title": "CHAT",
-        "chat1": "Alison",
-        "chat2": "Aula",
-        "chat3": "María",
-        "chat4": "Álex"
+        "chat1": "Alice",
+        "chat2": "Classe",
+        "chat3": "Maria",
+        "chat4": "Alexandre"
     },
     "settings": {
         "text": "Você voltará para a tela inicial. Tem certeza?",

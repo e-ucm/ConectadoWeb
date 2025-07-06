@@ -10,17 +10,17 @@
         },
 
         "talked": {
-            "text": "Has vuelto. ¿Quieres algo más?"
+            "text": "Você voltou, precisa de mais alguma coisa?"
         },
         "choices": [
             {
                 "text": "Oi, me chamo {{name}}."
             },
             {
-                "text": "(Perguntar onde fica a sala de aula.)"
+                "text": "(Perguntar onde fica a sala de aula)"
             },
             {
-                "text": "Não preciso de nada, até mais."
+                "text": "Não preciso de nada, tchau."
             }
         ],
         "askClass": {
@@ -33,7 +33,7 @@
             "text": "Até mais."
         },
         "notIntroduced": {
-            "text": "Eu sou o Jose."
+            "text": "Eu sou o José."
         },
         "alreadyIntroduced": {
             "text": "Você já me disse o seu nome."
@@ -46,26 +46,26 @@
         },
         "choices": [
             {
-                "text": "Sou {{name}}... E você é?"
+                "text": "Sou {{name}}... qual o seu nome...?"
             },
             {
-                "text": "Não, desculpe. estou com pressa. Até mais."
+                "text": "Não, desculpe, estou com pressa. Até mais."
             }
             
         ],
         "introduce": [
             {
-                "text": "Prazer, sou a Alison."
+                "text": "Prazer, sou a Alice."
             },
             {
-                "text": "Espero que você goste daqui. As pessoas são super bacanas."
+                "text": "Espero que você goste daqui, as pessoas são super bacanas."
             },
             {
-                "text": "Em qual série você está?"
+                "text": "Em qual série você estuda?"
             }
         ],
         "playerAnswer": {
-            "text": "(Você responde.)"
+            "text": "(Você responde)"
         },
         "afterPlayerIntroduction": [
             {
@@ -81,11 +81,11 @@
         "goodbye": [
             {
                 "text": "",
-                "text_male": "Não seja tímido, eu não mordo, viu",
-                "text_female": "Não seja tímida, eu não mordo, viu"
+                "text_male": "Não seja tímido , eu não mordo, viu?",
+                "text_female": "Não seja tímida , eu não mordo, viu?"
             },
             {
-                "text": "Então, até mais. Tenha um bom primeiro dia."
+                "text": "Então, até mais. Tenha um bom primeiro dia de aula."
             }
         ]
     },
@@ -93,22 +93,22 @@
     "guille": {
         "root": {
             "text": "",
-            "text_male": "Você é novo aqui? Acho que nunca te vi antes.",
-            "text_female": "Você é nova aqui? Acho que nunca te vi antes."
+            "text_male": "Você é novo aqui? Acho que nunca te vi.",
+            "text_female": "Você é nova aqui? Acho que nunca te vi."
         },
         "choices": [
             {
-                "text": "Sim me chamo {{name}}... Que é você?"
+                "text": "Sim, eu sou {{name}}... Quem é você?"
             },
             {
-                "text": "Desculpe, estou com pressa (Você sai)."
+                "text": "Desculpe, estou com pressa. (Você sai)."
             }
         ],
         "introduce": {
-            "text": "Pode me chamar do Guille."
+            "text": "Pode me chamar de Guilherme."
         },
         "bellRinging": {
-            "text": "<<O sinal está tocando.>>"
+            "text": "<<O sinal está tocando>>"
         },
         "guilleGoodbye": {
             "text": "Vamos entrar, até mais."

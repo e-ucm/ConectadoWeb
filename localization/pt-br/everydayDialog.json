@@ -4,11 +4,12 @@
             "text": "Não tenho nada para responder."
         }
     },
+
     "bedroom": {
         "pc": {
             "root": [
                 {
-                    "text": "Se eu ligar o computador agora, com certeza vou me atrasar."
+                    "text": "Se eu ligar o computador, com certeza vou me atrasar."
                 },
                 {
                     "text": "Melhor esperar até de tarde."
@@ -19,40 +20,43 @@
             },
             "pcChoice": [
                 {
-                    "text": "Sim."
+                    "text": "Sim"
                 },
                 {
-                    "text": "Não."
+                    "text": "Não"
                 }
             ],
-            "leavePC": {
-                "text": "É melhor eu ir embora."
+            "leavePC":{
+                "text": "Melhor eu sair."
             }
         },
+
         "bagAfternoon": {
             "root": [
                 {
-                    "text": "Acabei de voltar."
+                    "text": "Acabei de chegar."
                 },
                 {
-                    "text": "Não preciso da mochila no momento."
+                    "text": "Eu realmente não preciso da minha mochila agora."
                 }
             ]
         },
+        
         "bedAfternoon": {
             "root": {
-                "text": "Mmm, deveria ir dormir agora?"
+                "text": "Hmm, será que já devo ir dormir?"
             },
             "choices": [
                 {
-                    "text": "Sim."
+                    "text": "Sim"
                 },
                 {
-                    "text": "Não."
+                    "text": "Não"
                 }
             ]
         }
     },
+
     "livingroom": {
         "doorMorning": {
             "root": {
@@ -65,10 +69,11 @@
             }
         }
     },
+
     "playground": {
         "homeMorning": {
             "root": {
-                "text": "Acabei de chegar, não posso sair ainda não!"
+                "text": "Acabei de chegar, então ainda não posso sair!"
             }
         },
         "homeBreak": {
@@ -92,10 +97,11 @@
             ]
         }
     },
+
     "stairs": {
         "door": {
             "root": {
-                "text": "Parece que não tem ninguém lá dentro..."
+                "text": "Parece que não tem ninguém lá dentro."
             }
         },
         "tag": {
@@ -108,7 +114,9 @@
                 "text": "Melhor eu ir direto para a minha sala."
             }
         }
+
     },
+
     "corridor": {
         "restroom": {
             "root": {
@@ -123,14 +131,16 @@
             },
             "choices": [
                 {
-                    "text": "(Entrar mesmo assim.)"
+                    "text": "(Entrar mesmo assim)."
                 },
                 {
                     "text": "Vou dar mais uma volta."
                 }
             ]
         }
+
     },
+
     "class": {
         "table": {
             "root": {
@@ -138,10 +148,10 @@
             },
             "choices": [
                 {
-                    "text": "Sim."
+                    "text": "Sim"
                 },
                 {
-                    "text": "Não."
+                    "text": "Não"
                 }
             ],
             "teacherArrive": {
@@ -152,8 +162,8 @@
             "root": [
                 {
                     "text": "",
-                    "text_male": "Você está atrasado.",
-                    "text_female": "Você está atrasada."
+                    "text_male": "Você está atrasado",
+                    "text_female": "Você está atrasada"
                 },
                 {
                     "text": "Por favor, sente-se rápido para podermos continuar a aula."
@@ -161,6 +171,7 @@
             ]
         }
     },
+
     "board": {
         "gumWashed": [
             {
@@ -175,7 +186,7 @@
                 "text": "Tem uma foto minha e editaram para parecer que estou com chicletes colados no meu traseiro."
             },
             {
-                "text": "¿Quem iria querer me humilhar desse jeito?"
+                "text": "Quem iria querer me humilhar desse jeito?"
             }
         ]
     }

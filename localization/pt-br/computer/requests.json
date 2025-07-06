@@ -1,9 +1,9 @@
 {
     "Alison": {
-        "bio": "Sempre há uma razão para seguir em frente.",
+        "bio": "Sempre há uma razão para continuar em frente",
         "deny": {
             "root": {
-                "text": "Não posso rejeitar o convite. É a primeira pessoa que parece querer ser minha amiga."
+                "text": "Não posso rejeitar o convite, ela é a primeira pessoa que parece querer ser minha amiga."
             }
         }
     },

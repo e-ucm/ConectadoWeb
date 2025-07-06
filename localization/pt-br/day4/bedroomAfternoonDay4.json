@@ -1,7 +1,7 @@
 {
     "wardrobe1": {
         "root": {
-            "text": "No hay nada útil dentro."
+            "text": "Não tem nada útil aqui dentro."
         }
     },
 
@@ -14,14 +14,14 @@
 
     "bed": {
         "root": {
-                "text": "¿Mmm, debería irme ya a dormir?"
+                "text": "Hmm, será que já devo ir dormir?"
             },
             "choices": [
                 {
-                    "text": "Sí."
+                    "text": "Sim"
                 },
                 {
-                    "text": "No."
+                    "text": "Não"
                 }
             ],
         "noPhone": [
@@ -39,7 +39,7 @@
 
     "phone": {
         "root": {
-            "text": "He visto que has borrado tu publicacion con tu nº de telefono, pero no pasa nada, tengo pantallazo y puedo resubirlo jajaja"
+            "text": "Vi que você excluiu a postagem com seu número de telefone, mas não se preocupe, tirei um print e posso repostar hahaha"
         }
     }
     

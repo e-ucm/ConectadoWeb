@@ -9,7 +9,7 @@
             }
         ],
         "knock": {
-            "text": "(Alguém bate à porta.)"
+            "text": "(Alguém bate à porta)"
         },
         "allowEnter": {
             "text": "Pode entrar."
@@ -17,17 +17,17 @@
     },
     "afterEnter": {
         "root": {
-            "text": "Alejandro, você está atrasado. Por favor, sente-se."
+            "text": "Alexandre, você está atrasado. Por favor, sente-se."
         },
         "alexAnswer": {
             "text": "",
-            "text_male": "O novato está no meu lugar.",
+            "text_male": "O novato está no meu lugar",
             "text_female": "A novata está no meu lugar."
         },
         "teacherAnswer": {
             "text": "",
-            "text_male": "Seu nome é {{name}}. Sente-se em outra cadeira por enquanto. Pedi para a Alison ajudar ele nos primeiros dias.",
-            "text_female": "Seu nome é {{name}}. Sente-se em outra cadeira por enquanto. Pedi para a Alison ajudar ela nos primeiros dias."
+            "text_male": "Seu nome é {{name}}. Sente-se em outra cadeira por enquanto. Pedi para a Alice ajudar ele nos primeiros dias.",
+            "text_female": "Seu nome é {{name}}. Sente-se em outra cadeira por enquanto. Pedi para a Alice ajudar ela nos primeiros dias."
         }
     }
 

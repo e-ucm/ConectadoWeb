@@ -16,20 +16,18 @@
         },
         "choices2": [
             {
-                "text": "Entendí, boa leitura então. Tchau (Que esquisita)."
+                "text": "Entendi, boa leitura então. Tchau (Que esquisita)."
             },
             {
-                "text": "Você não prefere ir lá para o pátio como seus amigos?"
+                "text": "Você não prefere ir lá para o pátio com seus amigos?"
             }
         ],
         "keepAsking": [
             {
-                "text": "",
-                "text_male": "Você está sendo um pouco chato fazendo tantas perguntas.",
-                "text_female": "Você está sendo um pouco chata fazendo tantas perguntas."
+                "text": "Você está sendo um pouco chato fazendo tantas perguntas."
             },
             {
-                "text": "Eu não tenho amigos. Eles acham qeu sou esquisita."
+                "text": "Eu não tenho amigos. Eles acham que sou esquisita."
             },
             {
                 "text": "Você já pode ir agora."
@@ -59,7 +57,7 @@
                 "text": "Mas hoje vou ficar aqui. Estou quase terminando o livro."
             },
             {
-                "text": "Divrta-se lá embaixo e evite o Alex. Ele é um idiota."
+                "text": "Divirta-se lá embaixo e evite o Alex. Ele é um idiota."
             }
         ],
         
@@ -70,21 +68,21 @@
             "text": "Parece que ela está me ignorando."
         },
         "talkedNice": {
-            "text": "Você quer alguma coisa?"
+            "text": "Estou terminando de ler meu livro. Vamos conversar depois?"
         }
 
     },
 
     "phone": {
         "root": {
-            "text": "Obrigada de novo por ter me ajudado"
+            "text": "Obrigado de novo por ter me ajudado"
         },
         "choices":[
             {
                 "text": "Não é nada."
             },
             {
-                "text": "(Não vou responder, vou pensar no que dizer depois.)"
+                "text": "(Não vou responder, vou pensar no que dizer depois)"
             }
         ],
         "reply": {
@@ -116,7 +114,7 @@
                 "text": "O recreio está quase acabando, vamos voltar pra sala."
             },
             {
-                "text": "Te vejo lá dentro"
+                "text": "Te vejo lá dentro!"
             }
         ]
     }

@@ -44,8 +44,8 @@
     "restroom": {
         "root": {
             "text": "",
-            "text_male": "No puedo entrar ahí, es el baño de chicas.",
-            "text_female": "No puedo entrar ahí, es el baño de chicos."
+            "text_male": "Não posso entrar lá, é o banheiro das meninas.",
+            "text_female": "Não posso entrar lá, é o banheiro das meninos."
         },
         "choices": [
             {

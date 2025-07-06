@@ -2,10 +2,10 @@
     "dad": {
         "root": [
             {
-                "text": "Converse com sua mãe."
+                "text": "Habla con tu madre."
             },
             {
-                "text": "Ela quer saber como foi seu dia."
+                "text": "Quiere saber qué tal te ha ido el día."
             }
         ]
     },
@@ -28,7 +28,7 @@
                 "text": "Ah, foi o de sempre. Vou para o meu quarto agora."
             },
             {
-                "text": "Conheci o Guille..."
+                "text": "Conheci o Guilherme..."
             },
             {
                 "text": "(Falar sobre outros colegas)"
@@ -36,7 +36,7 @@
         ],
         "guille": [
             {
-                "text": "Hoje conheci o Guille, ele foi muito legal comigo."
+                "text": "Hoje conheci o Guilherme, ele foi muito legal comigo."
             },
             {
                 "text": "Acho que vamos nos dar bem."
@@ -53,7 +53,7 @@
 
         "choices2": [
             {
-                "text": "Tem uma garota chamada Alison..."
+                "text": "Tem uma garota chamada Alice..."
             },
             {
                 "text": "Tem o José..."
@@ -64,34 +64,34 @@
         ],
         "alison": [
             {
-                "text": "Na sala tem uma garota loira chamada Alison."
+                "text": "Tem uma garota loira chamada Alice."
             },
             {
-                "text": "Hoje ela perdeu um dos seus brincos."
+                "text": "Ela perdeu um dos brincos."
             }
         ],
         "notFound": {
             "text": "Acho que ela não conseguiu encontrar o brinco."
         },
         "found": {
-            "text": "Eu a ajudei a procurar. Ela havia perdido ele no pátio."
+            "text": "Eu a ajudei a procurar, ela havia perdido ele no pátio."
         },
         "jose": [
             {
                 "text": "José é outro dos meus colegas, ele parece mais tímido."
             },
             {
-                "text": "Mas também parece ser bem legal."
+                "text": "Mas também parece ser bem legal!."
             }
         ],
 
 
         "choices3": [
             {
-                "text": "A clase va María..."
+                "text": "E a Maria também..."
             },
             {
-                "text": "Tem o Alex..."
+                "text": "Tem o Alexandre..."
             },
             {
                 "text": "(Falar sobre outros colegas)"
@@ -173,7 +173,7 @@
 
         "choices4": [
             {
-                "text": "Ana..."
+                "text": "A Ana é uma colega também..."
             },
             {
                 "text": "Sobre a escola..."
@@ -184,7 +184,7 @@
         ],
         "ana": [
             {
-                "text": "Na sala também está a Ana."
+                "text": "Também tem a Ana."
             },
             {
                 "text": "Ela é um pouco assustadora."
@@ -202,5 +202,4 @@
             }
         ]
     }
-    
 }
