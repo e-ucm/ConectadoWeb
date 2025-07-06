@@ -1,29 +1,31 @@
 {
     "alexAna": {
         "root": {
-            "text": "(Te han visto, pero pasan de ti, Álex y ana siguen hablando entre ellos)"
+            "text": "(Eles te viram, mas ainda te ignoram. Alex e Ana estão conversando entre si)"
         },
         "suggestion": {
-            "text": "Creo que cabezabuque y gremlin son los más originales."
+            "text": "Acho que Outdoor e Troll são os mais originais."
         },
         "opinion": [
             {
-				"text": "El de margi me parecía bien."
+				"text": "",
+                "text_male": "Eu ainda prefiro Excluído.",
+                "text_female": "Eu ainda prefiro Excluída."
 			},
 			{
-				"text": "Aunque es verdad que {{name}} cabezabuque suena my bien. Jajaja."
+				"text": "Ainda assim, eu concordo que {{name}} Outdoor soa muito bom hahaha."
 			}
         ],
         "jose": {
-            "text": "Jajaja. A ver que opina Jose."
+            "text": "Hahaha, vamos ver o que José pensa."
         },
         "goOn": {
-            "text": "No os cortéis. Seguid ignorándome y pensando en el mote que me vais a poner."
+            "text": "Não seja tímido, continue ignorando e pensando em como me chamar."
         }
     },
     "board": {
         "root": {
-            "text": "Parece que alguien ha arrancado ya la foto de ayer."
+            "text": "Parece que alguém pegou a foto de ontem."
         }
     }
 }

@@ -1,7 +1,7 @@
 {
     "bag": {
         "root": {
-            "text": "Habrá que irse... "
+            "text": "Preciso ir... "
         }
     },
 
@@ -13,14 +13,14 @@
 
     "wardrobe2": {
         "root": {
-            "text": "Igual puedo ordenar ahora en vez de ir a clase... Mamá se enfadaría."
+            "text": "Talvez eu devesse organizar isso agora, em vez de ir para a escola... Minha mãe vai ficar brava."
         }
     },
 
     
     "bed": {
         "root": {
-            "text": "Otro día más, tengo que irme, espero que se pase rápido."
+            "text": "Outro dia... Preciso ir, espero que passe rápido."
         }
     }
     

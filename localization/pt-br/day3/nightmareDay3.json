@@ -3,13 +3,13 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Voy a hacer que nadie te quiera hablar."
+                    "text": "Eu vou garantir que ninguém fale com você."
                 },
                 {
-                    "text": "Puedes decir lo que quieras, pero no conseguirás nada."
+                    "text": "Você pode fazer o que quiser, mas não vai conseguir nada."
                 },
                 {
-                    "text": "Adelante. Habla con la gente de clase, a ver si consigues que te hablen."
+                    "text": "Vai lá, converse com as pessoas da sala, vamos ver se elas falam com você."
                 }
             ]
         },
@@ -17,17 +17,19 @@
             "root": [
                 {
                     "text": "",
-                    "text_male": "Me parece que te has quedado solo.",
-                    "text_female": "Me parece que te has quedado sola."
+                    "text_male": "Acho que você está sozinho.",
+                    "text_female": "Acho que você está sozinha."
                 },
                 {
-                    "text": "¿Qué tal sienta que todos te ignoren?"
+                    "text": "",
+                    "text_male": "Como é ser ignorado por todos?",
+                    "text_female": "Como é ser ignorada por todos?"
                 },
                 {
-                    "text": "¿No te parece divertido que nadie te haga caso?"
+                    "text": "Não é engraçado como ninguém presta atenção em você?"
                 },
                 {
-                    "text": "Porque yo me estoy partiendo de solo verte."
+                    "text": "Porque estou rindo muito só de te olhar para você."
                 }
             ]
         }
@@ -38,13 +40,13 @@
         },
         "playerWorry": [
             {
-                "text": "¿Tú también me vas a ignorar?"
+                "text": "Você vai me ignorar também?"
             },
             {
-                "text": "¿No te habían hecho lo mismo? No me ignores, sabes lo que se siente."
+                "text": "Eles não fizeram o mesmo com você? Não me ignore, você sabe como é."
             },
             {
-                "text": "Tú me entiendes, ¿verdad?"
+                "text": "Você me entende, né?"
             }
         ]
     },
@@ -54,13 +56,13 @@
         },
         "playerWorry": [
             {
-                "text": "Tú eres mi amigo, ¿no?"
+                "text": "Você é meu amigo, não é?"
             },
             {
-                "text": "Guille, tú no eres como los demás."
+                "text": "Guille, você não é como os outros."
             },
             {
-                "text": "No dejes que te amenacen."
+                "text": "Não deixe que eles te ameacem."
             }
         ]
     },
@@ -70,13 +72,13 @@
         },
         "playerWorry": [
             {
-                "text": "¿Vas a ignorarme sin motivo? ¿Solo por qué te han dicho que lo hagas?"
+                "text": "Você vai me ignorar sem motivo? Só porque te disseram para fazer isso?"
             },
             {
                 "text": "Podemos ser amigos."
             },
             {
-                "text": "¿Tienes 3 años? Dime algo."
+                "text": "Quantos anos você tem? Três? Fale comigo."
             }
         ]
     },
@@ -86,13 +88,13 @@
         },
         "playerWorry": [
             {
-                "text": "Eres mi amiga, ¿no?"
+                "text": "Você é minha amiga, certo?"
             },
             {
-                "text": "Eres maja. No me vas a dejar de hablar, ¿verdad?"
+                "text": "Você parece legal, você não vai começar a me ignorar, vai?"
             },
             {
-                "text": "Por favor, dime algo."
+                "text": "Por favor, fala comigo."
             }
         ]
     },
@@ -102,13 +104,13 @@
         },
         "playerWorry": [
             {
-                "text": "¿Qué te he hecho? ¿Por qué vas a por mí también?"
+                "text": "que eu fiz para você? Por que você também está me perseguindo?"
             },
             {
-                "text": "Si Álex se tira de un puente, ¿también te tiras tú?"
+                "text": "Se o Alex pular de uma ponte, você pularia também?"
             },
             {
-                "text": "¿No podemos llevarnos bien?"
+                "text": "Não podemos nos entender?"
             }
         ]
     }

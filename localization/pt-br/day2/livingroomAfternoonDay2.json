@@ -1,62 +1,64 @@
 {
     "dad": {
         "notTalked": {
-            "text": "Veo que ya has llegado, {{name}}."
+            "text": "Oi, {{name}}. Você já chegou."
         },
         "notWashed": [
             {
-                "text": "¿Te has fijado en el chicle que llevas en el culo?"
+                "text": "Você percebeu o chiclete grudado na sua calça?"
             },
             {
-                "text": "A ver si tienes más cuidado, como tú no lavas..."
+                "text": "",
+                "text_male": "Você precisa ser mais cuidadoso. É impressionante que você não tenha lavado sua roupa...",
+                "text_female": "Você precisa ser mais cuidadosa. É impressionante que você não tenha lavado sua roupa..."
             },
             {
-                "text": "Bueno, ¿qué tal el día?"
+                "text": "Então, como foi seu dia?"
             }
         ],
         "washed": {
-            "text": "¿Cómo te ha ido el día?"
+            "text": "Como foi o seu dia?"
         },
 
         "talked": {
-            "text": "¿Quieres hablar de algo más?"
+            "text": "Quer falar sobre mais alguma coisa?"
         },
 
         "choices1": [
             {
-                "text": "Como siempre."
+                "text": "Nada de novo..."
             },
             {
-                "text": "Guille me ha dicho de ir a su casa el sábado."
+                "text": "Guilherme me convidou para ir à casa dele neste sábado."
             },
             {
                 "text": "(Falar sobre outros colegas)"
             }
         ],
         "goMatch": {
-            "text": "Le he dicho que iré, así que el sábado por la tarde no estaré en casa."
+            "text": "Eu disse a ele que iria, então não estarei em casa no sábado à tarde."
         },
         "dontGoMatch": {
-            "text": "Le he dicho que no, demasiada gente con la que no tengo confianza."
+            "text": "Eu avisei que não vou, tem muitas pessoas em quem não confio."
         },
         "askMatch": [
             {
-                "text": "Le he dicho que tenia que preguntar en casa."
+                "text": "Eu disse a ele que precisava perguntar a você primeiro."
             },
             {
-                "text": "¿Te importa que vaya?"
+                "text": "Você se importa se eu for?"
             }
         ],
         "askMatchReply": {
-            "text": "En principio puedes ir. Se lo comentaré a tu madre por si acaso."
+            "text": "Você pode ir, mas vou confirmar com sua mãe."
         },
 
         "choices2": [
             {
-                "text": "Sobre Alison..."
+                "text": "Sobre a Alice..."
             },
             {
-                "text": "(Contarle lo del chicle)"
+                "text": "(Contar sobre o chiclete)"
             },
             {
                 "text": "(Falar sobre outros colegas)"
@@ -64,126 +66,128 @@
         ],
         "alisonWarn": [
             {
-                "text": "Alison es muy maja."
+                "text": "A Alice é super legal."
             },
             {
-                "text": "Me ha advertido de que Álex iba a gastarme una broma."
+                "text": "Ela me avisou sobre o Alex querendo fazer uma pegadinha comigo."
             },
             {
-                "text": "Aunque de poco ha servido."
+                "text": "Embora isso não tenha me ajudado em nada."
             }
         ],
         "alisonNormal": {
-            "text": "Hoy he hablado poco con ella."
+            "text": "Conversei com ela hoje."
         },
 
         "aboutGumWashed": [
             {
-                "text": "Hoy he acabado con un chicle en el culo."
+                "text": "Hoje, acabei com um chiclete grudado na minha roupa."
             },
             {
-                "text": "He intentado quitarlo con agua y jabón, pero ha sido peor."
+                "text": "Tentei tirar com água e sabão, mas só piorou."
             },
             {
-                "text": "La mayoría de clase se ha reído de mí."
+                "text": "A maioria da turma estava rindo de mim."
             }
         ],
         "aboutGumNotWashed": [
             {
-				"text": "Lo del chicle... no sé cómo ha sido."
+				"text": "Sobre o chiclete... Não sei como isso aconteceu."
 			},
 			{
-				"text": "La mayoría de clase se ha reído de mí."
+				"text": "A maioria da turma estava rindo de mim."
 			}
         ],
         "dadGumNotWashed": {
-            "text": "Cariño, tienes que mirar donde apoyas el culo."
+            "text": "",
+            "text_male": "Oh querido, você tem que prestar mais atenção onde se senta.",
+            "text_female": "Oh querida, você tem que prestar mais atenção onde se senta."
         },
         
         "choices3": [
             {
-                "text": "María..."
+                "text": "Maria..."
             },
             {
-                "text": "El estúpido de Álex..."
+                "text": "Aquele idiota do Alex..."
             },
             {
-                "text": "(Hablar del colegio)"
+                "text": "(Falar sobre a escola)"
             }
         ],
         "maria": [
             {
-                "text": "Con María me llevo bien."
+                "text": "Eu me dou bem com a Maria."
             },
             {
-                "text": "Aunque parece que no habla con nadie más de clase."
+                "text": "Mas parece que ela não conversa com mais ninguém."
             }
         ],
         
         "alex": [
             {
-                "text": "Diría que la tiene tomada conmigo desde el primer día."
+                "text": "Eu acho que ele tem algum problema comigo desde o primeiro dia."
             },
             {
-                "text": "Aunque no se muy bien el porqué."
+                "text": "Mas eu não sei exatamente o porquê."
             }
         ],
 
         "prank": {
-            "text": "Y hoy me ha querido gastar una broma."
+            "text": "E hoje ele queria fazer uma pegadinha."
         },
 
         "ask": [
             {
-                "text": "Estaba enfadado por haberme sentado en su sitio."
+                "text": "Ele ficou chateado comigo por sentar na cadeira dele."
             },
             {
-                "text": "He intentado hacer las paces con él."
+                "text": "Tentei fazer as pazes com ele."
             },
             {
-                "text": "Pero por como me ha hablado, creo que va a seguir buscando pelea."
+                "text": "Mas pelo jeito que ele falou, acho que ele vai continuar procurando confusão."
             }
         ],
         "askReply": [
             {
-				"text": "Si tienes algún problema con él, no dudes en decírmelo."
+				"text": "Se você tiver algum problema com ele, não deixe de me contar."
 			},
 			{
-				"text": "Si hace falta hablaremos con tu profesor."
+				"text": "Se precisar, vamos falar com seu professor."
 			}
         ],
         
         "distrust": [
             {
-                "text": "Va buscando pelea."
+                "text": "Ele está querendo arrumar briga."
             },
             {
-                "text": "Me dan ganas de darle dos hostias."
+                "text": "Ele me faz querer dar uma boa surra nele."
             }
         ],
         "distrustReply": [
             {
-                "text": "No busques pelea."
+                "text": "Não entre em brigas."
             },
             {
-                "text": "Si hace falta que vaya a hablar con él, dímelo."
+                "text": "Se precisar que eu vá lá conversar com ele, me avise."
             },
             {
-                "text": "O si tienes cualquier problema, habla con tu profesor."
+                "text": "Ou se você estiver em apuros, fale com seu professor."
             }
         ],
         
         "choices4": [
             {
-                "text": "El instituto..."
+                "text": "Ensino médio..."
             },
             {
-                "text": "Me voy a la habitación. Tengo cosas que hacer."
+                "text": "Vou para o meu quarto, tenho algumas coisas para fazer."
             }
         ],
 
         "school": {
-            "text": "Empiezo a no estar a gusto."
+            "text": "Estou começando a me sentir desconfortável."
         }
     }
 }

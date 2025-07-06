@@ -2,104 +2,104 @@
     "alison": {
         "root": [
             {
-                "text": "{{name}}, quiero hablar contigo."
+                "text": "{{name}}, eu queria falar com você."
             },
             {
-                "text": "No sé si lo sabes, pero Álex nos ha dicho a todos que no te hablemos."
+                "text": "Não sei se você já está sabendo, mas o Alex disse para todos nós não conversarmos com você."
             },
             {
-                "text": "Y a los que no queremos hacerle caso nos amenaza con algo."
+                "text": "E ele está ameaçando quem não o segue."
             },
             {
-                "text": "¿Puedo confiar en ti? No quiero dejar de ser tu amiga."
+                "text": "Posso confiar em você? Não quero que a gente pare de ser amigos."
             }
         ],
         "choices": [
             {
-                "text": "Muchas gracias por ser mi amiga."
+                "text": "Muito obrigado por ser minha amiga."
             },
             {
-                "text": "No. Y no tengo interés en ganarme tu confianza."
+                "text": "Não, e não tenho interesse em ganhar sua confiança."
             }
         ],
         "thanks": [
             {
-                "text": "Me alegra oír eso."
+                "text": "Que bom ouvir isso."
             },
             {
-                "text": "Intercambiemos contraseñas de redes sociales y del móvil."
+                "text": "Vamos trocar nossas senhas de celular e redes sociais."
             },
             {
-                "text": "Como muestra de amistad y confianza."
+                "text": "Como um gesto de amizade e confiança."
             },
             {
-                "text": "Antiguamente para gestos así se daban la mano con una herida abierta para intercambiar sangre."
+                "text": "No passado, as pessoas apertavam as mãos sobre feridas abertas para compartilhar sangue."
             },
             {
-                "text": "Pero eso es asqueroso y puedes coger cualquier cosa."
+                "text": "Mas isso é nojento e nem um pouco saudável."
             }
         ],
         "passChoices": [
             {
-                "text": "(Aceptar el intercambio de contraseñas)"
+                "text": "(Aceitar a troca de senhas)"
             },
             {
-                "text": "(Rechazar el intercambio de contraseñas)"
+                "text": "(Recusar a troca de senhas)"
             }
         ],
         "exchange":  {
-            "text": "(Os escribís las contraseñas a través del móvil)"
+            "text": "(Você escreve as senhas pelo celular)"
         },
         "exchange2": {
-            "text": "Perfecto. Best Friends (sonríe de oreja a oreja)."
+            "text": "rfeito. \"Melhores amigos\" (sorrindo de orelha a orelha)."
         },
         "dont": [
             {
-                "text": "Si no confías en mí yo tampoco puedo confiar en ti."
+                "text": "Se você não confia em mim, eu também não posso confiar em você."
             },
             {
-                "text": "Lo siento, pero entonces no puedo hablarte más."
+                "text": "Desculpe, mas não posso mais falar com você."
             },
             {
-                "text": "No quiero que Álex la tome conmigo."
+                "text": "Não quero que o Alex fique contra mim."
             }
         ],
         "reject": [
             {
-                "text": "Entonces no me queda otra que hacer caso a Álex y dejarte de hablar."
+                "text": "Então não tenho escolha, vou parar de falar com você."
             },
             {
-                "text": "No quiero correr ningún riesgo."
+                "text": "Não quero correr riscos."
             }
         ],
         "bellRinging": {
             "text": "<<O sinal está tocando>>"
         },
         "late": {
-            "text": "Me voy a clase ya, que es tarde, ya verás como nos cae bronca."
+            "text": "****I'm going to class now, it's late already, we'll get scolded for sure."
         }
     },
 
     "guille": {
         "root": {
-            "text": "(El gesto de su cara cambia al verte, gira la cabeza y mira a otro lado)"
+            "text": "(A expressão do rosto dele muda ao te ver. Ele vira a cabeça e olha para o outro lado)"
         }
     },
 
     "jose": {
         "root": [
             {
-                "text": "(Con una sonrisa en su cara te mira fijamente y empieza a reir)"
+                "text": "(Com um sorriso no rosto, ele te olha e começa a rir)"
             },
             {
-                "text": "¡¡Jajaja!!"
+                "text": "HAHAHA!!"
             }
         ]
     },
 
     "board": {
         "root": {
-            "text": "Parece que alguien ha arrancado ya la foto de ayer."
+            "text": "Parece que alguém pegou a foto de ontem."
         }
     }
 }

@@ -2,10 +2,10 @@
     "dad": {
         "root": [
             {
-                "text": "Habla con tu madre."
+                "text": "Converse com sua mãe."
             },
             {
-                "text": "Quiere saber qué tal te ha ido el día."
+                "text": "Ela quer saber como foi seu dia."
             }
         ]
     },
@@ -13,261 +13,259 @@
     "mom": {
         "notTalked": [
             {
-                "text": "Ya has vuelto, {{name}}."
+                "text": "Você voltou, {{name}}."
             },
             {
-                "text": "¿Qué tal te ha ido el día?"
+                "text": "Como foi seu dia?"
             }
         ],
         "talked": {
-            "text": "¿Quieres que hablemos un rato?"
+            "text": "Quer conversar um pouco?"
         },
         "talked2": {
-            "text": "¿Qué tal el día?"
+            "text": "Como foi o seu dia?"
         },
 
         "choices1": [
             {
-                "text": "Bien, normal, me voy a mi cuarto."
+                "text": "Tudo certo, o de sempre, vou pro meu quarto."
             },
             {
-                "text": "Hoy Álex y Ana me han intentado chantajear."
+                "text": "Hoje Alex e Ana tentaram me chantagear."
             },
             {
-                "text": "Hoy Álex y Ana me han chantajeado."
+                "text": "Hoje Alex e Ana me chantagearam."
             },
             {
-                "text": "(Hablar de otra cosa)"
+                "text": "(Falar sobre outra coisa)"
             }
         ],
 
         "mariaNotPranked": [
             {
-                "text": "Han intentado que le ponga un cartel a María."
+                "text": "Eles tentaram me fazer colar um cartaz da Maria."
             },
             {
-                "text": "Se creen los reyes del colegio o algo."
+                "text": "Se chamam de os reis da escola ou algo assim."
             }
         ],
         "mariaPranked": [
             {
-                "text": "Han hecho que le ponga un cartel a María."
+                "text": "Me obrigaram a colar um cartaz da Maria..."
             },
             {
-                "text": "No me han dado otra opción para recuperar el móvil que me habían quitado."
+                "text": "Não tive outra escolha se queria meu celular de volta."
             }
         ],
 
         "choices2": [
             {
-                "text": "Hoy he perdido el móvil."
+                "text": "Perdi meu celular hoje."
             },
             {
-                "text": "Alguien me ha quitado el móvil."
+                "text": "Alguém pegou meu celular."
             },
             {
-                "text": "Alison, puedo confiar en ella."
+                "text": "Alice, posso confiar nela."
             },
             {
-                "text": "Me voy a la habitación. Ya hemos hablado suficiente."
+                "text": "Vou para o meu quarto, já conversamos demais."
             }
         ],
         "lostPhone": {
-            "text": "Hoy me han quitado el móvil y no he podido recuperarlo."
+            "text": "Pegaram meu celular e não consegui recuperar ele."
         },
         "lostPhone2": {
-            "text": "Pues te has quedado sin móvil. Tienes que tener más cuidado con las cosas."
+            "text": "Então você vai ficar sem celular. Tem que cuidar melhor das suas coisas."
         },
 
         "foundPhone": [
             {
-                "text": "Hoy me han quitado el móvil."
+                "text": "Hoje pegaram meu celular."
             },
             {
                 "text": "",
-                "text_male": "Y alguien lo ha dejado tirado en el baño de chicas.",
-                "text_female": "Y alguien lo ha dejado tirado en el baño de chicos."
+                "text_male": "E alguém deixou ele no banheiro das meninas.",
+                "text_female": "E alguém deixou ele no banheiro dos meninos."
             }
         ],
         "foundPhone2": {
-            "text": "Tienes que tener más cuidado con las cosas. No puedes dejarlas en cualquier sitio."
+            "text": "Você tem que cuidar melhor das suas coisas. Não pode deixar em qualquer lugar."
         },
 
         "exchangedPassword": [
             {
-                "text": "Alison me ha sorprendido. De verdad puedo confiar en ella."
+                "text": "A Alice me surpreendeu. Posso confiar mesmo nela."
             },
             {
-                "text": "Hoy hemos intercambiado nuestras contraseñas."
+                "text": "Hoje trocamos senhas."
             }
         ],
         "exchangedPassword2": [
             {
-				"text": "¿¡Cómo se te ocurre!? ¿Y si las comparte o se hace pasar por ti?"
+				"text": "Como assim!? E se ela compartilhar ela ou fingir ser você"
 			},
 			{
-				"text": "¿Es que no piensas en lo que haces?"
+				"text": "Você não pensa no que faz?"
 			}
         ],
         "exchangedPassword3": [
             {
-                "text": "Pero yo tengo sus contraseñas también. Confió en ella."
+                "text": "Mas eu tenho as senhas dela também. Confio nela."
             },
             {
-                "text": "Es la única que quiere ser mi amiga."
+                "text": "Ela é a única que quer ser minha amiga."
             }
         ],
 
         "commonPhone": {
-            "text": "No ha sido culpa mía."
+            "text": "Não foi culpa minha."
         },
         "commonPhone2": {
-            "text": "Eso no quita que debas vigilar tus cosas. De todas formas..."
+            "text": "Isso não é desculpa para deixar suas coisas desprotegidas. De qualquer forma..."
         },
 
         "suggestMeeting": {
-            "text": "Creo que deberíamos hablar con el colegio sobre todo lo que está pasando."
+            "text": "Acho que devemos falar com a escola sobre o que tá acontecendo com você."
         },
         "meetingChoices": [
             {
-                "text": "Si, por favor. No puedo más."
+                "text": "Sim, por favor, não aguento mais."
             },
             {
-                "text": "No. La tomarán aún más conmigo."
+                "text": "Não, vai ser ainda pior."
             }
         ],
         "acceptMeeting": {
-            "text": "No te preocupes cariño. Vamos a solucionar todo."
+            "text": "Não se preocupe, vai ficar tudo bem, vamos resolver tudo."
         },
 
         "rejectMeeting": {
-            "text": "De acuerdo. Por ahora no iremos al colegio."
+            "text": "Entendi, então não vamos por enquanto."
         },
         "rejectMeeting2": {
-            "text": "Pero en cuanto pase algo más grave... no nos vamos a quedar sentados."
+            "text": "Mas se acontecer algo sério... a gente não vai deixar pra lá."
         },
 
         "meetingSuccess": {
-            "text": "Más motivos para que nos reunamos con el colegio mañana y solucionemos esto."
+            "text": "Mais um motivo pra gente ir amanhã na sala do diretor e resolver tudo isso."
         }
     },
 
     "noPhone": {
         "root": [
             {
-                "text": "Voy a cambiarle la batería al móvil..."
+                "text": "Tô trocando a bateria do cel."
             },
             {
-                "text": "Creo que tenia una en el mueble de la entrada... tercer cajón..."
+                "text": "Acho q tinha uma na mesa da entrada... terceira gaveta..."
             },
             {
-                "text": "Aquí está... ¿Enciende?.. Sí. Menos mal."
+                "text": "Achei... será q funciona?... Aí sim, beleza."
             },
             {
-                "text": "¿Y tanto mensaje?"
+                "text": "O que são todas essas mensagens?"
             }
         ]
     },
 
     "classChat": {
         "root": {
-            "text": "veo k al final no me habéis echado, gracias. Como regalo saber k me gusta comer penes :)"
+            "text": "parece q vc não me bloqueou, valeu. De presente, vou te contar q eu amo chupar rola :)"
         },
         "message2": {
-            "text": "en verdad le doy a todo, si alguien s anima k me avise"
+            "text": "na real, eu curto de tudo, se alguém quiser fazer algo 'especial', me chama"
         },
         "message3": {
-            "text": "gracias por confesar, aunk ya lo sabiamos, tienes cara de ello"
+            "text": "valeu por nos contar, mas a gente já sabia, é bem a sua cara mesmo"
         },
         "message4": {
-            "text": "ya tenemos el mote perfecto, CARATRA, xk tiene cara de tragarlas jajaja"
+            "text": "achamos o nome perfeito, CHUPA-CHUPA"
         },
         "message5": {
-            "text": "y esto? a q viene? por q dices estas cosas?"
+            "text": "o q q é isso? pq vc tá falando essas coisas?"
         },
         "message6": {
-           "text": "justo el mejor dia no voy... q m e perdido?"
+           "text": "putz, o melhor dia e eu perdi... o q eu perdi?"
         },
         "message7": {
             "text": "",
-            "text_male": "os estais pasando ya, quien le ha troleado",
-            "text_female": "os estais pasando ya, quien la ha troleado"
+            "text_male": "vc tá passando do limite já, quem trollou ele?",
+            "text_female": "vc tá passando do limite já, quem trollou ela?"
         },
         "message8": {
-            "text": "nadie, que pasa guille? t la ha chupado y no queires que se sepa? jajaja"
+            "text": "ninguém, e aí Guilherme? foi chupado e não quer q saibam? kkk"
         },
         "choices": [
             {
-                "text": "Yo no he escrito nada"
+                "text": "Eu não escrevi nada"
             },
             {
-                "text": "Álex, Ana, que os den"
+                "text": "Alex, Ana, vão se lascar"
             },
             {
-                "text": "Como oís, me encanta"
+                "text": "Como vocês ouviram, eu amo isso!"
             }
         ],
 
         "notMe": {
-            "text": "alguien ha usado mi móvil para escribir eso"
+            "text": "Alguém usou meu telefone para escrever isso"
         },
         "notMe2": {
-            "text": "ya tenemos fotos de lo que has dicho, vamos a compartirselas a todas las clases jajaja"
+            "text": "Temos fotos do que você disseram, vamos compartilhá-las com todas as outras turmas, kkk"
         },
         "notMe3": {
-            "text": "jajaja ya es tarde para negar nada :P"
+            "text": "kkk agora é tarde demais para negar qualquer coisa :P"
         },
 
         "fkU": {
-            "text": "Álex, Ana, que os den, sé que es cosa vuestra"
+            "text": "Alex, Ana, vão se ferrar os dois! Eu sei que foi vocês"
         },
         "fkU2": {
-            "text": "quiza lo sea, y q? ya tenemos fotos de la conversacion"
+            "text": "talvez seja, e daí? já temos fotos da conversa"
         },
         "fkU3": {
-            "text": "mañana sabra todo el mundo tus gustos jajaja"
+            "text": "amanhã todo mundo vai saber sobre seus gostos pessoais kkk"
         },
 
         "agree": {
-            "text": "Como oís, me encanta, algún problema? ENVIDIOSOS!!"
+            "text": "Sim, eu gosto mesmo, algum problema com isso? Vocês ouviram, eu amo, algum problema? VOCÊS ESTÃO COM CIÚMES!!"
         }
     },
 
     "mariaChat": {
         "root": {
             "text": "",
-            "text_male": "ests muy buena, mañana en los bañs ya tu sabs ;)",
-            "text_female": "soy bollera y se k tu tambn, mañana en los bañs ya tu sabs ;)"
+            "text_male": "vc é gostosa, amanhã no banheiro a gente se ve ;)",
+            "text_female": "gosto de meninas e sei q vc tbm, amanhã no banheiro a gente se ve ;)"
         },
         "message2": {
-            "text": "esto no es propio de ti {{name}}, te han troleado verdad?"
+            "text": "isso não parece com você {{name}}, estão te trollando, né?"
         },
         "choices": [
             {
-                "text": "Yo no he escrito nada"
+                "text": "Eu não escrevi nada"
             },
             {
-                "text": "Si, he sido yo"
+                "text": "Sim, fui eu."
             },
             {
-                "text": "(No contestar)"
+                "text": "(Não responder)"
             }
         ],
 
         "notMe": {
-            "text": "perdona María, no te he escrito yo, debieron escribirte cuando me quitaron el móvil"
+            "text": "Desculpe Maria, eu não escrevi isso, eles podem ter escrito quando roubaram meu telefone"
         },
         "notMe2": {
-            "text": "lo siento mucho, de verdad"
+            "text": "sinto muito, de verdade"
         },
         "notMe3": {
-            "text": "",
-            "text_male": "te creo, tranquilo, descansa",
-            "text_female": "te creo, tranquila, descansa"
+            "text": "eu acredito em você, relaxa, descansa um pouco"
         },
 
         "wasMe": {
-            "text": "si, lo escribí yo, mañana nos vemos guapa"
+            "text": "Sim, fui eu que escrevi. Até amanhã <3"
         }
     }
 

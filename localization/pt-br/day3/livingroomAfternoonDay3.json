@@ -2,36 +2,36 @@
     "mom": {
         "notTalked": [
             {
-                "text": "Buenas tardes, cariño"
+                "text": "Oi, meu bem. Boa tarde."
             },
             {
-                "text": "¿Qué habéis hecho hoy?"
+                "text": "Como foi seu dia na escola?"
             }
         ],
         "talked": {
-            "text": "¿Quieres hablar de algo más?"
+            "text": "Você quer falar sobre mais alguma coisa?"
         },
         "choices1": [
             {
-                "text": "Nada a destacar."
+                "text": "Na verdade, não tenho muito o que falar."
             },
             {
-                "text": "María no ha venido."
+                "text": "A Maria não apareceu hoje."
             },
             {
-                "text": "(Hablar de otra cosa)"
+                "text": "(Falar sobre outra coisa)"
             }
         ],
         "maria": {
-            "text": "A María hoy no la he visto."
+            "text": "Não vi a Maria hoje."
         },
         
         "choices2": [
             {
-				"text": "La clase."
+				"text": "Sobre a turma."
 			},
 			{
-				"text": "(Contarle lo de la foto en los tablones)"
+				"text": "(Falar sobre a foto no mural)"
 			},
 			{
 				"text": "(Falar sobre outros colegas)"
@@ -39,57 +39,57 @@
         ],
         "school": [
             {
-                "text": "Casi todos me han ignorado. Pocos hablaban conmigo."
+                "text": "Quase todo mundo me ignorou, mal falaram comigo hoje."
             },
             {
-                "text": "Es como si todo el mundo me evitara o me hiciera el vacío."
+                "text": "Parece que todos estão me evitando ou me tratando com silêncio."
             }
         ],
         "board": [
             {
-                "text": "Se han dedicado a poner fotos mías en todos los tablones."
+                "text": "Decidiram colocar fotos minhas em todos os murais da escola."
             },
             {
-                "text": "No se qué he hecho mal para que se porten así conmigo."
+                "text": "Não sei o que fiz para merecer ser tratado assim."
             }
         ],
         "momBoard": [
             {
-				"text": "Luego hablaré con tu padre."
+				"text": "Vou  conversar com seu pai sobre isso mais tarde."
 			},
 			{
-				"text": "Igual deberíamos ir a hablar con tu tutor a ver qué está pasando."
+				"text": "Talvez devêssemos falar com o coordenador e entender o que está acontecendo."
 			}
         ],
 
         "choices3": [
             {
-                "text": "He hablado con Guille."
+                "text": "Conversei com o Guilherme hoje."
             },
             {
-                "text": "Me voy a la habitación. Tengo cosas que hacer."
+                "text": "Vou para o meu quarto, tenho coisas para fazer."
             }
         ],
         "guille": [
             {
-                "text": "Guille me ha contado que Álex me odia."
+                "text": "O Guilherme disse que o Alex me odeia."
             },
             {
-                "text": "Álex me está haciendo la vida imposible."
+                "text": "O Alex tem me infernizado."
             },
             {
-                "text": "Y tiene amenazada a media clase para que me ignoren."
+                "text": "Ele está ameaçando metade da turma para que todos me ignorem."
             }
         ],
         "aboutBoard": [
             {
-                "text": "Y me ha contado que Ana es la primera en seguirle el juego a Álex."
+                "text": "Ele disse que a Ana é a primeira a sempre obedecer."
             },
             {
-                "text": "Está mañana ha llegado la primera..."
+                "text": "Ela chegou cedo hoje de manhã..."
             },
             {
-                "text": "Y se ha dedicado a poner fotos mías en todos los tablones."
+                "text": "E decidiu espalhar fotos minhas nos murais da escola."
             }
         ]
 

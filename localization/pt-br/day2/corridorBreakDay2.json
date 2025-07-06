@@ -2,18 +2,18 @@
     "maria": {
         "washed": [
             {
-                "text": "¿Qué has hecho? menuda mancha."
+                "text": "O que aconteceu? Que bagunça."
             },
             {
-                "text": "Madre mía, parece que te hayas meado encima, o incluso cagado."
+                "text": "Oh, meu amigo, parece que você molhou suas calças ou que 'sujou' elas."
             }
         ],
         "notWashed": [
             {
-                "text": "No sé si te has fijado, pero llevas un chicle pegado en el culo."
+                "text": "Acho que você não percebeu, mas tem um chiclete grudado na sua calça."
             },
             {
-                "text": "Puedes pasar por el baño a verlo en el espejo."
+                "text": "Você pode ir ver isso no espelho do banheiro."
             }
         ]
     }

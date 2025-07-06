@@ -2,21 +2,21 @@
     "sink": {
         "washed": [
             {
-                "text": "Ya me he quitado el chicle, pero ahora la mancha es peor."
+                "text": "Eu já tirei o chiclete, mas agora ficou uma mancha ainda pior."
             },
             {
-                "text": "Se van a reír aún más de mí."
+                "text": "Agora eles vão rir de mim ainda mais."
             }
         ],
         "notWashed": {
-            "text": "Igual con agua y jabón consigo quitarlo."
+            "text": "Talvez água e sabão sejam tudo que eu preciso."
         },
         "choices": [
             {
-                "text": "(Probar con agua y jabón)"
+                "text": "(ProbTentar água e sabão)"
             },
             {
-                "text": "(Dejarlo como está)"
+                "text": "(Melhor deixar como está)"
             }
         ]
     }

@@ -1,102 +1,102 @@
 {
     "guille": {
         "maleRestroom": {
-            "text": "Así que eras tú el de la nota, Guille."
+            "text": "Então, quem escreveu o bilhete foi você, Guilherme."
         },
 
         "femaleRestroom": [
             {
-                "text": "¿Qué haces en el baño de chicas, Guille?"
+                "text": "O que você está fazendo no banheiro das meninas?"
             },
             {
-                "text": "No puedes estar aquí. Vete."
+                "text": "Você não pode estar aqui. Sai fora!"
             }
         ],
         "explainRestroom": {
-            "text": "Tenía que hablar contigo, yo te pasé la notita."
+            "text": "Eu preciso falar com você. Fui eu quem escreveu o bilhete."
         },
 
         "ask": [
             {
-                "text": "¿Ahora si me hablas?"
+                "text": "Então agora você resolve falar comigo"
             },
             {
-                "text": "¿A qué viene esto de que más de media clase me ignore?"
+                "text": "E a metade da classe me ignorando, como fica?"
             }
         ],
         "explanation": [
             {
-                "text": "De eso te quería hablar."
+                "text": "É disso que eu quero falar com você."
             },
             {
-                "text": "No puedo hablar contigo mientras Álex o alguno de sus amigos pueda verme."
+                "text": "Não posso falar com você aqui, onde o Alex ou os amigos dele podem nos ver."
             },
             {
-                "text": "Me ha amenazado con mandarle a mis padres una foto mía del año pasado en la que salgo con una cerveza y un cigarrillo."
+                "text": "Ele ameaçou mostrar uma foto minha fumando e bebendo pros meus pais."
             },
             {
-                "text": "Mis padres son muy estrictos, y si la ven, no se que podrá pasar. Igual me mandan a otro instituto."
+                "text": "Meus pais são muito rigorosos e, se descobrirem, não sei o que pode acontecer... Talvez até me mandem pra outra escola."
             }
         ],
         "explanationQuestion": {
-            "text": "¿Pero por qué Álex no quiere que nadie hable conmigo?"
+            "text": "Mas por que o Alex não quer que ninguém fale comigo?"
         },
         "continueExplanation": [
             {
-                "text": "No lo sabemos. La tiene tomada contigo desde el primer día."
+                "text": "A gente não sabe. Ele pegou no seu pé desde o primeiro dia."
             },
             {
-                "text": "Mucha gente le hace caso porque quiere, pero somos unos cuantos a los que nos ha amenazado."
+                "text": "Muita gente faz o que ele quer, mas alguns de nós já foram ameaçados por ele."
             },
             {
-                "text": "A María le pasó algo parecido a lo tuyo el año pasado, aunque fue cosa de Ana."
+                "text": "No ano passado, a Ana fez algo parecido com a Maria."
             },
             {
-                "text": "Desde entonces no tiene amigos y cuando alguno de nosotros intenta hablar con ella... nos ignora."
+                "text": "Ela não tem amigos desde então e, quando alguém tenta falar com ela, acaba ignorando."
             },
             {
-                "text": "No nos ha perdonado."
+                "text": "Ela ainda não nos perdoou."
             },
             {
-                "text": "Bueno... Sólo quería decirte que lo siento, pero hasta que a Álex se le pase el mosqueo no podré hablar contigo."
+                "text": "Olha, eu só queria pedir desculpas, mas enquanto o Alex estiver assim, não poderei falar com você."
             },
             {
-                "text": "Lo siento mucho, {{name}}."
+                "text": "Desculpa mesmo, {{name}}."
             }
         ],
 
         "choices": [
             {
-                "text": "¿Y ya está? ¿Álex se sale con la suya?"
+                "text": "E é isso então? O Alex sempre consegue o que quer?"
             },
             {
-                "text": "¿Y mi foto en el tablón? ¿Ha sido Álex?"
+                "text": "E aquela minha foto no mural? Foi o Alex quem fez isso?"
             }
         ],
         "apology": [
             {
-                "text": "De verdad que lo siento."
+                "text": "Desculpa mesmo."
             },
             {
-                "text": "Pero no quiero que me haga también la vida imposible a mí."
+                "text": "Mas não quero que ele torne minha vida um inferno também."
             }
         ],
         "aboutBoard": [
             {
-                "text": "Eso fue cosa de Ana."
+                "text": "Isso foi a Ana quem fez."
             },
             {
-                "text": "Está muy pillada por Álex y si él te putea, ella va a hacer lo mismo."
+                "text": "EEla realmente gosta do Alex e, se ele pegar no seu pé, ela vai fazer o mesmo."
             },
             {
-                "text": "Y José es su perrito faldero. No sabe pensar por sí mismo."
+                "text": "E o José é o capacho dele, não consegue pensar por si mesmo."
             },
             {
-                "text": "Evita a los tres."
+                "text": "Evite os três."
             }
         ],
         "talked": {
-            "text": "Lo siento mucho, de verdad, pero mis padres no pueden enterarse."
+            "text": "Desculpa, mas meus pais não podem saber disso."
         }
 
     }

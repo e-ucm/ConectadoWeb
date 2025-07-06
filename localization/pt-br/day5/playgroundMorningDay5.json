@@ -2,60 +2,58 @@
     "alison": {
         "passwordExchanged": [
             {
-                "text": "Te has ganado lo que ha pasado."
+                "text": "Você merece o que aconteceu."
             },
             {
-                "text": "¿Cómo se te ocurre darme tu contraseña?"
+                "text": "O que você estava pensando ao me dar sua senha?"
             }
         ],
         "phoneStolen": {
-            "text": "Si hubieras confiado en mí, igual esto no habría pasado. Es tu culpa."
+            "text": "Nada disso teria acontecido se você tivesse confiado em mim. É sua culpa."
         },
 
         "talked": {
-            "text": "Vete, no tenemos de que hablar."
+            "text": "Some daqui, não temos nada para conversar."
         }
     },
 
     "ana": {
         "passwordExchanged": [
             {
-                "text": "No me creo que le dieras tu contraseña a Alison."
+                "text": "Não consigo acreditar que você deu sua senha para a Alice."
             },
             {
-                "text": "¿De verdad te pensabas que iba a ser tu amiga? No me creo lo fácil que fué engañarte."
+                "text": "Você realmente achou que ela seria sua amiga? Não consigo acreditar que foi tão fácil."
             },
             {
-                "text": "¡¡¡Jajajaja!!! En serio, me parto contigo."
+                "text": "HAHAHAHA!!! Sério, estou morrendo de rir de você."
             }
         ],
         "phoneFound": [
             {
-                "text": "¡¡¡Jajajaja!!! No me creo que no tuvieras patrón de desbloqueo en el móvil."
+                "text": "HAHAHAHA!!! Não consigo acreditar que você não tinha um padrão de bloqueio no celular."
             },
             {
-                "text": "Pensaba que iba a ser más difícil..."
+                "text": "Pensei que seria mais difícil..."
             },
             {
                 "text": "",
-                "text_male": "Que divertido va a ser el día. Ahora la mayoría piensa que eres de verdad un marica vicioso que le da a todo.",
-                "text_female": "Que divertido va a ser el día, ahora la mayoría piensa que eres de verdad una puta viciosa."
+                "text_male": "ai ser um dia engraçado. Agora todo mundo acha que você é um viado que gosta de tudo.",
+                "text_female": "ai ser um dia engraçado. Agora todo mundo acha que você é uma vadia que não tem limites."
             }
         ],
         "phoneNotFound": [
             {
-                "text": "Mira quién ha llegado. Y yo que pensaba que hoy no vendrías."
+                "text": "Olha quem chegou, e eu pensei que você não viria hoje."
             },
             {
-                "text": "¿Aún sigues sin móvil? Jajaja. No era tan difícil encontrarlo si hubieras buscado bien."
+                "text": "Ainda sem celular? Hahaha, não foi tão difícil de encontrar se você tivesse procurado direito."
             },
             {
-                "text": "",
-                "text_male": "Hay que ser estúpido.",
-                "text_female": "Hay que ser estúpida."
+                "text": "Que idiota..."
             },
             {
-                "text": "¿De dónde has salido? Jajaja."
+                "text": "De onde você veio? hahaha."
             }
         ],
         "bellRinging": {
@@ -63,7 +61,9 @@
         },
 
         "talked": {
-            "text": "Jajajaja. Margi."
+            "text": "",
+                "text_male": "Hahahaha, excluído",
+                "text_female": "Hahahaha, excluída."
         }
     }
 }

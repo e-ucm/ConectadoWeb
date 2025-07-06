@@ -1,42 +1,42 @@
 {
     "maria": {
         "normal": {
-            "text": "Me alegro de que hoy hayas venido."
+            "text": "Que bom que você veio hoje."
         },
         
         "notFound": {
-            "text": "¿Has visto mi móvil?"
+            "text": "Você viu meu celular?"
         },
         "notFound2": [
             {
-                "text": "No, ni idea. Revisa bien la clase por si acaso."
+                "text": "Não, não faço ideia. Fale novamente com o resto da turma, só para garantir."
             },
             {
-                "text": "Si veo algo, te aviso."
+                "text": "Se eu encontrar, te aviso."
             }
         ],
 
         "found": {
-            "text": "¿Has visto si ha entrado alguien a los baños recientemente?"
+            "text": "Você viu alguém entrando no banheiro recentemente?"
         },
         "found2": {
-            "text": "No me he fijado, lo siento."
+            "text": "Não, desculpe."
         },
 
         "prankChoices": [
             {
-                "text": "Buenas, María."
+                "text": "Oi, Maria."
             },
             {
-                "text": "(Pegar el cartel con cuidado e irte sin decir nada)"
+                "text": "(Cole o pôster com cuidado e saia sem dizer nada)"
             }
         ],
         "pranked": [
             {
-                "text": "(Bien. Parece que no se ha dado cuenta)"
+                "text": "(Parece que ela não percebeu)"
             },
             {
-                "text": "(Espero que ahora me digan dónde está mi móvil)"
+                "text": "(Espero que agora me digam onde está meu celular)"
             }
         ]
     },
@@ -49,10 +49,10 @@
         },
         "choices": [
             {
-                "text": "(Entrar de todas formas)"
+                "text": "(Entrar de qualquer maneira)"
             },
             {
-                "text": "(Marcharse)"
+                "text": "(Sair)"
             }
         ]
     }

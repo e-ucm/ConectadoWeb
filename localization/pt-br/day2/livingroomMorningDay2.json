@@ -1,10 +1,10 @@
 {
     "door": {
         "normal": {
-            "text": "Parece que papá y mamá hoy han vuelto a irse pronto."
+            "text": "Parece que meus pais saíram bem cedo hoje."
         },
         "late": {
-            "text": "Parece que papá y mamá se han ido ya a trabajar."
+            "text": "Parece que meus pais já saíram para o trabalho."
         }
     }
 }

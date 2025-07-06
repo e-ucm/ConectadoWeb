@@ -1,69 +1,69 @@
 {
     "ana_jose": {
         "washed": {
-            "text": "Jajaja. ¿Te has meado encima?"
+            "text": "Hahaha, você se molhou?"
         },
         "washed2": [
             {
-				"text": "Jajajaja. No, no, mira bien, se ha cagado."
+				"text": "Hahahaha, não, não! Olha só, ele se sujou todo."
 			},
 			{
-				"text": "¿Llevas el móvil, Ana? ¡¡Foto!!"
+				"text": "Ana, você está com o seu celular? Tira uma foto!"
 			}
         ],
         "washed3": {
-            "text": "Jajajaja."
+            "text": "Hahahaha."
         },
 
         "notWashed": [
             {
-				"text": "A ver si lavas la ropa. Menudo desastre llevas en el pantalón."
+				"text": "Você deveria lavar suas roupas, suas calças estão bem sujas."
 			},
 			{
-				"text": "¿No tenéis lavadora en casa?"
+				"text": "Não tem uma máquina de lavar em casa?"
 			}
         ],
         "notWashed2": [
             {
-				"text": "Jajajaja. ¡Nueva moda! Chicles pegados al pantalón."
+				"text": "Hahahaha, nova moda! Chicletes grudados nas calças."
 			},
 			{
-				"text": "Con lo horrorosa que es su ropa, no merece la pena que la lave."
+				"text": "Essas roupas feias não valem a pena lavar."
 			},
 			{
-				"text": "Debería tirarla a la basura directamente."
+				"text": "Deveria jogar tudo no lixo."
 			}
         ],
         "notWashed3": {
-            "text": "Jajajaja."
+            "text": "Hahahaha."
         }
     },
 
     "guille_alison": {
         "washed": {
-            "text": "Menuda mancha llevas."
+            "text": "Que sujeira."
         },
         "washed2": {
-            "text": "Bueno, no pasa nada. En un rato se secará."
+            "text": "Está tudo bem, isso vai secar rápido."
         },
 
         "notTalked": [
             {
-				"text": "¿Dónde te has apoyado?"
+				"text": "Onde você sentou?"
 			},
 			{
-				"text": "Te has debido sentar encima de un chicle."
+				"text": "Acho que você sentou em um chiclete."
 			}
         ],
         "notTalked2": {
-            "text": "Menudo desastre. Pasa por el baño antes de ir a clase."
+            "text": "Que confusão! Vá direto para o banheiro antes da aula."
         },
         "notTalked3": {
-            "text": "Sí, igual consigues quitarlo."
+            "text": "Sim, talvez você consiga tirar."
         },
 
         "talked": {
-            "text": "Prueba a quitarte el chicle en el baño."
+            "text": "Tente tirar o chiclete no banheiro."
         }
     }
 }

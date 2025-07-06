@@ -1,92 +1,90 @@
 {
     "maria": {
         "friend": {
-            "text": "Buenos días {{name}}."
+            "text": "Bom dia {{name}}."
         },
         "hello": {
-            "text": "Hola, María."
+            "text": "Oi, Maria."
         },
         "friendChoices": [
             {
-                "text": "Ayer no viniste a clase. ¿Estás bien?"
+                "text": "Você não veio ontem. Está tudo bem?"
             },
             {
-                "text": "¿Me hablas?"
+                "text": "Você está falando comigo?"
             },
             {
-                "text": "Tengo prisa, ya ha sonado la campana. Hablamos luego."
+                "text": "Estou com pressa, o sinal já tocou. A gente conversa depois."
             }
         ],
 
         "askMissing": [
             {
-                "text": "Sí, estoy bien. Gracias por preguntar."
+                "text": "Sim, estou bem. Obrigada por perguntar."
             },
             {
-                "text": "Ayer me encontraba en casa con fiebre y me quedé descansado."
+                "text": "Ontem eu estava com febre, então fiquei em casa descansando."
             },
             {
-                "text": "Hoy ya estoy como nueva."
+                "text": "Hoje estou nova em folha."
             }
         ],
 
         "askTalkFriends": [
             {
-                "text": "Supongo que lo dices por Álex."
+                "text": "Acho que você está falando do Alex."
             },
             {
-                "text": "Ana hizo algo parecido el año pasado para putearme."
+                "text": "Ana fez algo parecido ano passado para me sacanear."
             },
             {
-                "text": "Deberías hablar con tus padres o nuestro tutor."
+                "text": "Você deveria falar com seus pais ou com nosso coordenador."
             },
             {
-                "text": "Yo no lo hice cuando tuve la oportunidad, mis padres se enteraron cuando me obligaron a ir a un psicólogo."
+                "text": "Eu não fiz isso quando tive a chance. Meus pais me obrigaram a ir ver um psicólogo quando descobriram."
             },
             {
-                "text": "",
-                "text_male": "Si necesitas que te acompañe para hablar con el profe puedes decírmelo. Pero no te quedes callado",
-                "text_female": "Si necesitas que te acompañe para hablar con el profe puedes decírmelo. Pero no te quedes callada"
+                "text": "Se precisar que eu vá com você falar com o professor, é só me chamar. Mas não se cale"
             }
         ],
         "askTalkFriends2": {
-            "text": "Gracias, nos vemos luego."
+            "text": "Valeu, até mais tarde."
         },
 
         "normal": {
-            "text": "Buenas, María."
+            "text": "Oi, Maria."
         },
         "normal2": {
-            "text": "Hola, {{name}}. ¿Quieres algo?"
+            "text": "Olá, {{name}}. Precisa de algo?"
         },
         "normalChoices": [
             {
-                "text": "Nada, hasta luego."
+                "text": "Não, até mais."
             },
             {
-                "text": "¿Me hablas?"
+                "text": "Você está falando comigo?"
             }
         ],
         "askTalkNormal": {
-            "text": "¿Por qué no lo iba a hacer?"
+            "text": "Por que não estaria?"
         },
         "askTalkNormal2": {
-            "text": "¿No has hablado con Álex?"
+            "text": "Você não falou com o Alex?"
         },
         "askTalkNormal3": [
             {
-                "text": "Sí, lo de que nadie te dirija la palabra..."
+                "text": "Sim, sobre o negócio de não falar com você..."
             },
             {
-                "text": "A mi ya me hicieron la vida imposible entre todos el año pasado. Aprendí la lección."
+                "text": "Eles tornaram minha vida um inferno no ano passado. Aprendi a lição."
             },
             {
-                "text": "Lo mejor será que hables con tus padres o con tu tutor y no hagas caso a Álex ni a ninguno de sus perritos falderos."
+                "text": "É melhor você conversar com seus pais ou o professor e ignorar o Alex e seus 'minions'."
             }
         ],
 
         "talked": {
-            "text": "Llegarás tarde a clase si no te vas ya."
+            "text": "Você vai se atrasar se não for agora."
         }
     }
 }

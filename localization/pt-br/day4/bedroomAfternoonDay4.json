@@ -7,7 +7,7 @@
 
     "wardrobe2": {
         "root": {
-            "text": "No necesito buscar nada de aquí dentro."
+            "text": "Não preciso de nada daqui."
         }
     },
 
@@ -26,20 +26,20 @@
             ],
         "noPhone": [
             {
-                "text": "Pero no tengo móvil para ponerme el despertador."
+                "text": "Não posso usar o despertador do celular."
             },
             {
-                "text": "Mmmm, usaré mi móvil viejo, pero al estar sin SIM y no tener nada sólo me servirá como despertador."
+                "text": "Mmmm, vou usar meu celular antigo. Ele não tem um cartão SIM, então só serve como despertador."
             },
             {
-                "text": "Vale, despertador listo... Hora de dormir."
+                "text": "Ok, despertador ajustado... Hora de dormir."
             }
         ]
     },
 
     "phone": {
         "root": {
-            "text": "Vi que você excluiu a postagem com seu número de telefone, mas não se preocupe, tirei um print e posso repostar hahaha"
+            "text": "Vi que você excluiu a postagem com seu número de telefone, mas não se preocupe, tirei um print e posso repostar kkk"
         }
     }
     

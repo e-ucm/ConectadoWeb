@@ -2,20 +2,20 @@
     "guilleAlison": {
         "choices": [
             {
-                "text": "¿Sabéis quién me ha quitado el móvil y lo ha dejado en el baño?"
+                "text": "Você sabe quem pegou meu celular e deixou no banheiro?"
             },
             {
-                "text": "¿Alguno sabe dónde está mi móvil? Alguien me lo ha quitado."
+                "text": "Alguém sabe onde está meu celular? Alguém pegou ele."
             },
             {
-                "text": "Supongo que no me vais a hablar... Paso de deciros nada."
+                "text": "Acho que você não está falando comigo..."
             }
         ],
         "askFound": {
             "text": "..."
         },
         "askFound2": {
-            "text": "No vamos a chivarnos, pero supongo que ya te imaginas quién tiene la culpa."
+            "text": "Não vamos dedurar eles, mas acho que você já sabe quem foi."
         },
         "askFound3": {
             "text": "*sshhhhhh*"
@@ -25,10 +25,10 @@
             "text": "..."
         },
         "askNotFound2": {
-            "text": "Lo siento, no tenemos ni idea."
+            "text": "Desculpe, não fazemos ideia."
         },
         "askNotFound3": {
-            "text": "Gracias Guille."
+            "text": "Obrigado, Gui."
         },
         
 

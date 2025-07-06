@@ -2,59 +2,59 @@
     "alex": {
         "passwordExchanged": [
             {
-                "text": "Vaya cosas publicas en \"Conectado\", ¿no?"
+                "text": "Dá uma olhada nos seus posts no \"Conectado\", ok?"
             },
             {
-                "text": "No me esperaba esto de ti. Es como si no lo hubieras publicado tú."
+                "text": "Não esperava isso de você, é como se não fosse você escrevendo XD."
             }
         ],
         "phoneFound": [
             {
-                "text": "Vaya cosas dices por el chat, ¿no? Caratra, nos has sorprendido a todos."
+                "text": "Olha seus comentários no chat. Superou nossas expectativas."
             },
             {
-                "text": "No me esperaba esto de ti. Es como si no lo hubieras escrito tú. Jajaja."
+                "text": "Não esperava isso de você. É como se não fosse você escrevendo hahaha."
             }
         ],
         "phoneNotFound": [
             {
-                "text": "Parece que te vas a tener que comprar un móvil nuevo, ¿no?"
+                "text": "Parece que você vai precisar de um celular novo, né?"
             },
             {
-                "text": "Espero que ese no lo pierdas... o te lo quiten."
+                "text": "Espero que você não perca esse também... ou que não te tirem ele."
             }
         ],
 
         "enough": [
             {
-                "text": "Bueno, creo que es suficiente."
+                "text": "Bem, acho que já é o suficiente."
             },
             {
-                "text": "Hagamos una cosa. Hablemos donde nadie nos escuche, al terminar las clases."
+                "text": "Vamos fazer o seguinte. Quando as aulas acabarem, vamos conversar onde ninguém possa nos ouvir."
             },
             {
-                "text": "Hablemos, te disculpas, y entonces te dejamos en paz."
+                "text": "A gente fala sobre isso, você se desculpa e te deixamos em paz."
             },
             {
-                "text": "Ana y yo pasaremos de ti, y los demás que hagan lo que quieran."
+                "text": "A Ana e eu vamos te deixar tranquilo e o resto pode fazer o que quiser."
             }
         ],
         
         "talked": [
             {
-                "text": "En los baños, al final de clases. Tú ven, acuérdate."
+                "text": "Quando a aula acabar, não esquece de ir até os banheiros."
             },
             {
                 "text": "",
-                "text_male": "Estaré allí.",
-                "text_female" : "Ana te esperará allí."
+                "text_male": "Eu estarei lá.",
+                "text_female" : "Ana vai estar esperando lá."
             }
         ]
     },
 
     "guille": {
         "notTalked": {
-            "text": "No tengo nada que hablar contigo."
+            "text": "Não tenho nada pra falar com você."
         },
         "talked": {
             "text": "..."

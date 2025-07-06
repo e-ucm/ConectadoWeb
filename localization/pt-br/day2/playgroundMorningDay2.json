@@ -1,10 +1,10 @@
 {
     "ana": {
         "talked": {
-            "text": "Piérdete. No tengo nada que hablar contigo."
+            "text": "Sai fora! Não tenho nada pra conversar com você."
         },
         "mean": {
-            "text": "¿Qué estás mirando? Di algo o vete."
+            "text": "O que você está fazendo? Fala alguma coisa ou sai logo daqui."
         },
         "normal": [
             {
@@ -16,82 +16,82 @@
         ],
         "choices": [
             {
-                "text": "Nada (te vas)."
+                "text": "Nada (você sai)."
             },
             {
-                "text": "Me han dicho que has hablado con Álex de gastarme una broma."
+                "text": "Ouvi falar que você e o Alex estavam falando de uma pegadinha."
             }
         ],
         "warnMean": {
-            "text": "Sí, ¿y? Venga, vete."
+            "text": "É daí? Sai daqui."
         },
         "warnNormal": [
             {
-                "text": "Vaya, nos has pillado. Era una tontería."
+                "text": "Poxa, você nos pegou! Foi só uma bobeira."
             },
             {
-                "text": "Pero ya no tiene gracia. No la haremos."
+                "text": "Mas não é mais engraçado, vamos deixar pra lá."
             }
         ]
     },
 
     "maria": {
         "talked": {
-            "text": "Ya he hablado con María. Debería ver quién más hay por el patio esperando a que suene la campana."
+            "text": "Já falei com a Maria. Melhor eu dar uma olhada no pátio"
         },
         "notMet": {
-            "text":  "¿Querías algo?"
+            "text":  "Você precisa de algo?"
         },
         "notMetChoices": [
             {
-                "text": "No, nada. Adiós."
+                "text": "Não, nada, tchau."
             },
             {
-                "text": "Saludarte, siempre te veo sola y leyendo."
+                "text": "Oi! Sempre te vejo sozinha e lendo."
             }
         ],
         "niceResponse": [
             {
-                "text": "Muy amable."
+                "text": "Que gentil."
             },
             {
-                "text": "La gente no suele hablar conmigo."
+                "text": "Ninguém costuma falar comigo."
             },
             {
-                "text": "Que pases un buen día."
+                "text": "Tenha um bom dia."
             }
         ],
 
         "ignore": [
             {
-                "text": "Estoy leyendo."
+                "text": "Estou lendo."
             },
             {
-                "text": "Si no te importa... (Te ignora y sigue leyendo)."
+                "text": "Se não se importa... (Ela te ignora e continua lendo)."
             }
         ],
 
         "warn": [
             {
-                "text": "Buenos días, {{name}}."
+                "text": "Bom dia, {{name}}."
             },
             {
-                "text": "Antes he escuchado a Álex hablar con Ana sobre gastarte una broma."
+                "text": "Ouvi o Alex falando com a Ana sobre fazer uma pegadinha com você."
             },
             {
-                "text": "No sé qué puede ser, pero ten cuidado. No suelen ser graciosas precisamente."
+                "text": "Não sei do que se trata, mas cuidado, elas geralmente não são muito engraçadas."
             }
         ],
         "warnChoices": [
             {
-                "text": "Gracias por avisar"
+                "text": "Obrigado pelo aviso"
             },
             {
-                "text": "No le tengo miedo"
+                "text": "Eu não tenho medo dele"
             }
         ],
         "warnGoodbye": {
-            "text": "Nos vemos después. Hasta luego"
+            "text": "Até mais, tchau"
         },
         "bellRinging": {
             "text": "<<O sinal está tocando>>"
@@ -101,20 +101,20 @@
     "jose": {
         "notTalked": [
             {
-                "text": "¿Has visto la aplicación que comprueba tu relación con la gente con la que más hablas?"
+                "text": "Você já viu aquele aplicativo que analisa seu relacionamento com as pessoas com quem mais conversa?"
             },
             {
-                "text": "Te dice con quién te llevas mejor o peor de los que también tienen instalada la aplicación."
+                "text": "Ele mostra com quem você se dá bem ou não entre todos que baixaram."
             },
             {
-                "text": "Dicen que es muy exacta, pero aún no se sabe como funciona."
+                "text": "Dizem que é bem preciso, mas não sei explicar exatamente como funciona."
             },
             {
-                "text": "Veo que ya la tienes."
+                "text": "Vi que você já baixou ele."
             }
         ],
         "talked": {
-            "text": "Nos vemos luego."
+            "text": "Até mais."
         }
     }
 }

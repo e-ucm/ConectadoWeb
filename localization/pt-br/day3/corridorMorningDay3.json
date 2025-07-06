@@ -4,46 +4,46 @@
             "text": "..."
         },
         "ignoreThoughts": {
-            "text": "También me está ignorando... ¿Qué les he hecho?"
+            "text": "Está me ignorando de novo... O que eu fiz de errado?"
         },
 
         "notTalked": [
             {
-                "text": "Estaba mirando el tablón."
+                "text": "Eu estava olhando o mural."
             },
             {
-                "text": "Y... será mejor que no lo mires. Ignóralo hoy."
+                "text": "E... Acho que é melhor você ignorá-lo hoje."
             }
         ],
         "choices": [
             {
-                "text": "Ya lo he visto."
+                "text": "Eu já vi."
             },
             {
-                "text": "¿Por qué? ¿Qué hay?"
+                "text": "Por quê? O que tem lá?"
             }
         ],
         "seen": [
             {
-                "text": "Lo siento. Álex está llegando demasiado lejos."
+                "text": "Desculpa, o Alex foi longe demais com isso."
             },
             {
-                "text": "Igual deberías hablar con el profesor o a la directora."
+                "text": "Acho que você deveria falar com o coordenador ou o diretor."
             }
         ],
         "ask": [
             {
-                "text": "Alguien ha puesto una foto tuya en los tablones de todo el colegio."
+                "text": "Colocaram uma foto sua em todos os murais da escola."
             },
             {
-                "text": "En el patio también estaba."
+                "text": "Também colocaram no pátio."
             },
             {
-                "text": "Creo que deberías hablar con algún profesor."
+                "text": "Acho que você deveria falar com qualquer professor que encontrar."
             }
         ],
         "talked": {
-            "text": "Ignora lo del tablón."
+            "text": "Esquece o mural."
         }
     }
 }

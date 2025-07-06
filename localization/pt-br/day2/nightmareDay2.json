@@ -3,26 +3,26 @@
         "introduction": {
             "root": [
                 {
-                    "text": "Bueno...¿ya lo hemos solucionado no?"
+                    "text": "Então... conseguimos resolver isso?"
                 },
                 {
-                    "text": "¿Sabes dónde sentarte?"
+                    "text": "Você sabe onde se sentar?"
                 },
                 {
-                    "text": "Quizás deberías evitar que los chicles caigan en la silla golpeándolos. O si no, tendrás que sentarte en uno."
+                    "text": "Talvez você devesse evitar que os chicletes grudem nas cadeiras. Caso contrário, vai ter que se sentar em um deles."
                 }
             ]
         },
         "outro": {
             "root": [
                 {
-                    "text": "Tendrás que sentarte en un chicle."
+                    "text": "Você vai ter que sentar em um chiclete."
                 },
                 {
-                    "text": "Jajaja. Adelante, siéntate."
+                    "text": "Hahaha, vai em frente, sente-se."
                 },
                 {
-                    "text": "Venga, ¿a qué esperas?"
+                    "text": "Vamos lá, o que você está esperando?"
                 }
             ]
         }
