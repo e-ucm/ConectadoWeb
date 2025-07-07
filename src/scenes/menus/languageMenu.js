@@ -45,15 +45,15 @@ export default class LanguageMenu extends Phaser.Scene {
             height, 'UK', 'en', tweenTime, increase);
         
         // Boton de salir
-        let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
-            async () => {
-                if(!this.gameManager.initialized) {
-                    await this.gameManager.InitializedGame();
-                }
-                this.gameManager.CompletedGame(true);
-            },
-            'powerOff', { R: 64, G: 142, B: 134 }, { R: 0, G: 104, B: 93 }, { R: 200, G: 200, B: 200 }
-        );
+        // let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
+        //     async () => {
+        //         if(!this.gameManager.initialized) {
+        //             await this.gameManager.InitializedGame();
+        //         }
+        //         this.gameManager.CompletedGame(true);
+        //     },
+        //     'powerOff', { R: 64, G: 142, B: 134 }, { R: 0, G: 104, B: 93 }, { R: 200, G: 200, B: 200 }
+        // );
     }
 
     /**

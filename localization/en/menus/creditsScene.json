@@ -10,8 +10,13 @@
     "libraryText": "for his magnificent dialog library",
     "hackatonText": "for that hackaton that started everything",
     "betaTestersText": "Beta testers",
+
     "localizationText": "Localization team",
     "frenchText": "French texts",
+    "brText": "",
+    "cnText": "",
+    "hkText": "",
+
     "collaboratorsText": "Collaborators",
     "schoolsText": "Educational institutions",
     "schoolCollabText": "Have collaborated in game's validation:",

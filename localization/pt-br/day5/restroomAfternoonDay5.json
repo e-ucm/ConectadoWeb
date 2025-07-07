@@ -118,18 +118,16 @@
         ],
         "noSnitchNoMeetingFS": [
             {
-                "text": "",
-                "text_male": "¿Estás seguro de que no pasa nada?",
-                "text_female": "¿Estás segura de que no pasa nada?"
+                "text": "Você tem certeza que está tudo bem"
             },
             {
-                "text": "Bueno, vete a casa. Pero recuerda una cosa..."
+                "text": "Então, vá para casa. Mas lembre-se disso..."
             },
             {
-                "text": "Si alguien se mete contigo, habla conmigo o con la orientadora."
+                "text": "Se alguém te provocar, avise a mim ou ao coordenador."
             },
             {
-                "text": "Busca ayuda. Las cosas no van a mejorar por sí solas, sólo pueden ir a peor."
+                "text": "Procure ajuda, as coisas não vão mudar sozinhas e podem até piorar."
             }
         ],
         
@@ -256,7 +254,7 @@
         ],
         "noSnitchNoMeetingNoFS": [
             {
-                "text": "Você tem certeza de que está tudo bem"
+                "text": "Você tem certeza de que está tudo bem?"
             },
             {
                 "text": "Então, vá para casa."

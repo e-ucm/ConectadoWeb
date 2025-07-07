@@ -30,13 +30,13 @@
     "seat": {
         "root": [
             {
-                "text": "I can see， you've found a seat， but。"
+                "text": "I can see，you've found a seat，but。"
             },
             {
                 "text": "That seat is mine。 You'll have to pick another one。"
             },
             {
-                "text": "You can sit down wherever you want， but not in that one。"
+                "text": "You can sit down wherever you want，but not in that one。"
             }
         ]
     }

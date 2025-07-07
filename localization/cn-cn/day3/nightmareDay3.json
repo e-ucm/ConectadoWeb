@@ -6,10 +6,10 @@
                     "text": "I'm going to make sure nobody talks to you。"
                 },
                 {
-                    "text": "You can do whatever you want， but you won't get anything。"
+                    "text": "You can do whatever you want，but you won't get anything。"
                 },
                 {
-                    "text": "Go on。 Talk to people in class， and see if you get them to talk to you。"
+                    "text": "Go on。 Talk to people in class，and see if you get them to talk to you。"
                 }
             ]
         },
@@ -39,10 +39,10 @@
                 "text": "Are you gonna ignore me too？"
             },
             {
-                "text": "Didn't they do the same to you？ Don't ignore me， you know how it feels。"
+                "text": "Didn't they do the same to you？ Don't ignore me，you know how it feels。"
             },
             {
-                "text": "You get me， right？"
+                "text": "You get me，right？"
             }
         ]
     },
@@ -52,10 +52,10 @@
         },
         "playerWorry": [
             {
-                "text": "You're my friend， right？"
+                "text": "You're my friend，right？"
             },
             {
-                "text": "Guille， you're not like the others。"
+                "text": "Guille，you're not like the others。"
             },
             {
                 "text": "Don't let them threaten you。"
@@ -84,13 +84,13 @@
         },
         "playerWorry": [
             {
-                "text": "You're my friend， right？"
+                "text": "You're my friend，right？"
             },
             {
-                "text": "You're nice。 You're not gonna stop talking to me， aren't you？"
+                "text": "You're nice。 You're not gonna stop talking to me，aren't you？"
             },
             {
-                "text": "Please， talk to me。"
+                "text": "Please，talk to me。"
             }
         ]
     },
@@ -103,7 +103,7 @@
                 "text": "What have I done to you？ Why do you come after me？"
             },
             {
-                "text": "If Alex jumps off a bridge， are you gonna jump off too？"
+                "text": "If Alex jumps off a bridge，are you gonna jump off too？"
             },
             {
                 "text": "Can't we just get along？"

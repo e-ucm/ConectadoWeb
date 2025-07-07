@@ -8,10 +8,10 @@
         },
         "normal": [
             {
-                "text": "Buenos días, {{name}}."
+                "text": "Bom dia, {{name}}."
             },
             {
-                "text": "¿Querías algo?"
+                "text": "Precisa de alguma coisa"
             }
         ],
         "choices": [
