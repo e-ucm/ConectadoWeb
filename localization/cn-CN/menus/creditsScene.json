@@ -13,9 +13,9 @@
 
     "localizationText": "本地化团队",
     "frenchText": "法语",
-    "brText": "",
-    "cnText": "",
-    "hkText": "",
+    "brText": "巴西葡萄牙语文本",
+    "cnText": "简体中文文本",
+    "hkText": "繁体中文文本",
 
     "collaboratorsText": "合作者",
     "schoolsText": "教育机构",

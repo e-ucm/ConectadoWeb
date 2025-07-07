@@ -12,10 +12,10 @@
     "betaTestersText": "Beta testers",
 
     "localizationText": "Localization team",
-    "frenchText": "French texts",
-    "brText": "",
-    "cnText": "",
-    "hkText": "",
+    "frenchText": "French translation",
+    "brText": "Brazilian Portuguese translation",
+    "cnText": "Chinese translation",
+    "hkText": "Cantonese translation",
 
     "collaboratorsText": "Collaborators",
     "schoolsText": "Educational institutions",

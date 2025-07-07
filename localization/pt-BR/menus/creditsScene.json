@@ -13,9 +13,9 @@
 
     "localizationText": "Equipe de localização",
     "frenchText": "Textos em francês",
-    "brText": "",
-    "cnText": "",
-    "hkText": "",
+    "brText": "Textos em português brasileiro",
+    "cnText": "Textos em chinês",
+    "hkText": "Textos em cantonês",
 
     "collaboratorsText": "Colaboradores",
     "schoolsText": "Instituições educacionais",

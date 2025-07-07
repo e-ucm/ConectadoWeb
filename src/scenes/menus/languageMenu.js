@@ -35,14 +35,13 @@ export default class LanguageMenu extends Phaser.Scene {
         let height = CANVAS_HEIGHT / 7.5;
         let tweenTime = 7;
         let increase = 1.3;
-        this.createFlagButton(1.2 * CANVAS_WIDTH / 4, 1.1 * CANVAS_HEIGHT / 4,
-            height, 'France', 'fr', tweenTime, increase);
-        this.createFlagButton(2.8 * CANVAS_WIDTH / 4, 1.1 * CANVAS_HEIGHT / 4,
-            height, 'Portugal', 'pt', tweenTime, increase);
-        this.createFlagButton(1.2 * CANVAS_WIDTH / 4, 2.4 * CANVAS_HEIGHT / 4,
-            height, 'Spain', 'es', tweenTime, increase);
-        this.createFlagButton(2.8 * CANVAS_WIDTH / 4, 2.4 * CANVAS_HEIGHT / 4,
-            height, 'UK', 'en', tweenTime, increase);
+        this.createFlagButton(1.3 * CANVAS_WIDTH / 6, 1.1 * CANVAS_HEIGHT / 4, height, 'es', 'es', tweenTime, increase);
+        this.createFlagButton(3.2 * CANVAS_WIDTH / 6, 1.1 * CANVAS_HEIGHT / 4, height, 'fr', 'fr', tweenTime, increase);
+        this.createFlagButton(4.9 * CANVAS_WIDTH / 6, 1.1 * CANVAS_HEIGHT / 4, height, 'en', 'en', tweenTime, increase);
+
+        this.createFlagButton(1.3 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'pt-br', 'pt-BR', tweenTime, increase);
+        this.createFlagButton(3.2 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'cn-cn', 'cn-CN', tweenTime, increase);
+        this.createFlagButton(4.9 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'cn-hk', 'cn-HK', tweenTime, increase);
         
         // Boton de salir
         // let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
