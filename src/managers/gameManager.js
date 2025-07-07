@@ -498,11 +498,7 @@ export default class GameManager {
     }
 
     Completed(id, type, completion) {
-        var actualTime = new Date();
-        var durationInMs = actualTime.getTime() - this.startedTime.getTime();
-        var duration = durationInMs/1000;
-        return xapiTracker.completable(id, type).Completed(null, completion)
-                .withDuration(duration);
+        return xapiTracker.completable(id, type).Completed(null, completion);
     }
 
     AddStateExtensions(statement) {
@@ -531,10 +527,8 @@ export default class GameManager {
 
     async ProgressedGame() {
         var actualTime = new Date();
-        var durationInMs = actualTime.getTime() - this.startedTime.getTime();
-        var duration = durationInMs/1000;
         await xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME).Progressed(this.day/5)
-            .withDuration(duration)
+            .withDuration(this.startedTime, actualTime)
             .apply(statement => this.AddStateExtensions(statement));
         await xapiTracker.flush();
     }
