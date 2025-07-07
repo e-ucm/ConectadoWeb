@@ -1,5 +1,6 @@
 
 import RestroomBase from '../baseScenarios/restroomBase.js';
+import xapiTracker from '../../../lib/xapi.js';
 
 export default class RestroomBreakDay2 extends RestroomBase {
     constructor() {
@@ -33,7 +34,7 @@ export default class RestroomBreakDay2 extends RestroomBase {
         sink.input.cursor = 'pointer';
         
         sink.on('pointerdown', () => {
-            this.gameManager.Interacted("sink", JSTracker.GAMEOBJECTTYPE.ITEM);
+            this.gameManager.Interacted("sink", xapiTracker.GAMEOBJECTTYPE.ITEM);
             this.dialogManager.setNode(sinkNode);
         });
 

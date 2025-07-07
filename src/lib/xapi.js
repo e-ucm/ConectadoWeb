@@ -1,4 +1,6 @@
-var xapiTracker = new JSTracker();
-xapiTracker.generateXAPITrackerFromURLParams("ConectadoWeb");
-//xapiTracker.completableTracker.Initialized("ConectadoWeb", JSTracker.COMPLETABLETYPE.GAME);
+/**
+ * @type {SeriousGameTracker}
+ */
+var xapiTracker = new SeriousGameTracker({});
+xapiTracker.generateXAPITrackerFromURLParams({default_uri : "ConectadoWeb"});
 export default xapiTracker;

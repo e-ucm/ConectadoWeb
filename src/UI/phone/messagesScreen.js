@@ -83,7 +83,7 @@ export default class MessagesScreen extends BaseScreen {
 
         // Al hacer click, vuelve a cambiar el color de la caja al original
         button.on('pointerdown', () => {
-            xapiTracker.gameObjectTracker.Interacted("messageButton", JSTracker.GAMEOBJECTTYPE.ITEM);
+            xapiTracker.gameObject("messageButton", xapiTracker.GAMEOBJECTTYPE.ITEM).Interacted();
             let fadeColor = this.scene.tweens.addCounter({
                 targets: [button],
                 from: 0,

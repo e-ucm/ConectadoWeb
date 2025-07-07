@@ -1,5 +1,6 @@
 
 import RestroomBase from '../baseScenarios/restroomBase.js';
+import xapiTracker from '../../../lib/xapi.js';
 
 export default class RestroomAfternoonDay5 extends RestroomBase {
     constructor() {
@@ -18,7 +19,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
         let doorClosed = this.add.image(doorPos.x, doorPos.y, this.atlasName, 'restroomDoorClosed').setOrigin(0, 0).setScale(this.scale);
         doorClosed.setInteractive({ useHandCursor: true });
         doorClosed.on('pointerdown', () => {
-            this.gameManager.Interacted("restroomDoorclosed", JSTracker.GAMEOBJECTTYPE.ITEM);
+            this.gameManager.Interacted("restroomDoorclosed", xapiTracker.GAMEOBJECTTYPE.ITEM);
             this.dialogManager.setNode(doorNode);
         });
 
@@ -76,7 +77,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
             sink.setInteractive(sinkPolygon, Phaser.Geom.Polygon.Contains);
             sink.input.cursor = 'pointer';
             sink.on('pointerdown', () => {
-                this.gameManager.Interacted("sink", JSTracker.GAMEOBJECTTYPE.ITEM);
+                this.gameManager.Interacted("sink", xapiTracker.GAMEOBJECTTYPE.ITEM);
                 this.dialogManager.setNode(sinkNode);
             });
 
@@ -99,7 +100,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
             floor.setInteractive(floorPolygon, Phaser.Geom.Polygon.Contains);
             floor.input.cursor = 'pointer';
             floor.on('pointerdown', () => {
-                this.gameManager.Interacted("floor", JSTracker.GAMEOBJECTTYPE.ITEM);
+                this.gameManager.Interacted("floor", xapiTracker.GAMEOBJECTTYPE.ITEM);
                 this.dialogManager.setNode(floorNode);
             });
 

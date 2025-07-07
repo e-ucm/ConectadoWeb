@@ -32,7 +32,7 @@ export default class SettingsScreen extends BaseScreen {
         let yesText = this.i18next.t("settings.yes", { ns: "phoneInfo" })
         let yesButton = new Button(scene, this.BG_X, this.BG_Y * 1.1, 1,
             () => {
-                xapiTracker.alternativeTracker.Selected("setting_reset_game", "yes", JSTracker.ALTERNATIVETYPE.MENU);
+                xapiTracker.alternative("setting_reset_game",xapiTracker.ALTERNATIVETYPE.MENU).Selected("yes");
                 this.gameManager.CompletedGame(false);
                 yesButton.reset();
                 this.gameManager.startLangMenu();
@@ -50,7 +50,7 @@ export default class SettingsScreen extends BaseScreen {
         let noText = this.i18next.t("settings.no", { ns: "phoneInfo" })
         let noButton = new Button(scene, this.BG_X, this.BG_Y * 1.4, 1,
             () => {
-                xapiTracker.alternativeTracker.Selected("setting_reset_game", "no", JSTracker.ALTERNATIVETYPE.MENU);
+                xapiTracker.alternative("setting_reset_game", xapiTracker.ALTERNATIVETYPE.MENU).Selected("no");
                 noButton.reset();
                 phone.toPrevScreen();
             },
