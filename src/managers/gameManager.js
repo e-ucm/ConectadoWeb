@@ -389,7 +389,7 @@ export default class GameManager {
     }
 
     switchToComputer() {
-        this.Interacted("ShowComputerLogin", xapiTracker.GAMEOBJECTTYPE.ITEM);
+        this.Interacted("ShowComputerLogin", xapiTracker.GAMEOBJECTTYPE.ITEM).send();
         // Se desactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(false);
         
@@ -402,7 +402,7 @@ export default class GameManager {
     }
 
     leaveComputer() {
-        this.Interacted("offComputer", xapiTracker.GAMEOBJECTTYPE.ITEM);
+        this.Interacted("offComputer", xapiTracker.GAMEOBJECTTYPE.ITEM).send();
         // Se reactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(true);
 
@@ -470,8 +470,8 @@ export default class GameManager {
 
         // Si no se encuentra el personaje en la blackboard, se anade con 50 de amistad por defecto
         if (!this.getValue(varName)) {
-            xapiTracker.alternative("friend",xapiTracker.ALTERNATIVETYPE.ALTERNATIVE).Unlocked(character);
-            xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE).Initialized();
+            xapiTracker.alternative("friend",xapiTracker.ALTERNATIVETYPE.ALTERNATIVE).Unlocked(character).send();
+            xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE).Initialized().send();
             this.setValue(varName, 50);
         }
 
@@ -479,7 +479,7 @@ export default class GameManager {
         let val = this.getValue(varName)
         val += amount;
         this.setValue(varName, val);
-        xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE).Progressed(val);
+        xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE).Progressed(val).send();
         // Actualiza el valor tambien en la pantalla de relaciones del movil
         this.UIManager.phoneManager.phone.updateRelationShip(character, val);
     }
@@ -521,7 +521,7 @@ export default class GameManager {
     async InitializedGame() {
         this.startedTime=new Date();
         this.Initialized=true;
-        await xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME).Initialized();
+        await xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME).Initialized().send();
         await xapiTracker.flush();
     }
 
@@ -529,13 +529,14 @@ export default class GameManager {
         var actualTime = new Date();
         await xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME).Progressed(this.day/5)
             .withDuration(this.startedTime, actualTime)
-            .apply(statement => this.AddStateExtensions(statement));
+            .apply(statement => this.AddStateExtensions(statement))
+            .send();
         await xapiTracker.flush();
     }
 
     async CompletedGame(completion) {
         this.Initialized=false;
-        await this.Completed("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME, completion);
+        await this.Completed("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME, completion).send();
         await xapiTracker.flush({withBackup:true});
     }
 }
