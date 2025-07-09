@@ -4,5 +4,6 @@
 var xapiTracker = new SeriousGameTracker();
 xapiTracker.trackerSettings.default_uri="ConectadoWeb";
 xapiTracker.trackerSettings.generateSettingsFromURLParams=true;
-xapiTracker.Login();
+await xapiTracker.Login();
+xapiTracker.Start();
 export default xapiTracker;
