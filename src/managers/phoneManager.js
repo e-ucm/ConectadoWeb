@@ -139,7 +139,7 @@ export default class PhoneManager {
 
             // Si el telefono es visible
             if (this.phone.visible) {
-                this.gameManager.Interacted("hideMobile", xapiTracker.GAMEOBJECTTYPE.ITEM).send();
+                this.gameManager.Interacted("hideMobile", xapiTracker.GAMEOBJECTTYPE.ITEM).Send();
                 this.phone.setScale(this.PHONE_SCALE);
                 let x = { from: this.PHONE_VISIBLE.x, to: this.PHONE_HIDDEN.x };
                 let y = { from: this.PHONE_VISIBLE.y, to: this.PHONE_HIDDEN.y };
@@ -172,7 +172,7 @@ export default class PhoneManager {
             }
             // Si el telefono no es visible
             else {
-                this.gameManager.Interacted("toggleMobile", xapiTracker.GAMEOBJECTTYPE.ITEM).send();
+                this.gameManager.Interacted("toggleMobile", xapiTracker.GAMEOBJECTTYPE.ITEM).Send();
                 // Se hace visible y se bloquea la interaccion con los elementos del fondo
                 this.phone.visible = true;
                 this.bgBlock.setInteractive({ useHandCursor: true });
@@ -419,8 +419,8 @@ export default class PhoneManager {
             this.wakeUpMessage.visible = true;
         }
         this.gameManager.Interacted("Sleep_phone", xapiTracker.GAMEOBJECTTYPE.ITEM)
-            .withResultExtension("isLate",this.gameManager.getValue("isLate"))
-            .send();
+            .WithResultExtension("isLate",this.gameManager.getValue("isLate"))
+            .Send();
     }
 
     // Funcion llamada al apagar la alarma y despertarse
@@ -445,8 +445,8 @@ export default class PhoneManager {
             });
         }
         this.gameManager.Interacted("wake_up_phone", xapiTracker.GAMEOBJECTTYPE.ITEM)
-            .withResultExtension("isLate",this.gameManager.getValue("isLate"))
-            .send();
+            .WithResultExtension("isLate",this.gameManager.getValue("isLate"))
+            .Send();
     }
 
 

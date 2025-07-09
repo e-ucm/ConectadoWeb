@@ -61,7 +61,7 @@ export default class CorridorBreakDay1 extends CorridorBase {
         // Al salir a las escaleras, aparece Alison
         this.stairsDoor.once('pointerdown', () => {
             this.gameManager.Interacted("stairsDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             alison.char.visible = true;
         });
         

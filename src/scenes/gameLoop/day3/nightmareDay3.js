@@ -116,7 +116,7 @@ export default class NightmareDay3 extends NightmareMinigame {
         character.char.setInteractive({ useHandCursor: true });
         character.char.once('pointerdown', () => {
             this.gameManager.Interacted(charName, xapiTracker.GAMEOBJECTTYPE.NPC)
-                            .send();
+                            .Send();
             character.char.removeInteractive();
             this.dialogManager.setNode(node);
         })

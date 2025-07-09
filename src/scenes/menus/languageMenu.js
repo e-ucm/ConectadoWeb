@@ -91,9 +91,9 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
-            xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU)
+            xapiTracker.Alternative("language", xapiTracker.ALTERNATIVETYPE.MENU)
                         .Selected(language)
-                        .send();
+                        .Send();
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();

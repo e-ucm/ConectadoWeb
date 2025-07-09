@@ -107,7 +107,7 @@ export default class PlaygroundMorningDay3 extends PlaygroundBase {
         bulletinBoard.setInteractive({ useHandCursor: true });
         bulletinBoard.on('pointerdown', () => {
             this.gameManager.Interacted("bulletinBoard", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.photo.visible = true;
             this.dialogManager.setNode(boardNode);
         })

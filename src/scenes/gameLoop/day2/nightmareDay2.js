@@ -169,9 +169,9 @@ export default class NightmareDay2 extends NightmareMinigame {
 
         gum.setInteractive({ useHandCursor: true });
         gum.on('pointerup', () => {
-            xapiTracker.gameObject("gum", xapiTracker.GAMEOBJECTTYPE.ITEM)
+            xapiTracker.GameObject("gum", xapiTracker.GAMEOBJECTTYPE.ITEM)
                         .Interacted()
-                        .send();
+                        .Send();
             // Si se clica, se elmina del grupo y se destruye
             this.gums.remove(gum, true, true);
         })

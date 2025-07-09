@@ -35,7 +35,7 @@ export default class RestroomBreakDay2 extends RestroomBase {
         
         sink.on('pointerdown', () => {
             this.gameManager.Interacted("sink", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(sinkNode);
         });
 

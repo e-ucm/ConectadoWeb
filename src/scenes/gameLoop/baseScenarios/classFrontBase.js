@@ -87,7 +87,7 @@ export default class ClassFrontBase extends BaseScene {
         
         tables.on('pointerdown', () => {
             this.gameManager.Interacted("tables", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(this.tablesNode);
         });
 

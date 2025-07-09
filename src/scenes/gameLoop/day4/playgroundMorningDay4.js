@@ -29,7 +29,7 @@ export default class PlaygroundMorningDay4 extends PlaygroundBase {
         bulletinBoard.setInteractive({ useHandCursor: true });
         bulletinBoard.on('pointerdown', () => {
             this.gameManager.Interacted("bulletinBoard", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(boardNode);
         })
 

@@ -136,9 +136,9 @@ export default class FriendsTab extends Phaser.GameObjects.Group {
 
     interacted(id) {
         try {
-            xapiTracker.gameObject(id, xapiTracker.GAMEOBJECTTYPE.ITEM)
+            xapiTracker.GameObject(id, xapiTracker.GAMEOBJECTTYPE.ITEM)
                         .Interacted()
-                        .send();
+                        .Send();
         } catch(e) {
             console.debug(e);
         }

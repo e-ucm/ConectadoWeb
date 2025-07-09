@@ -20,7 +20,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
         doorClosed.setInteractive({ useHandCursor: true });
         doorClosed.on('pointerdown', () => {
             this.gameManager.Interacted("restroomDoorclosed", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(doorNode);
         });
 
@@ -79,7 +79,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
             sink.input.cursor = 'pointer';
             sink.on('pointerdown', () => {
                 this.gameManager.Interacted("sink", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                                .send();
+                                .Send();
                 this.dialogManager.setNode(sinkNode);
             });
 
@@ -103,7 +103,7 @@ export default class RestroomAfternoonDay5 extends RestroomBase {
             floor.input.cursor = 'pointer';
             floor.on('pointerdown', () => {
                 this.gameManager.Interacted("floor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                                .send();
+                                .Send();
                 this.dialogManager.setNode(floorNode);
             });
 

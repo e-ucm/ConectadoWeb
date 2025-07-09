@@ -18,7 +18,7 @@ export default class CorridorMorningDay4 extends CorridorBase {
         bulletinBoard.setInteractive({ useHandCursor: true });
         bulletinBoard.on('pointerdown', () => {
             this.gameManager.Interacted("bulletinBoard", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(boardNode);
         })
 

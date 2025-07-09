@@ -35,7 +35,7 @@ export default class BedroomAfternoonDay4 extends BedroomBase {
         bag.setInteractive({ useHandCursor: true });
         bag.on('pointerdown', () => {
             this.gameManager.Interacted("bag", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(bagNode)
         });
 

@@ -34,7 +34,7 @@ export default class PlaygroundBase extends BaseScene {
         // mostrara. En caso contrario, se pasara a la escena del salon con la camara a la izquierda y se eliminara esta escena
         exit.on('pointerdown', () => {
             this.gameManager.Interacted("exit", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (this.homeNode) {
                 this.dialogManager.setNode(this.homeNode);
             }
@@ -55,7 +55,7 @@ export default class PlaygroundBase extends BaseScene {
         // no se puede entrar), se mostrara. En caso contrario, se pasara a la escena de las escaleras
         doors.on('pointerdown', () => {
             this.gameManager.Interacted("doors", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (!this.doorNode && this.bgImg === 'playgroundOpened') {
                 this.gameManager.changeScene(this.stairs, { } , true);
             }

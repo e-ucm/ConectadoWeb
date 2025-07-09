@@ -36,7 +36,7 @@ export default class OppositeRestroom extends BaseScene {
         // Al hacer click, se pasara a la escena del pasillo sin eliminar esta escena
         super.toggleDoor(doorClosed, doorOpened, () => {
             this.gameManager.Interacted("restroomDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             let params = {
                 camPos: "left"
             }
@@ -49,12 +49,12 @@ export default class OppositeRestroom extends BaseScene {
         let stall2DoorOpened = this.add.image(861 * this.scale, 240 * this.scale, this.atlasName, 'restroomStall2Opened').setOrigin(0.5, 0).setScale(this.scale);
         super.toggleDoor(stall2DoorClosed, stall2DoorOpened, () => {
             this.gameManager.Interacted("restroomStall2", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .withResultExtension("status", "closed")
-                            .send();
+                            .WithResultExtension("status", "closed")
+                            .Send();
         }, true, () => {
             this.gameManager.Interacted("restroomStall2", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .withResultExtension("status", "opened")
-                            .send();
+                            .WithResultExtension("status", "opened")
+                            .Send();
         });
         stall2DoorClosed.flipX = true;
         stall2DoorOpened.flipX = true;
@@ -65,7 +65,7 @@ export default class OppositeRestroom extends BaseScene {
         phone.setInteractive({ useHandCursor: true });
         phone.on('pointerdown', () => {
             this.gameManager.Interacted("phone", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(phoneNode);
         })
 

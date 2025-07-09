@@ -49,7 +49,7 @@ export default class CorridorBase extends BaseScene {
         // mostrara. En caso contrario, se pasara a la escena de las escaleras sin eliminar esta escena
         this.stairsDoor.on('pointerdown', () => {
             this.gameManager.Interacted("stairsDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (this.stairsNode) {
                 this.dialogManager.setNode(this.stairsNode);
             }
@@ -69,7 +69,7 @@ export default class CorridorBase extends BaseScene {
         // mostrara. En caso contrario, se pasara a la escena del bano sin eliminar esta escena
         super.toggleDoor(boysRestroomdoorClosed, boysRestroomDoorOpened, () => {
             this.gameManager.Interacted("boysRestroom", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (this.boysRestroomNode) {
                 this.dialogManager.setNode(this.boysRestroomNode);
             }

@@ -111,9 +111,9 @@ export default class Phone extends Phaser.GameObjects.Container {
 
     // Pasa a la pantalla anterior
     toPrevScreen() {
-        xapiTracker.gameObject("toPrevScreen", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("toPrevScreen", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         // Si la pantalla actual es la pantalla principal, se guarda el movil
         if (this.currScreen === this.mainScreen) {
             this.phoneManager.togglePhone();
@@ -131,25 +131,25 @@ export default class Phone extends Phaser.GameObjects.Container {
 
     // Cambia a la pantalla principal
     toMainScreen() {
-        xapiTracker.gameObject("toMainScreen", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("toMainScreen", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         this.changeScreen(this.mainScreen);
     }
 
     // Cambia a la pantalla de estado
     toStatusScreen() {
-        xapiTracker.gameObject("openFriendsApp", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("openFriendsApp", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         this.changeScreen(this.statusScreen);
     }
 
     // Cambia a la pantalla de mensajes
     toMsgScreen() {
-        xapiTracker.gameObject("openMobileChat", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("openMobileChat", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         this.changeScreen(this.messagesScreen);
     }
 
@@ -158,9 +158,9 @@ export default class Phone extends Phaser.GameObjects.Container {
      * @param {String} chat - id del chat
      */
     toChatScreen(chat) {
-        xapiTracker.gameObject(`chat_${chat}`, xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject(`chat_${chat}`, xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         if (this.chats.has(chat)) {
             this.changeScreen(this.chats.get(chat));
             this.chats.get(chat).clearNotifications();
@@ -169,9 +169,9 @@ export default class Phone extends Phaser.GameObjects.Container {
 
     // Cambia a la pantalla de ajustes
     toSettingsScreen() {
-        xapiTracker.gameObject("openMobileSettings", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("openMobileSettings", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         this.changeScreen(this.settingsScreen);
     }
 

@@ -39,7 +39,7 @@ export default class LivingroomBase extends BaseScene {
         // mostrara. En caso contrario, se pasara a la escena del patio con la camara a la izquierda y se eliminara esta escena
         super.toggleDoor(playgroundDoorClosed, playgroundDoorOpened, () => {
             this.gameManager.Interacted("exitHomeDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (this.doorNode) {
                 this.dialogManager.setNode(this.doorNode);
             }
@@ -58,7 +58,7 @@ export default class LivingroomBase extends BaseScene {
         // Al hacer click sobre la puerta abierta, se pasa a la habitacion con la camara en la izquierda
         super.toggleDoor(bedroomDoorClosed, bedroomDoorOpened, () => {
             this.gameManager.Interacted("bedroomDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             let params = {
                 camPos: "left"
             };

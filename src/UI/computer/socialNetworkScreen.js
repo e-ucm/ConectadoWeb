@@ -550,9 +550,9 @@ export default class SocialNetworkScreen extends Phaser.GameObjects.Group {
      * Cambiar a la pestana donde aparecen las solicitudes de amistad
      */
     accessFriendsTab() {
-        xapiTracker.gameObject("ShowComputerFriends", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("ShowComputerFriends", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         this.feedTab.setVisible(false);
         this.friendsTab.start();
     }
@@ -561,9 +561,9 @@ export default class SocialNetworkScreen extends Phaser.GameObjects.Group {
      * Cambiar a la pestana donde aparecen los posts de los amigos
      */
     accessFeedTab() {
-        xapiTracker.gameObject("ShowComputerPublications", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+        xapiTracker.GameObject("ShowComputerPublications", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
                     .Interacted()
-                    .send();
+                    .Send();
         this.friendsTab.setVisible(false);
         this.feedTab.setVisible(true);
     }

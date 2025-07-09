@@ -119,11 +119,11 @@ export default class LoginMenu extends Phaser.Scene {
                     else if (userInfo.gender === 1) {
                         userInfo.gender = "female";
                     }
-                    xapiTracker.accessible("StartGame")
+                    xapiTracker.Accessible("StartGame")
                                 .Accessed()
-                                .withResultExtension("gender", userInfo.gender)
-                                .withResultExtension("password", userInfo.password)
-                                .send();
+                                .WithResultExtension("gender", userInfo.gender)
+                                .WithResultExtension("password", userInfo.password)
+                                .Send();
                     this.gameManager.startGame(userInfo);
                 }
             },

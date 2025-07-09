@@ -33,7 +33,7 @@ export default class StairsBase extends BaseScene {
         wallTag.on('pointerdown', () => {
             this.dialogManager.setNode(wallTagNode);
             this.gameManager.Interacted("wallTag", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
         });
 
         // Puerta del despacho
@@ -47,7 +47,7 @@ export default class StairsBase extends BaseScene {
         // Al hacer click en la puerta, se muestra un dialogo
         super.toggleDoor(doorClosed, doorOpened, () => {
             this.gameManager.Interacted("stairsDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             this.dialogManager.setNode(this.doorNode);
         }, false);
 
@@ -60,7 +60,7 @@ export default class StairsBase extends BaseScene {
         // mostrara. En caso contrario, se pasara a la escena del patio con la camara a la derecha sin eliminar esta escena
         playgroundStairs.on('pointerdown', () => {
             this.gameManager.Interacted("playgroundStairs", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (this.playgroundNode) {
                 this.dialogManager.setNode(this.playgroundNode);
             }
@@ -80,7 +80,7 @@ export default class StairsBase extends BaseScene {
         // mostrara. En caso contrario, se pasara a la escena del pasillo sin eliminar esta escena
         corridorStairs.on('pointerdown', () => {
             this.gameManager.Interacted("corridorStairs", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .send();
+                            .Send();
             if (this.corridorNode) {
                 this.dialogManager.setNode(this.corridorNode);
             }
