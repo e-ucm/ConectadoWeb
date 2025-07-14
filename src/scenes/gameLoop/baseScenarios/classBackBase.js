@@ -35,8 +35,8 @@ export default class ClassBackBase extends BaseScene {
         // Al hacer click, si hay algun dialogo que mostrar (para indicar que no se puede salir), se
         // mostrara. En caso contrario, se pasara a la escena del pasillo y se elimina esta escena
         super.toggleDoor(doorClosed, doorOpened, () => {
-            this.gameManager.Interacted("classDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .Send();
+            this.gameManager.interacted("classDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .send();
             if (this.doorNode) {
                 this.dialogManager.setNode(this.doorNode);
             }

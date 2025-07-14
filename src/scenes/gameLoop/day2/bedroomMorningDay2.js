@@ -23,9 +23,9 @@ export default class BedroomMorningDay2 extends BedroomBase {
         let bag = this.add.image(1900 * this.scale, 1035 * this.scale, this.atlasName, 'bag').setOrigin(0, 0).setScale(-this.scale * 0.9, this.scale * 0.9);
         bag.setInteractive({ useHandCursor: true });
         bag.on('pointerdown', () => {
-            this.gameManager.Interacted("bag", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                                    .WithResultExtension("bagPicked", true)
-                                    .Send();
+            this.gameManager.interacted("bag", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                                    .withResultExtension("bagPicked", true)
+                                    .send();
             this.dialogManager.setNode(bagNode)
         });
 

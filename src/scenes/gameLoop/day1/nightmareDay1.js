@@ -105,15 +105,15 @@ export default class NightmareDay1 extends NightmareMinigame {
             chair.removeInteractive();
 
             if (node) {
-                xapiTracker.GameObject("chair_with_dialog", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .Interacted()
-                            .Send();
+                xapiTracker.gameObject("chair_with_dialog", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .interacted()
+                            .send();
                 this.lastTouchedChair = chair;
                 this.dialogManager.setNode(node);
             } else {
-                xapiTracker.GameObject("chair_without_dialog", xapiTracker.GAMEOBJECTTYPE.ITEM)
-                            .Interacted()
-                            .Send();
+                xapiTracker.gameObject("chair_without_dialog", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .interacted()
+                            .send();
                 this.chairFadesOut(chair);
             }
         });

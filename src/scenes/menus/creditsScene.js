@@ -33,7 +33,7 @@ export default class CreditsScene extends Phaser.Scene {
             let exitButtonTranslation = this.i18next.t("exitButton", { ns: this.ns });
             let exitButton = new Button(this, sidePadding, this.CANVAS_HEIGHT - bottomPadding, 0.47,
                 () => {
-                    this.gameManager.CompletedGame(true);
+                    this.gameManager.completedGame(true);
                     this.gameManager.startLangMenu();
                 },
                 this.gameManager.textBox.fillName, { R: 240, G: 240, B: 240 }, { R: 64, G: 142, B: 134 }, { R: 200, G: 200, B: 200 },
