@@ -1,0 +1,193 @@
+{
+    "phone": {
+        "root": {
+            "text": "Não tenho nada para responder."
+        }
+    },
+
+    "bedroom": {
+        "pc": {
+            "root": [
+                {
+                    "text": "Se eu ligar o computador, com certeza vou me atrasar."
+                },
+                {
+                    "text": "Melhor esperar até de tarde."
+                }
+            ],
+            "pcQuestion": {
+                "text": "Você quer ligar o computador?"
+            },
+            "pcChoice": [
+                {
+                    "text": "Sim"
+                },
+                {
+                    "text": "Não"
+                }
+            ],
+            "leavePC":{
+                "text": "Melhor eu sair."
+            }
+        },
+
+        "bagAfternoon": {
+            "root": [
+                {
+                    "text": "Acabei de chegar."
+                },
+                {
+                    "text": "Eu realmente não preciso da minha mochila agora."
+                }
+            ]
+        },
+        
+        "bedAfternoon": {
+            "root": {
+                "text": "Hmm, será que já devo ir dormir?"
+            },
+            "choices": [
+                {
+                    "text": "Sim"
+                },
+                {
+                    "text": "Não"
+                }
+            ]
+        }
+    },
+
+    "livingroom": {
+        "doorMorning": {
+            "root": {
+                "text": "Esqueci a mochila! Melhor voltar ao meu quarto para pegá-la antes de sair."
+            }
+        },
+        "doorAfternoon": {
+            "root": {
+                "text": "Não tenho nada para fazer lá fora."
+            }
+        }
+    },
+
+    "playground": {
+        "homeMorning": {
+            "root": {
+                "text": "Acabei de chegar, então ainda não posso sair!"
+            }
+        },
+        "homeBreak": {
+            "root": {
+                "text": "É hora do recreio, mas ainda faltam algumas aulas antes de eu poder ir para casa."
+            }
+        },
+        "doorMorning": {
+            "root": {
+                "text": "Cheguei cedo e a sala ainda está fechada. Vou dar uma volta por aqui."
+            }
+        },
+        "doorAfternoon": {
+            "root": [
+                {
+                    "text": "Não tem mais aulas hoje, e todo mundo já foi embora."
+                },
+                {
+                    "text": "É melhor eu ir para casa."
+                }
+            ]
+        }
+    },
+
+    "stairs": {
+        "door": {
+            "root": {
+                "text": "Parece que não tem ninguém lá dentro."
+            }
+        },
+        "tag": {
+            "root": {
+                "text": "Sala do Diretor."
+            }
+        },
+        "downstairs": {
+            "root": {
+                "text": "Melhor eu ir direto para a minha sala."
+            }
+        }
+
+    },
+
+    "corridor": {
+        "restroom": {
+            "root": {
+                "text": "",
+                "text_male": "Não posso entrar lá, é o banheiro das meninas.",
+                "text_female": "Não posso entrar lá, é o banheiro dos meninos."
+            }
+        },
+        "class": {
+            "root": {
+                "text": "Se eu entrar e o professor aparecer, não vou conseguir sair."
+            },
+            "choices": [
+                {
+                    "text": "(Entrar mesmo assim)."
+                },
+                {
+                    "text": "Vou dar mais uma volta."
+                }
+            ]
+        }
+
+    },
+
+    "class": {
+        "table": {
+            "root": {
+                "text": "Este lugar está livre. Posso me sentar aqui?"
+            },
+            "choices": [
+                {
+                    "text": "Sim"
+                },
+                {
+                    "text": "Não"
+                }
+            ],
+            "teacherArrive": {
+                "text": "(Você ouve passos. O professor está chegando.)"
+            }
+        },
+        "late": {
+            "root": [
+                {
+                    "text": "",
+                    "text_male": "Você está atrasado",
+                    "text_female": "Você está atrasada"
+                },
+                {
+                    "text": "Por favor, sente-se rápido para podermos continuar a aula."
+                }
+            ]
+        }
+    },
+
+    "board": {
+        "gumWashed": [
+            {
+                "text": "É uma foto minha de ontem, logo depois que eu tirei o chiclete."
+            },
+            {
+                "text": "Escreveram uma frase super original... \"Um bebê chegou à aula\"."
+            }
+        ],
+        "gumNotWashed": [
+            {
+                "text": "Tem uma foto minha e editaram para parecer que estou com chicletes colados no meu traseiro."
+            },
+            {
+                "text": "Quem iria querer me humilhar desse jeito?"
+            }
+        ]
+    }
+}

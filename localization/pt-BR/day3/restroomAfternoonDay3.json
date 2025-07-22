@@ -1,0 +1,103 @@
+{
+    "guille": {
+        "maleRestroom": {
+            "text": "Então, quem escreveu o bilhete foi você, Guilherme."
+        },
+
+        "femaleRestroom": [
+            {
+                "text": "O que você está fazendo no banheiro das meninas?"
+            },
+            {
+                "text": "Você não pode estar aqui. Sai fora!"
+            }
+        ],
+        "explainRestroom": {
+            "text": "Eu preciso falar com você. Fui eu quem escreveu o bilhete."
+        },
+
+        "ask": [
+            {
+                "text": "Então agora você resolve falar comigo"
+            },
+            {
+                "text": "E a metade da classe me ignorando, como fica?"
+            }
+        ],
+        "explanation": [
+            {
+                "text": "É disso que eu quero falar com você."
+            },
+            {
+                "text": "Não posso falar com você aqui, onde o Alex ou os amigos dele podem nos ver."
+            },
+            {
+                "text": "Ele ameaçou mostrar uma foto minha fumando e bebendo para os meus pais."
+            },
+            {
+                "text": "Meus pais são muito rigorosos e, se descobrirem, não sei o que pode acontecer... Talvez até me mandem pra outra escola."
+            }
+        ],
+        "explanationQuestion": {
+            "text": "Mas por que o Alex não quer que ninguém fale comigo?"
+        },
+        "continueExplanation": [
+            {
+                "text": "A gente não sabe. Ele pegou no seu pé desde o primeiro dia."
+            },
+            {
+                "text": "Muita gente faz o que ele quer, mas alguns de nós já foram ameaçados por ele."
+            },
+            {
+                "text": "No ano passado, a Ana fez algo parecido com a Maria."
+            },
+            {
+                "text": "Ela não tem amigos desde então e, quando alguém tenta falar com ela, acaba ignorando."
+            },
+            {
+                "text": "Ela ainda não nos perdoou."
+            },
+            {
+                "text": "Olha, eu só queria pedir desculpas, mas enquanto o Alex estiver assim, não poderei falar com você."
+            },
+            {
+                "text": "Desculpa mesmo, {{name}}."
+            }
+        ],
+
+        "choices": [
+            {
+                "text": "E é isso então? O Alex sempre consegue o que quer?"
+            },
+            {
+                "text": "E aquela minha foto no mural? Foi o Alex quem fez isso?"
+            }
+        ],
+        "apology": [
+            {
+                "text": "Desculpa mesmo."
+            },
+            {
+                "text": "Mas não quero que ele torne minha vida um inferno também."
+            }
+        ],
+        "aboutBoard": [
+            {
+                "text": "Isso foi a Ana quem fez."
+            },
+            {
+                "text": "Ela realmente gosta do Alex e, se ele pegar no seu pé, ela vai fazer o mesmo."
+            },
+            {
+                "text": "E o José é o capacho dele, não consegue pensar por si mesmo."
+            },
+            {
+                "text": "Evite os três."
+            }
+        ],
+        "talked": {
+            "text": "Desculpa, mas meus pais não podem saber disso."
+        }
+
+    }
+}

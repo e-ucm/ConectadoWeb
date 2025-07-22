@@ -1,0 +1,27 @@
+{
+    "mainText": "与您的朋友保持联络！",
+    "startButton": "开始",
+    "backButton": "返回",
+    "warningText": "重要提示！",
+    "inscriptionText": "不要提交您已经使用的密码。请设置一个新的密码。它仅在游戏内使用。",
+    "nameInput": {
+        "sideText": "姓名",
+        "defaultText": "你的姓名"
+    },
+    "userInput": {
+        "sideText": "用戶",
+        "defaultText": "您的用户名 "
+    },
+    "passwordInput": {
+        "sideText": "密码",
+        "defaultText": "你的密码 "
+    },
+    "errorTexts": {
+        "invalidName": "请填写您的姓名",
+        "invalidUser": "请填写您的用户名",
+        "invalidPassword": "请填写密码",
+        "shorterName": "您的姓名不能超过{{number}}个英文字符",
+        "shorterUserOrPassword": "您的用户名和密码不能超过{{number}}个字符",
+        "invalidGender": "您需要选择性别"
+    }
+}

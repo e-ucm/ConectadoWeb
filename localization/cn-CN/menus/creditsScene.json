@@ -1,0 +1,28 @@
+{
+    "titleText": "制作人员",
+    "projectManagerText": "项目经理",
+    "design-devText": "设计与开发",
+    "artManagerText": "艺术经理",
+    "art-animationText": "艺术与动画",
+    "webVersionText": "****Web version",
+    "originalConceptText": "原创概念",
+    "acknowledgmentsText": "致谢",
+    "libraryText": "感谢他出色的对话库",
+    "hackatonText": "感谢那次启动一切的编程马拉松",
+    "betaTestersText": "测试人员",
+
+    "localizationText": "本地化团队",
+    "frenchText": "法语",
+    "brText": "巴西葡萄牙语文本",
+    "cnText": "简体中文文本",
+    "hkText": "繁体中文文本",
+
+    "collaboratorsText": "合作者",
+    "schoolsText": "教育机构",
+    "schoolCollabText": "已参与游戏验证",
+    "specialThanksText": "特别感谢",
+    "sponsorsText": "赞助商",
+    "endThanksText": "谢谢！",
+    "returnButton": "****Return",
+    "exitButton": "****Exit"
+}

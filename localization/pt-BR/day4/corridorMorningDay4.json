@@ -1,0 +1,31 @@
+{
+    "alexAna": {
+        "root": {
+            "text": "(Eles te viram, mas ainda te ignoram. Alex e Ana estão conversando entre si)"
+        },
+        "suggestion": {
+            "text": "Acho que Outdoor e Troll são os mais originais."
+        },
+        "opinion": [
+            {
+				"text": "",
+                "text_male": "Eu ainda prefiro Excluído.",
+                "text_female": "Eu ainda prefiro Excluída."
+			},
+			{
+				"text": "****Ainda assim, eu concordo que {{name}} Outdoor soa muito bom hahaha."
+			}
+        ],
+        "jose": {
+            "text": "Hahaha, vamos ver o que José pensa."
+        },
+        "goOn": {
+            "text": "Não seja tímido, continue ignorando e pensando em como me chamar."
+        }
+    },
+    "board": {
+        "root": {
+            "text": "Parece que alguém pegou a foto de ontem."
+        }
+    }
+}

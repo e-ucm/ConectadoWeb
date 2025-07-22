@@ -1,0 +1,42 @@
+{
+    "guilleAlison": {
+        "choices": [
+            {
+                "text": "你知道是谁拿了我的手机然后把它放在厕所里的吗？"
+            },
+            {
+                "text": "有人知道我的手机在哪吗？有人把它拿走了。"
+            },
+            {
+                "text": "我想你现在不想和我说话…那我就先走了。"
+            }
+        ],
+        "askFound": {
+            "text": "…"
+        },
+        "askFound2": {
+            "text": "我们不会告发他们，但我想你已经猜到是谁了。"
+        },
+        "askFound3": {
+            "text": "嘘嘘嘘嘘"
+        },
+
+        "askNotFound": {
+            "text": "…"
+        },
+        "askNotFound2": {
+            "text": "对不起，我们不知道。"
+        },
+        "askNotFound3": {
+            "text": "谢谢你，吉列尔莫。"
+        },
+        
+
+        "talked": {
+            "text": "…"
+        },
+        "talked2": {
+            "text": "…"
+        }
+    }
+}

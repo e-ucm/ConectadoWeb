@@ -1,0 +1,51 @@
+{
+    "mom": {
+        "notTalkedNormal": [
+            {
+                "text": "",
+                "text_male": "Parece que você está pronto para ir.",
+                "text_female": "Parece que você está pronta para ir."
+            },
+            {
+                "text": "Você pegou tudo? Lembre-se da sua mochila."
+            },
+            {
+                "text": "Comporte-se e faça muitos amigos!"
+            }
+        ],
+        "notTalkedLate": [
+            {
+                "text": "Você viu que horas são?"
+            },
+            {
+                "text": "",
+                "text_male": "Seu primeiro dia na nova escola e você já está atrasado.",
+                "text_female": "Seu primeiro dia na nova escola e você já está atrasada."
+            },
+            {
+                "text": "Vamos, pegue tudo o que precisa e saia AGORA!"
+            }
+        ],
+        "hasBag": {
+            "text": "Parece que você pegou tudo."
+        },
+        "hasBagNormal": {
+            "text": "Vá agora ou você vai se atrasar."
+        },
+        "hasBagLate":  {
+            "text": "",
+            "text_male": "Vá agora, você já está atrasado.",
+            "text_female": "Vá agora, você já está atrasada."
+        },
+        "noBag": [
+            {
+                "text": "Você esqueceu a sua mochila."
+            },
+            {
+                "text": "Está no seu quarto. Pegue-a e vá para escola agora!"
+            }
+        ]
+    }
+    
+
+}

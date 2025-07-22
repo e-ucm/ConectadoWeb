@@ -1,5 +1,6 @@
 import Phone from '../UI/phone/phone.js';
 import GameManager from './gameManager.js';
+import xapiTracker from '../lib/xapi.js';
 
 export default class PhoneManager {
     /**
@@ -138,7 +139,8 @@ export default class PhoneManager {
 
             // Si el telefono es visible
             if (this.phone.visible) {
-                this.gameManager.Interacted("hideMobile", JSTracker.GAMEOBJECTTYPE.ITEM);
+                this.gameManager.interacted("hideMobile", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                                .send();
                 this.phone.setScale(this.PHONE_SCALE);
                 let x = { from: this.PHONE_VISIBLE.x, to: this.PHONE_HIDDEN.x };
                 let y = { from: this.PHONE_VISIBLE.y, to: this.PHONE_HIDDEN.y };
@@ -171,7 +173,8 @@ export default class PhoneManager {
             }
             // Si el telefono no es visible
             else {
-                this.gameManager.Interacted("toggleMobile", JSTracker.GAMEOBJECTTYPE.ITEM);
+                this.gameManager.interacted("toggleMobile", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                                .send();
                 // Se hace visible y se bloquea la interaccion con los elementos del fondo
                 this.phone.visible = true;
                 this.bgBlock.setInteractive({ useHandCursor: true });
@@ -417,8 +420,9 @@ export default class PhoneManager {
         else {
             this.wakeUpMessage.visible = true;
         }
-        this.gameManager.Interacted("Sleep_phone", JSTracker.GAMEOBJECTTYPE.ITEM)
-            .withResultExtension("isLate",this.gameManager.getValue("isLate"));
+        this.gameManager.interacted("Sleep_phone", xapiTracker.GAMEOBJECTTYPE.ITEM)
+            .withResultExtension("isLate",this.gameManager.getValue("isLate"))
+            .send();
     }
 
     // Funcion llamada al apagar la alarma y despertarse
@@ -442,8 +446,9 @@ export default class PhoneManager {
 
             });
         }
-        this.gameManager.Interacted("wake_up_phone", JSTracker.GAMEOBJECTTYPE.ITEM)
-            .withResultExtension("isLate",this.gameManager.getValue("isLate"));
+        this.gameManager.interacted("wake_up_phone", xapiTracker.GAMEOBJECTTYPE.ITEM)
+            .withResultExtension("isLate",this.gameManager.getValue("isLate"))
+            .send();
     }
 
 

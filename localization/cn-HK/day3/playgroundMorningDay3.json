@@ -1,0 +1,68 @@
+{
+    "group": {
+        "notTalked": {
+            "text": "早安，你在這做什麽呢？"
+        },
+        "explain": {
+            "text": "我們只是在聊天。"
+        },
+        "shutUp": [
+            {
+                "text": "閉嘴吉耶，還記得我們的約定嗎？"
+            },
+            {
+                "text": "還是你想你的父母知道呢？"
+            }
+        ],
+        "silence": {
+            "text": "…"
+        },
+        "choices": [
+            {
+                "text": "發生了什麽，吉耶？"
+            },
+            {
+                "text": "那聽起來像是威脅。"
+            }
+        ],
+        "worry": {
+            "text": "你還好嗎，吉耶？"
+        },
+        "threat": {
+            "text": "你還要和吉耶過不去嗎…阿歷？"
+        },
+        
+        "silenceQuestion": {
+            "text": "…"
+        },
+        "askSilence": {
+            "text": "有誰要説些什麽嗎？"
+        },
+
+        "bellRinging": {
+            "text": "<<學校鐘聲響起>>"
+        },
+        "late": {
+            "text": "好吧，什麽都不要説。我要去教室，現在已經足夠晚了。"
+        },
+        "talked": [
+            {
+                "text": "你們是在排擠我嗎，這是認真的？"
+            },
+            {
+                "text": "你也是嗎，吉耶？"
+            }
+        ],
+        "keepSilence": {
+            "text": "…"
+        },
+        "talkedChoices": [
+            {
+                "text": "等等看他們會不會説話。"
+            },
+            {
+                "text": "離開。"
+            }
+        ]
+    }
+}

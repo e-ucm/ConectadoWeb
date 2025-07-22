@@ -1,0 +1,43 @@
+{
+    "shadow": {
+        "introduction": {
+            "root": [
+                {
+                    "text": "É seu primeiro dia de aula. Que tal escolher um lugar para se sentar?"
+                },
+                {
+                    "text": "Escolha o lugar que você mais gosta."
+                }
+            ]
+        },
+        "outro": {
+            "root": [
+                {
+                    "text": "Parece que você perdeu seu lugar."
+                },
+                {
+                    "text": "O que?! Você nem sabe como se sentar?"
+                },
+                {
+                    "text": "Você serve pra alguma coisa?"
+                },
+                {
+                    "text": "Como espera fazer amigos agindo assim?"
+                }
+            ]
+        }
+    },
+    "seat": {
+        "root": [
+            {
+                "text": "Vejo que você encontrou um lugar, mas..."
+            },
+            {
+                "text": "Esse lugar é meu, você terá que escolher outro."
+            },
+            {
+                "text": "Você pode sentar onde quiser, menos aqui."
+            }
+        ]
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "wardrobe1": {
+        "root": {
+            "text": "Não tem nada útil aqui dentro."
+        }
+    },
+    "wardrobe2": {
+        "root": {
+            "text": "Hoje não dá pra organizar tudo isso."
+        }
+    },
+    "phone1": {
+        "root": {
+            "text": "{{name}} este é o chat que usamos com a galera"
+        },
+        "message2": {
+            "text": "",
+            "text_male": "Bem-vindo!",
+            "text_female": "Bem-vinda!"
+        },
+        "message3": {
+            "text": ":)"
+        }
+    },
+    "phone2": {
+        "root": [
+            {
+                "text": "",
+                "text_male": "Obrigado :)",
+                "text_female": "Obrigada :)"
+            }
+        ],
+        "reply": {
+            "text": "",
+            "text_male": "Obrigado :)",
+            "text_female": "Obrigada :)"
+        }
+    },
+    "phone3": {
+        "root": {
+            "text": "Por que o convite? Você não conversou com o Alex hoje?"
+        },
+        "message4": {
+            "text": "",
+            "text_male": "Hmm, ele não merece estar neste grupo. Alguém tira ele AGORA!",
+            "text_female": "Hmm, ela não merece estar neste grupo. Alguém tira ela AGORA!"
+        },
+        "message5": {
+            "text": "A única que sobra é aquela estranha, Maria"
+        },
+        "message6": {
+            "text": "José é o administrador. Fala com ele amanhã, ele não acompanha esse chat muito bem"
+        },
+        "reply2": [
+            {
+                "text": "Você me trata mal. Isso me deixa triste."
+            },
+            {
+                "text": "Cresça!"
+            },
+            {
+                "text": "O que eu fiz para você?"
+            }
+        ],
+        "sad": {
+            "text": "Acabei de chegar na escola e é muito ruim que vocês me tratem como lixo."
+        },
+        "sad2": {
+            "text": "Não estou dizendo que vocês precisam gostar de mim, mas poderiam me tratar com um pouco mais de respeito."
+        },
+        "growUp": {
+            "text": "Cresçam, quantos anos vocês têm?"
+        },
+        "ask": {
+            "text": "Não entendo, o que eu fiz para vocês me insultarem, ignorarem e fazerem piadas sobre mim?"
+        },
+        "message7": {
+            "text": "Qual é o seu problema com {{name}}?"
+        },
+        "message8": {
+            "text": "Vocês estão passando dos limites"
+        },
+        "message9": {
+            "text": "Isso não é da sua conta. Eu posso fazer o José te expulsar também"
+        },
+        "reply3": [
+            {
+                "text": "Não se preocupe, estou saindo"
+            },
+            {
+                "text": "Espero que o José seja mais inteligente"
+            },
+            {
+                "text": "Alex, pare"
+            }
+        ],
+        "leave": {
+            "text": "Se eu estar nesse grupo é um problema, eu mesmo vou sair"
+        },
+        "insult": {
+            "text": "Espero que o José não seja tão burro quanto você quando ler o chat"
+        },
+        "stop": {
+            "text": "Pare, eu não fiz nada para você que justifique a maneira como você está me tratando"
+        },
+        "goToSleep": {
+            "text": "Vou para a cama, vejo você amanhã"
+        }
+    }
+}

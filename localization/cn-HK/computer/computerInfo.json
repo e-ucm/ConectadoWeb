@@ -1,0 +1,32 @@
+{
+    "yourUserText": "你的用戶名稱",
+    "yourPasswordText": "你的密碼",
+    "loginScreen": {
+        "subtitleText": "****CONNECT WITH YOUR FRIENDS！",
+        "userInput": {
+            "sideText": "用戶"
+        },
+        "passwordInput": {
+            "sideText": "密碼"
+        },
+        "errorText": "用戶/密碼唔正確",
+        "enterButton": "輸入"
+    },
+    "socialNetScreen": {
+        "tabTexts": {
+            "feed": "儀錶板",
+            "friends": "朋友",
+            "upload": "發佈"
+        },
+        "friendRequestNot": "您收到了新朋友既請求！",
+        "blockNot": "****YOU CAN'T BLOCK USERS！",
+        "friendsNumberText": "朋友",
+        "pendingRequestsText": "待候請求",
+        "informationText": "呢個係你既儀錶板，睇吓你既朋友分享咗乜野？"
+    },
+    "commentsNumberText": "評論",
+    "friendRequestButtons": {
+        "acceptText": "接受",
+        "denyText": "否認"
+    }
+}

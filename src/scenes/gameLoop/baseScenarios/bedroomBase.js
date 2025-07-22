@@ -1,6 +1,6 @@
 
 import BaseScene from '../baseScene.js';
-
+import xapiTracker from '../../../lib/xapi.js';
 export default class BedroomBase extends BaseScene {
     /**
      * Escena base para la habitacion. Coloca los elementos que se mantienen igual todos los dias
@@ -13,7 +13,12 @@ export default class BedroomBase extends BaseScene {
 
     create(params) {
         super.create(params);
-
+        let statementBuilder=this.gameManager.initialized(`scene ${this.scene.key}`, xapiTracker.COMPLETABLETYPE.COMPLETABLE,true, true);
+        statementBuilder=this.gameManager.addStateExtensions(statementBuilder);
+        statementBuilder.send();
+        this.gameManager.initialized(this.scene.key, xapiTracker.COMPLETABLETYPE.STORYNODE,true)
+                        .send();
+                        
         this.livingroom = "";
 
         // Pone la imagen de fondo con las dimensiones del canvas
@@ -27,33 +32,39 @@ export default class BedroomBase extends BaseScene {
         let door1Closed = this.add.image(2190 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor1Closed').setOrigin(0, 0).setScale(this.scale);
         let door1Opened = this.add.image(2110 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor1Opened').setOrigin(0, 0).setScale(this.scale);
         super.toggleDoor(door1Closed, door1Opened, () => {
-            this.gameManager.Interacted("wardrobeDoor1", JSTracker.GAMEOBJECTTYPE.ITEM)
-                            .withResultExtension("status", "closed");
+            this.gameManager.interacted("wardrobeDoor1", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .withResultExtension("status", "closed")
+                            .send();
         }, true, () => {
-            this.gameManager.Interacted("wardrobeDoor1", JSTracker.GAMEOBJECTTYPE.ITEM)
-                            .withResultExtension("status", "opened");
+            this.gameManager.interacted("wardrobeDoor1", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .withResultExtension("status", "opened")
+                            .send();
         });
 
         // Puerta izquierda del armario
         let door2Closed = this.add.image(2500 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor2Closed').setOrigin(0, 0).setScale(this.scale);
         let door2Opened = this.add.image(2435 * this.scale, 307 * this.scale, this.atlasName, 'wardrobeDoor2Opened').setOrigin(0, 0).setScale(this.scale);
         super.toggleDoor(door2Closed, door2Opened, () => {
-            this.gameManager.Interacted("wardrobeDoor2", JSTracker.GAMEOBJECTTYPE.ITEM)
-                            .withResultExtension("status", "closed");
+            this.gameManager.interacted("wardrobeDoor2", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .withResultExtension("status", "closed")
+                            .send();
         }, true, () => {
-            this.gameManager.Interacted("wardrobeDoor2", JSTracker.GAMEOBJECTTYPE.ITEM)
-                            .withResultExtension("status", "opened");
+            this.gameManager.interacted("wardrobeDoor2", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .withResultExtension("status", "opened")
+                            .send();
         });
 
         // Puerta derecha del armario
         let door3Closed = this.add.image(3155 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor3Closed').setOrigin(1, 0).setScale(this.scale);
         let door3Opened = this.add.image(3220 * this.scale, 330 * this.scale, this.atlasName, 'wardrobeDoor3Opened').setOrigin(1, 0).setScale(this.scale);
         super.toggleDoor(door3Closed, door3Opened, () => {
-            this.gameManager.Interacted("wardrobeDoor3", JSTracker.GAMEOBJECTTYPE.ITEM)
+            this.gameManager.interacted("wardrobeDoor3", xapiTracker.GAMEOBJECTTYPE.ITEM)
                             .withResultExtension("status", "closed")
+                            .send();
         }, true, () => {
-            this.gameManager.Interacted("wardrobeDoor3", JSTracker.GAMEOBJECTTYPE.ITEM)
+            this.gameManager.interacted("wardrobeDoor3", xapiTracker.GAMEOBJECTTYPE.ITEM)
                             .withResultExtension("status", "opened")
+                            .send();
         });
 
 
@@ -71,7 +82,8 @@ export default class BedroomBase extends BaseScene {
         wardrobe1.setInteractive({ useHandCursor: true });
         wardrobe1.on('pointerdown', () => {
             if (door1Opened.visible) {
-                this.gameManager.Interacted("wardrobe1", JSTracker.GAMEOBJECTTYPE.ITEM);
+                this.gameManager.interacted("wardrobe1", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                                .send();
                 this.dialogManager.setNode(this.wardrobe1Node);
                 
             }
@@ -85,7 +97,8 @@ export default class BedroomBase extends BaseScene {
         wardrobe2.setInteractive();
         wardrobe2.on('pointerdown', () => {
             if (door2Opened.visible || door3Opened.visible) {
-                this.gameManager.Interacted("wardrobe2", JSTracker.GAMEOBJECTTYPE.ITEM);
+                this.gameManager.interacted("wardrobe2", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                                .send();
                 this.dialogManager.setNode(this.wardrobe2Node);
             }
         })
@@ -99,7 +112,8 @@ export default class BedroomBase extends BaseScene {
         // Al hacer click sobre el, se cambia el nodo en el dialogManager, y si
         // se lanza el evento turnPC, se cambia a la escena del ordenador
         pc.on('pointerdown', () => {
-            this.gameManager.Interacted("computer", JSTracker.GAMEOBJECTTYPE.ITEM);
+            this.gameManager.interacted("computer", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .send();
             this.dialogManager.setNode(this.pcNode);
         });
         this.dispatcher.add("turnPC", this, (obj) => {
@@ -117,7 +131,8 @@ export default class BedroomBase extends BaseScene {
             let params = {
                 camPos: "right"
             };
-            this.gameManager.Interacted("livingroomDoor", JSTracker.GAMEOBJECTTYPE.ITEM);
+            this.gameManager.interacted("livingroomDoor", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .send();
             this.gameManager.changeScene(this.livingroom, params, true);
         }, false);
 
@@ -130,7 +145,8 @@ export default class BedroomBase extends BaseScene {
         this.bed.setDepth(10);
         this.bedNode = null;
         this.bed.on('pointerdown', () => {
-            this.gameManager.Interacted("bed", JSTracker.GAMEOBJECTTYPE.ITEM);
+            this.gameManager.interacted("bed", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .send();
             this.dialogManager.setNode(this.bedNode);
         })
 
@@ -142,9 +158,12 @@ export default class BedroomBase extends BaseScene {
             this.phoneManager.topLid.y = -this.CANVAS_HEIGHT / 2;
             this.phoneManager.botLid.y = this.CANVAS_HEIGHT;
             let anim = this.phoneManager.closeEyesAnimation(false);
-            this.gameManager.AddStateExtensions(this.gameManager.Completed(`scene ${this.scene.key}`, JSTracker.COMPLETABLETYPE.COMPLETABLE,true, true));
-            this.gameManager.Completed(this.scene.key, JSTracker.COMPLETABLETYPE.STORYNODE,true);
-            this.gameManager.ProgressedGame();
+            let statementBuilder=this.gameManager.completed(`scene ${this.scene.key}`, xapiTracker.COMPLETABLETYPE.COMPLETABLE,true, true);
+            statementBuilder=this.gameManager.addStateExtensions(statementBuilder);
+            statementBuilder.send();
+            this.gameManager.completed(this.scene.key, xapiTracker.COMPLETABLETYPE.STORYNODE,true)
+                            .send();
+            this.gameManager.progressedGame();
             anim.on('complete', () => {
                 setTimeout(() => {
                     this.phoneManager.bgBlock.disableInteractive();

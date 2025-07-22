@@ -1,0 +1,59 @@
+{
+    "maria": {
+        "normal": {
+            "text": "Que bom que você veio hoje."
+        },
+        
+        "notFound": {
+            "text": "Você viu meu celular?"
+        },
+        "notFound2": [
+            {
+                "text": "Não, não faço ideia. Fale novamente com o resto da turma, só para garantir."
+            },
+            {
+                "text": "Se eu encontrar, te aviso."
+            }
+        ],
+
+        "found": {
+            "text": "Você viu alguém entrando no banheiro recentemente?"
+        },
+        "found2": {
+            "text": "Não, desculpe."
+        },
+
+        "prankChoices": [
+            {
+                "text": "Oi, Maria."
+            },
+            {
+                "text": "(Cole o pôster com cuidado e saia sem dizer nada)"
+            }
+        ],
+        "pranked": [
+            {
+                "text": "(Parece que ela não percebeu)"
+            },
+            {
+                "text": "(Espero que agora me digam onde está meu celular)"
+            }
+        ]
+    },
+
+    "restroom": {
+        "root": {
+            "text": "",
+            "text_male": "Não posso entrar lá, é o banheiro das meninas.",
+            "text_female": "Não posso entrar lá, é o banheiro das meninos."
+        },
+        "choices": [
+            {
+                "text": "(Entrar de qualquer maneira)"
+            },
+            {
+                "text": "(Sair)"
+            }
+        ]
+    }
+}
