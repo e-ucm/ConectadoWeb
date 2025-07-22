@@ -1,0 +1,37 @@
+{
+    "shadow": {
+        "introduction": {
+            "root": [
+                {
+                    "text": "Você não ama as novas fotos que acabamos de publicar?"
+                },
+                {
+                    "text": "Você pode tentar deletá-las..."
+                },
+                {
+                    "text": "Você vai ter que fazer mais do que apenas deletar ou reportar elas."
+                },
+                {
+                    "text": "Vá em frente, tente... todos nós já temos uma cópia."
+                }
+            ]
+        },
+        "outro": {
+            "root": [
+                {
+                    "text": "Você não conseguiu nada."
+                },
+                {
+                    "text": "Hahaha."
+                },
+                {
+                    "text": "As fotos ainda estão lá."
+                },
+                {
+                    "text": "Uma vez online, todo mundo pode fazer uma cópia."
+                }
+            ]
+        }
+    },
+    "imageText": "Denunciar foto"
+}

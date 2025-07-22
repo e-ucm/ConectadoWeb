@@ -1,0 +1,37 @@
+{
+    "earring": {
+        "root": [
+            {
+                "text": "Parece que é o brinco perdido da Alice!"
+            },
+            {
+                "text": "Acho que é melhor eu o entregar para ela."
+            }
+        ]
+    },
+
+    "ana": {
+        "earringNotFound": [
+            {
+                "text": "Tem algo estranho ali perto da cesta de basquete."
+            },
+            {
+                "text": "Consigo ver algo brilhante daqui."
+            }
+        ],
+        "earringFound": {
+            "text": "Parece que você encontrou o brinco perdido da Alice."
+        }
+    },
+
+    "guille": {
+        "root": [
+            {
+                "text": "Nosso professor é bem legal!"
+            },
+            {
+                "text": "Se você tiver algum problema, é só falar com ele."
+            }
+        ]
+    }
+}

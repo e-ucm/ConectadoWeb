@@ -1,0 +1,79 @@
+{
+    "alex_ana": {
+        "choices": [
+            {
+                "text": "",
+                "text_male": "Foi você? Escondeu meu celular no banheiro das meninas?",
+                "text_female": "Foi você? Escondeu meu celular no banheiro dos meninos?"
+            },
+            {
+                "text": "Alguém sabe onde está meu celular? Não é engraçado."
+            },
+            {
+                "text": "Eu sei que foi você, isso não tem graça."
+            }
+        ],
+
+        "askFound": {
+            "text": "E se tivesse sido a gente? Você vai correr para contar para seus pais ou pro professor...?"
+        },
+        "askFound2": [
+            {
+                "text": "",
+                "text_male": "Hahaha, certeza que ele vai",
+                "text_female": "Hahaha, certeza que ela? vai"
+            },
+            {
+                "text": "Ah, vai se lascar, vai chorar em outro lugar."
+            }
+        ],
+
+        "askNotFound": [
+            {
+                "text": "Talvez."
+            },
+            {
+                "text": "A gente te conta onde está se você colar esse cartaz nas costas da Maria."
+            },
+            {
+                "text": "",
+                "text_male": "(Ela te entrega um papel com fita e a frase \"Gosto de ser xingado, me xingue se você ler isso\").",
+                "text_female": "(Ela te entrega um papel com fita e a frase \"Gosto de ser xingada, me xingue se você ler isso\")."
+            },
+            {
+                "text": "Volte quando tiver feito isso... Senão, não me enche."
+            }
+        ],
+
+        "askPrank": {
+            "text": "Você conseguiu colar o cartaz na Maria sem ela perceber?"
+        },
+        "prankChoices": [
+            {
+                "text": "Sim"
+            },
+            {
+                "text": "Não"
+            }
+        ],
+
+        "hurry": {
+            "text": "O que você tá esperando? Vai logo colar ele nas costas dela..."
+        },
+        "reveal": {
+            "text": "Hahahaha, muito bem."
+        },
+        "reveal2": {
+            "text": "",
+            "text_male": "Hahaha, seu celular tá no banheiro das meninas.",
+            "text_female": "Hahaha, seu celular tá no banheiro dos meninos."
+        },
+
+        "laugh": {
+            "text": "Hahaha."
+        },
+        "laugh2": {
+            "text": "Hahaha."
+        }
+    }
+}

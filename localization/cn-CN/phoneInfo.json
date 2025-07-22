@@ -1,0 +1,53 @@
+{
+    "alarm": {
+        "title": "闹钟",
+        "message": "您不能再睡了。现在应该起床了"
+    },
+    "clock": {
+        "days": [
+            "星期一，****Day 1",
+            "星期二，****Day 2",
+            "星期三，****Day 3",
+            "星期四，****Day 4",
+            "星期五，****Day 5"
+        ],
+
+        "alarmHour": "07:30",
+        "alarmLateHour": "08:05",
+        "pcLateHour": "08:10",
+        
+        "playgroundMorning": "08:20",
+        "classStart": "08:30",
+        "playgroundMorningLate": "08:40",
+        
+        "startBreak": "11:05",
+        "midBreak": "11:10",
+        "endBreak": "11:20",
+
+        "endClass": "14:02",
+        "returnHome": "15:00",
+
+        "afternoon": {
+            "endClass": "14:05",
+            "corridor": "14:08"
+        },
+
+        "night": "21:30"
+    },
+    "statusScreen": {
+        "title":"社交风险",
+        "subtitle":"友谊"
+    },
+    "textMessages": {
+        "title": "聊天",
+        "chat1": "艾莉森",
+        "chat2": "我们的群组",
+        "chat3": "玛丽亚",
+        "chat4": "亚历山大"
+    },
+    "settings": {
+        "text": "****You will return to the main screen。 Are you sure？",
+        "yes": "是",
+        "no": "否" 
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "bag": {
+        "root": [
+            {
+                "text": "Acho que já estou com tudo pronto..."
+            },
+            {
+                "text": "Sim, estou com tudo o que preciso. Melhor eu pegar a minha mochila e sair."
+            }
+        ]
+    },
+
+    "wardrobe1": {
+        "root": {
+            "text": "Não tem nada útil aqui dentro."
+        }
+    },
+
+    "wardrobe2": {
+        "root": {
+            "text": "Alguma hora vou ter que arruma tudo isso, mas agora tenho que ir pra escola."
+        }
+    },
+    
+    "bed": {
+        "root": {
+            "text": "Agora que já levantei é melhor eu não me deitar de novo."
+        }
+    }
+
+}

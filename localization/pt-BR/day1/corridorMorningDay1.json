@@ -1,0 +1,37 @@
+{
+    "maria": {
+        "root": {
+            "text": "..."
+        },
+        "leaveMaria": {
+            "text": "Ela parece desconfortável. É melhor deixá-la sozinha por enquanto."
+        }
+    },
+    
+    "alison": {
+        "root": {
+            "text": "Desculpe, estou com pressa e vou me atrasar se não entrar agora." 
+        }
+    },
+
+    "guille": {
+        "notTalked": [
+            {
+                "text": "Oi, eu estava lendo o mural agora."
+            },
+            {
+                "text": "Tem algumas mensagens e adesivos bem legais por lá."
+            },
+            {
+                "text": "É bom dar uma olhada pelo menos uma vez por dia, é importante se acostumar a fazer isso."
+            },
+            {
+                "text": "Vamos entrar?"
+            }
+        ],
+        "talked": {
+            "text": "Não se esqueça de olhar o mural. Às vezes, tem coisas interessantes lá."
+        }
+    }
+    
+}

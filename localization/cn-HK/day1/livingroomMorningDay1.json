@@ -1,0 +1,45 @@
+{
+    "mom": {
+        "notTalkedNormal": [
+            {
+                "text": "看來你已經準備出發了。"
+            },
+            {
+                "text": "你帶齊東西了嗎？記得帶上背囊。"
+            },
+            {
+                "text": "乖啲，多交些朋友。"
+            }
+        ],
+        "notTalkedLate": [
+            {
+                "text": "你看現在幾點了？"
+            },
+            {
+                "text": "你在新學校的第一天就遲到了。"
+            },
+            {
+                "text": "快點，帶齊所有東西，馬上離開！"
+            }
+        ],
+        "hasBag": {
+            "text": "看來你把所有東西都收拾好了。"
+        },
+        "hasBagNormal": {
+            "text": "****Go now or you will be late。"
+        },
+        "hasBagLate":  {
+            "text": "****Go now，you're already late。"
+        },
+        "noBag": [
+            {
+                "text": "你忘了背囊。"
+            },
+            {
+                "text": "它在你房間，趕緊帶上出發。"
+            }
+        ]
+    }
+    
+
+}

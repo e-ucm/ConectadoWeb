@@ -1,0 +1,49 @@
+{
+    "mom_dad": {
+        "meeting": {
+            "text": "Decidimos ir conversar com seu professor para entender o que está acontecendo."
+        },
+        "meeting2": {
+            "text": "Vamos pedir uma reunião para amanhã."
+        },
+        "choices": [
+            {
+                "text": "",
+                "text_male": "Obrigado.",
+                "text_female": "Obrigada."
+            },
+            {
+                "text": "Vai piorar tudo."
+            }
+        ],
+        "thanks": {
+            "text": "",
+            "text_male": "De jeito nenhum, querido. Queremos que você fique bem.",
+            "text_female": "De jeito nenhum, querida. Queremos que você fique bem."
+        },
+        "thanks2": {
+            "text": "Vamos tentar marcar essa reunião para amanhã, no máximo."
+        },
+        "downplay": [
+            {
+                "text": "Eu não quero que vocês vão. Vai piorar tudo."
+            },
+            {
+                "text": "Eles vão pensar que sou um dedo-duro, e não era tão grave assim."
+            },
+            {
+                "text": "Deixa pra lá, o tempo vai resolver."
+            }
+        ],
+        "downplay2": {
+            "text": "Tudo bem, mas nos avise se a situação piorar."
+        },
+
+        "talked": {
+            "text": "Se cuida e se comporte bem."
+        },
+        "talked2": {
+            "text": "E não esqueça que vamos visitar a vovó no domingo."
+        }
+    }
+}

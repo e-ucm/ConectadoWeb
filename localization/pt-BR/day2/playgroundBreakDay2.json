@@ -1,0 +1,69 @@
+{
+    "ana_jose": {
+        "washed": {
+            "text": "Hahaha, você se molhou?"
+        },
+        "washed2": [
+            {
+				"text": "Hahahaha, não, não! Olha só, ele se sujou todo."
+			},
+			{
+				"text": "Ana, você está com o seu celular? Tira uma foto!"
+			}
+        ],
+        "washed3": {
+            "text": "Hahahaha."
+        },
+
+        "notWashed": [
+            {
+				"text": "Você deveria lavar suas roupas, suas calças estão bem sujas."
+			},
+			{
+				"text": "Não tem uma máquina de lavar em casa?"
+			}
+        ],
+        "notWashed2": [
+            {
+				"text": "Hahahaha, nova moda! Chicletes grudados nas calças."
+			},
+			{
+				"text": "Essas roupas feias não valem a pena lavar."
+			},
+			{
+				"text": "Deveria jogar tudo no lixo."
+			}
+        ],
+        "notWashed3": {
+            "text": "Hahahaha."
+        }
+    },
+
+    "guille_alison": {
+        "washed": {
+            "text": "Que sujeira."
+        },
+        "washed2": {
+            "text": "Está tudo bem, isso vai secar rápido."
+        },
+
+        "notTalked": [
+            {
+				"text": "Onde você sentou?"
+			},
+			{
+				"text": "Acho que você sentou em um chiclete."
+			}
+        ],
+        "notTalked2": {
+            "text": "Que confusão! Vá direto para o banheiro antes da aula."
+        },
+        "notTalked3": {
+            "text": "Sim, talvez você consiga tirar."
+        },
+
+        "talked": {
+            "text": "Tente tirar o chiclete no banheiro."
+        }
+    }
+}

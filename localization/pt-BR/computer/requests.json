@@ -1,0 +1,29 @@
+{
+    "Alison": {
+        "bio": "Sempre há uma razão para continuar em frente",
+        "deny": {
+            "root": {
+                "text": "Não posso rejeitar o convite, ela é a primeira pessoa que parece querer ser minha amiga."
+            }
+        }
+    },
+    "Guille": {
+        "bio": "Se o plano não funcionar, mude o plano, mas não mude o objetivo.",
+        "deny": {
+            "root": {
+                "text": "Não tenho motivo para rejeitar o convite dele. Será que realmente quero rejeitá-lo?"
+            },
+            "decision": [
+                {
+                    "text": "Sim, é melhor eu não aceitar."
+                },
+                {
+                    "text": "Não, é melhor eu pensar sobre isso."
+                }
+            ]
+        }
+    },
+    "Jose": {
+        "bio": ":) ... (:"
+    }
+}
