@@ -44,15 +44,15 @@ export default class LanguageMenu extends Phaser.Scene {
         this.createFlagButton(4.9 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'cn-hk', 'cn-HK', tweenTime, increase);
         
         // Boton de salir
-        // let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
-        //     async () => {
-        //         if(!this.gameManager.initialized) {
-        //             await this.gameManager.InitializedGame();
-        //         }
-        //         this.gameManager.CompletedGame(true);
-        //     },
-        //     'powerOff', { R: 64, G: 142, B: 134 }, { R: 0, G: 104, B: 93 }, { R: 200, G: 200, B: 200 }
-        // );
+        let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
+            async () => {
+                if(!this.gameManager.initialized) {
+                    await this.gameManager.initializedGame();
+                }
+                this.gameManager.completedGame(true);
+            },
+            'powerOff', { R: 64, G: 142, B: 134 }, { R: 0, G: 104, B: 93 }, { R: 200, G: 200, B: 200 }
+        );
     }
 
     /**
@@ -90,7 +90,9 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
-            xapiTracker.enqueue(xapiTracker.alternativeTracker.Selected("language", language, JSTracker.ALTERNATIVETYPE.MENU));
+            xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU)
+                        .selected(language)
+                        .send();
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();
