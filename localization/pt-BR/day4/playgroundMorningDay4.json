@@ -1,0 +1,107 @@
+{
+    "alison": {
+        "root": [
+            {
+                "text": "{{name}}, eu queria falar com você."
+            },
+            {
+                "text": "Não sei se você já está sabendo, mas o Alex disse para todos nós não conversarmos com você."
+            },
+            {
+                "text": "E ele está ameaçando quem não o segue."
+            },
+            {
+                "text": "Posso confiar em você? Não quero que a gente pare de ser amigos."
+            }
+        ],
+        "choices": [
+            {
+                "text": "",
+                "text_male": "Muito obrigado por ser minha amiga.",
+                "text_female": "Muito obrigada por ser minha amiga."
+            },
+            {
+                "text": "Não, e não tenho interesse em ganhar sua confiança."
+            }
+        ],
+        "thanks": [
+            {
+                "text": "Que bom ouvir isso."
+            },
+            {
+                "text": "Vamos trocar nossas senhas de celular e redes sociais."
+            },
+            {
+                "text": "Como um gesto de amizade e confiança."
+            },
+            {
+                "text": "No passado, as pessoas apertavam as mãos sobre feridas abertas para compartilhar sangue."
+            },
+            {
+                "text": "Mas isso é nojento e nem um pouco saudável."
+            }
+        ],
+        "passChoices": [
+            {
+                "text": "(Aceitar a troca de senhas)"
+            },
+            {
+                "text": "(Recusar a troca de senhas)"
+            }
+        ],
+        "exchange":  {
+            "text": "(Você escreve as senhas pelo celular)"
+        },
+        "exchange2": {
+            "text": "Perfeito. \"Melhores amigos\" (sorrindo de orelha a orelha)."
+        },
+        "dont": [
+            {
+                "text": "Se você não confia em mim, eu também não posso confiar em você."
+            },
+            {
+                "text": "Desculpe, mas não posso mais falar com você."
+            },
+            {
+                "text": "Não quero que o Alex fique contra mim."
+            }
+        ],
+        "reject": [
+            {
+                "text": "Então não tenho escolha, vou parar de falar com você."
+            },
+            {
+                "text": "Não quero correr riscos."
+            }
+        ],
+        "bellRinging": {
+            "text": "<<O sinal está tocando>>"
+        },
+        "late": {
+            "text": "***Estou indo para a aula agora, já está bem tarde, com certeza vamos levar uma bronca."
+        }
+    },
+
+    "guille": {
+        "root": {
+            "text": "(A expressão do rosto dele muda ao te ver. Ele vira a cabeça e olha para o outro lado)"
+        }
+    },
+
+    "jose": {
+        "root": [
+            {
+                "text": "(Com um sorriso no rosto, ele te olha e começa a rir)"
+            },
+            {
+                "text": "HAHAHA!!"
+            }
+        ]
+    },
+
+    "board": {
+        "root": {
+            "text": "Parece que alguém pegou a foto de ontem."
+        }
+    }
+}

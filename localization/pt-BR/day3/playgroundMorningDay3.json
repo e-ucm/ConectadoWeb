@@ -1,0 +1,68 @@
+{
+    "group": {
+        "notTalked": {
+            "text": "Bom dia! O que você estão fazendo aqui?"
+        },
+        "explain": {
+            "text": "Estávamos apenas conversando."
+        },
+        "shutUp": [
+            {
+                "text": "Cala a boca, Guilherme! O que foi que combinamos, hein?"
+            },
+            {
+                "text": "Ou você quer que eu conte para os seus pais?"
+            }
+        ],
+        "silence": {
+            "text": "..."
+        },
+        "choices": [
+            {
+                "text": "O que está acontecendo, Guilherme?"
+            },
+            {
+                "text": "Aquilo pareceu como uma ameaça."
+            }
+        ],
+        "worry": {
+            "text": "Você está bem?"
+        },
+        "threat": {
+            "text": "Você também tem algo contra ele, Alex?"
+        },
+        
+        "silenceQuestion": {
+            "text": "..."
+        },
+        "askSilence": {
+            "text": "Alguém vai dizer alguma coisa?"
+        },
+
+        "bellRinging": {
+            "text": "<<O sinal está tocando>>"
+        },
+        "late": {
+            "text": "Tudo bem, não precisam dizer nada. Vou para a aula, já está tarde."
+        },
+        "talked": [
+            {
+                "text": "Vocês realmente estão me ignorando?"
+            },
+            {
+                "text": "Até você, Guilherme?"
+            }
+        ],
+        "keepSilence": {
+            "text": "..."
+        },
+        "talkedChoices": [
+            {
+                "text": "Vou esperar para ver se eles falam alguma coisa."
+            },
+            {
+                "text": "Sair."
+            }
+        ]
+    }
+}

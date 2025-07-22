@@ -1,0 +1,118 @@
+{
+    "maria": {
+        "notTalked": {
+            "text": "Você quer alguma coisa?"
+        },
+        "choices1": [
+            {
+                "text": "Ah, não é nada. Tchau."
+            },
+            {
+                "text": "Por que você está sozinha aqui em vez de estar lá no pátio?"
+            }
+        ],
+        "ask": {
+            "text": "Eu prefiro ficar lendo tranquilamente por aqui."
+        },
+        "choices2": [
+            {
+                "text": "Entendi, boa leitura então. Tchau (Que esquisita)."
+            },
+            {
+                "text": "Você não prefere ir lá para o pátio com seus amigos?"
+            }
+        ],
+        "keepAsking": [
+            {
+                "text": "...",
+                "text_male": "Você está sendo um pouco chato fazendo tantas perguntas.",
+                "text_female": "Você está sendo um pouco chata fazendo tantas perguntas."
+            },
+            {
+                "text": "Eu não tenho amigos. Eles acham que sou esquisita."
+            },
+            {
+                "text": "Você já pode ir agora."
+            }
+        ],
+        "choices3": [
+            {
+                "text": "(Ficar)"
+            },
+            {
+                "text": "(Ir embora)"
+            }
+        ],
+        "stay": [
+            {
+                "text": "Você não parece esquisita para mim."
+            },
+            {
+                "text": "Estou indo para o pátio. Se quiser, estarei lá embaixo."
+            }
+        ],
+        "stayAnswer": [
+            {
+                "text": "Obrigada, você é muito gentil."
+            },
+            {
+                "text": "Mas hoje vou ficar aqui. Estou quase terminando o livro."
+            },
+            {
+                "text": "Divirta-se lá embaixo e evite o Alex. Ele é um idiota."
+            }
+        ],
+        "talkedMean": {
+            "text": "..."
+        },
+        "talkedMeanThoughts": {
+            "text": "Parece que ela está me ignorando."
+        },
+        "talkedNice": {
+            "text": "Estou terminando de ler meu livro. Vamos conversar depois?"
+        }
+    },
+    "phone": {
+        "root": {
+            "text": "Obrigado de novo por ter me ajudado"
+        },
+        "choices": [
+            {
+                "text": "Não é nada."
+            },
+            {
+                "text": "(Não vou responder, vou pensar no que dizer depois)"
+            }
+        ],
+        "reply": {
+            "text": "Não é nada"
+        }
+    },
+    "alison": {
+        "notFound": [
+            {
+                "text": "Você ainda não achou?"
+            },
+            {
+                "text": "Por favor, continue procurando."
+            }
+        ],
+        "found": [
+            {
+                "text": "Vejo que você achou meu brinco."
+            },
+            {
+                "text": "Muito obrigada!"
+            },
+            {
+                "text": "Você é incrível, te devo uma."
+            },
+            {
+                "text": "O recreio está quase acabando, vamos voltar pra sala."
+            },
+            {
+                "text": "Te vejo lá dentro!"
+            }
+        ]
+    }
+}

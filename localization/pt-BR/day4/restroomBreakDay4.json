@@ -1,0 +1,17 @@
+{
+    "phone": {
+        "root": [
+            {
+                "text": "É meu celular."
+            },
+            {
+                "text": "",
+                "text_male": "Quem pegou e deixou no banheiro das meninas?",
+                "text_female": "Quem pegou e deixou no banheiro dos meninos?"
+            },
+            {
+                "text": "Puxa, ele não está ligando. Espero que seja só a bateria. Assim que chegar em casa, vou trocá-la."
+            }
+        ]
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "player": {
+        "upload": {
+            "root": {
+                "text": "我冇新相可以上載。"
+            }
+        },
+        "postStolen": {
+            "description": "呢個是我，請打 543-654-54-31 呢個電話",
+            "comment": {
+                "decision": [
+                    {
+                        "text": "（刪除貼子）"
+                    },
+                    {
+                        "text": "愛莉…咁就係你想交換密碼既原因。"
+                    },
+                    {
+                        "text": "（唔出聲）"
+                    }
+                ],
+                "sayErase": {
+                    "text": "我要刪除貼子"
+                },
+                "complain": {
+                    "text": "愛莉…呢個就係你想要交換密碼的原因，你係最壞。"
+                },
+                "default": {
+                    "text": "我依家冇乜野可以貼，我有更重要既野去做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "等緊你的來電"
+                },
+                "secondCommentMale": {
+                    "text": "我地可以隨時見面 ;)"
+                },
+                "secondCommentFemale": {
+                    "text": "我地可以隨時見面 ;)"
+                },
+                "thirdComment": {
+                    "text": "你是誤打過嚟嗎？因為我發呢條友係度打俾我哈哈哈"
+                },
+                "fourthComment": {
+                    "text": "這直接發到班級公告板哈哈哈"
+                },
+                "fifthComment": {
+                    "text": "但你得到報酬嗎？"
+                }
+            }
+        }
+    },
+    "Alison": {
+        "postEarring": {
+            "description": "我既新耳環，我愛伱:)",
+            "comment": {
+                "thanks": {
+                    "text": "唔駛客氣，愛莉"
+                },
+                "default": {
+                    "text": "我依家冇乜野可以貼，我有更重要既野去做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "我好鐘意佢哋，你知道佢哋係邊度買嗎？"
+                },
+                "secondComment": {
+                    "text": "噢，我啱啱在課堂上唔見一個，姑娘"
+                },
+                "thirdComment": {
+                    "text": ":（ 希望你能找到它，好好看看我去過哪裡"
+                },
+                "foundEarringComment": {
+                    "text": "{{name}}搵到啦並將佢還返俾我。非常感謝 :)"
+                },
+                "notFoundEarringComment": {
+                    "text": "唔可能搵到佢，可能有人將佢攞走咗。非常感謝所有幫我搵既人。"
+                }
+            }
+        }
+    },
+    "Guille": {
+        "postMatch": {
+            "description": "睇緊球賽",
+            "comment": {
+                "root": {
+                    "text": "我依家冇乜野可以貼，我有更重要既野去做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "兄弟，呢場真係一場精彩的比賽！我們應該一齊出去睇睇下一集。我爸爸買咗一台新電視，非常大"
+                },
+                "secondComment": {
+                    "text": "我加入咗，你們隨時都可以聯絡我"
+                }
+            }
+        }
+    },
+    "Ana": {
+        "postTroll": {
+            "description": "尋找花名。",
+            "comment": {
+                "decision": [
+                    {
+                        "text": "（舉報貼子）"
+                    },
+                    {
+                        "text": "你係個屎忽鬼"
+                    },
+                    {
+                        "text": "我最後會同你導師講"
+                    }
+                ],
+                "report": {
+                    "text": "我會舉報留言，睇吓佢地會唔會因為內容而刪除。"
+                },
+                "insult": {
+                    "text": "你哋都是賤人，躝開。你的所作所為就好似三歲既細路一樣。s"
+                },
+                "insultReply": {
+                    "text": "我確認你就係個個晚上瀨尿既人，哈哈哈"
+                },
+                "snitch": {
+                    "text": "我厭倦咗佢地。明日我將會同導師講。"
+                },
+                "default": {
+                    "text": "我依家冇乜野可以貼，我有更重要既野去做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "睇吓個個額頭…船頭"
+                },
+                "secondComment": {
+                    "text": "哈哈，睇嚟似一幅大牆。點解唔係特朗普？"
+                },
+                "thirdComment": {
+                    "text": "空氣，你的耳朵移動時會發出乜野聲音，哈哈"
+                },
+                "fourthComment": {
+                    "text": "****Alex，WIND，not air hahaha"
+                },
+                "fifthComment": {
+                    "text": "",
+                    "text_male": "不要太複雜，我們可以打電話他被排斥的人…無論如何，不要再和被排斥的人說話了…",
+                    "text_female": "不要太複雜，我們可以打電話她被排斥的人…無論如何，不要再和被排斥的人說話了…"
+                },
+                "sixthComment": {
+                    "text": "被排斥的人並沒有什麼新意… 那小精靈又如何？"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "ana": {
+        "root": {
+            "text": "Acho que você entrou na sala errada."
+        },
+        "choices": [
+            {
+                "text": "Não, é meu primeiro dia aqui, eu me chamo {{name}}."
+            },
+            {
+                "text": "E quem é você? A sapatona da turma?"
+            }
+        ],
+        
+        "introduce": [
+            {
+                "text": "",
+                "text_male": "Ah, então você é {{name}}, o novato.",
+                "text_female": "Ah, então você é {{name}}, a novata."
+            },
+            {
+                "text": "Eu me chamo Ana, também sou dessa turma."
+            }
+        ],
+        "insult": {
+            "text": "",
+            "text_male": "Você é um idiota...",
+            "text_female": "Você é uma idiota..."
+        },
+
+        "teacherArrive": {
+            "text": "(Você ouve passos, parece que o seu professor chegou)"
+        },
+        "teacher": {
+            "text": "Vamos pessoal, a aula está prestes a começar, entrem logo e se sentem."
+        },
+
+        "chooseSit":[
+            {
+                "text": "(Sentar-se na última fileira)"
+            },
+            {
+                "text": "(Perguntar onde você pode se sentar)"
+            }
+        ],
+        "ask": [
+            {
+                "text": "Sente perto da Alice."
+            },
+            {
+                "text": "Alice, por favor, ajude {{name}} com qualquer dúvida que tiver sobre a escola."
+            }
+        ] 
+
+    },
+
+    "teacher": {
+        "root": [
+            {
+                "text": "{{name}}, certo?"
+            },
+            {
+                "text": "Se atrasar no primeiro dia não é a melhor maneira de começar."
+            },
+            {
+                "text": "",
+                "text_male": "Pessoal, este é o novo colega de vocês. Por favor, ajudem com qualquer duvida que tiver nesses primeiros dias.",
+                "text_female": "Pessoal, esta é a nova colega de vocês. Por favor, ajudem com qualquer duvida que tiver nesses primeiros dias."
+            },
+            {
+                "text": "{{name}}, eu serei o seu professor. Qualquer problema, é so falar comigo."
+            },
+            {
+                "text": "Por favor, {{name}}, sente-se perto da Alice."
+            },
+            {
+                "text": "Alice, por favor, ajude {{name}} com qualquer dúvida que tiver sobre a escola."
+            },
+            {
+                "text": "Agora, vamos continuar a aula."
+            }
+        ]
+    }
+
+}

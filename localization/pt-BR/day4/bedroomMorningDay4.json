@@ -1,0 +1,27 @@
+{
+    "bag": {
+        "root": {
+            "text": "Preciso ir... "
+        }
+    },
+
+    "wardrobe1": {
+        "root": {
+            "text": "Não tem nada útil aqui dentro."
+        }
+    },
+
+    "wardrobe2": {
+        "root": {
+            "text": "Talvez eu devesse organizar isso agora, em vez de ir para a escola... Minha mãe vai ficar brava."
+        }
+    },
+
+    
+    "bed": {
+        "root": {
+            "text": "Outro dia... Preciso ir, espero que passe rápido."
+        }
+    }
+    
+}

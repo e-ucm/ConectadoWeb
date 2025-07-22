@@ -10,8 +10,13 @@
     "libraryText": "Pour sa magnifique bibliothèque de dialogues",
     "hackatonText": "Pour ce hackaton qui a tout déclenché",
     "betaTestersText": "Beta testers",
+
     "localizationText": "Équipe de traduction",
-    "frenchText": "Traduction en Français",
+    "frenchText": "Traduction en français",
+    "brText": "Traduction en traduction en portugais brésilien",
+    "cnText": "Traduction en chinoise",
+    "hkText": "Traduction en cantonais",
+
     "collaboratorsText": "Collaborateurs",
     "schoolsText": "Établissements d'enseignement",
     "schoolCollabText": "Ont collaboré à la validation du jeu:",

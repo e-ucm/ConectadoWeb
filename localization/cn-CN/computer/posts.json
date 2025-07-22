@@ -1,0 +1,157 @@
+{
+    "player": {
+        "upload": {
+            "root": {
+                "text": "我没有新的相可以上载。"
+            }
+        },
+        "postStolen": {
+            "description": "这个是我，请打 543-654-54-31 这个电话",
+            "comment": {
+                "decision": [
+                    {
+                        "text": "（删除帖子）"
+                    },
+                    {
+                        "text": "艾莉森…这就是你想交换密码的原因。"
+                    },
+                    {
+                        "text": "（保持沉默）"
+                    }
+                ],
+                "sayErase": {
+                    "text": "我要删除该帖子"
+                },
+                "complain": {
+                    "text": "艾莉森…这就是你想要交换密码的原因，你太坏了。"
+                },
+                "default": {
+                    "text": "我现在没有什么可以发布，我还有更好的事情要做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "等待你的来电"
+                },
+                "secondCommentMale": {
+                    "text": "我们可以随时见面 ;)"
+                },
+                "secondCommentFemale": {
+                    "text": "我们可以随时见面 ;)"
+                },
+                "thirdComment": {
+                    "text": "你是误打过来吗？因为我发这人是在打给我哈哈哈"
+                },
+                "fourthComment": {
+                    "text": "这直接发到班级公告板上了哈哈哈"
+                },
+                "fifthComment": {
+                    "text": "但你得到报酬了吗？"
+                }
+            }
+        }
+    },
+    "Alison": {
+        "postEarring": {
+            "description": "我的新耳环，我爱你 :)",
+            "comment": {
+                "thanks": {
+                    "text": "别客气，艾莉森"
+                },
+                "default": {
+                    "text": "我现在没有什么可以发布，我还有更好的事情要做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "我很喜欢它们，你知道他们在哪里买的吗？"
+                },
+                "secondComment": {
+                    "text": "噗，我刚刚在课堂上丢了一个，姑娘"
+                },
+                "thirdComment": {
+                    "text": ":( 希望你能找到它，好好看看我去过哪里"
+                },
+                "foundEarringComment": {
+                    "text": "{{name}}找到了并还给我。非常感谢 :)"
+                },
+                "notFoundEarringComment": {
+                    "text": "不可能找到，可能有人把它拿走了。非常感谢所有帮助我寻找它的人。"
+                }
+            }
+        }
+    },
+    "Guille": {
+        "postMatch": {
+            "description": "观看比赛",
+            "comment": {
+                "root": {
+                    "text": "我现在没有什么可以发布，我还有更好的事情要做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "真是一场精彩的比赛！我们应该一起出去看看下一场比赛。我爸爸买了一台新电视，非常大"
+                },
+                "secondComment": {
+                    "text": "我加入了，你们随时都可以联系我"
+                }
+            }
+        }
+    },
+    "Ana": {
+        "postTroll": {
+            "description": "寻找{{name}}的昵称",
+            "comment": {
+                "decision": [
+                    {
+                        "text": "（举报帖子）"
+                    },
+                    {
+                        "text": "你是个混蛋"
+                    },
+                    {
+                        "text": "我最后要和你的导师谈谈"
+                    }
+                ],
+                "report": {
+                    "text": "我要报告该消息，看看他们是否会因为其内容而将其删除。"
+                },
+                "insult": {
+                    "text": "你们都是混蛋，滚开。你们就像三岁的小孩一样。"
+                },
+                "insultReply": {
+                    "text": "我确定你就是那个晚上尿裤子的人，哈哈哈"
+                },
+                "snitch": {
+                    "text": "我受够了他们。明天我要和导师谈谈。"
+                },
+                "default": {
+                    "text": "我现在没有什么可以发布，我还有更好的事情要做。"
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "****看看那额头…Shiphead"
+                },
+                "secondComment": {
+                    "text": "哈哈，看起来像是一堵大墙。为什么不是特朗普？"
+                },
+                "thirdComment": {
+                    "text": "空气。耳朵动起来会发出什么声音？哈哈"
+                },
+                "fourthComment": {
+                    "text": "哈哈哈，亚历克斯，这是风，不是空气"
+                },
+                "fifthComment": {
+                    "text": "",
+                    "text_male": "不要想得太复杂，我们可以叫他被抛弃的人…无论如何，不​​要再和被抛弃的人说话了…",
+                    "text_female": "不要想得太复杂，我们可以叫她被抛弃的人…无论如何，不​​要再和被抛弃的人说话了…"
+                },
+                "sixthComment": {
+                    "text": "被抛弃的人并没有什么新意… 那小精灵 又如何？"
+                }
+            }
+        }
+    }
+}
