@@ -1,7 +1,7 @@
 import GameManager from "../../managers/gameManager.js"
 import Button from '../../UI/button.js'
 import xapiTracker from "../../lib/xapi.js";
-
+import ogdTracker from "../../lib/ogdTracker.js";
 export default class LanguageMenu extends Phaser.Scene {
     /**
     * Menu para elegir el idioma del juego
@@ -90,9 +90,13 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
-            xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU)
-                        .selected(language)
-                        .send();
+            ogdTracker.setUserId('TestingStuff');
+            ogdTracker.log("language_selection", {
+                "language": language
+            });
+            // xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU)
+            //             .selected(language)
+            //             .send();
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();

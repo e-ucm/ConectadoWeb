@@ -32,6 +32,21 @@ This repository consists of a **browser version** of the original game developed
 All graphic resources of the project have a CC BY-NC-SA (Creative Commons Attribution Non-Commercial Share Alike) license.
 The graphic resources have been designed by [Ana Vallecillos Ruiz](https://nashek.artstation.com/) and [Lola González Gutiérrez](https://www.redbubble.com/es/people/lolagonzalez?asc=u).
 
+## Server Setup
+
+#### 1. Install npm libs
+```sh
+npm install
+```
+#### 2. Build js using rollup (output dist folder)
+```sh
+npm run build
+```
+#### 3. Launch app serving root as static folder, e.g.
+```sh
+python3 -m http.server 8000
+```
+
 <hr>
 
 <div align="center">
