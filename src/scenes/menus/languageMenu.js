@@ -90,13 +90,47 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
-            ogdTracker.setUserId('TestingStuff');
-            ogdTracker.log("language_selection", {
-                "language": language
-            });
-            // xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU)
-            //             .selected(language)
-            //             .send();
+            // Open Game Data OVERRIDE (this is the first event to be sent)
+
+            let statementBuilder = xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU).selected(language)
+
+            const proto = Object.getPrototypeOf(statementBuilder); // StatementBuilder
+            const originalSend = proto.send;
+            proto.send = function (...args) {
+                let stat = this.statement;
+
+                let actor_id = stat.actor.accountName;
+                let verb_id = stat.verb.verbDisplay;
+                let object_id = stat.object.id.replace("ConectadoWeb://", ""); // checkme - why object id starts like this
+
+                let event_name = object_id + "_" + verb_id;
+                let event_data = stat.result ? stat.result.toXAPI() : {}; // checkme scorekey format
+
+                if (stat.object.type) {
+                    event_data["object_type"] = stat.object.type;
+                }
+
+                if (event_data.extensions) {
+                    for (let key in event_data.extensions) {
+                        let field = key.replace("ConectadoWeb://", "");
+                        event_data[field] = event_data.extensions[key];
+                    }
+
+                    delete event_data.extensions;
+                }
+
+                // sending event to OGD (timestamp autofilled)
+                ogdTracker.setUserId(actor_id);
+                ogdTracker.log(event_name, event_data);
+
+                // checkme maybe add "if debug = true"
+                console.log("Sending " + event_name + " to OPEN GAME DATA");
+
+                return originalSend.apply(this, args);
+            };
+
+            statementBuilder.send(); // moving trace to queue
+
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();
