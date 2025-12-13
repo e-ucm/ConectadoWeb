@@ -38,7 +38,7 @@ The graphic resources have been designed by [Ana Vallecillos Ruiz](https://nashe
 ```sh
 npm install
 ```
-#### 2. Build js using rollup (output dist folder)
+#### 2. Build js using rollup (output in dist folder)
 ```sh
 npm run build
 ```

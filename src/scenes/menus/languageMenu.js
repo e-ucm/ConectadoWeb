@@ -101,7 +101,7 @@ export default class LanguageMenu extends Phaser.Scene {
 
                 let actor_id = stat.actor.accountName;
                 let verb_id = stat.verb.verbDisplay;
-                let object_id = stat.object.id.replace("ConectadoWeb://", ""); // checkme - why object id starts like this
+                let object_id = stat.object.id.replace("ConectadoWeb://", "");
 
                 let event_name = object_id + "_" + verb_id;
                 let event_data = stat.result ? stat.result.toXAPI() : {}; // checkme scorekey format
