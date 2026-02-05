@@ -94,7 +94,8 @@ export default class LanguageMenu extends Phaser.Scene {
 
             let statementBuilder = xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU).selected(language)
 
-            if (ogdTracker.enabled) {
+            let urlParams = new URLSearchParams(window.location.search);
+            if (ogdTracker.enabled && urlParams.get('wisconsin') == 'true') {
                 const proto = Object.getPrototypeOf(statementBuilder); // StatementBuilder
                 const originalSend = proto.send;
                 proto.send = function (...args) {
