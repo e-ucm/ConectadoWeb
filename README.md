@@ -27,6 +27,7 @@ Este repositorio se trata de una **versión web** del videojuego original desarr
 - Inglés 🇬🇧
 - Francés 🇫🇷
 - Portugués 🇵🇹 (en proceso)
+- Chino (en proceso)
 
 ## Recursos
 Todos los recursos gráficos del proyecto poseen una licencia CC BY-NC-SA (Creative Commons Attribution Non-Commercial Share Alike). Los recusos gráficos han sido diseñados por [Ana Vallecillos Ruiz](https://nashek.artstation.com/) (Directora de Arte) y [Lola González Gutiérrez](https://www.redbubble.com/es/people/lolagonzalez/shop?asc=u).
