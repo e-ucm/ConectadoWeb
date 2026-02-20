@@ -90,56 +90,18 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
-            // Open Game Data OVERRIDE (this is the first event to be sent)
-
             let statementBuilder = xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU).selected(language)
 
             let urlParams = new URLSearchParams(window.location.search);
             if (!ogdTracker.initialized && urlParams.get('wisconsin') == 'true') {
+                // Open Game Data OVERRIDE (this is the first event to be sent)
                 ogdTracker.initialized = true;
                 ogdTracker.setUserId(Date.now().toString()); // generar un identificador usando el timestamp actual
 
                 const proto = Object.getPrototypeOf(statementBuilder); // StatementBuilder
                 const originalSend = proto.send;
                 proto.send = function (...args) {
-                    let stat = this.statement;
-
-                    let actor_id = stat.actor.accountName;
-                    if (actor_id) { // coger actor_id de xAPI si existe (sobreescribe el generado con Date)
-                        ogdTracker.setUserId(actor_id);
-                    }
-
-                    let verb_id = stat.verb.verbDisplay;
-                    let object_id = stat.object.id.replace("ConectadoWeb://", "");
-
-                    let event_name = object_id + "_" + verb_id;
-                    let event_data = stat.result ? stat.result.toXAPI() : {}; // checkme scorekey format
-
-                    if (stat.object.type) {
-                        event_data["object_type"] = stat.object.type;
-                    }
-
-                    if (event_data.extensions) {
-                        for (let key in event_data.extensions) {
-                            let field = key.replace("ConectadoWeb://", "");
-                            event_data[field] = event_data.extensions[key];
-                        }
-
-                        delete event_data.extensions;
-                    }
-
-                    // para evitar problemas de encoding base64 (charset utf-8)
-                    let str_event_data = JSON.stringify(event_data);
-                    str_event_data = str_event_data.replace(/á/g, "a").replace(/é/g, "e").replace(/í/g, "i")
-                    .replace(/ó/g, "o").replace(/ú/g, "u").replace(/ñ/g, "ni")
-                    .replace(/ü/g, "u");
-                    event_data = JSON.parse(str_event_data);
-                    // sending event to OGD (timestamp autofilled)
-                    ogdTracker.log(event_name, event_data);
-
-                    // checkme maybe add "if debug = true"
-                    console.log("Sending " + event_name + " to OPEN GAME DATA");
-
+                    ogdTracker.sendFromXAPI(this.statement);
                     return originalSend.apply(this, args);
                 };
             }
