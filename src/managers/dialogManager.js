@@ -262,7 +262,7 @@ export default class DialogManager {
             else if (this.currNode.type === "text") {
                 if(!this.launched) {
                     var dialog = this.currNode.dialogs[0];
-                    xapiTracker.completable(`${dialog.name} ${dialog.text}`, xapiTracker.COMPLETABLETYPE.STORYNODE)
+                    xapiTracker.completable(`${dialog.name} ${dialog.text.slice(0, 25)}`, xapiTracker.COMPLETABLETYPE.STORYNODE)
                                 .initialized()
                                 .send();
                     this.launched=true;
@@ -367,7 +367,7 @@ export default class DialogManager {
                     // Actualiza el ultimo personaje que se ha hablado
                     this.lastCharacter = this.currNode.character;
                     var dialog = this.currNode.dialogs[0];
-                    xapiTracker.completable(`${dialog.name} ${dialog.text}`, xapiTracker.COMPLETABLETYPE.STORYNODE)
+                    xapiTracker.completable(`${dialog.name} ${dialog.text.slice(0, 25)}`, xapiTracker.COMPLETABLETYPE.STORYNODE)
                             .completed(true, true)
                             .send();
                     this.launched=false;
