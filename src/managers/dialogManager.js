@@ -18,6 +18,7 @@ export default class DialogManager {
         this.portraits = new Map();         // Mapa para guardar los retratos en esta escena
         this.allPortraits = new Set();
         this.launched=false;
+        this.activeDialogTracker = null;    // Tracker para completar dialogos en xAPI
 
         this.gameManager = GameManager.getInstance();
         this.dispatcher = this.gameManager.dispatcher;
@@ -262,9 +263,8 @@ export default class DialogManager {
             else if (this.currNode.type === "text") {
                 if(!this.launched) {
                     var dialog = this.currNode.dialogs[0];
-                    xapiTracker.completable(`${dialog.name} ${dialog.text.slice(0, 25)}`, xapiTracker.COMPLETABLETYPE.STORYNODE)
-                                .initialized()
-                                .send();
+                    this.activeDialogTracker = xapiTracker.completable(`${dialog.name} ${dialog.text.slice(0, 25)}`, xapiTracker.COMPLETABLETYPE.STORYNODE);
+                    this.activeDialogTracker.initialized().send();
                     this.launched=true;
                 }
                 // Si el nodo no tiene texto, se lo salta y pasa al siguiente nodo
@@ -366,10 +366,11 @@ export default class DialogManager {
                 else {
                     // Actualiza el ultimo personaje que se ha hablado
                     this.lastCharacter = this.currNode.character;
-                    var dialog = this.currNode.dialogs[0];
-                    xapiTracker.completable(`${dialog.name} ${dialog.text.slice(0, 25)}`, xapiTracker.COMPLETABLETYPE.STORYNODE)
-                            .completed(true, true)
-                            .send();
+                    // Completa el dialogo rastreado
+                    if (this.activeDialogTracker) {
+                        this.activeDialogTracker.completed(true, true).send();
+                        this.activeDialogTracker = null;
+                    }
                     this.launched=false;
                     // Se reinicia el dialogo del nodo actual y actualiza el nodo al siguiente
                     // IMPORTANTE: DESPUES DE UN NODO DE DIALOGO SOLO HAY UN NODO, POR LO QUE 
