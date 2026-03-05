@@ -1,7 +1,6 @@
 import GameManager from "../../managers/gameManager.js"
 import Button from '../../UI/button.js'
 import xapiTracker from "../../lib/xapi.js";
-import ogdTracker from "../../lib/ogdTracker.js";
 export default class LanguageMenu extends Phaser.Scene {
     /**
     * Menu para elegir el idioma del juego
@@ -91,22 +90,7 @@ export default class LanguageMenu extends Phaser.Scene {
         });
         button.on('pointerdown', () => {
             let statementBuilder = xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU).selected(language)
-
-            let urlParams = new URLSearchParams(window.location.search);
-            if (!ogdTracker.initialized && urlParams.get('wisconsin') == 'true') {
-                // Open Game Data OVERRIDE (this is the first event to be sent)
-                ogdTracker.initialized = true;
-                ogdTracker.setUserId(Date.now().toString()); // generar un identificador usando el timestamp actual
-
-                const proto = Object.getPrototypeOf(statementBuilder); // StatementBuilder
-                const originalSend = proto.send;
-                proto.send = function (...args) {
-                    ogdTracker.sendFromXAPI(this.statement);
-                    return originalSend.apply(this, args);
-                };
-            }
-
-            statementBuilder.send(); // moving trace to queue
+            statementBuilder.send();
 
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
