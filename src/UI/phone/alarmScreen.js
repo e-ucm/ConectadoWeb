@@ -64,7 +64,7 @@ export default class AlarmScreen extends BaseScreen {
         });
 
         this.add(alarmText);
-        this.add(this.hourText)
+        this.add(this.hourText);
         this.add(this.dayText);
         this.add(scrollable);
     }

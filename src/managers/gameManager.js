@@ -484,6 +484,11 @@ export default class GameManager {
         // Obtiene la cantidad a establecer y la actualiza
         let val = this.getValue(varName)
         val += amount;
+        if(val > 100) {
+            val = 100; 
+        } else if (val < 0) {
+            val = 0;
+        }
         this.setValue(varName, val);
         xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE)
                     .progressed(val)
@@ -495,9 +500,8 @@ export default class GameManager {
     interacted(id, type) {
         return xapiTracker.gameObject(id, type)
             .interacted()
-            .withResultExtension("GameDay",this.dayText)
-            .withResultExtension("GameHour", this.hour)
-            //.withResultExtension("IsRepeatedDay", this.isRepeatedDay) //TODO GlobalState.Repeated.ToString() 
+            .withResultExtension("GameDay", `day.${this.day}`)
+            .withResultExtension("GameHour", `${this.hourId}`)
             .withResultExtension("MobileMessages", this.notificationAmount)
             .withResultExtensions(this.blackboard);
     }
@@ -505,8 +509,8 @@ export default class GameManager {
     initialized(id, type) {
         return xapiTracker.completable(id, type)
                           .initialized()
-                          .withResultExtension("GameDay",this.dayText)
-                          .withResultExtension("GameHour", this.hour)
+                          .withResultExtension("GameDay", `day.${this.day}`)
+                          .withResultExtension("GameHour", `${this.hourId}`)
                           //.withResultExtension("IsRepeatedDay", this.isRepeatedDay) //TODO GlobalState.Repeated.ToString() 
                           .withResultExtension("MobileMessages", this.notificationAmount)
                           .withResultExtensions(this.blackboard);
@@ -515,8 +519,8 @@ export default class GameManager {
     completed(id, type, completion) {
         return xapiTracker.completable(id, type)
                           .completed(null, completion)
-                          .withResultExtension("GameDay",this.dayText)
-                          .withResultExtension("GameHour", this.hour)
+                          .withResultExtension("GameDay",`day.${this.day}`)
+                          .withResultExtension("GameHour", `${this.hourId}`)
                           //.withResultExtension("IsRepeatedDay", this.isRepeatedDay) //TODO GlobalState.Repeated.ToString() 
                           .withResultExtension("MobileMessages", this.notificationAmount)
                           .withResultExtensions(this.blackboard);
@@ -524,8 +528,8 @@ export default class GameManager {
 
     addStateExtensions(statement) {
         statement.withResultExtension("Final", this.final);
-        statement.withResultExtension("GameDay",this.dayText);
-        statement.withResultExtension("GameHour", this.hour);
+        statement.withResultExtension("GameDay", `day.${this.day}`);
+        statement.withResultExtension("GameHour", `${this.hourId}`);
         statement.withResultExtension("MariaFriendship",this.blackboard.get("MariaFS"));
         statement.withResultExtension("AlisonFriendship", this.blackboard.get("AlisonFS"));
         statement.withResultExtension("AnaFriendship", this.blackboard.get("AnaFS"));

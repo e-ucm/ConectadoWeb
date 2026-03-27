@@ -350,19 +350,15 @@ export default class PhoneManager {
      * @param {String} hourId - id de la hora en el archivo de traducciones 
      */
     setDayInfo(hourId) {
-        // Coge el texto de la hora y de los dias en el archivo de traducciones
-        let hour = this.i18next.t("clock." + hourId, { ns: "phoneInfo" });
-        let days = this.i18next.t("clock.days", { ns: "phoneInfo", returnObjects: true });
-
-        // Coge el dia del array en base al dia del gameManager
-        let day = days[this.gameManager.day - 1];
-
         // Set date time in game manager for xapiTracker
-        this.gameManager.hour = hour;
-        this.gameManager.dayText = day;
-
+        this.gameManager.hourId = `clock.${hourId}`;
+        // Coge el texto de la hora y de los dias en el archivo de traducciones
+        this.gameManager.hour = this.i18next.t(this.gameManager.hourId, { ns: "phoneInfo" });
+        // Coge el dia del array en base al dia del gameManager
+        let days = this.i18next.t("clock.days", { ns: "phoneInfo", returnObjects: true });
+        this.gameManager.dayText = days[this.gameManager.day - 1];
         // Cambia la hora del telefono
-        this.phone.setDayInfo(hour, day);
+        this.phone.setDayInfo(this.gameManager.hour, this.gameManager.dayText);
     }
 
     /**

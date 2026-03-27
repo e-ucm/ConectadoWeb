@@ -263,7 +263,7 @@ export default class DialogManager {
             else if (this.currNode.type === "text") {
                 if(!this.launched) {
                     var dialog = this.currNode.dialogs[0];
-                    this.activeDialogTracker = xapiTracker.completable(`${dialog.name} ${dialog.text.slice(0, 25)}`, xapiTracker.COMPLETABLETYPE.STORYNODE);
+                    this.activeDialogTracker = xapiTracker.completable(`${this.currNode.fullId}`, xapiTracker.COMPLETABLETYPE.STORYNODE);
                     this.activeDialogTracker.initialized().send();
                     this.launched=true;
                 }
@@ -442,9 +442,12 @@ export default class DialogManager {
         this.activateOptions(false);
 
         let next = this.currNode.next[index];
-        xapiTracker.alternative(this.currNode.fullId, xapiTracker.ALTERNATIVETYPE.DIALOG)
-                    .selected(this.currNode.choices[index].text)
-                    .send();
+        let statementBuilder = xapiTracker.alternative(this.currNode.fullId, xapiTracker.ALTERNATIVETYPE.DIALOG)
+                    .selected(`${index}`);
+        for (let i = 0; i < this.currNode.choices.length; i++) {
+            statementBuilder.withResultExtension(`choice/${i}`, `${this.currNode.choices[i].fullId}`);
+        }
+        statementBuilder.send();
         // Si la opcion no se puede elegir de nuevo, elimina tanto la opcion
         // como el nodo al que lleva de sus arrays correspondientes
         if (!this.currNode.choices[index].repeat) {
