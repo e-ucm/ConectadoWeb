@@ -1,7 +1,7 @@
 {
   "name": "conectado-web",
   "description": "conectado Web Version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "rollup --watch --config rollup/rollup.config.dev.mjs --no-treeshake",
     "build": "rollup --config rollup/rollup.config.prod.mjs"
