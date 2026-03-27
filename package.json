@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/e-ucm/ConectadoWeb#readme",
   "dependencies": {
-    "phaser": "^3.85.2"
+    "phaser": "^3.85.2",
+    "js-tracker": "github:e-ucm/js-tracker#update-module"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.5",

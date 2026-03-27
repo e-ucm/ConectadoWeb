@@ -28,26 +28,21 @@ export default {
     output: {
         file: './dist/bundle.js',
         name: 'PhaserTemplate',
-        format: 'iife',
+        format: 'es',
         sourcemap: true
     },
     plugins: [
-        glslify(),
         nodeResolve({
             browser: true,
+            preferBuiltins: false,
+            mainFields: ['module', 'main', 'browser']
         }),
         commonjs({
-            include: [
-                'node_modules/eventemitter3/**',
-                'node_modules/phaser/**'
-            ],
-            exclude: [
-                'node_modules/phaser/src/polyfills/requestAnimationFrame.js',
-                'node_modules/phaser/src/phaser-esm.js'
-            ],
-            sourceMap: false,
-            ignoreGlobal: false
+            include: /node_modules/,
+            requireReturnsDefault: "auto"
         }),
+        url(),
+        glslify(),
         terser({
             format: {
                 comments: false
@@ -61,7 +56,6 @@ export default {
             babelHelpers: 'bundled',
             exclude: 'node_modules/**'
         }),
-        url(),
         copy({
             targets: [
                 { src: 'index.html', dest: 'dist/' },

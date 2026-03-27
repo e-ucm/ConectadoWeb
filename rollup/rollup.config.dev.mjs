@@ -17,37 +17,39 @@ export default {
     output: {
         file: './dist/bundle.js',
         name: 'PhaserTemplate',
-        format: 'iife',
+        format: 'es',
         indent: false,
         sourcemap: true,
         minifyInternalExports: false,
     },
     plugins: [
-        url({
-            emitFiles: true
-        }),
         alias({
             entries: [
                 { 
                     find: 'phaser',
                     replacement: path.resolve(__dirname, '../node_modules/phaser/dist/phaser.min.js')
+                },
+                {
+                    find: '@xapi/xapi',
+                    replacement: path.resolve(__dirname, '../node_modules/@xapi/xapi/dist/XAPI.esm.js')
+                },
+                {
+                    find: 'ms',
+                    replacement: path.resolve(__dirname, '../node_modules/ms/index.js')
                 }
             ]
         }),
-        glslify(),
-        nodeResolve(),
-        commonjs({
-            include: [
-                'node_modules/eventemitter3/**',
-                'node_modules/phaser/**'
-            ],
-            exclude: [
-                'node_modules/phaser/src/polyfills/requestAnimationFrame.js',
-                'node_modules/phaser/src/phaser-esm.js'
-            ],
-            sourceMap: true,
-            ignoreGlobal: false
+        nodeResolve({
+            browser: true,
+            preferBuiltins: false,
+            mainFields: ['module', 'main', 'browser']
         }),
+        commonjs({
+            include: /node_modules/,
+            requireReturnsDefault: "auto"
+        }),
+        url({ emitFiles: true }),
+        glslify(),
         serve({
             open: true,
             contentBase: ['public', 'dist'],
@@ -71,5 +73,6 @@ export default {
             ],
             copyOnce: true
         })
-    ]
+    ],
+    context: "window"
 };
