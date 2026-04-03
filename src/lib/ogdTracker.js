@@ -1,6 +1,6 @@
 import {OGDLogger} from 'opengamedata-js-log'
 let appName = 'CONECTADO';
-let version = '1.0.0'; // checkme version should be detected automatically. also what about log version (js-tracker version?)
+let version = '1.0.3'; // js-tracker version
 var ogdTracker = new OGDLogger(appName, version)
 ogdTracker.initialized = false; // evitar volver a sobreescribir el send
 
@@ -33,7 +33,6 @@ let GAME_STATE = {
     Risk: 50,
 
     Progress: 0,
-    // Final: null,
 }
 
 ogdTracker.sendFromXAPI = function (statement) {
@@ -76,9 +75,7 @@ ogdTracker.sendFromXAPI = function (statement) {
                 else
                     // progreso en el juego
                     GAME_STATE["Progress"] = event_data.extensions[key];
-            }
-
-            if (typeof event_data.extensions[key] === "object") {
+            } else if (typeof event_data.extensions[key] === "object") {
                 // nested object
                 for (let subkey in event_data.extensions[key]) {
                     event_data[field + "_" + subkey] = event_data.extensions[key][subkey];
