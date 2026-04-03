@@ -353,6 +353,7 @@ export default class BaseScene extends Phaser.Scene {
                     repeat = true;
                 }
                 let choice = {
+                    fullId: fileObj[id].choices[i].next || "donothing", // Si la opcion no lleva a ningun nodo, se le asigna un nodo de id "donothing" (que se tendria que crear con anterioridad y no hacer nada) para evitar problemas al intentar acceder a un nodo con id undefined
                     text: texts[i].text,
                     repeat: repeat
                 }

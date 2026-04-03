@@ -45,7 +45,7 @@ export default class LanguageMenu extends Phaser.Scene {
         // Boton de salir
         let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
             async () => {
-                if(!this.gameManager.initialized) {
+                if(!this.gameManager.Initialized) {
                     await this.gameManager.initializedGame();
                 }
                 this.gameManager.completedGame(true);

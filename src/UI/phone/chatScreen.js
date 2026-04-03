@@ -269,7 +269,7 @@ export default class ChatScreen extends BaseScreen {
 
     // Procesa el nodo de dialogo
     processNode() {
-        if (this.currNode !== null) {
+        if (this.currNode) {
             this.textBox.disableInteractive();
             this.canAnswer = false;
 
