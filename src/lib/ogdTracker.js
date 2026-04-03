@@ -4,8 +4,10 @@ let version = '1.0.3'; // js-tracker version
 var ogdTracker = new OGDLogger(appName, version)
 ogdTracker.initialized = false; // evitar volver a sobreescribir el send
 
-function encodeNonUtf8AsUnicode(object) {
-    // para evitar problemas de encoding base64 (charset utf-8)
+function encodeNonAsciiAsUnicode(object) {
+    // Libreria OGD usa btoa - lo envia en Latin 1, base64.
+    // Servidor OGD lo recibe como UTF-8, base64.
+    // Por ello, caracteres como tildes, o ñ (fuera del ASCII) se transforman en unicode para evitar problemas.
     let strObject = JSON.stringify(object);
     strObject = strObject.replace(/[^\x00-\x7F]/g, (c) => `\\\\u${c.charCodeAt(0).toString(16).padStart(4, '0')}`);
 
@@ -89,9 +91,9 @@ ogdTracker.sendFromXAPI = function (statement) {
     }
 
     // sending event to OGD (timestamp autofilled)
-    event_name = encodeNonUtf8AsUnicode(event_name);
-    event_data = encodeNonUtf8AsUnicode(event_data);
-    GAME_STATE = encodeNonUtf8AsUnicode(GAME_STATE);
+    event_name = encodeNonAsciiAsUnicode(event_name);
+    event_data = encodeNonAsciiAsUnicode(event_data);
+    GAME_STATE = encodeNonAsciiAsUnicode(GAME_STATE);
     ogdTracker.setGameState(GAME_STATE);
     ogdTracker.log(event_name, event_data);
 
