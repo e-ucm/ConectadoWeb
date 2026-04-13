@@ -1,4 +1,6 @@
 import GameManager from '../managers/gameManager.js';
+import xapiTracker from '../lib/xapi.js';
+import ogdTracker from '../lib/ogdTracker.js';
 
 export default class BootScene extends Phaser.Scene {
     /**
@@ -507,6 +509,18 @@ export default class BootScene extends Phaser.Scene {
 
     create() {
         this.events.once('start', () => {
+            // Este es el primer evento enviado (acceso a la web)
+            const statementBuilder = xapiTracker.accessible("WEB").accessed();
+
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('wisconsin') == 'true' && !ogdTracker.initialized) {
+                ogdTracker.initialized = true;
+                this.setupOGDTracker(statementBuilder);
+            }
+
+            statementBuilder.send(); // moving trace to queue
+
+
             // Se crea la animacion del autobus en la primera escena para no tener que crearla de nuevo
             this.anims.create({
                 key: 'moving',
@@ -519,5 +533,20 @@ export default class BootScene extends Phaser.Scene {
             gameManager.startLangMenu();
             // gameManager.startTest();
         })
+    }
+
+    setupOGDTracker(statementBuilder) {
+        // Open Game Data OVERRIDE
+
+        // userId por defecto, puede cambiar dentro de sendFromXAPI
+        ogdTracker.setUserId(Date.now().toString());
+
+        const proto = Object.getPrototypeOf(statementBuilder);
+        const originalSend = proto.send;
+
+        proto.send = function (...args) {
+            ogdTracker.sendFromXAPI(this.statement);
+            return originalSend.apply(this, args);
+        };
     }
 }

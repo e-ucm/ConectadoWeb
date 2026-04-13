@@ -32,6 +32,21 @@ Este repositorio se trata de una **versión web** del videojuego original desarr
 ## Recursos
 Todos los recursos gráficos del proyecto poseen una licencia CC BY-NC-SA (Creative Commons Attribution Non-Commercial Share Alike). Los recusos gráficos han sido diseñados por [Ana Vallecillos Ruiz](https://nashek.artstation.com/) (Directora de Arte) y [Lola González Gutiérrez](https://www.redbubble.com/es/people/lolagonzalez/shop?asc=u).
 
+## Server Setup
+
+#### 1. Install npm libs
+```sh
+npm install
+```
+#### 2. Build js using rollup (output dist folder)
+```sh
+npm run build
+```
+#### 3. Launch app serving root as static folder, e.g.
+```sh
+python3 -m http.server 8000
+```
+
 <hr>
 
 <div align="center">
