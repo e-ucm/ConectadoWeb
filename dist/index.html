@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/bigIcon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Scripts -->
+    
+    <script src="./src/lib/js-tracker-webpack.bundle.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/lib/phaser.js"></script>
+    <!-- Como los archivos .spine estan desactualizados se han tenido que comentar 
+     las siguientes lineas de SpinePlugin.js para que funcione: 4497, 4498, 5910, 5911, -->
+    <script src="src/lib/SpinePlugin.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+    <!-- Precargar las fuentes para asegurar que ya estan cargadas se usen en Phaser.
+     Las fuentes pueden tardar un tiempo en cargarse y si se usan antes, no se van a encontrar.
+     Por lo tanto, se usan en una etiqueta invisible para que HTML las traiga y asegurar que
+     ya estan cargadas cuando se usan en Phaser -->
+
+    <div style="font-family:kimberley; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:AUdimat-Regular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:Gidolinya-Regular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:adventpro-regular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:kimberley; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:gidole-regular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:dadha; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:caladea-regular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+    <div style="font-family:roboto-regular; position:absolute; left:-1000px; visibility:hidden;">.</div>
+
+    <!-- Contenedor del juego -->
+    <div id="game">
+        <script src="dist/bundle.js"></script>
+        <!-- <script src="./src/game.js" type="module"></script> -->
+    </div>
+
+
+</body>
+
+</html>
