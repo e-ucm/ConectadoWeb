@@ -13,7 +13,8 @@ export default class BootScene extends Phaser.Scene {
                 files: [{
                     type: 'plugin',
                     key: 'rextexttranslationplugin',
-                    url: 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rextexttranslationplugin.min.js',
+                    url: './src/lib/rextexttranslationplugin.min.js',
+                    // url: 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rextexttranslationplugin.min.js',
                     start: true,
                     mapping: 'translation'  // Add text-translation plugin to `scene.translation`
                 }]
