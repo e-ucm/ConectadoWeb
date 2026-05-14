@@ -1,6 +1,5 @@
 import EventDispatcher from "../eventDispatcher.js";
 import xapiTracker from '../lib/xapi.js';
-import BaseScene from "../scenes/gameLoop/baseScene.js";
 
 // Variable de nivel de modulo
 // - Se puede acceder desde cualquier parte del modulo, pero no es visible
@@ -349,12 +348,10 @@ export default class GameManager {
      */
     clearRunningScenes() {
         this.runningScenes.forEach(sc => {
-            // Si la escena es hija de BaseScene, se tiene que llamar a su shutdown 
-            // antes de detener la escena para evitar problemas al borrar los retratos
-            if (sc instanceof BaseScene) {
-                if (typeof sc.shutdown === 'function') {
-                    sc.shutdown();
-                }
+            // Si la escena define shutdown, se llama antes de detenerla para
+            // evitar problemas al limpiar recursos compartidos (p.ej. retratos).
+            if (typeof sc.shutdown === 'function') {
+                sc.shutdown();
             }
             sc.scene.stop(sc);
         });

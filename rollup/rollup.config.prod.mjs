@@ -25,6 +25,16 @@ const phasermsg = () => {
 
 export default {
     input: 'src/game.js',
+    onwarn(warning, warn) {
+        const circularIds = (warning.ids || []).map((id) => id.replace(/\\/g, '/'));
+        if (
+            warning.code === 'CIRCULAR_DEPENDENCY'
+            && circularIds.some((id) => id.includes('node_modules/opengamedata-js-log/'))
+        ) {
+            return;
+        }
+        warn(warning);
+    },
     output: {
         file: './dist/bundle.js',
         name: 'PhaserTemplate',
