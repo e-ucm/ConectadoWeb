@@ -21,7 +21,7 @@
                 "text": "Alors maintenant tu me parles."
             },
             {
-                "text": "qu'est-ce que c'est que cette histoire pourquoi y a-t-il plus de la moitié de la classe qui m'ignore?"
+                "text": "Qu'est-ce que c'est que cette histoire ? Pourquoi y a-t-il plus de la moitié de la classe qui m'ignore?"
             }
         ],
         "explanation": [
@@ -96,7 +96,7 @@
             }
         ],
         "talked": {
-            "text": "Je suis vraiment désolé, mais mes parents ne doivent pas le savoir"
+            "text": "Je suis vraiment désolé, mais mes parents ne doivent pas le savoir."
         }
 
     }

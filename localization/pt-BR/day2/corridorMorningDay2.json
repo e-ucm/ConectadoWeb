@@ -1,0 +1,129 @@
+{
+    "alex": {
+        "choices": [
+            {
+                "text": "Fiquei sabendo que você quer fazer uma pegadinha comigo."
+            },
+            {
+                "text": "Podemos tentar nos entender?"
+            },
+            {
+                "text": "Eu conheço bem o tipo de pessoa que você é."
+            }
+        ],
+        "prank": [
+            {
+                "text": "",
+                "text_male": "Sou meio brincalhão, mas fica tranquilo.",
+                "text_female": "Sou meio brincalhão, mas fica tranquila."
+            },
+            {
+                "text": "Vamos todos rir juntos."
+            }
+        ],
+
+        "ask": {
+            "text": "Por que não começamos de novo?"
+        },
+        "askReply": {
+            "text": "Tudo certo, vamos entrar."
+        },
+
+        "distrust": [
+            {
+                "text": "Você é do tipo que se aproveita dos outros."
+            },
+            {
+                "text": "Sempre procurando briga por qualquer motivo."
+            }
+        ],
+        "distrustReply": {
+            "text": "Se já terminou de me incomodar, sai logo daqui"
+        },
+
+        "normal": {
+            "text": "Você ainda está chateado com a história do lugar?"
+        },
+        "normalReply": {
+            "text": "Talvez. E você, já sabe qual é o seu lugar?"
+        },
+        "talked": {
+            "text": "Ele está me ignorando."
+        }
+    },
+    
+    "alison": {
+        "notTalked": {
+            "text": "Oi, {{name}}! Como você está?"
+        },
+        "warn": [
+            {
+                "text": "A propósito, o Alex comentou antes que queria fazer uma pegadinha com você."
+            },
+            {
+                "text": "Sabe, ele não costumava ser assim, não sei o que está acontecendo."
+            },
+            {
+                "text": "Tome cuidado, tá?"
+            }
+        ],
+        "talked": {
+            "text": "Vamos entrar ou vamos chegar tarde."
+        }
+    },
+
+    "guille": {
+        "match": [
+            {
+                "text": "Vamos nos encontrar neste sábado para assistir a um filme na minha casa."
+            },
+            {
+                "text": "Você quer vir? Alguns colegas da turma vão estar lá."
+            },
+            {
+                "text": "E vamos assistir na TV enorme que meu pai acabou de comprar pra ver futebol."
+            }
+        ],
+        "choices": [
+            {
+                "text": "Sim"
+            },
+            {
+                "text": "Não"
+            },
+            {
+                "text": "Preciso perguntar aos meus pais se posso."
+            }
+        ],
+        "yes": [
+            {
+                "text": "Ótimo, mais um para o nosso time!"
+            },
+            {
+                "text": "Vou te passar o endereço e os detalhes."
+            }
+        ],
+        "no": [
+            {
+                "text": "Que pena..."
+            },
+            {
+                "text": "Bom, até mais!"
+            }
+        ],
+        "ask": {
+            "text": "Então me avise."
+        },
+        
+        "reminder": {
+            "text": "Não esquece. Sábado à tarde, às 6, na minha casa."
+        },
+        "goToClass": {
+            "text": "Vamos entrar."
+        },
+
+        "distracted": {
+            "text": "Parece estar distraído."
+        }
+    }
+}

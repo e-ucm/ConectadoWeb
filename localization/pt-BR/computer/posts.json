@@ -1,0 +1,159 @@
+{
+    "player": {
+        "upload": {
+            "root": {
+                "text": "Eu não tenho nenhuma foto nova para enviar."
+            }
+        },
+        "postStolen": {
+            "description": "Sou eu, me chama no (34) 953259340",
+            "comment": {
+                "decision": [
+                    {
+                        "text": "(Excluir postagem)"
+                    },
+                    {
+                        "text": "Alice... Era por isso que você queria trocar senhas comigo."
+                    },
+                    {
+                        "text": "(Permanecer em silêncio)"
+                    }
+                ],
+                "sayErase": {
+                    "text": "Vou excluir a postagem"
+                },
+                "complain": {
+                    "text": "Alice... é por isso que você queria trocar senhas, você é a pior."
+                },
+                "default": {
+                    "text": "Não tenho nada para postar agora, tenho coisas melhores pra fazer."
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "tô esperando sua ligação"
+                },
+                "secondCommentMale": {
+                    "text": "a gente se ve quando vc quiser ;)"
+                },
+                "secondCommentFemale": {
+                    "text": "a gente se ve quando vc quiser ;)"
+                },
+                "thirdComment": {
+                    "text": "vc tá ligando sem querer? pq juro q essa sua bunda tá me chamando KKK"
+                },
+                "fourthComment": {
+                    "text": "isso vai direto pro grupo da turma kkk"
+                },
+                "fifthComment": {
+                    "text": "mas vc recebe pra isso?"
+                }
+            }
+        }
+    },
+    "Alison": {
+        "postEarring": {
+            "description": "Meus novos brincos, eu <3 ELES :)",
+            "comment": {
+                "thanks": {
+                    "text": "De nada, Alice"
+                },
+                "default": {
+                    "text": "Não tenho nada para postar agora, tenho coisas melhores pra fazer."
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "Eu adorei, você sabe onde compraram?"
+                },
+                "secondComment": {
+                    "text": "Pff, eu acabei de perder um durante a aula"
+                },
+                "thirdComment": {
+                    "text": ":( espero que você consiga encontrar, procure bem onde esteve"
+                },
+                "foundEarringComment": {
+                    "text": "{{name}} encontrou e me devolveu. Muito obrigada :)"
+                },
+                "notFoundEarringComment": {
+                    "text": "Foi impossível encontrar, alguém deve ter pegado. Muito obrigada a todos que me ajudaram a procurar."
+                }
+            }
+        }
+    },
+    "Guille": {
+        "postMatch": {
+            "description": "Assistindo o jogo",
+            "comment": {
+                "root": {
+                    "text": "Não tenho nada para postar agora, tenho coisas melhores pra fazer."
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "Que jogo, hein! Precisamos nos encontrar para assistir ao próximo. Meu pai comprou uma TV nova e é enorme!"
+                },
+                "secondComment": {
+                    "text": "Tô dentro, galera, me avisem quando quiserem"
+                }
+            }
+        }
+    },
+    "Ana": {
+        "postTroll": {
+            "description": "procurando um apelido para {{name}}...",
+            "comment": {
+                "decision": [
+                    {
+                        "text": "(Denunciar postagem)"
+                    },
+                    {
+                        "text": "Você é um idiota."
+                    },
+                    {
+                        "text": "Vou acabar falando com seu professor."
+                    }
+                ],
+                "report": {
+                    "text": "Vou denunciar a mensagem e ver se eles a excluem por causa do conteúdo."
+                },
+                "insult": {
+                    "text": "Vocês são todos idiotas, vão se ferrar. Agem como criancinhas de três anos."
+                },
+                "insultReply": {
+                    "text": "Tenho certeza de que é você quem se mijou à noite, kkk"
+                },
+                "snitch": {
+                    "text": "Já me cansei deles. Amanhã vou falar com o coordenador."
+                },
+                "default": {
+                    "text": "Não tenho nada para postar agora, tenho coisas melhores pra fazer."
+                }
+            },
+            "oldComments": {
+                "root": {
+                    "text": "olha essa testa... Outdoor"
+                },
+                "secondComment": {
+                    "text": "KKK, parece uma parede enorme. Que tal MURALHA?"
+                },
+                "thirdComment": {
+                    "text": "Ar. Que é o que suas orelhas fazem quando se movem LOL"
+                },
+                "fourthComment": {
+                    "text": "kkk, Alex, VENTANIA combina mais do que ar"
+                },
+                "fifthComment": {
+                    "text": "",
+                    "text_male": "Não complique muito, podemos chamar só de EXCLUÍDO... de qualquer forma, agora ninguém mais fala com ele...",
+                    "text_female": "Não complique muito, podemos chamar só de EXCLUÍDA... de qualquer forma, agora ninguém mais fala com ela..."
+                },
+                "sixthComment": {
+                    "text": "",
+                    "text_male": "excluído não é muito original... que tal troll?",
+                    "text_female": "excluída não é muito original... que tal troll?"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "mom": {
+        "notTalked": [
+            {
+                "text": "Oi, meu bem. Boa tarde."
+            },
+            {
+                "text": "Como foi seu dia na escola?"
+            }
+        ],
+        "talked": {
+            "text": "Você quer falar sobre mais alguma coisa?"
+        },
+        "choices1": [
+            {
+                "text": "Na verdade, não tenho muito o que falar."
+            },
+            {
+                "text": "A Maria não apareceu hoje."
+            },
+            {
+                "text": "(Falar sobre outra coisa)"
+            }
+        ],
+        "maria": {
+            "text": "Não vi a Maria hoje."
+        },
+        
+        "choices2": [
+            {
+				"text": "Sobre a turma."
+			},
+			{
+				"text": "(Falar sobre a foto no mural)"
+			},
+			{
+				"text": "(Falar sobre outros colegas)"
+			}
+        ],
+        "school": [
+            {
+                "text": "Quase todo mundo me ignorou, mal falaram comigo hoje."
+            },
+            {
+                "text": "Parece que todos estão me evitando ou me tratando com silêncio."
+            }
+        ],
+        "board": [
+            {
+                "text": "Decidiram colocar fotos minhas em todos os murais da escola."
+            },
+            {
+                "text": "Não sei o que fiz para merecer ser tratado assim."
+            }
+        ],
+        "momBoard": [
+            {
+				"text": "Vou conversar com seu pai sobre isso mais tarde."
+			},
+			{
+				"text": "Talvez devêssemos falar com o coordenador e entender o que está acontecendo."
+			}
+        ],
+
+        "choices3": [
+            {
+                "text": "Conversei com o Guilherme hoje."
+            },
+            {
+                "text": "Vou para o meu quarto, tenho coisas para fazer."
+            }
+        ],
+        "guille": [
+            {
+                "text": "O Guilherme disse que o Alex me odeia."
+            },
+            {
+                "text": "O Alex tem me infernizado."
+            },
+            {
+                "text": "Ele está ameaçando metade da turma para que todos me ignorem."
+            }
+        ],
+        "aboutBoard": [
+            {
+                "text": "Ele disse que a Ana é a primeira a sempre obedecer."
+            },
+            {
+                "text": "Ela chegou cedo hoje de manhã..."
+            },
+            {
+                "text": "E decidiu espalhar fotos minhas nos murais da escola."
+            }
+        ]
+
+        
+    }
+}

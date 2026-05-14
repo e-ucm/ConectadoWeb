@@ -1,5 +1,7 @@
 import NightmareMinigame from '../baseScenarios/nightmareMinigame.js';
 
+import xapiTracker from "../../../lib/xapi.js";
+
 export default class NightmareDay3 extends NightmareMinigame {
     /**
      * Pesadilla que aparece el dia 3
@@ -113,6 +115,8 @@ export default class NightmareDay3 extends NightmareMinigame {
 
         character.char.setInteractive({ useHandCursor: true });
         character.char.once('pointerdown', () => {
+            this.gameManager.interacted(charName, xapiTracker.GAMEOBJECTTYPE.NPC)
+                            .send();
             character.char.removeInteractive();
             this.dialogManager.setNode(node);
         })

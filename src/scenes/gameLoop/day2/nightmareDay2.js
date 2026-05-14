@@ -1,3 +1,4 @@
+import xapiTracker from '../../../lib/xapi.js';
 import NightmareMinigame from '../baseScenarios/nightmareMinigame.js';
 import ChairWithGum from '../../../gameObjects/chairWithGum.js';
 
@@ -168,6 +169,9 @@ export default class NightmareDay2 extends NightmareMinigame {
 
         gum.setInteractive({ useHandCursor: true });
         gum.on('pointerup', () => {
+            xapiTracker.gameObject("gum", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                        .interacted()
+                        .send();
             // Si se clica, se elmina del grupo y se destruye
             this.gums.remove(gum, true, true);
         })

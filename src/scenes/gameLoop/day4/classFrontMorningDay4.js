@@ -87,7 +87,9 @@ export default class ClassFrontMorningDay4 extends ClassFrontBase {
 
             let nodes = this.cache.json.get('everydayDialog');
             let teacherNode = super.readNodes(nodes, "everydayDialog", "class.late", true);
-            this.dialogManager.setNode(teacherNode);
+            setTimeout(() => {
+                this.dialogManager.setNode(teacherNode);               
+            }, 50);
         }
 
 

@@ -1,0 +1,27 @@
+{
+    "mainText": "Conecte-se com seus amigos!",
+    "startButton": "Começar",
+    "backButton": "Voltar",
+    "warningText": "IMPORTANTE!",
+    "inscriptionText": "Não use uma senha que você já utiliza. Crie uma nova. Ela será usada apenas dentro do jogo.",
+    "nameInput": {
+        "sideText": "Nome",
+        "defaultText": "Seu nome "
+    },
+    "userInput": {
+        "sideText": "Usuário",
+        "defaultText": "Seu nome de usuário "
+    },
+    "passwordInput": {
+        "sideText": "Senha",
+        "defaultText": "Sua senha "
+    },
+    "errorTexts": {
+        "invalidName": "Seu nome é obrigatório",
+        "invalidUser": "Seu nome de usuário é obrigatório",
+        "invalidPassword": "Uma senha é obrigatória",
+        "shorterName": "Seu nome não pode ter mais de {{number}} caracteres",
+        "shorterUserOrPassword": "Seu usuário e senha não podem ter mais de {{number}} caracteres",
+        "invalidGender": "Você precisa selecionar seu gênero"
+    }
+}

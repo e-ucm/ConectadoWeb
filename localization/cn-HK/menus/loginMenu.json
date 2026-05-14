@@ -1,0 +1,27 @@
+{
+    "mainText": "同你既朋友連接！",
+    "startButton": "開始",
+    "backButton": "返回",
+    "warningText": "重要事項！",
+    "inscriptionText": "不要提交您已使用的密碼。好好開一個好啲。它只會在遊戲內使用。",
+    "nameInput": {
+        "sideText": "姓名",
+        "defaultText": "你的姓名"
+    },
+    "userInput": {
+        "sideText": "用戶",
+        "defaultText": "你的用戶名稱"
+    },
+    "passwordInput": {
+        "sideText": "密碼",
+        "defaultText": "你的密碼 "
+    },
+    "errorTexts": {
+        "invalidName": "需要你的名字",
+        "invalidUser": "需要你的用戶名字",
+        "invalidPassword": "需要你的密碼",
+        "shorterName": "你的名稱不可有超過{{number}}個字",
+        "shorterUserOrPassword": "你的用戶名稱及密碼不可有超過{{number}}個字",
+        "invalidGender": "你需要選擇你的性別"
+    }
+}

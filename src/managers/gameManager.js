@@ -1,5 +1,5 @@
 import EventDispatcher from "../eventDispatcher.js";
-import BaseScene from "../scenes/gameLoop/baseScene.js";
+import xapiTracker from '../lib/xapi.js';
 
 // Variable de nivel de modulo
 // - Se puede acceder desde cualquier parte del modulo, pero no es visible
@@ -46,6 +46,12 @@ export default class GameManager {
 
         // Dia de la semana. Empieza en 0 porque al iniciarse la escena de la alarma, se va actualizando
         this.day = 0;
+        this.dayText = null;
+        this.hourId = null;
+        this.hour = null;
+        this.notificationAmount = null;
+        //this.isRepeatedDay=false;
+        this.startedTime=null;
 
         this.generateTextures();
 
@@ -279,11 +285,33 @@ export default class GameManager {
         this.changeScene(sceneName, params);
     }
 
+    startTest() {
+        this.initializedGame();
+        this.blackboard.clear();
+        let userInfo = {
+            name: "Pepe",
+            gender: "male",
+        }
+        this.setUserInfo(userInfo);
+
+        let UIsceneName = 'UIManager';
+        this.currentScene.scene.launch(UIsceneName);
+        this.UIManager = this.currentScene.scene.get(UIsceneName);
+
+        let computerSceneName = 'ComputerScene';
+        this.currentScene.scene.run(computerSceneName);
+        this.computerScene = this.currentScene.scene.get(computerSceneName);
+        this.computerScene.scene.sleep();
+
+        this.day = 3;
+        this.changeScene("BedroomAfternoonDay3");
+    }
+
     startGame(userInfo) {
+        this.initializedGame();
         this.blackboard.clear();
         this.setUserInfo(userInfo);
         this.day = 0;
-
         // IMPORTANTE: Hay que lanzar primero el UIManager para que se inicialice
         // el DialogManager y las escenas puedan crear los dialogos correctamente
         let UIsceneName = 'UIManager';
@@ -313,7 +341,6 @@ export default class GameManager {
         };
 
         this.changeScene(sceneName, params);
-
     }
 
     /**
@@ -321,12 +348,10 @@ export default class GameManager {
      */
     clearRunningScenes() {
         this.runningScenes.forEach(sc => {
-            // Si la escena es hija de BaseScene, se tiene que llamar a su shutdown 
-            // antes de detener la escena para evitar problemas al borrar los retratos
-            if (sc instanceof BaseScene) {
-                if (typeof sc.shutdown === 'function') {
-                    sc.shutdown();
-                }
+            // Si la escena define shutdown, se llama antes de detenerla para
+            // evitar problemas al limpiar recursos compartidos (p.ej. retratos).
+            if (typeof sc.shutdown === 'function') {
+                sc.shutdown();
             }
             sc.scene.stop(sc);
         });
@@ -361,9 +386,11 @@ export default class GameManager {
     }
 
     switchToComputer() {
+        this.interacted("ShowComputerLogin", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                .send();
         // Se desactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(false);
-
+        
         // Se duerme la escena actual
         this.currentScene.scene.sleep();
 
@@ -373,6 +400,8 @@ export default class GameManager {
     }
 
     leaveComputer() {
+        this.interacted("offComputer", xapiTracker.GAMEOBJECTTYPE.ITEM)
+            .send();
         // Se reactiva la interfaz del telefono
         this.UIManager.phoneManager.activate(true);
 
@@ -440,15 +469,100 @@ export default class GameManager {
 
         // Si no se encuentra el personaje en la blackboard, se anade con 50 de amistad por defecto
         if (!this.getValue(varName)) {
+            xapiTracker.alternative("friend",xapiTracker.ALTERNATIVETYPE.ALTERNATIVE)
+                        .unlocked(character)
+                        .send();
+            xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE)
+                        .initialized()
+                        .send();
             this.setValue(varName, 50);
         }
 
         // Obtiene la cantidad a establecer y la actualiza
         let val = this.getValue(varName)
         val += amount;
+        if(val > 100) {
+            val = 100; 
+        } else if (val < 0) {
+            val = 0;
+        }
         this.setValue(varName, val);
-
+        xapiTracker.completable(varName, xapiTracker.COMPLETABLETYPE.COMPLETABLE)
+                    .progressed(val)
+                    .send();
         // Actualiza el valor tambien en la pantalla de relaciones del movil
         this.UIManager.phoneManager.phone.updateRelationShip(character, val);
+    }
+
+    interacted(id, type) {
+        return xapiTracker.gameObject(id, type)
+            .interacted()
+            .withResultExtension("GameDay", `day.${this.day}`)
+            .withResultExtension("GameHour", `${this.hourId}`)
+            .withResultExtension("MobileMessages", this.notificationAmount)
+            .withResultExtensions(this.blackboard);
+    }
+
+    initialized(id, type) {
+        return xapiTracker.completable(id, type)
+                          .initialized()
+                          .withResultExtension("GameDay", `day.${this.day}`)
+                          .withResultExtension("GameHour", `${this.hourId}`)
+                          //.withResultExtension("IsRepeatedDay", this.isRepeatedDay) //TODO GlobalState.Repeated.ToString() 
+                          .withResultExtension("MobileMessages", this.notificationAmount)
+                          .withResultExtensions(this.blackboard);
+    }
+
+    completed(id, type, completion) {
+        return xapiTracker.completable(id, type)
+                          .completed(null, completion)
+                          .withResultExtension("GameDay",`day.${this.day}`)
+                          .withResultExtension("GameHour", `${this.hourId}`)
+                          //.withResultExtension("IsRepeatedDay", this.isRepeatedDay) //TODO GlobalState.Repeated.ToString() 
+                          .withResultExtension("MobileMessages", this.notificationAmount)
+                          .withResultExtensions(this.blackboard);
+    }
+
+    addStateExtensions(statement) {
+        statement.withResultExtension("Final", this.final);
+        statement.withResultExtension("GameDay", `day.${this.day}`);
+        statement.withResultExtension("GameHour", `${this.hourId}`);
+        statement.withResultExtension("MariaFriendship",this.blackboard.get("MariaFS"));
+        statement.withResultExtension("AlisonFriendship", this.blackboard.get("AlisonFS"));
+        statement.withResultExtension("AnaFriendship", this.blackboard.get("AnaFS"));
+        statement.withResultExtension("GuillermoFriendship", this.blackboard.get("GuilleFS"));
+        statement.withResultExtension("JoseFriendship", this.blackboard.get("JoseFS"));
+        statement.withResultExtension("AlejandroFriendship", this.blackboard.get("AlexFS"));
+        statement.withResultExtension("ParentsFriendship", this.blackboard.get("ParentsFS"));
+        statement.withResultExtension("TeacherFriendship", this.blackboard.get("TeacherFS"));
+        statement.withResultExtension("RiskFriendship", this.blackboard.get("Risk"));
+        statement.withProgress(this.day/5);
+        return statement;
+    }
+
+    async initializedGame() {
+        this.startedTime=new Date();
+        this.Initialized=true;
+        await xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME)
+                            .initialized()
+                            .send();
+        await xapiTracker.flush();
+    }
+
+    async progressedGame() {
+        var actualTime = new Date();
+        let statementBuilder=xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME)
+                    .progressed(this.day/5)
+                    .withDuration(this.startedTime, actualTime);
+        statementBuilder=this.addStateExtensions(statementBuilder);
+        await statementBuilder.send();
+        await xapiTracker.flush();
+    }
+
+    async completedGame(completion) {
+        this.Initialized=false;
+        await this.completed("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME, completion)
+                    .send();
+        await xapiTracker.flush({withBackup:true});
     }
 }

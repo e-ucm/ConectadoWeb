@@ -1,6 +1,7 @@
 import BaseScreen from "./baseScreen.js";
 import VerticalListView from "../listView/verticalListView.js";
 import MessageBox from "../messageBox.js";
+import xapiTracker from "../../lib/xapi.js";
 
 export default class ChatScreen extends BaseScreen {
     /**
@@ -33,7 +34,7 @@ export default class ChatScreen extends BaseScreen {
 
         // Configuracion de texto para la el texto del titulo
         let textConfig = { ...scene.gameManager.textConfig };
-        textConfig.fontFamily = 'roboto';
+        textConfig.fontFamily = 'roboto-regular';
         textConfig.color = '#000';
         textConfig.fontStyle = 'bold';
 
@@ -128,6 +129,9 @@ export default class ChatScreen extends BaseScreen {
 
         // Al hacer click, vuelve a cambiar el color de la caja al original
         this.textBox.on('pointerdown', () => {
+            xapiTracker.gameObject("chatBoxScreen", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                        .interacted()
+                        .send();
             if (!this.scene.dialogManager.isTalking() && this.canAnswer) {
                 let fadeColor = this.scene.tweens.addCounter({
                     targets: [this.textBox],
@@ -198,6 +202,9 @@ export default class ChatScreen extends BaseScreen {
 
         });
         this.returnButton.on('pointerdown', () => {
+            xapiTracker.gameObject("returnButton", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                        .interacted()
+                        .send();
             if (!this.scene.dialogManager.isTalking()) {
                 let anim = this.scene.tweens.add({
                     targets: [this.returnButton],
@@ -250,12 +257,8 @@ export default class ChatScreen extends BaseScreen {
      * @param {DialogNode} node - nodo de dialogo que se va a reproducir
      */
     setNode(node) {
-        this.canAnswer = true;
-        this.scene.dialogManager.setTalking(false);
-        this.scene.dialogManager.bgBlock.disableInteractive();
-
         // Si el nodo a poner es valido, cambia el nodo por el indicado
-        if (node) {
+        if (node !== null) {
             this.currNode = node;
 
             if (this.currNode.type === "chatMessage") {
@@ -266,11 +269,10 @@ export default class ChatScreen extends BaseScreen {
 
     // Procesa el nodo de dialogo
     processNode() {
-        this.canAnswer = true;
-        this.scene.dialogManager.setTalking(false);
-        this.scene.dialogManager.bgBlock.disableInteractive();
-        
         if (this.currNode) {
+            this.textBox.disableInteractive();
+            this.canAnswer = false;
+
             // Si el nodo es de tipo mensaje, con el retardo indicado, anade
             //  el mensaje al chat, pasa al siguiente nodo, y lo procesa.
             if (this.currNode.type === "chatMessage") {
@@ -301,9 +303,9 @@ export default class ChatScreen extends BaseScreen {
                 this.currNode = this.currNode.next[0];
                 this.processNode();
             }
-            // Si no, si es de cualquier otro tipo excepto de eleccion multiple, lo gestiona el dialogManager
-            else if (this.currNode.type !== "choice") {
-                this.scene.dialogManager.setNode(this.currNode);
+            else {
+                this.textBox.setInteractive();
+                this.canAnswer = true;
             }
         }
     }

@@ -1,5 +1,6 @@
 
 import BaseScene from '../baseScene.js';
+import xapiTracker from '../../../lib/xapi.js';
 
 export default class ClassFrontBase extends BaseScene {
     /**
@@ -85,6 +86,8 @@ export default class ClassFrontBase extends BaseScene {
         tables.input.cursor = 'pointer';
         
         tables.on('pointerdown', () => {
+            this.gameManager.interacted("tables", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .send();
             this.dialogManager.setNode(this.tablesNode);
         });
 

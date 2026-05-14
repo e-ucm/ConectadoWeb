@@ -1,3 +1,4 @@
+import xapiTracker from '../../../lib/xapi.js';
 import NightmareMinigame from '../baseScenarios/nightmareMinigame.js'
 
 export default class NightmareDay1 extends NightmareMinigame {
@@ -104,10 +105,15 @@ export default class NightmareDay1 extends NightmareMinigame {
             chair.removeInteractive();
 
             if (node) {
+                xapiTracker.gameObject("chair_with_dialog", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .interacted()
+                            .send();
                 this.lastTouchedChair = chair;
                 this.dialogManager.setNode(node);
-            }
-            else {
+            } else {
+                xapiTracker.gameObject("chair_without_dialog", xapiTracker.GAMEOBJECTTYPE.ITEM)
+                            .interacted()
+                            .send();
                 this.chairFadesOut(chair);
             }
         });

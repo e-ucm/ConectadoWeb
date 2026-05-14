@@ -169,7 +169,7 @@
             },
             {
                 "text": "",
-                "text_male": "Tout cela parce que je me suis assis  à sa place.",
+                "text_male": "Tout cela parce que je me suis assis à sa place.",
                 "text_female": "Tout cela parce que je me suis assise à sa place."
             },
             {
@@ -205,10 +205,10 @@
         },
         "schoolChoices": [
             {
-                "text": "Le cadre est sympa... les bâtiments sont neufs et les salles de classe sont bien équipées (ordis, vidéoprojecteurs, ...). On a un terrain de foot, un terrain de basket, des tables de ping-pong... c'est super!"
+                "text": "Le cadre est sympa... les bâtiments sont neufs et les salles de classe sont bien équipées.\nC'est super!"
             },
             {
-                "text": "Ouais, il est beaucoup moins bien équipé que mon ancien lycée!...même pas de salle pour étudier, ni de salle pour se retrouver entre nous, ni de MDL (Maison Des Lycéens)."
+                "text": "Ouais, il est beaucoup moins bien équipé que mon ancien lycée!"
             }
         ]
     }

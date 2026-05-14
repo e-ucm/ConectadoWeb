@@ -28,24 +28,25 @@ export default class CreditsScene extends Phaser.Scene {
         let sidePadding = 100;
         let bottomPadding = 40;
 
-        // Boton de salir (se regresa a la pantalla de seleccion del idioma)
-        let exitButtonTranslation = this.i18next.t("exitButton", { ns: this.ns });
-        let exitButton = new Button(this, sidePadding, this.CANVAS_HEIGHT - bottomPadding, 0.47,
-            () => {
-                this.gameManager.startLangMenu();
-            },
-            this.gameManager.textBox.fillName, { R: 240, G: 240, B: 240 }, { R: 64, G: 142, B: 134 }, { R: 200, G: 200, B: 200 },
-            exitButtonTranslation, { font: 'kimberley', size: 75, style: 'normal', color: '#004E46' }, this.gameManager.textBox.edgeName,
-            {
-                area: new Phaser.Geom.Rectangle(this.gameManager.textBox.offset, this.gameManager.textBox.offset, this.gameManager.textBox.width, this.gameManager.textBox.height),
-                callback: Phaser.Geom.Rectangle.Contains
-            }
-        );
-
-        if (!params.endgame) {
+        if (params.endgame) {
+            // Boton de salir (se regresa a la pantalla de seleccion del idioma)
+            let exitButtonTranslation = this.i18next.t("exitButton", { ns: this.ns });
+            let exitButton = new Button(this, sidePadding, this.CANVAS_HEIGHT - bottomPadding, 0.47,
+                () => {
+                    this.gameManager.completedGame(true);
+                    this.gameManager.startLangMenu();
+                },
+                this.gameManager.textBox.fillName, { R: 240, G: 240, B: 240 }, { R: 64, G: 142, B: 134 }, { R: 200, G: 200, B: 200 },
+                exitButtonTranslation, { font: 'kimberley', size: 75, style: 'normal', color: '#004E46' }, this.gameManager.textBox.edgeName,
+                {
+                    area: new Phaser.Geom.Rectangle(this.gameManager.textBox.offset, this.gameManager.textBox.offset, this.gameManager.textBox.width, this.gameManager.textBox.height),
+                    callback: Phaser.Geom.Rectangle.Contains
+                }
+            );
+        } else {
             // Boton de volver (solo aparece si se accede desde el menu principal)
             let returnButtonTranslation = this.i18next.t("returnButton", { ns: this.ns });
-            new Button(this, exitButton.x, exitButton.y - bottomPadding * 1.3, 0.47,
+            new Button(this, sidePadding, this.CANVAS_HEIGHT - bottomPadding, 0.47,
                 () => {
                     this.gameManager.startTitleMenu();
                 },

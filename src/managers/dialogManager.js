@@ -1,6 +1,7 @@
 import TextBox from '../UI/dialog/textBox.js';
 import OptionBox from '../UI/dialog/optionBox.js';
 import GameManager from './gameManager.js';
+import xapiTracker from "../lib/xapi.js";
 
 export default class DialogManager {
     /**
@@ -16,6 +17,8 @@ export default class DialogManager {
         this.currNode = null;               // Nodo actual
         this.portraits = new Map();         // Mapa para guardar los retratos en esta escena
         this.allPortraits = new Set();
+        this.launched=false;
+        this.activeDialogTracker = null;    // Tracker para completar dialogos en xAPI
 
         this.gameManager = GameManager.getInstance();
         this.dispatcher = this.gameManager.dispatcher;
@@ -40,10 +43,9 @@ export default class DialogManager {
             if (this.textbox.box.input.enabled && this.textbox.box.alpha > 0) {
                 this.nextDialog();
             }
-
-            if (!this.currNode) {
-                this.textbox.activate(false);
-                this.bgBlock.disableInteractive();
+            else if (!this.currNode) {
+                // console.log("node null when clicking bgBlock");
+                this.setNode(null);
             }
         });
 
@@ -70,11 +72,13 @@ export default class DialogManager {
     * @param {Phaser.Scene} scene - escena a la que se va a pasar
     */
     changeScene(scene) {
+        xapiTracker.accessible(scene.scene.key, xapiTracker.ACCESSIBLETYPE.SCREEN)
+                    .accessed()
+                    .send();
         // Desactiva la caja de texto y las opciones (por si acaso)
-        if (this.textbox) {
-            this.textbox.activate(false);
-            this.bgBlock.disableInteractive();
-        }
+        this.textbox.activate(false);
+        // console.log("bgBlock interactive disabled when changing scene");
+        this.bgBlock.disableInteractive();
         this.activateOptions(false);
         this.portraits.clear();
 
@@ -126,23 +130,27 @@ export default class DialogManager {
     */
     setNode(node) {
         // Si no hay ningun dialogo activo y el nodo a poner es valido
-        if (!this.isTalking() && node) {
+        if (!this.isTalking() && node !== null) {
             // Indica que ha empezado un dialogo
             this.setTalking(true);
 
             // Desactiva la caja de texto y las opciones (por si acaso)
-            if (this.textbox) {
-                this.textbox.activate(false);
-                this.bgBlock.disableInteractive();
-            }
+            this.textbox.activate(false);
+            // console.log("bgBlock interactive disabled when setting valid node");
+            this.bgBlock.disableInteractive();
             this.activateOptions(false);
 
             // Cambia el nodo por el indicado
             this.currNode = node;
+            this.lastCharacter = null;
             this.processNode(node);
         }
         else {
+            // Se resetea la configuracion del texto de la caja por si se habia cambiado a la de por defecto
+            this.currNode = null;
+            this.textbox.resetTextConfig();
             this.textbox.activate(false);
+            // console.log("bgBlock interactive disabled when setting null node");
             this.bgBlock.disableInteractive();
             this.setTalking(false);
         }
@@ -218,6 +226,7 @@ export default class DialogManager {
             setTimeout(() => {
                 this.dispatcher.dispatch(evt.name, evt);
 
+                // console.log("Dispatching " + evt.name);
                 // Si el evento establece el valor de una variable, lo cambia en la 
                 // blackboard correspondiente (la de la escena o la del gameManager)
                 let blackboard = this.gameManager.blackboard;
@@ -236,6 +245,7 @@ export default class DialogManager {
         // Si el nodo actual es valido
         if (this.currNode) {
             this.bgBlock.setInteractive();
+
             // Si el nodo es un nodo condicional
             if (this.currNode.type === "condition") {
                 let i = this.processCondition(this.currNode);
@@ -251,6 +261,12 @@ export default class DialogManager {
                 this.activateOptions(true);
             }
             else if (this.currNode.type === "text") {
+                if(!this.launched) {
+                    var dialog = this.currNode.dialogs[0];
+                    this.activeDialogTracker = xapiTracker.completable(`${this.currNode.fullId}`, xapiTracker.COMPLETABLETYPE.STORYNODE);
+                    this.activeDialogTracker.initialized().send();
+                    this.launched=true;
+                }
                 // Si el nodo no tiene texto, se lo salta y pasa al siguiente nodo
                 // IMPORTANTE: DESPUES DE UN NODO DE DIALOGO SOLO HAY UN NODO, POR LO QUE 
                 // EL SIGUIENTE NODO SERA EL PRIMER NODO DEL ARRAY DE NODOS SIGUIENTES
@@ -290,11 +306,15 @@ export default class DialogManager {
             else if (this.currNode.type === "chatMessage") {
                 this.setTalking(false);
                 this.scene.phoneManager.phone.setChatNode(this.currNode.chat, this.currNode);
+                // console.log("bgBlock interactive disabled when setting chatMessageNode");
                 this.bgBlock.disableInteractive();
             }
             else if (this.currNode.type === "socialNetMessage") {
                 // Funcion comun (se anade el comentario al post y se procesa el nodo)
                 let fnAux = () => {
+                    xapiTracker.alternative(this.currNode.postName, xapiTracker.ALTERNATIVETYPE.DIALOG)
+                                .selected(this.currNode.text)
+                                .send();
                     this.gameManager.computerScene.socialNetScreen.addCommentToPost(this.currNode.owner, this.currNode.postName,
                         this.currNode.character, this.currNode.name, this.currNode.text);
 
@@ -319,12 +339,10 @@ export default class DialogManager {
                 }
             }
         }
+        // Se ha acabado el dialogo o se ha pasado un nodo invalido
         else {
-            // Se resetea la configuracion del texto de la caja por si se habia cambiado a la de por defecto
-            this.textbox.resetTextConfig();
-            this.textbox.activate(false);
-            this.bgBlock.disableInteractive();
-            this.setTalking(false);
+            // console.log("node null when processing currentNode == null");
+            this.setNode(null);
         }
     }
 
@@ -346,9 +364,14 @@ export default class DialogManager {
                 }
                 // Si ya se han mostrado todos los dialogos
                 else {
-                    // Actualiza el ultimo personaje que ha balado
+                    // Actualiza el ultimo personaje que se ha hablado
                     this.lastCharacter = this.currNode.character;
-
+                    // Completa el dialogo rastreado
+                    if (this.activeDialogTracker) {
+                        this.activeDialogTracker.completed(true, true).send();
+                        this.activeDialogTracker = null;
+                    }
+                    this.launched=false;
                     // Se reinicia el dialogo del nodo actual y actualiza el nodo al siguiente
                     // IMPORTANTE: DESPUES DE UN NODO DE DIALOGO SOLO HAY UN NODO, POR LO QUE 
                     // EL SIGUIENTE NODO SERA EL PRIMER NODO DEL ARRAY DE NODOS SIGUIENTES
@@ -419,7 +442,12 @@ export default class DialogManager {
         this.activateOptions(false);
 
         let next = this.currNode.next[index];
-
+        let statementBuilder = xapiTracker.alternative(this.currNode.fullId, xapiTracker.ALTERNATIVETYPE.DIALOG)
+                    .selected(`${index}`);
+        for (let i = 0; i < this.currNode.choices.length; i++) {
+            statementBuilder.withResultExtension(`choice/${i}`, `${this.currNode.choices[i].fullId}`);
+        }
+        statementBuilder.send();
         // Si la opcion no se puede elegir de nuevo, elimina tanto la opcion
         // como el nodo al que lleva de sus arrays correspondientes
         if (!this.currNode.choices[index].repeat) {

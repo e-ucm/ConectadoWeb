@@ -1,0 +1,191 @@
+{
+    "phone": {
+        "root": {
+            "text": "我无话可回答"
+        }
+    },
+
+    "bedroom": {
+        "pc": {
+            "root": [
+                {
+                    "text": "如果我现在打开电脑，我肯定会迟到的。"
+                },
+                {
+                    "text": "最好还是等到下午吧。"
+                }
+            ],
+            "pcQuestion": {
+                "text": "你想打开电脑吗？"
+            },
+            "pcChoice": [
+                {
+                    "text": "是"
+                },
+                {
+                    "text": "否"
+                }
+            ],
+            "leavePC":{
+                "text": "我最好还是现在就离开。"
+            }
+        },
+
+        "bagAfternoon": {
+            "root": [
+                {
+                    "text": "我刚回来。"
+                },
+                {
+                    "text": "我根本不需要背包。"
+                }
+            ]
+        },
+        
+        "bedAfternoon": {
+            "root": {
+                "text": "嗯，我现在应该去睡觉吗？"
+            },
+            "choices": [
+                {
+                    "text": "是"
+                },
+                {
+                    "text": "否"
+                }
+            ]
+        }
+    },
+
+    "livingroom": {
+        "doorMorning": {
+            "root": {
+                "text": "我忘了书包。我最好在离开前回房间拿一下。"
+            }
+        },
+        "doorAfternoon": {
+            "root": {
+                "text": "我在街上也没什么事可做。"
+            }
+        }
+    },
+
+    "playground": {
+        "homeMorning": {
+            "root": {
+                "text": "我刚到，还不能走。"
+            }
+        },
+        "homeBreak": {
+            "root": {
+                "text": "现在是休息时间，我还要上几节课才能回家。"
+            }
+        },
+        "doorMorning": {
+            "root": {
+                "text": "看起来我到的太早了，现在还不能进去。我最好消磨一下时间。"
+            }
+        },
+        "doorAfternoon": {
+            "root": [
+                {
+                    "text": "今天没有课了，而且这里也没人了。"
+                },
+                {
+                    "text": "我最好还是回家吧。"
+                }
+            ]
+        }
+    },
+
+    "stairs": {
+        "door": {
+            "root": {
+                "text": "看起来里面没人。"
+            }
+        },
+        "tag": {
+            "root": {
+                "text": "校长办公室。"
+            }
+        },
+        "downstairs": {
+            "root": {
+                "text": "我应该直接去上课了。"
+            }
+        }
+
+    },
+
+    "corridor": {
+        "restroom": {
+            "root": {
+                "text": "",
+                "text_male": "我不能去那里，那是女厕所。",
+                "text_female": "我不能去那里，那是男厕所。"
+            }
+        },
+        "class": {
+            "root": {
+                "text": "如果我进去后老师出现，我就出不来了。"
+            },
+            "choices": [
+                {
+                    "text": "（还是进去了）"
+                },
+                {
+                    "text": "那我再走走好了。"
+                }
+            ]
+        }
+
+    },
+
+    "class": {
+        "table": {
+            "root": {
+                "text": "这个位子是空的，我可以坐这里吗？"
+            },
+            "choices": [
+                {
+                    "text": "是"
+                },
+                {
+                    "text": "否"
+                }
+            ],
+            "teacherArrive": {
+                "text": "（背后有人轻拍，老师来了）。"
+            }
+        },
+        "late": {
+            "root": [
+                {
+                    "text": "{{name}}，你迟到了。"
+                },
+                {
+                    "text": "请坐，我们继续上课。"
+                }
+            ]
+        }
+    },
+
+    "board": {
+        "gumWashed": [
+            {
+                "text": "那是我昨天刚把口香糖弄掉后的照片。"
+            },
+            {
+                "text": "上面还有一句很奇葩的话…“一个宝宝来到了教室”。"
+            }
+        ],
+        "gumNotWashed": [
+            {
+                "text": "那是一张我的照片，被P得看起来像我在排泄口香糖。"
+            },
+            {
+                "text": "谁想这样捉弄我？"
+            }
+        ]
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "shadow": {
+        "introduction": {
+            "root": [
+                {
+                    "text": "Eu vou garantir que ninguém fale com você."
+                },
+                {
+                    "text": "Você pode fazer o que quiser, mas não vai conseguir nada."
+                },
+                {
+                    "text": "Vai lá, converse com as pessoas da sala, vamos ver se elas falam com você."
+                }
+            ]
+        },
+        "outro": {
+            "root": [
+                {
+                    "text": "",
+                    "text_male": "Acho que você está sozinho.",
+                    "text_female": "Acho que você está sozinha."
+                },
+                {
+                    "text": "",
+                    "text_male": "Como é ser ignorado por todos?",
+                    "text_female": "Como é ser ignorada por todos?"
+                },
+                {
+                    "text": "Não é engraçado como ninguém presta atenção em você?"
+                },
+                {
+                    "text": "Porque estou rindo muito só de te olhar para você."
+                }
+            ]
+        }
+    },
+    "Maria": {
+        "root": {
+            "text": "..."
+        },
+        "playerWorry": [
+            {
+                "text": "Você vai me ignorar também?"
+            },
+            {
+                "text": "Eles não fizeram o mesmo com você? Não me ignore, você sabe como é."
+            },
+            {
+                "text": "Você me entende, né?"
+            }
+        ]
+    },
+    "Guille": {
+        "root": {
+            "text": "..."
+        },
+        "playerWorry": [
+            {
+                "text": "Você é meu amigo, né?"
+            },
+            {
+                "text": "Guille, você não é como os outros."
+            },
+            {
+                "text": "Não deixe que eles te ameacem."
+            }
+        ]
+    },
+    "Jose": {
+        "root": {
+            "text": "..."
+        },
+        "playerWorry": [
+            {
+                "text": "Você vai me ignorar sem motivo? Só porque te disseram para fazer isso?"
+            },
+            {
+                "text": "Podemos ser amigos."
+            },
+            {
+                "text": "Quantos anos você tem? Três? Fale comigo."
+            }
+        ]
+    },
+    "Alison": {
+        "root": {
+            "text": "..."
+        },
+        "playerWorry": [
+            {
+                "text": "Você é minha amiga, certo?"
+            },
+            {
+                "text": "Você parece legal, você não vai começar a me ignorar, vai?"
+            },
+            {
+                "text": "Por favor, fala comigo."
+            }
+        ]
+    },
+    "Ana": {
+        "root": {
+            "text": "..."
+        },
+        "playerWorry": [
+            {
+                "text": "Que eu fiz para você? Por que você também está me perseguindo?"
+            },
+            {
+                "text": "Se o Alex pular de uma ponte, você pularia também?"
+            },
+            {
+                "text": "Não podemos nos entender?"
+            }
+        ]
+    }
+}

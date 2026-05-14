@@ -107,17 +107,16 @@ export default class OptionBox extends DialogObject {
     activate(active) {
         // Es visible si el alpha de la caja es 1
         let isVisible = this.box.alpha == 1;
+        this.box.disableInteractive();
 
         // Si se va a activar y no es visible, aparece con animacion
         if (active && !isVisible) {
-            this.box.disableInteractive();
             super.activate(true, [this.box, this.text], () => {
                 this.box.setInteractive({ useHandCursor: true });
             }, 0);
         }
         // Si se va a desactivar y es visible, desaparece con animacion
         else if (!active && isVisible) {
-            this.box.disableInteractive();
             super.activate(false, [this.box, this.text]);
         }
     }

@@ -2,7 +2,7 @@ import GameManager from '../../managers/gameManager.js';
 import ListViewButton from '../listView/listViewButton.js';
 import VerticalListView from '../listView/verticalListView.js';
 import MessageBox from '../messageBox.js'
-
+import xapiTracker from '../../lib/xapi.js';
 export default class Post extends Phaser.GameObjects.Container {
     /**
      * Post que ha subido un personaje
@@ -18,6 +18,9 @@ export default class Post extends Phaser.GameObjects.Container {
      */
     constructor(scene, x, y, scale, avatar, name, photo, description) {
         super(scene, x, y);
+        this.avatar = avatar;
+        this.name = name;
+        this.photo = photo;
 
         this.scene.add.existing(this);
 
@@ -81,6 +84,9 @@ export default class Post extends Phaser.GameObjects.Container {
         // Boton para comentar en el post
         offset = 10;
         this.commentButton = new ListViewButton(this.scene, photoBg.x + photoBg.displayWidth / 2 - offset, photoBg.y + offset, 0.65, () => {
+            xapiTracker.gameObject(`comment_button_${this.name}_${this.photo}`)
+                        .interacted()
+                        .send();
             if (this.commentNode !== null) {
                 this.dialogManager.setNode(this.commentNode);
             }

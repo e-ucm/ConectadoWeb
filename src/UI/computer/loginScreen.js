@@ -1,5 +1,6 @@
 import TextInput from '../../UI/textInput.js'
 import Button from '../../UI/button.js'
+import xapiTracker from '../../lib/xapi.js';
 
 export default class LoginScreen extends Phaser.GameObjects.Group {
     /**
@@ -62,9 +63,15 @@ export default class LoginScreen extends Phaser.GameObjects.Group {
             () => {
                 // Se comprueba que los datos introducidos son correctos
                 if (this.handleErrors(this.userInput, this.passwordInput)) {
+                    xapiTracker.gameObject("onComputer", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+                                .interacted()
+                                .send();
                     this.scene.logIntoSocialNet();
                 }
                 else {
+                    xapiTracker.gameObject("errorWhenIntroducedCredentialsonComputer", xapiTracker.GAMEOBJECTTYPE.GAMEOBJECT)
+                                .interacted()
+                                .send();
                     this.errorText.setVisible(true);
                 }
             },

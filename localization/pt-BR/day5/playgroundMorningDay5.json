@@ -1,0 +1,69 @@
+{
+    "alison": {
+        "passwordExchanged": [
+            {
+                "text": "Você merece o que aconteceu."
+            },
+            {
+                "text": "O que você estava pensando ao me dar sua senha?"
+            }
+        ],
+        "phoneStolen": {
+            "text": "Nada disso teria acontecido se você tivesse confiado em mim. É sua culpa."
+        },
+
+        "talked": {
+            "text": "Some daqui, não temos nada para conversar."
+        }
+    },
+
+    "ana": {
+        "passwordExchanged": [
+            {
+                "text": "Não consigo acreditar que você deu sua senha para a Alice."
+            },
+            {
+                "text": "Você realmente achou que ela seria sua amiga? Não consigo acreditar que foi tão fácil."
+            },
+            {
+                "text": "HAHAHAHA!!! Sério, estou morrendo de rir de você."
+            }
+        ],
+        "phoneFound": [
+            {
+                "text": "HAHAHAHA!!! Não consigo acreditar que você não tinha um padrão de bloqueio no celular."
+            },
+            {
+                "text": "Pensei que seria mais difícil..."
+            },
+            {
+                "text": "",
+                "text_male": "ai ser um dia engraçado. Agora todo mundo acha que você é um viado que gosta de tudo.",
+                "text_female": "ai ser um dia engraçado. Agora todo mundo acha que você é uma vadia que não tem limites."
+            }
+        ],
+        "phoneNotFound": [
+            {
+                "text": "Olha quem chegou, e eu pensei que você não viria hoje."
+            },
+            {
+                "text": "Ainda sem celular? Hahaha, não foi tão difícil de encontrar se você tivesse procurado direito."
+            },
+            {
+                "text": "Que idiota..."
+            },
+            {
+                "text": "De onde você veio? hahaha."
+            }
+        ],
+        "bellRinging": {
+            "text": "<<O sinal está tocando>>"
+        },
+
+        "talked": {
+            "text": "",
+                "text_male": "Hahahaha, excluído",
+                "text_female": "Hahahaha, excluída."
+        }
+    }
+}

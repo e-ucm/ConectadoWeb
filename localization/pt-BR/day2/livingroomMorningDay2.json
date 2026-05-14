@@ -1,0 +1,10 @@
+{
+    "door": {
+        "normal": {
+            "text": "Parece que meus pais saíram bem cedo hoje."
+        },
+        "late": {
+            "text": "Parece que meus pais já saíram para o trabalho."
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import GameManager from "../../managers/gameManager.js"
-
+import Button from '../../UI/button.js'
+import xapiTracker from "../../lib/xapi.js";
 export default class LanguageMenu extends Phaser.Scene {
     /**
     * Menu para elegir el idioma del juego
@@ -15,6 +16,7 @@ export default class LanguageMenu extends Phaser.Scene {
 
         this.gameManager = GameManager.getInstance();
         this.i18next = this.gameManager.i18next;
+        let namespace = 'menus\\languageMenu';
 
         // Fondo escalado en cuanto al canvas
         let bg = this.add.image(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, 'basePC');
@@ -32,14 +34,24 @@ export default class LanguageMenu extends Phaser.Scene {
         let height = CANVAS_HEIGHT / 7.5;
         let tweenTime = 7;
         let increase = 1.3;
-        this.createFlagButton(1.2 * CANVAS_WIDTH / 4, 1.1 * CANVAS_HEIGHT / 4,
-            height, 'France', 'fr', tweenTime, increase);
-        this.createFlagButton(2.8 * CANVAS_WIDTH / 4, 1.1 * CANVAS_HEIGHT / 4,
-            height, 'Portugal', 'pt', tweenTime, increase);
-        this.createFlagButton(1.2 * CANVAS_WIDTH / 4, 2.4 * CANVAS_HEIGHT / 4,
-            height, 'Spain', 'es', tweenTime, increase);
-        this.createFlagButton(2.8 * CANVAS_WIDTH / 4, 2.4 * CANVAS_HEIGHT / 4,
-            height, 'UK', 'en', tweenTime, increase);
+        this.createFlagButton(1.3 * CANVAS_WIDTH / 6, 1.1 * CANVAS_HEIGHT / 4, height, 'es', 'es', tweenTime, increase);
+        this.createFlagButton(3.2 * CANVAS_WIDTH / 6, 1.1 * CANVAS_HEIGHT / 4, height, 'fr', 'fr', tweenTime, increase);
+        this.createFlagButton(4.9 * CANVAS_WIDTH / 6, 1.1 * CANVAS_HEIGHT / 4, height, 'en', 'en', tweenTime, increase);
+
+        this.createFlagButton(1.3 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'pt-br', 'pt-BR', tweenTime, increase);
+        this.createFlagButton(3.2 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'cn-cn', 'cn-CN', tweenTime, increase);
+        this.createFlagButton(4.9 * CANVAS_WIDTH / 6, 2.4 * CANVAS_HEIGHT / 4, height, 'cn-hk', 'cn-HK', tweenTime, increase);
+        
+        // Boton de salir
+        let exitButton = new Button(this, 100, 3 * CANVAS_HEIGHT / 4 + 10, 0.5,
+            async () => {
+                if(!this.gameManager.Initialized) {
+                    await this.gameManager.initializedGame();
+                }
+                this.gameManager.completedGame(true);
+            },
+            'powerOff', { R: 64, G: 142, B: 134 }, { R: 0, G: 104, B: 93 }, { R: 200, G: 200, B: 200 }
+        );
     }
 
     /**
@@ -77,6 +89,9 @@ export default class LanguageMenu extends Phaser.Scene {
             });
         });
         button.on('pointerdown', () => {
+            let statementBuilder = xapiTracker.alternative("language", xapiTracker.ALTERNATIVETYPE.MENU).selected(language)
+            statementBuilder.send();
+
             // Se cambia el idioma y se pasa a la pantalla de titulo
             this.i18next.changeLanguage(language);
             this.gameManager.startTitleMenu();

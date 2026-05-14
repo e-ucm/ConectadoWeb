@@ -1,3 +1,5 @@
+import xapiTracker from "../lib/xapi.js";
+
 export default class Character {
     /**
     * Clase para un personaje y su retrato 
@@ -12,7 +14,7 @@ export default class Character {
         this.scene = scene;
 
         this.anims = [];
-
+        this.key = key;
         // Se crea el personaje y sus animaciones esqueletales de Spine
         // Nota: el origen es (0.5, 1). No se puede modificar
         this.char = this.scene.add.spine(trans.x, trans.y, key);
@@ -24,6 +26,9 @@ export default class Character {
 
         this.dialog = dialog;
         this.char.on('pointerdown', () => {
+            xapiTracker.gameObject(this.key, xapiTracker.GAMEOBJECTTYPE.NPC)
+                        .interacted()
+                        .send();
             this.dialog();
         });
 

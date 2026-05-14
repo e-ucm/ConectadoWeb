@@ -1,95 +1,143 @@
 {
   "frames": {
-    "France": {
+    "cn-cn": {
       "frame": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "sourceSize": {
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "Portugal": {
+    "cn-hk": {
       "frame": {
-        "x": 256,
+        "x": 225,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "sourceSize": {
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "Spain": {
+    "en": {
       "frame": {
-        "x": 512,
+        "x": 450,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "sourceSize": {
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "UK": {
+    "es": {
       "frame": {
-        "x": 768,
+        "x": 675,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
       },
       "sourceSize": {
-        "w": 256,
-        "h": 171
+        "w": 225,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "fr": {
+      "frame": {
+        "x": 900,
+        "y": 0,
+        "w": 225,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 225,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 225,
+        "h": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "pt-br": {
+      "frame": {
+        "x": 1125,
+        "y": 0,
+        "w": 225,
+        "h": 150
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 225,
+        "h": 150
+      },
+      "sourceSize": {
+        "w": 225,
+        "h": 150
       },
       "pivot": {
         "x": 0.5,
@@ -103,9 +151,10 @@
     "image": "flags.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1024,
-      "h": 171
+      "w": 1350,
+      "h": 150
     },
-    "scale": 1
+    "scale": 1,
+    "source": "https://hampusborgos.github.io/country-flags/"
   }
 }

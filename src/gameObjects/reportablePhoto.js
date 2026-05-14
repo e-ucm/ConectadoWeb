@@ -49,6 +49,7 @@ export default class ReportablePhoto extends Phaser.GameObjects.Container {
         this.speed = speed;
 
         // Foto
+        this.frame = frame;
         this.image = this.scene.add.image(0, 0, 'photos', frame);
         this.add(this.image);
 

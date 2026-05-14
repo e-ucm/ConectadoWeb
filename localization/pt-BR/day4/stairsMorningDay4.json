@@ -1,0 +1,90 @@
+{
+    "maria": {
+        "friend": {
+            "text": "Bom dia {{name}}."
+        },
+        "hello": {
+            "text": "Oi, Maria."
+        },
+        "friendChoices": [
+            {
+                "text": "Você não veio ontem. Está tudo bem?"
+            },
+            {
+                "text": "Você está falando comigo?"
+            },
+            {
+                "text": "Estou com pressa, o sinal já tocou. A gente conversa depois."
+            }
+        ],
+
+        "askMissing": [
+            {
+                "text": "Sim, estou bem. Obrigada por perguntar."
+            },
+            {
+                "text": "Ontem eu estava com febre, então fiquei em casa descansando."
+            },
+            {
+                "text": "Hoje estou nova em folha."
+            }
+        ],
+
+        "askTalkFriends": [
+            {
+                "text": "Acho que você está falando do Alex."
+            },
+            {
+                "text": "Ana fez algo parecido ano passado para me sacanear."
+            },
+            {
+                "text": "Você deveria falar com seus pais ou com nosso coordenador."
+            },
+            {
+                "text": "Eu não fiz isso quando tive a chance. Meus pais me obrigaram a ir ver um psicólogo quando descobriram."
+            },
+            {
+                "text": "Se precisar que eu vá com você falar com o professor, é só me chamar. Mas não se cale."
+            }
+        ],
+        "askTalkFriends2": {
+            "text": "Valeu, até mais tarde."
+        },
+
+        "normal": {
+            "text": "Oi, Maria."
+        },
+        "normal2": {
+            "text": "Olá, {{name}}. Precisa de algo?"
+        },
+        "normalChoices": [
+            {
+                "text": "Não, até mais."
+            },
+            {
+                "text": "Você está falando comigo?"
+            }
+        ],
+        "askTalkNormal": {
+            "text": "Por que não estaria?"
+        },
+        "askTalkNormal2": {
+            "text": "Você não falou com o Alex?"
+        },
+        "askTalkNormal3": [
+            {
+                "text": "Sim, sobre o negócio de não falar com você..."
+            },
+            {
+                "text": "Eles tornaram minha vida um inferno no ano passado. Aprendi a lição."
+            },
+            {
+                "text": "É melhor você conversar com seus pais ou o professor e ignorar o Alex e seus 'minions'."
+            }
+        ],
+
+        "talked": {
+            "text": "Você vai se atrasar se não for agora."
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "guilleAlison": {
+        "choices": [
+            {
+                "text": "Você sabe quem pegou meu celular e deixou no banheiro?"
+            },
+            {
+                "text": "Alguém sabe onde está meu celular? Alguém pegou ele."
+            },
+            {
+                "text": "Acho que você não está falando comigo..."
+            }
+        ],
+        "askFound": {
+            "text": "..."
+        },
+        "askFound2": {
+            "text": "Não vamos dedurar eles, mas acho que você já sabe quem foi."
+        },
+        "askFound3": {
+            "text": "*sshhhhhh*"
+        },
+
+        "askNotFound": {
+            "text": "..."
+        },
+        "askNotFound2": {
+            "text": "Desculpe, não fazemos ideia."
+        },
+        "askNotFound3": {
+            "text": "Obrigado, Gui."
+        },
+        
+
+        "talked": {
+            "text": "..."
+        },
+        "talked2": {
+            "text": "..."
+        }
+    }
+}

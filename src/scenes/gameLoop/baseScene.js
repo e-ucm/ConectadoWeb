@@ -353,6 +353,7 @@ export default class BaseScene extends Phaser.Scene {
                     repeat = true;
                 }
                 let choice = {
+                    fullId: fileObj[id].choices[i].next || "donothing", // Si la opcion no lleva a ningun nodo, se le asigna un nodo de id "donothing" (que se tendria que crear con anterioridad y no hacer nada) para evitar problemas al intentar acceder a un nodo con id undefined
                     text: texts[i].text,
                     repeat: repeat
                 }
@@ -609,7 +610,7 @@ export default class BaseScene extends Phaser.Scene {
      * @param {Function} onClick - funcion a la que se llamara al hacer click sobre la puerta abierta
      * @param {Boolean} click - true si la imagen se cambia al hacer click, false si lo hace al pasar/sacar el raton por encima
      */
-    toggleDoor(closed, opened, onClick = {}, click = true) {
+    toggleDoor(closed, opened, onClickClose = {}, click = true, onClickOpen = {}) {
         closed.setInteractive({ useHandCursor: true });
         opened.setInteractive({ useHandCursor: true });
 
@@ -640,10 +641,11 @@ export default class BaseScene extends Phaser.Scene {
         
         // Al pulsar la puerta abierta, se produce el evento indicado
         opened.on('pointerdown', () => {
-            if (onClick !== null && typeof onClick === 'function') {
-                onClick();
+            if (onClickClose !== null && typeof onClickClose === 'function') {
+                onClickClose();
             }
         });
+
 
 
         // Al pulsar la puerta cerrada, si se esta usando input tactil, se abre la puerta por un 
@@ -653,14 +655,17 @@ export default class BaseScene extends Phaser.Scene {
                 opened.visible = true;
                 closed.visible = false;
                 setTimeout(() => {
-                    if (onClick !== null && typeof onClick === 'function') {
-                        onClick();
+                    if (onClickClose !== null && typeof onClickClose === 'function') {
+                        onClickClose();
                     }
                     if (!click) {
                         opened.visible = false;
                         closed.visible = true;
                     }
                 }, 100);
+            }
+            if (onClickOpen !== null && typeof onClickOpen === 'function') {
+                onClickOpen();
             }
         });
     }

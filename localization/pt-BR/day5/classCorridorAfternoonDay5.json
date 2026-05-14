@@ -1,0 +1,41 @@
+{
+    "player_stairs": {
+        "root": [
+            {
+                "text": "Todo mundo foi embora."
+            },
+            {
+                "text": "",
+                "text_male": "Devo confiar no Alex e ir ao banheiro conversar com ele?",
+                "text_female": "Devo confiar no Alex e ir ao banheiro conversar com a Ana?"
+            },
+            {
+                "text": "Se eu for, será que isso tudo vai acabar de uma vez por todas?"
+            }
+        ]
+    },
+    
+    
+    "class": {
+        "root": {
+            "text": "Não tenho nada para fazer na sala de aula."
+        }
+    },
+
+    "alex_stairs": {
+        "root": [
+            {
+                "text": "Sério? Você estava saindo sem passar no banheiro."
+            },
+            {
+                "text": "Vê isso como uma oportunidade para resolver tudo, vamos lá... Eu vou com você."
+            }
+        ]
+    },
+
+    "alex_corridor": {
+        "root": {
+            "text": "Vamos, entra logo no banheiro."
+        }
+    }
+}

@@ -1,4 +1,6 @@
 import GameManager from '../managers/gameManager.js';
+import xapiTracker from '../lib/xapi.js';
+import ogdTracker from '../lib/ogdTracker.js';
 
 export default class BootScene extends Phaser.Scene {
     /**
@@ -203,11 +205,11 @@ export default class BootScene extends Phaser.Scene {
             // Idiomas permitidos
             // Sin esta propiedad a la hora de buscar las traducciones se podria buscar
             // en cualquier idioma (aunque no existiese)
-            supportedLngs: ['en', 'es', 'fr', 'pt'],
+            supportedLngs: ['en', 'es', 'fr', 'pt-BR', 'cn-CN', 'cn-HK'],
             // IMPORTANTE: hay que precargar los namespaces de todos los idiomas porque sino a la hora
             // de usar un namespace por primera vez no le da tiempo a encontrar la traduccion
             // y termina usando la del idioma de respaldo
-            preload: ['en', 'es', 'fr'],
+            preload: ['en', 'es', 'fr', 'pt-BR', 'cn-CN', 'cn-HK'],
             // Namespaces que se cargan para cada uno de los idiomas
             ns: namespaces,
             // Mostrar informacion de ayuda por consola
@@ -508,6 +510,18 @@ export default class BootScene extends Phaser.Scene {
 
     create() {
         this.events.once('start', () => {
+            // Este es el primer evento enviado (acceso a la web)
+            const statementBuilder = xapiTracker.accessible("WEB").accessed();
+
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('wisconsin') == 'true' && !ogdTracker.initialized) {
+                ogdTracker.initialized = true;
+                this.setupOGDTracker(statementBuilder);
+            }
+
+            statementBuilder.send(); // moving trace to queue
+
+
             // Se crea la animacion del autobus en la primera escena para no tener que crearla de nuevo
             this.anims.create({
                 key: 'moving',
@@ -518,6 +532,22 @@ export default class BootScene extends Phaser.Scene {
 
             let gameManager = GameManager.create(this);
             gameManager.startLangMenu();
+            // gameManager.startTest();
         })
+    }
+
+    setupOGDTracker(statementBuilder) {
+        // Open Game Data OVERRIDE
+
+        // userId por defecto, puede cambiar dentro de sendFromXAPI
+        ogdTracker.setUserId(Date.now().toString());
+
+        const proto = Object.getPrototypeOf(statementBuilder);
+        const originalSend = proto.send;
+
+        proto.send = function (...args) {
+            ogdTracker.sendFromXAPI(this.statement);
+            return originalSend.apply(this, args);
+        };
     }
 }

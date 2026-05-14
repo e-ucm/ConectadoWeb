@@ -1,0 +1,193 @@
+{
+    "dad": {
+        "notTalked": {
+            "text": "Oi, {{name}}. Você já chegou."
+        },
+        "notWashed": [
+            {
+                "text": "Você percebeu o chiclete grudado na sua calça?"
+            },
+            {
+                "text": "",
+                "text_male": "Você precisa ser mais cuidadoso. É impressionante que você não tenha lavado sua roupa...",
+                "text_female": "Você precisa ser mais cuidadosa. É impressionante que você não tenha lavado sua roupa..."
+            },
+            {
+                "text": "Então, como foi seu dia?"
+            }
+        ],
+        "washed": {
+            "text": "Como foi o seu dia?"
+        },
+
+        "talked": {
+            "text": "Quer falar sobre mais alguma coisa?"
+        },
+
+        "choices1": [
+            {
+                "text": "Nada de novo..."
+            },
+            {
+                "text": "Guilherme me convidou para ir à casa dele neste sábado."
+            },
+            {
+                "text": "(Falar sobre outros colegas)"
+            }
+        ],
+        "goMatch": {
+            "text": "Eu disse a ele que iria, então não estarei em casa no sábado à tarde."
+        },
+        "dontGoMatch": {
+            "text": "Eu avisei que não vou, tem muitas pessoas em quem não confio."
+        },
+        "askMatch": [
+            {
+                "text": "Eu disse a ele que precisava perguntar a você primeiro."
+            },
+            {
+                "text": "Você se importa se eu for?"
+            }
+        ],
+        "askMatchReply": {
+            "text": "Você pode ir, mas vou confirmar com sua mãe."
+        },
+
+        "choices2": [
+            {
+                "text": "Sobre a Alice..."
+            },
+            {
+                "text": "(Contar sobre o chiclete)"
+            },
+            {
+                "text": "(Falar sobre outros colegas)"
+            }
+        ],
+        "alisonWarn": [
+            {
+                "text": "A Alice é super legal."
+            },
+            {
+                "text": "Ela me avisou sobre o Alex querendo fazer uma pegadinha comigo."
+            },
+            {
+                "text": "Embora isso não tenha me ajudado em nada."
+            }
+        ],
+        "alisonNormal": {
+            "text": "Conversei com ela hoje."
+        },
+
+        "aboutGumWashed": [
+            {
+                "text": "Hoje, acabei com um chiclete grudado na minha roupa."
+            },
+            {
+                "text": "Tentei tirar com água e sabão, mas só piorou."
+            },
+            {
+                "text": "A maioria da turma estava rindo de mim."
+            }
+        ],
+        "aboutGumNotWashed": [
+            {
+				"text": "Sobre o chiclete... Não sei como isso aconteceu."
+			},
+			{
+				"text": "A maioria da turma estava rindo de mim."
+			}
+        ],
+        "dadGumNotWashed": {
+            "text": "",
+            "text_male": "Oh querido, você tem que prestar mais atenção onde se senta.",
+            "text_female": "Oh querida, você tem que prestar mais atenção onde se senta."
+        },
+        
+        "choices3": [
+            {
+                "text": "Maria..."
+            },
+            {
+                "text": "Aquele idiota do Alex..."
+            },
+            {
+                "text": "(Falar sobre a escola)"
+            }
+        ],
+        "maria": [
+            {
+                "text": "Eu me dou bem com a Maria."
+            },
+            {
+                "text": "Mas parece que ela não conversa com mais ninguém."
+            }
+        ],
+        
+        "alex": [
+            {
+                "text": "Eu acho que ele tem algum problema comigo desde o primeiro dia."
+            },
+            {
+                "text": "Mas eu não sei exatamente o porquê."
+            }
+        ],
+
+        "prank": {
+            "text": "E hoje ele queria fazer uma pegadinha."
+        },
+
+        "ask": [
+            {
+                "text": "Ele ficou chateado comigo por sentar na cadeira dele."
+            },
+            {
+                "text": "Tentei fazer as pazes com ele."
+            },
+            {
+                "text": "Mas pelo jeito que ele falou, acho que ele vai continuar procurando confusão."
+            }
+        ],
+        "askReply": [
+            {
+				"text": "Se você tiver algum problema com ele, não deixe de me contar."
+			},
+			{
+				"text": "Se precisar, vamos falar com seu professor."
+			}
+        ],
+        
+        "distrust": [
+            {
+                "text": "Ele está querendo arrumar briga."
+            },
+            {
+                "text": "Ele me faz querer dar uma boa surra nele."
+            }
+        ],
+        "distrustReply": [
+            {
+                "text": "Não entre em brigas."
+            },
+            {
+                "text": "Se precisar que eu vá lá conversar com ele, me avise."
+            },
+            {
+                "text": "Ou se você estiver em apuros, fale com seu professor."
+            }
+        ],
+        
+        "choices4": [
+            {
+                "text": "Ensino médio..."
+            },
+            {
+                "text": "Vou para o meu quarto, tenho algumas coisas para fazer."
+            }
+        ],
+
+        "school": {
+            "text": "Estou começando a me sentir desconfortável."
+        }
+    }
+}

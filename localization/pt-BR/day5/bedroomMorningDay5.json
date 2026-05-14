@@ -1,0 +1,46 @@
+{
+    "bag": {
+        "root": {
+            "text": "Vou pegar tudo e sair."
+        }
+    },
+
+    "wardrobe1": {
+        "root": {
+            "text": "Não preciso me preocupar com isso agora."
+        }
+    },
+
+    "wardrobe2": {
+        "root": {
+            "text": "..."
+        }
+    },
+
+    
+    "bed": {
+        "root": {
+            "text": "Tenho que ir."
+        }
+    },
+
+    "pc": {
+        "root": {
+            "text": "Você quer ligar o computador?"
+        },
+        "pcChoice": [
+            {
+                "text": "Sim"
+            },
+            {
+                "text": "Não"
+            }
+        ],
+        "turnPC": {
+            "text": "Não está funcionando, está quebrado?"
+        },
+        "leavePC": {
+            "text": "Melhor não, vou para a aula."
+        }
+    }
+}
