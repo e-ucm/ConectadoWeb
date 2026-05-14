@@ -11,8 +11,8 @@
     "url": "git+https://github.com/e-ucm/ConectadoWeb.git"
   },
   "author": "e-UCM Team",
-  "license": "GNU GENERAL PUBLIC LICENSE",
-  "licenseUrl": "http://www.opensource.org/licenses/gnu-license.php",
+  "license": "Apache-2.0",
+  "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
   "bugs": {
     "url": "https://github.com/e-ucm/ConectadoWeb/issues"
   },
