@@ -8,6 +8,7 @@ import xapiTracker from '../lib/xapi.js';
 // al modulo y solo existe un modulo
 
 let instance = null;
+let locationUrl = `${window.location.origin}${window.location.pathname}`; // Base URL for xAPI statements (can be customized or set via URL params)
 
 export default class GameManager {
     /**
@@ -543,7 +544,7 @@ export default class GameManager {
     async initializedGame() {
         this.startedTime=new Date();
         this.Initialized=true;
-        await xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME)
+        await xapiTracker.completable(locationUrl,xapiTracker.COMPLETABLETYPE.GAME)
                             .initialized()
                             .send();
         await xapiTracker.flush();
@@ -551,7 +552,7 @@ export default class GameManager {
 
     async progressedGame() {
         var actualTime = new Date();
-        let statementBuilder=xapiTracker.completable("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME)
+        let statementBuilder=xapiTracker.completable(locationUrl,xapiTracker.COMPLETABLETYPE.GAME)
                     .progressed(this.day/5)
                     .withDuration(this.startedTime, actualTime);
         statementBuilder=this.addStateExtensions(statementBuilder);
@@ -561,7 +562,7 @@ export default class GameManager {
 
     async completedGame(completion) {
         this.Initialized=false;
-        await this.completed("ConnectadoWeb",xapiTracker.COMPLETABLETYPE.GAME, completion)
+        await this.completed(locationUrl,xapiTracker.COMPLETABLETYPE.GAME, completion)
                     .send();
         await xapiTracker.flush({withBackup:true});
     }

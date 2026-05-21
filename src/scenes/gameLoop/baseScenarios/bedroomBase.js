@@ -13,10 +13,10 @@ export default class BedroomBase extends BaseScene {
 
     create(params) {
         super.create(params);
-        let statementBuilder=this.gameManager.initialized(`scene ${this.scene.key}`, xapiTracker.COMPLETABLETYPE.COMPLETABLE,true, true);
+        let statementBuilder=this.gameManager.initialized(`scene.${this.scene.key}`, xapiTracker.COMPLETABLETYPE.COMPLETABLE,true, true);
         statementBuilder=this.gameManager.addStateExtensions(statementBuilder);
         statementBuilder.send();
-        this.gameManager.initialized(this.scene.key, xapiTracker.COMPLETABLETYPE.STORYNODE,true)
+        this.gameManager.initialized(`scene.${this.scene.key}`, xapiTracker.COMPLETABLETYPE.STORYNODE,true)
                         .send();
                         
         this.livingroom = "";
@@ -158,10 +158,10 @@ export default class BedroomBase extends BaseScene {
             this.phoneManager.topLid.y = -this.CANVAS_HEIGHT / 2;
             this.phoneManager.botLid.y = this.CANVAS_HEIGHT;
             let anim = this.phoneManager.closeEyesAnimation(false);
-            let statementBuilder=this.gameManager.completed(`scene ${this.scene.key}`, xapiTracker.COMPLETABLETYPE.COMPLETABLE,true, true);
+            let statementBuilder=this.gameManager.completed(`scene.${this.scene.key}`, xapiTracker.COMPLETABLETYPE.COMPLETABLE,true, true);
             statementBuilder=this.gameManager.addStateExtensions(statementBuilder);
             statementBuilder.send();
-            this.gameManager.completed(this.scene.key, xapiTracker.COMPLETABLETYPE.STORYNODE,true)
+            this.gameManager.completed(`scene.${this.scene.key}`, xapiTracker.COMPLETABLETYPE.STORYNODE,true)
                             .send();
             this.gameManager.progressedGame();
             anim.on('complete', () => {
